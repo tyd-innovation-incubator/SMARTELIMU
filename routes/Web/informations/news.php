@@ -1,7 +1,15 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: dontito
- * Date: 7/15/19
- * Time: 10:19 AM
- */
+
+Route::group([
+    'namespace' => 'Information',
+], function() {
+
+
+
+    Route::group([ 'prefix' => 'news',  'as' => 'news.'], function() {
+
+        Route::get('/search', 'NewsController@search')->name('search');
+
+    });
+});
+

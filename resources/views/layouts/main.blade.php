@@ -46,7 +46,7 @@
         <li><a href="features-typography.html">Wasifu Wetu</a>
 
         </li>
-        <li><a href="blog.html">Habari</a>
+        <li><a href="{!! route('news.search') !!}">Habari</a>
 
         </li>
         <li><a href="contact.html">Wasiliana nasi</a></li>
@@ -193,7 +193,7 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="dropdown yamm-fw"><a href="blog.html">Habari</a>
+                    <li class="dropdown yamm-fw"><a href="{!! route('news.search') !!}">Habari</a>
                     </li>
                     <li class="dropdown yamm-fw">
                         <a href="features-typography.html">Wasifu Wetu</a>

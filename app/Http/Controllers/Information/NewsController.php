@@ -8,4 +8,10 @@ use Illuminate\Http\Request;
 class NewsController extends Controller
 {
     //
+
+    public function search()
+    {
+
+        return view('information.news.search.search');
+    }
 }

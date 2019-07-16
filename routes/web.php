@@ -20,7 +20,7 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 
-Route::group(['middleware' => 'csrf'], function () {
+Route::group([''], function () {
     includeRouteFiles(__DIR__.'/Web/');
 });
 
