@@ -25,7 +25,7 @@
 </div>
 <nav class="ct-menuMobile">
     <ul class="ct-menuMobile-navbar">
-        <li class="dropdown active"><a href = "index.html">Nyumbani</a>
+        <li class="dropdown active"><a href = "{!! url('/') !!}">Nyumbani</a>
         </li>
         <li class="dropdown">
             <a>Masomo</a>
@@ -57,7 +57,7 @@
         <div class="media ct-navbarCart--Item ct-u-displayTable ct-hoverImage--rectangle">
             <a href="course-single.html">
                 <div class="media-left">
-                    <img class="media-object" src="assets/images/content/itemCart1.jpg" alt="Item Cart">
+                    <img class="media-object" src="{!! url('assets/images/content/itemCart1.jpg') !!}" alt="Item Cart">
                 </div>
                 <div class="media-body">
                     <h5 class="ct-navbarCart--itemName ct-fw-400">Smart Elimu</h5>
@@ -68,7 +68,7 @@
         <div class="media ct-navbarCart--Item ct-u-displayTable ct-hoverImage--rectangle">
             <a href="course-single.html">
                 <div class="media-left">
-                    <img class="media-object" src="assets/images/content/itemCart2.jpg" alt="Item Cart">
+                    <img class="media-object" src="{!! url('assets/images/content/itemCart2.jpg') !!}" alt="Item Cart">
                 </div>
                 <div class="media-body">
                     <h5 class="ct-navbarCart--itemName ct-fw-400">Smart Elimu</h5>
@@ -79,7 +79,7 @@
         <div class="media ct-navbarCart--Item ct-u-displayTable ct-hoverImage--rectangle">
             <a href="course-single.html">
                 <div class="media-left">
-                    <img class="media-object" src="assets/images/content/itemCart3.jpg" alt="Item Cart">
+                    <img class="media-object" src="{!! url('assets/images/content/itemCart3.jpg') !!}" alt="Item Cart">
                 </div>
                 <div class="media-body">
                     <h5 class="ct-navbarCart--itemName ct-fw-400">Your Product Name</h5>
@@ -102,7 +102,7 @@
 
 <div id="ct-js-wrapper" class="ct-pageWrapper">
     <div class="ct-navbarMobile">
-        <a class="navbar-brand" href="index.html"><img src="assets/images/content/logo.png" alt="Website Logo"></a>
+        <a class="navbar-brand" href="{!! url('/') !!}"><img src="{!! url('assets/images/content/logo.png') !!}" alt="Website Logo"></a>
 
         <button type="button" class="navbar-toggle">
             <span class="sr-only">Toggle navigation</span>
@@ -121,14 +121,33 @@
                 <li><a href="#" class="ct-js-login">Ingia<i class="fa fa-lock"></i></a></li>
                 <li><a href="#" class="ct-js-signup">Jisajili<i class="fa fa-user"></i></a></li>
             </ul>
+
             <div class="ct-widget--group pull-right">
-                <ul class="ct-widget--socials list-inline text-uppercase">
-                    <li><a href="https://www.facebook.com/tydinnovation/" target = "blank"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="https://twitter.com/" target = "blank"><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="http://www.linkedin.com/" target = "blank"><i class="fa fa-linkedin"></i></a></li>
-                    <li><a href="http://www.youtube.com/" target = "blank"><i class="fa fa-youtube"></i></a></li>
-                    <li><a href="http://wa.me/255783973428" target = "blank"><i class="fa fa-whatsapp"></i></a></li>
-                </ul>
+
+
+                     <span class="d-none d-xl-inline-block">
+@php
+    $flag = [
+        'en' => 'england',
+        'sw' => 'tz',
+    ];
+@endphp
+                         <ul class="nav nav-pills">
+    <li class="nav-item dropdown">
+        <a class="nav-link" href="#" role="button" id="dropdownLanguage" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <img src="{{ url("assets/images/blank.gif") }}" class="flag flag-{{ $flag[app()->getLocale()] }}" alt="{{ __('menu.language-picker.langs.' . app()->getLocale()) }}"> {{ __('menu.language-picker.langs.' . app()->getLocale()) }}
+            <i class="fas fa-angle-down"></i>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="dropdownLanguage" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 36px, 0px); top: 0px; left: 0px; will-change: transform;">
+            @foreach (array_keys(
+        config('locale.languages')) as $lang)
+                <a class="dropdown-item" href="{{ url('lang/' . $lang) }}">
+                    <img src="{{ url("assets/images/blank.gif") }}" class="flag flag-{{ $flag[$lang] }}" alt="{{ __('menu.language-picker.langs.'.$lang) }}"> {{ __('menu.language-picker.langs.'.$lang) }}
+                </a>
+            @endforeach
+        </div>
+    </li>
+</ul>        </span>
             </div>
             <div class="clearfix"></div>
         </div>
@@ -136,11 +155,11 @@
     <nav class="navbar navbar-default yamm " data-heighttopbar="60px" data-startnavbar="0">
         <div class="container">
             <div class="navbar-header">
-                <a href="index.html"><img src="assets/images/content/logo.png" alt="logo"/></a>
+                <a href="{!! url('/') !!}"><img src="{!! url('assets/images/content/logo.png') !!}" alt="logo"/></a>
             </div>
             <div class="ct-navbar--fluid pull-right">
                 <ul class="nav navbar-nav ct-navbar--fadeInUp">
-                    <li class="dropdown yamm-fw"><a href="index.html">Nyumbani</a>
+                    <li class="dropdown yamm-fw"><a href="{!! url('/') !!}">Nyumbani</a>
 
                     </li>
                     <li class="dropdown yamm-fw"><a href="courses-listing3.html">Masomo</a>
@@ -390,7 +409,7 @@
                             <div class="col-sm-6 col-md-4">
                                 <div class="widget">
                                     <div class="widget-inner">
-                                        <a href="index.html"><img class="ct-u-marginBottom30" src="assets/images/content/logo.png" alt="logo"></a>
+                                        <a href="{!! url('/') !!}"><img class="ct-u-marginBottom30" src="{!! url('assets/images/content/logo.png') !!}" alt="logo"></a>
                                         <p class="ct-u-marginBottom40" align="justify">
                                             Smart Elimu ni jukwaa la kisasa la kujifunzia masomo kwa njia ya Picha Jongefu,
                                             Picha Mnato, Sauti na Maandishi. Jukwaa hili lililozingatia Mtaala wa elimu ya Tanzania

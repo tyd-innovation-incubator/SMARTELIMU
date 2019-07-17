@@ -27,3 +27,5 @@ Route::group([''], function () {
 Route::group(['middleware' => 'csrf'], function () {
     includeRouteFiles(__DIR__.'/Public/');
 });
+
+Route::get('lang/{lang}', 'LanguageController@swap');

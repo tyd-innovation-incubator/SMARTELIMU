@@ -109,7 +109,7 @@
                             <div class="col-sm-6 col-md-12">
                                 <section class="widget ct-widget-categories ct-u-marginBottom100">
                                     <div class="widget-inner">
-                                        <h4 class="text-uppercase ct-u-textNormal ct-fw-900">Makundi ya habari</h4>
+                                        <h4 class="text-uppercase ct-u-textNormal ct-fw-900">@lang('label.news_categories')</h4>
                                         <div class="ct-divider--dark ct-u-marginTop30 ct-u-marginBottom20"></div>
                                         <ul class="list-unstyled ct-fw-400">
                                             <li><a href="#"><i class="fa fa-angle-right"></i>Ubunifu 60</a></li>
