@@ -215,10 +215,10 @@
                     <li class="dropdown yamm-fw"><a href="{!! route('news.search') !!}">Habari</a>
                     </li>
                     <li class="dropdown yamm-fw">
-                        <a href="features-typography.html">Wasifu Wetu</a>
+                        <a href="{!! route('information.about_us') !!}">Wasifu Wetu</a>
 
                     </li>
-                    <li class="dropdown"><a href="contact.html">Wasiliana Nasi</a></li>
+                    <li class="dropdown"><a href="{!! route('information.contact_us') !!}">Wasiliana Nasi</a></li>
                 </ul>
                 <div id="ct-js-navSearch" class="ct-navbarSearch--icon">
                     <i class="fa fa-search"></i>

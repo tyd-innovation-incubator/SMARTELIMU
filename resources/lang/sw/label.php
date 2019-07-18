@@ -57,7 +57,8 @@ return [
     'news_all' => 'Habari Zote',
     'email_helper' => 'Hatuwezi gawa barua pepe yako kwa mtu mwingine yeyote.',
     'confirmation_helper' =>'Ingiza msimbo wa uthibitisho uliotumwa kwenye Nambari yako ya Simu',
-    'news_categories' =>'Makundi ya Habari'
+    'news_categories' =>'Makundi ya Habari',
+    'about_smart_elimu' => 'SIFA YA SMART ELIMU'
 
 
 ];
