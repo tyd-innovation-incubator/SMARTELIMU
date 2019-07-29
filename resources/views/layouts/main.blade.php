@@ -168,7 +168,7 @@
                                 <div class="yamm-content">
                                     <div class="row">
                                         <div class="col-sm-3">
-                                            <a href="courses-listing.html">Elimu ya Msingi</a>
+                                            <a href="{!! route('lessons.primary') !!}">Elimu ya Msingi</a>
                                             <a href="course-single.html">Darasa la 1</a>
                                             <a href="course-single2.html">Darasa la 2</a>
                                             <a href="course-single3.html">Darasa la 3</a>
