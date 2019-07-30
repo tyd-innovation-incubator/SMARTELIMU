@@ -256,17 +256,21 @@
                     <h3 class="modal-title text-uppercase">Login</h3>
                 </div>
                 <div class="modal-body">
-                    <form class="ct-u-paddingBottom100">
+                    <form class="ct-u-paddingBottom100" method="POST" action="{{ route('login') }}">
+                        {!! csrf_field() !!}
+
                         <div class="form-group ct-u-marginBottom50">
-                            <input placeholder="E-mail" type="text" required="" name="field[]" class="form-control ct-input--type1 input-hg ct-u-marginBottom50" title="Login">
-                            <input placeholder="Password" type="text" required="" name="field[]" class="form-control ct-input--type1 input-hg ct-u-marginBottom50" title="Password">
+                            <input placeholder="E-mail" type="text" required="" name="email" class="form-control ct-input--type1 input-hg ct-u-marginBottom50" title="Login">
+                            <input placeholder="Password" type="password" required="" name="password" class="form-control ct-input--type1 input-hg ct-u-marginBottom50" title="Password">
                             <div class="ct-checbox--custom">
                                 <input id="remember" type="checkbox" name="remember" value="remember">
                                 <label for="remember">remember me</label>
                             </div>
                         </div>
                         <div class="text-center">
-                            <button type="submit" class="btn btn-primary btn-lg text-uppercase"><span><a href = "userdashbord.html">Ingia</a></span></button>
+                            <button type="submit" class="btn btn-primary">
+                                {{ __('Login') }}
+                            </button>
                             <div class="ct-u-marginTop50">
                                 <a href="#"><i class="fa fa-info-circle"></i> Forgot Password ?</a>
                                 <a href="#"><i class="fa fa-long-arrow-right"></i> Register Now ?</a>
@@ -286,16 +290,18 @@
                     <h3 class="modal-title text-uppercase">Jisajili</h3>
                 </div>
                 <div class="modal-body">
-                    <form class="ct-u-paddingBottom100">
+                    <form class="ct-u-paddingBottom100"  method="POST" action="{{ route('register') }}">
+                        {!! csrf_field() !!}
+
                         <div class="form-group ct-u-marginBottom50">
                             <div class="row">
                                 <div class="col-md-6">
                                     <input placeholder="Name" type="text" required="" name="field[]" class="form-control ct-input--type1 input-hg ct-u-marginBottom50" title="Name">
-                                    <input placeholder="Password" type="text" required="" name="field[]" class="form-control ct-input--type1 input-hg ct-u-marginBottom50" title="Password">
+                                    <input placeholder="Password" type="password" required="" name="field[]" class="form-control ct-input--type1 input-hg ct-u-marginBottom50" title="Password">
                                 </div>
                                 <div class="col-md-6">
                                     <input placeholder="Email" type="text" required="" name="field[]" class="form-control ct-input--type1 input-hg ct-u-marginBottom50" title="Email">
-                                    <input placeholder="Repeat Password" type="text" required="" name="field[]" class="form-control ct-input--type1 input-hg ct-u-marginBottom50" title="Repeat">
+                                    <input placeholder="Repeat Password" type="password" required="" name="field[]" class="form-control ct-input--type1 input-hg ct-u-marginBottom50" title="Repeat">
                                 </div>
                             </div>
 
