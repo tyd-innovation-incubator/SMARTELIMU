@@ -117,10 +117,7 @@
     </div>
     <div class="ct-topBar text-center">
         <div class="container">
-            <ul class="ct-panel--user list-inline text-uppercase pull-left">
-                <li><a href="#" class="ct-js-login">Ingia<i class="fa fa-lock"></i></a></li>
-                <li><a href="#" class="ct-js-signup">Jisajili<i class="fa fa-user"></i></a></li>
-            </ul>
+            <!-- Right Side Of Navbar -->
 
             <div class="ct-widget--group pull-right">
 
@@ -214,15 +211,56 @@
                     </li>
                     <li class="dropdown yamm-fw"><a href="{!! route('news.search') !!}">Habari</a>
                     </li>
+
                     <li class="dropdown yamm-fw">
                         <a href="{!! route('information.about_us') !!}">Wasifu Wetu</a>
 
                     </li>
                     <li class="dropdown"><a href="{!! route('information.contact_us') !!}">Wasiliana Nasi</a></li>
+
+                            <!-- Authentication Links -->
+                            @guest
+                    <li class="dropdown yamm-fw"><a href="#">Account</a>
+                        <ul class="dropdown-menu">
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                            </li>
+                            @if (Route::has('register'))
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                                </li>
+
+                            @endif
+                        </ul>
+                    </li>
+                            @else
+                                <li class="nav-item dropdown">
+                                    <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                        {{ Auth::user()->name }} <span class="caret"></span>
+                                    </a>
+
+                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="{{ route('logout') }}"
+                                           onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                            {{ __('Logout') }}
+                                        </a>
+
+                                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                            @csrf
+                                        </form>
+                                    </div>
+                                </li>
+                                @endguest
+
+                    {{--<li class="dropdown yamm-fw">--}}
+                        {{--<ul class="navbar-nav ml-auto">--}}
+                          {{----}}
+                        {{--</ul>--}}
+
+                    {{--</li>--}}
                 </ul>
-                <div id="ct-js-navSearch" class="ct-navbarSearch--icon">
-                    <i class="fa fa-search"></i>
-                </div>
+
                 <div class="ct-navbar-search"><i class="fa fa-times ct-navbar-search-closeIcon"></i>
                     <button class="ct-navbar-search-button" type="submit">
                         <i class="fa fa-search fa-fw"></i>
