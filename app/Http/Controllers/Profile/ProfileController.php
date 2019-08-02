@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Http\Controllers\Lessons;
+namespace App\Http\Controllers\Profile;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class SecondaryLevelController extends Controller
+class ProfileController extends Controller
 {
     //
 
@@ -14,8 +14,11 @@ class SecondaryLevelController extends Controller
 
     }
 
+
     public function index()
     {
-        return view('lessons.secondary_level.index');
+
+        return view('profile.index');
     }
+
 }

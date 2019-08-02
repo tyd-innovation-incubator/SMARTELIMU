@@ -9,9 +9,13 @@ class ExtraPrimaryLevelController extends Controller
 {
     //
 
+    public function __construct()
+    {
+
+    }
 
     public function index()
     {
-        return view('lessons.primary_level.index');
+        return view('lessons.extra_primary_level.index');
     }
 }

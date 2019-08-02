@@ -8,7 +8,7 @@ Route::group([
 
     Route::group([ 'prefix' => 'lessons',  'as' => 'lessons.'], function() {
 
-        Route::get('/extra_primary', 'ExtraPrimaryLevelController@index')->name('primary');
+        Route::get('/extra_primary', 'ExtraPrimaryLevelController@index')->name('extra_primary');
 
     });
 });

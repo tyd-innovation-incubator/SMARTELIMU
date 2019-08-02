@@ -175,7 +175,7 @@
                                             <a href="course-single7.html">Darasa la 7</a>
                                         </div>
                                         <div class="col-sm-3">
-                                            <a href="courses-listing2.html">Elimu ya Sekondari</a>
+                                            <a href="{!! route('lessons.secondary') !!}">Elimu ya Sekondari</a>
                                             <a href="course-single8.html">Kidato Cha Kwanza</a>
                                             <a href="course-single9.html">Kidato Cha Pili</a>
                                             <a href="course-single10.html">Kidato Cha Tatu</a>
@@ -184,7 +184,7 @@
                                             <a href="course-single13.html">Kidato Cha Sita</a>
                                         </div>
                                         <div class="col-sm-3">
-                                            <a href="courses-listing3.html">Ziada elimu ya Msingi</a>
+                                            <a href="{!! route('lessons.extra_primary') !!}">Ziada elimu ya Msingi</a>
                                             <a href="course-single.html">Darasa la 1</a>
                                             <a href="course-single2.html">Darasa la 2</a>
                                             <a href="course-single3.html">Darasa la 3</a>
@@ -195,7 +195,7 @@
 
                                         </div>
                                         <div class="col-sm-3">
-                                            <a href="courses-listing3.html">Ziada elimu ya Sekondari</a>
+                                            <a href="{!! route('lessons.extra_secondary') !!}">Ziada elimu ya Sekondari</a>
                                             <a href="course-single8.html">Kidato Cha Kwanza</a>
                                             <a href="course-single9.html">Kidato Cha Pili</a>
                                             <a href="course-single10.html">Kidato Cha Tatu</a>
@@ -240,12 +240,22 @@
                                     </a>
 
                                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="{{ route('logout') }}"
-                                           onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                            {{ __('Logout') }}
-                                        </a>
 
+                                        <ul class="dropdown-menu">
+                                            <li><a href="{!! route('profile.index') !!}"><i class="fa fa-user"></i> Taarifa za mtumiaji</a></li>
+                                            <li><a href="courses-listing1.html"><i class="fa fa-user"></i> Orodha ya Masomo</a></li>
+                                            <li><a href="{!! route('logout') !!}"  onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();"><i class="fa fa-user"></i> Ondoka</a></li>
+                                        </ul>
+                                        {{--<a class="dropdown-item" href="{{ route('logout') }}"--}}
+                                           {{--onclick="event.preventDefault();--}}
+                                                     {{--document.getElementById('logout-form').submit();">--}}
+                                            {{--{{ __('Logout') }}--}}
+                                        {{--</a>--}}
+
+                                        {{--<a class="dropdown-item" href="{{ route('logout') }}">--}}
+                                            {{--<i class="fa fa-user"></i> Taarifa za mtumiaji--}}
+                                        {{--</a>--}}
                                         <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                             @csrf
                                         </form>
