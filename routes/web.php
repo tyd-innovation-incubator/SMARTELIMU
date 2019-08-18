@@ -19,6 +19,17 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+Route::get('/registered/{user}', 'Auth\RegisterController@showRegisteredForm')->name("auth.registered");
+
+Route::get('/verification/{user}', 'Auth\LoginController@verification')->name("auth.verification");
+Route::get('/account/confirm/{responce}', 'Auth\ConfirmAccountController@confirm')->name("auth.account.confirm");
+
+Route::get('/account/confirm_tmx/{token}', 'Auth\ConfirmAccountController@confirmTmxUser')->name("auth.account.confirm_tmx");
+
+Route::get('/account/sms_confirm/{user}', 'Auth\ConfirmAccountController@smsConfirm')->name("auth.account.sms_confirm");
+
+Route::get('account/confirm/resend/{user}', 'Auth\ConfirmAccountController@sendConfirmationEmail')->name("auth.account.confirm.resend");
+
 
 Route::group([''], function () {
     includeRouteFiles(__DIR__.'/Web/');

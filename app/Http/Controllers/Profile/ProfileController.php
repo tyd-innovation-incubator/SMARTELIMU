@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Profile;
 
 use App\Http\Controllers\Controller;
+use App\Models\Auth\User;
 use Illuminate\Http\Request;
 
 class ProfileController extends Controller
@@ -17,6 +18,7 @@ class ProfileController extends Controller
 
     public function index()
     {
+
 
         return view('profile.index');
     }

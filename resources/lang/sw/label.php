@@ -7,6 +7,21 @@ return [
     'detail' => 'Maelezo',
     'details' => 'Maelezo',
     'refresh'=>'Fanyiza Upya',
+    'first_name' =>'Jina la Kwanza',
+    'last_name' =>'Jina la Mwisho',
+    'username' =>'Jina la mtumiaji',
+    'email' => 'Barua Pepe',
+    'phone' => 'Namba ya simu',
+    'gender' =>'Jinsia',
+    'submit' =>'Wasilisha',
+    'resend_email' =>'Tuma tena Uthibitisho',
+    'confirmation_code' =>'Namba ya uthibitisho',
+
+
+    'address' =>'Anuani',
+    'account_category'=>'Aina ya Akaunti',
+
+
     'tasks'=>'Kazi',
     'download' => 'Pakua',
     'downloads' => 'Pakua',

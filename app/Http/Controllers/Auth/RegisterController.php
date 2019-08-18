@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers\Auth;
 
-use App\User;
 use App\Http\Controllers\Controller;
+use App\Repositories\Access\UserRepository;
+use App\User;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
@@ -29,15 +31,17 @@ class RegisterController extends Controller
      * @var string
      */
     protected $redirectTo = '/home';
+    protected $users;
 
     /**
      * Create a new controller instance.
      *
      * @return void
      */
-    public function __construct()
+    public function __construct(UserRepository $users)
     {
         $this->middleware('guest');
+        $this->users = $users;
     }
 
     /**
@@ -55,6 +59,15 @@ class RegisterController extends Controller
         ]);
     }
 
+    public function register(Request $request)
+    {
+
+        $user = $this->users->create($request->all());
+        return redirect()->route('auth.registered', $user->id)->withFlashSuccess(__('alert.registration.registered'));
+
+
+    }
+
     /**
      * Create a new user instance after a valid registration.
      *
@@ -63,10 +76,24 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-        return User::create([
+        return \App\User::create([
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
         ]);
     }
+
+
+    /**
+     * Show the application registered form.
+     *
+     * @param User $user
+     * @return $this
+     */
+    public function showRegisteredForm(User $user)
+    {
+        return view("auth/registered")
+            ->with("user", $user);
+    }
+
 }

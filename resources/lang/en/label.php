@@ -10,6 +10,7 @@ return [
     'details' => 'Details',
     'download' => 'Download',
     'downloads' => 'Downloads',
+    'submit' =>'Submit',
     'supported_by'=>'Supported by',
     'go_back' => 'Go Back',
     'date' => 'Date',
