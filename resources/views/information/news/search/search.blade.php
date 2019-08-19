@@ -34,58 +34,33 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8">
-                    <article itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting" class="ct-article">
-                        <div class="ct-article-media">
-                            <img itemprop="image" src="assets/images/content/blog-post1.jpg" alt="blog-post">
-                        </div>
-                        <div class="ct-article-title">
-                            <a itemprop="url" href="blog-single.html"><h4>Lorem ipsum dolor sit amet, consectetuer adipiscing elit .</h4></a>
-                        </div>
-                        <ul class="list-unstyled list-inline ct-article-meta">
-                            <li class="ct-article-author"><a itemprop="url" href="blog-single.html"><i class="fa fa-pencil-square-o"></i>by <span itemprop="author">Mohamed</span></a></li>
-                            <li itemprop="dateCreated" class="ct-article-date"><i class="fa fa-clock-o"></i>May 23,2014</li>
-                            <li class="ct-article-comments"><a itemprop="url" href="blog-single.html"><i class="fa fa-comments-o"></i><span itemprop="commentCount">29</span> Comments</a></li>
-                        </ul>
-                        <div itemprop="text" class="ct-article-description">
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum so
-                                ntesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputa
-                                te eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretiu
-                                Integer tincidunt.
-                            </p>
-                        </div>
-                    </article>
+
+                    @foreach($all_news as $news)
                     <article itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting" class="ct-article">
                         <div class="ct-article-media">
                             <div class="ct-slick ct-js-slick ct-slick-defaultNavigation" data-adaptiveHeight="true" data-animations="true" data-autoplay="true" data-infinite="true" data-autoplaySpeed="6000" data-draggable="true" data-touchMove="false" data-arrows="true" data-items="1">
                                 <div class="item">
-                                    <img itemprop="image" src="assets/images/content/blog-post2.jpg" alt="blog post">
+                                    <img itemprop="image" src="{!! url('img/news/'.$news->image.'') !!}" alt="blog post" height="300">
                                 </div>
-                                <div class="item">
-                                    <img itemprop="image" src="assets/images/content/blog-post3.jpg" alt="blog post">
-                                </div>
-                                <div class="item">
-                                    <img itemprop="image" src="assets/images/content/blog-post1.jpg" alt="blog post">
-                                </div>
+
                             </div>
                         </div>
                         <div class="ct-article-title">
-                            <a itemprop="url" href="blog-single.html"><h4>Lorem ipsum dolor sit amet, consectetuer adipiscing elit .</h4></a>
+                            <a itemprop="url" href="blog-single.html"><h4>{!! $news->title !!}</h4></a>
                         </div>
                         <ul class="list-unstyled list-inline ct-article-meta">
                             <li class="ct-article-author"><a itemprop="url" href="blog-single.html"><i class="fa fa-pencil-square-o"></i>by <span itemprop="author">Mohamed</span></a></li>
-                            <li itemprop="dateCreated" class="ct-article-date"><i class="fa fa-clock-o"></i>May 23,2014</li>
-                            <li class="ct-article-comments"><a itemprop="url" href="blog-single.html"><i class="fa fa-comments-o"></i><span itemprop="commentCount">29</span> Comments</a></li>
+                            <li itemprop="dateCreated" class="ct-article-date"><i class="fa fa-clock-o"></i>{!! short_date_format($news->created_at )!!}</li>
+                            <li class="ct-article-comments"><a itemprop="url" href="blog-single.html"><i class="fa fa-comments-o"></i> {!! $news->category !!}</a></li>
                         </ul>
                         <div itemprop="text" class="ct-article-description">
                             <p>
-                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum so
-                                ntesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputa
-                                te eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretiu
-                                Integer tincidunt.
+                              {!! $news->content !!}
                             </p>
                         </div>
                     </article>
+
+                        @endforeach
 
                 </div>
                 <div class="col-md-4">
@@ -128,74 +103,25 @@
                                         <h4 class="text-uppercase ct-u-textNormal ct-fw-900">Habari Mpya</h4>
                                         <div class="ct-divider--dark ct-u-marginBoth30"></div>
                                         <ul class="list-unstyled">
+                                            @foreach($latest_news as $latest)
                                             <li>
                                                 <div class="widget-latest-posts-left">
                                                     <a href="blog-single.html">
-                                                        <img src="assets/images/content/popular-post1.jpg" alt="">
+                                                        <img src="{!! url('img/news/'.$latest->image.'') !!}" alt="">
                                                     </a>
                                                 </div>
                                                 <div class="widget-latest-posts-content">
                                                     <a href="blog-single.html">
-                                                        <h5 class="ct-fw-900">But I must explain.</h5>
+                                                        <h5 class="ct-fw-900">{!! $latest->title !!}</h5>
                                                     </a>
                                                     <p class="ct-fw-400 ct-u-marginBottom10">
-                                                        Lorem ipsum dolor sit amet, consectetuer
-                                                        dolor. Aenean massa .
+                                                     {!! truncateString($latest->content,80)!!}
                                                     </p>
-                                                    <span class="ct-fw-300">Jul 29 2013</span>
+                                                    <span class="ct-fw-300">{!! short_date_format($latest->created_at) !!}</span>
                                                 </div>
                                             </li>
-                                            <li>
-                                                <div class="widget-latest-posts-left">
-                                                    <a href="blog-single.html">
-                                                        <img src="assets/images/content/popular-post2.jpg" alt="">
-                                                    </a>
-                                                </div>
-                                                <div class="widget-latest-posts-content">
-                                                    <a href="blog-single.html">
-                                                        <h5 class="ct-fw-900">Lorem ipsum dolor sit amet .</h5>
-                                                    </a>
-                                                    <p class="ct-fw-400 ct-u-marginBottom10">
-                                                        Lorem ipsum dolor sit amet, consectetuer
-                                                        dolor. Aenean massa .
-                                                    </p>
-                                                    <span class="ct-fw-300">Jul 29 2013</span>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="widget-latest-posts-left">
-                                                    <a href="blog-single.html">
-                                                        <img src="assets/images/content/popular-post3.jpg" alt="">
-                                                    </a>
-                                                </div>
-                                                <div class="widget-latest-posts-content">
-                                                    <a href="blog-single.html">
-                                                        <h5 class="ct-fw-900">Donec quam felis, ultricies .</h5>
-                                                    </a>
-                                                    <p class="ct-fw-400 ct-u-marginBottom10">
-                                                        Lorem ipsum dolor sit amet, consectetuer
-                                                        dolor. Aenean massa .
-                                                    </p>
-                                                    <span class="ct-fw-300">Jul 29 2013</span>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="widget-latest-posts-left">
-                                                    <a href="blog-single.html">
-                                                        <img src="assets/images/content/popular-post4.jpg" alt="">
-                                                    </a>
-                                                </div>
-                                                <div class="widget-latest-posts-content">
-                                                    <a href="blog-single.html">
-                                                        <h5 class="ct-fw-900">These sweet mornings.</h5>
-                                                    </a>
-                                                    <p class="ct-fw-400 ct-u-marginBottom10">
-                                                        Lorem ipsum dolor sit amet, consectetuer
-                                                        dolor. Aenean massa .
-                                                    </p>
-                                                    <span class="ct-fw-300">Jul 29 2013</span>
-                                                </div>
-                                            </li>
+                                       @endforeach
+
                                         </ul>
                                     </div>
                                 </section>

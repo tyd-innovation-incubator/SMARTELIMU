@@ -17,7 +17,7 @@
                 {{--<div class="card-header">{{ __('Register') }}</div>--}}
 
                 <div class="card-body" style="margin-top: 20px">
-                    {!! Form::open(['route' => ["auth.account.sms_confirm",$user->id],'method'=>'get', 'autocomplete' => 'off', 'class' => 'needs-validation', 'novalidate']) !!}                        @csrf
+                    {!! Form::open(['route' => ["auth.account.sms_confirm",$user->uuid],'method'=>'get', 'autocomplete' => 'off', 'class' => 'needs-validation', 'novalidate']) !!}                        @csrf
 
                         <div class="row">
                             <div class="col-md-4">
@@ -39,7 +39,7 @@
 
                                 <div class="table-responsive" style="margin-left: 230px;margin-top: 20px">
                                     <button type="submit" class="btn btn-primary">@lang("label.submit")</button>
-                                    <a href="{!! route('auth.account.confirm.resend',$user->id) !!}" style="margin-left: 30px;margin-top: 20px">@lang('label.resend_email')</a>
+                                    <a href="{!! route('auth.account.confirm.resend',$user->uuid) !!}" style="margin-left: 30px;margin-top: 20px">@lang('label.resend_email')</a>
                                 </div>
                             </div>
                         </div>

@@ -12,7 +12,7 @@ use OwenIt\Auditing\Auditable;
 
 class Role extends Model
 {
-    use  RoleAttribute, RoleRelationship, RoleAccess, Auditable;
+    use  RoleAttribute, RoleRelationship, RoleAccess;
 
 
     /**

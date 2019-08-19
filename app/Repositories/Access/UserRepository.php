@@ -22,6 +22,7 @@ class UserRepository extends BaseRepository
 
     public function create(array $input)
     {
+
         return DB::transaction(function () use ($input) {
             /*Save user info to user table*/
             $user = $this->saveUser($input);
@@ -104,7 +105,6 @@ class UserRepository extends BaseRepository
         $data = ['email' => $input['email'], 'phone' => PhoneNumber::make($input['phone'],'TZ')->formatE164()];
         $this->checkIfPhoneIsUnique($data['phone'], 'phone', 1, null);
         $user = DB::transaction(function () use ($input, $data) {
-            $input['confirmation_code'] = mt_rand(100000,999999);
             $input['password'] = bcrypt($input['password']);
             $user = $this->query()->create([
                 'first_name' => $input['first_name'],
@@ -116,9 +116,9 @@ class UserRepository extends BaseRepository
                 'phone' => $data['phone'],
                 'email' => $input['email'],
                 'password' => $input['password'],
+                'confirmation_code' => mt_rand(100000,999999),
                 'roles' =>2,
             ]);
-
             return $user;
 
         });

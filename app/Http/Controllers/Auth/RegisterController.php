@@ -63,8 +63,12 @@ class RegisterController extends Controller
     {
 
         $user = $this->users->create($request->all());
-        return redirect()->route('auth.registered', $user->id)->withFlashSuccess(__('alert.registration.registered'));
+//        return redirect()->route('auth.registered', $user->uuid)->withFlashSuccess(__('alert.registration.registered'));
 
+        $this->guard()->login($user);
+
+        return $this->registered($request, $user)
+            ?: redirect($this->redirectPath());
 
     }
 
