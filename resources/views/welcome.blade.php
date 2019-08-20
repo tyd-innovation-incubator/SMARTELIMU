@@ -561,92 +561,35 @@
     </div>
 
     <div class="row ct-u-marginBottom100" align="center">
-        <div class="col-md-4">
-            <div class="ct-personBox ct-personBox--inline ct-u-marginBottom30">
-                <div class="ct-personMedia ct-u-displayTableVertical">
-                    <div class="ct-u-displayTableCell">
-                        <div class="ct-personImage">
-                            <img src="assets/images/content/MY-PROFILE-PICTURE.png" alt="person">
-                        </div>
-                    </div>
-                    <div class="ct-u-displayTableCell">
-                        <div class="ct-personName">
-                                <span class="ct-personName--title ct-fw-700">
-                                    Mohamed Omar
-                                </span>
-                            <span class="ct-personName--meta text-lowercase">
-                                    Web Designer
-                                </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="ct-personDescription">
-                    <p>
-                        In just 2 years Smart Elimu has become one of the most
-                        successful instructors on the web. This site has incred
-                        ble rising story and been covered on the Wall Stre
-                        et Journal <a href="#">Moree..</a>
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="ct-personBox ct-personBox--inline ct-u-marginBottom30">
-                <div class="ct-personMedia ct-u-displayTableVertical">
-                    <div class="ct-u-displayTableCell">
-                        <div class="ct-personImage">
-                            <img src="assets/images/content/MY-PROFILE-PICTURE.png" alt="person">
-                        </div>
-                    </div>
-                    <div class="ct-u-displayTableCell">
-                        <div class="ct-personName">
-                                <span class="ct-personName--title ct-fw-700">
-                                    Mohamed Omar
-                                </span>
-                            <span class="ct-personName--meta text-lowercase">
-                                    Web Developer
-                                </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="ct-personDescription">
-                    <p>
-                        In just 2 years Smart Elimu has become one of the most
-                        successful instructors on the web. This site has incred
-                        ble rising story and been covered on the Wall Stre
-                        et Journal <a href="#">Moree..</a>
-                    </p>
-                </div>
-            </div>
-        </div>
+
+        @foreach($testimonies as $testimony)
         <div class="col-md-4">
             <div class="ct-personBox ct-personBox--inline">
                 <div class="ct-personMedia ct-u-displayTableVertical">
                     <div class="ct-u-displayTableCell">
                         <div class="ct-personImage">
-                            <img src="assets/images/content/MY-PROFILE-PICTURE.png" alt="person">
+                            <img src="{!! url('img/testimonials/'.$testimony->image.'') !!}" alt="person">
                         </div>
                     </div>
                     <div class="ct-u-displayTableCell">
                         <div class="ct-personName">
                                 <span class="ct-personName--title ct-fw-700">
-                                    Mohamed Said
+                                    {!! $testimony->name !!}
                                 </span>
                             <span class="ct-personName--meta text-lowercase">
-                                    Database Intergrater
+                                    {!! $testimony->occupation !!}
                                 </span>
                         </div>
                     </div>
                 </div>
                 <div class="ct-personDescription">
                     <p>
-                        In just 2 years Smart Elimu has become one of the most
-                        successful instructors on the web. This site has incred
-                        ble rising story and been covered on the Wall Stre
-                        et Journal <a href="#">Moree..</a>
+                        {!! truncateString($testimony->message,150) !!}
+                         <a href="#">Moree..</a>
                     </p>
                 </div>
             </div>
         </div>
+            @endforeach
     </div>
 @endsection

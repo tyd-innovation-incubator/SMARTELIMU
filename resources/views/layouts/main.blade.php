@@ -159,49 +159,28 @@
                     <li class="dropdown yamm-fw"><a href="{!! url('/') !!}">Nyumbani</a>
 
                     </li>
-                    <li class="dropdown yamm-fw"><a href="courses-listing3.html">Masomo</a>
+                    <li class="dropdown yamm-fw"><a href="#">Masomo</a>
                         <ul class="dropdown-menu">
                             <li>
                                 <div class="yamm-content">
                                     <div class="row">
                                         <div class="col-sm-3">
                                             <a href="{!! route('lessons.primary') !!}">Elimu ya Msingi</a>
-                                            <a href="course-single.html">Darasa la 1</a>
-                                            <a href="course-single2.html">Darasa la 2</a>
-                                            <a href="course-single3.html">Darasa la 3</a>
-                                            <a href="course-single4.html">Darasa la 4</a>
-                                            <a href="course-single5.html">Darasa la 5</a>
-                                            <a href="course-single6.html">Darasa la 6</a>
-                                            <a href="course-single7.html">Darasa la 7</a>
+
                                         </div>
                                         <div class="col-sm-3">
                                             <a href="{!! route('lessons.secondary') !!}">Elimu ya Sekondari</a>
-                                            <a href="course-single8.html">Kidato Cha Kwanza</a>
-                                            <a href="course-single9.html">Kidato Cha Pili</a>
-                                            <a href="course-single10.html">Kidato Cha Tatu</a>
-                                            <a href="course-single11.html">Kidato Cha Nne</a>
-                                            <a href="course-single12.html">Kidato Cha Tano</a>
-                                            <a href="course-single13.html">Kidato Cha Sita</a>
+                                            {{--<a href="course-single8.html">Kidato Cha Kwanza</a>--}}
+
                                         </div>
                                         <div class="col-sm-3">
                                             <a href="{!! route('lessons.extra_primary') !!}">Ziada elimu ya Msingi</a>
-                                            <a href="course-single.html">Darasa la 1</a>
-                                            <a href="course-single2.html">Darasa la 2</a>
-                                            <a href="course-single3.html">Darasa la 3</a>
-                                            <a href="course-single4.html">Darasa la 4</a>
-                                            <a href="course-single5.html">Darasa la 5</a>
-                                            <a href="course-single6.html">Darasa la 6</a>
-                                            <a href="course-single7.html">Darasa la 7</a>
+
 
                                         </div>
                                         <div class="col-sm-3">
                                             <a href="{!! route('lessons.extra_secondary') !!}">Ziada elimu ya Sekondari</a>
-                                            <a href="course-single8.html">Kidato Cha Kwanza</a>
-                                            <a href="course-single9.html">Kidato Cha Pili</a>
-                                            <a href="course-single10.html">Kidato Cha Tatu</a>
-                                            <a href="course-single11.html">Kidato Cha Nne</a>
-                                            <a href="course-single12.html">Kidato Cha Tano</a>
-                                            <a href="course-single13.html">Kidato Cha Sita</a>
+
 
                                         </div>
                                     </div>
@@ -243,7 +222,7 @@
 
                                         <ul class="dropdown-menu">
                                             <li><a href="{!! route('profile.index') !!}"><i class="fa fa-user"></i> Taarifa za mtumiaji</a></li>
-                                            <li><a href="courses-listing1.html"><i class="fa fa-user"></i> Orodha ya Masomo</a></li>
+                                            <li><a href="{!! route('profile.packages') !!}"><i class="fa fa-user"></i> Orodha ya Masomo</a></li>
                                             <li><a href="{!! route('logout') !!}"  onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();"><i class="fa fa-user"></i> Ondoka</a></li>
                                         </ul>
@@ -373,7 +352,10 @@
     @yield('content')
 
 
+    @php
 
+    $partners = \App\Models\Information\Partner::all();
+    @endphp
 
 
     <footer>
@@ -389,65 +371,14 @@
                             <div class="ct-slick ct-js-slick text-center ct-u-marginboth40" data-adaptiveHeight="true" data-animations="true" data-autoplay="true" data-infinite="false" data-autoplaySpeed="6000" data-draggable="true" data-touchMove="false" data-arrows="false" data-XSitems="4" data-SMitems="8" data-MDitems="12" data-LGitems="12" data-items="1">
 
 
-                                <div class="item ct-u-marginTop40" >
-                                    <a href="#" ><img src="assets/images/content/TYD-LOGO.jpg" height = "80px" width = "80px"></a>
-                                </div>
-                                <div class="item ct-u-marginTop40" >
-                                    <a href="#" ><img src="assets/images/content/TYD-LOGO.jpg" height = "80px" width = "80px"></a>
-                                </div>
-                                <div class="item ct-u-marginTop40" >
-                                    <a href="#" ><img src="assets/images/content/TYD-LOGO.jpg" height = "80px" width = "80px"></a>
-                                </div>
-                                <div class="item ct-u-marginTop40" >
-                                    <a href="#" ><img src="assets/images/content/TYD-LOGO.jpg" height = "80px" width = "80px"></a>
-                                </div>
-                                <div class="item ct-u-marginTop40" >
-                                    <a href="#" ><img src="assets/images/content/TYD-LOGO.jpg" height = "80px" width = "80px"></a>
-                                </div>
-                                <div class="item ct-u-marginTop40" >
-                                    <a href="#" ><img src="assets/images/content/TYD-LOGO.jpg" height = "80px" width = "80px"></a>
-                                </div>
-                                <div class="item ct-u-marginTop40" >
-                                    <a href="#" ><img src="assets/images/content/TYD-LOGO.jpg" height = "80px" width = "80px"></a>
-                                </div>
-                                <div class="item ct-u-marginTop40" >
-                                    <a href="#" ><img src="assets/images/content/TYD-LOGO.jpg" height = "80px" width = "80px"></a>
-                                </div>
-                                <div class="item ct-u-marginTop40" >
-                                    <a href="#" ><img src="assets/images/content/TYD-LOGO.jpg" height = "80px" width = "80px"></a>
-                                </div>
-                                <div class="item ct-u-marginTop40" >
-                                    <a href="#" ><img src="assets/images/content/TYD-LOGO.jpg" height = "80px" width = "80px"></a>
-                                </div>
-                                <div class="item ct-u-marginTop40" >
-                                    <a href="#" ><img src="assets/images/content/TYD-LOGO.jpg" height = "80px" width = "80px"></a>
-                                </div>
-                                <div class="item ct-u-marginTop40" >
-                                    <a href="#" ><img src="assets/images/content/TYD-LOGO.jpg" height = "80px" width = "80px"></a>
-                                </div>
-                                <div class="item ct-u-marginTop40" >
-                                    <a href="#" ><img src="assets/images/content/TYD-LOGO.jpg" height = "80px" width = "80px"></a>
-                                </div><div class="item ct-u-marginTop40" >
-                                    <a href="#" ><img src="assets/images/content/TYD-LOGO.jpg" height = "80px" width = "80px"></a>
-                                </div>
-                                <div class="item ct-u-marginTop40" >
-                                    <a href="#" ><img src="assets/images/content/TYD-LOGO.jpg" height = "80px" width = "80px"></a>
-                                </div>
-                                <div class="item ct-u-marginTop40" >
-                                    <a href="#" ><img src="assets/images/content/TYD-LOGO.jpg" height = "80px" width = "80px"></a>
-                                </div>
-                                <div class="item ct-u-marginTop40" >
-                                    <a href="#" ><img src="assets/images/content/TYD-LOGO.jpg" height = "80px" width = "80px"></a>
-                                </div>
-                                <div class="item ct-u-marginTop40" >
-                                    <a href="#" ><img src="assets/images/content/TYD-LOGO.jpg" height = "80px" width = "80px"></a>
-                                </div>
-                                <div class="item ct-u-marginTop40" >
-                                    <a href="#" ><img src="assets/images/content/TYD-LOGO.jpg" height = "80px" width = "80px"></a>
-                                </div>
-                                <div class="item ct-u-marginTop40" >
-                                    <a href="#" ><img src="assets/images/content/TYD-LOGO.jpg" height = "80px" width = "80px"></a>
-                                </div>
+
+                                @foreach($partners as $partner)
+                                    <div class="item ct-u-marginTop40" >
+                                        <a href="#" ><img src="{!! url('img/partners/'.$partner->image.'') !!}" height = "80px" width = "80px"></a>
+                                    </div>
+
+                            @endforeach
+
 
 
                                 <!-- <div class="item">

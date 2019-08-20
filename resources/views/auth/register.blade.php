@@ -89,7 +89,7 @@
                                 <div class="form-group ">
                                     <label for="email" class=" ol-form-label text-md-right">{{ __('label.gender') }}</label>
 
-                                    {!! Form::select('gender', code_value()->getCodeForSelect(3), [], ['class' => 'form-control select2', 'placeholder' => '', 'autocomplete' => 'off', 'id' => 'country', 'aria-describedby' => 'countryHelp', 'required']) !!}
+                                    {!! Form::select('gender', code_value()->getCodeForSelect(1), [], ['class' => 'form-control select2', 'placeholder' => '', 'autocomplete' => 'off', 'id' => 'country', 'aria-describedby' => 'countryHelp', 'required']) !!}
                                     {{--<input id="email" type="text" class="form-control @error('gender') is-invalid @enderror" name="gender" value="{{ old('gender') }}" required autocomplete="gender">--}}
 
                                     @error('email')
@@ -174,7 +174,8 @@
         </div>
 
         <div class="col-md-6">
-            <h3>Registration Information</h3>
+            <h3 class="text-center " style="margin-top: 10px">Registration Information</h3>
+            <hr>
         </div>
     </div>
 </div>

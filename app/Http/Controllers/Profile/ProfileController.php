@@ -23,4 +23,9 @@ class ProfileController extends Controller
         return view('profile.index');
     }
 
+    public function packages()
+    {
+        return view('profile.packages');
+    }
+
 }
