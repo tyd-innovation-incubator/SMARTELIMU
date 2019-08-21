@@ -14,6 +14,7 @@
 Route::get('/', function () {
     $partners = \App\Models\Information\Partner::all();
     $testimonies = \App\Models\Information\Testimony::all();
+
     return view('welcome')
         ->with('partners',$partners)
         ->with('testimonies',$testimonies);
