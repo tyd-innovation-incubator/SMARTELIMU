@@ -43,7 +43,7 @@ class CodeValuesTableSeeder extends Seeder
                     'id' => 3,
                     'code_id' => 2,
                     'values' => 'Teacher',
-                    'reference' => 'UACOW',
+                    'reference' => 'TECH',
                     'isactive' => 1,
                 ),
             3 =>
@@ -51,7 +51,39 @@ class CodeValuesTableSeeder extends Seeder
                     'id' => 4,
                     'code_id' => 2,
                     'values' => 'Self Candidate',
-                    'reference' => 'UACOW',
+                    'reference' => 'SECA',
+                    'isactive' => 1,
+                ),
+            4 =>
+                array (
+                    'id' => 5,
+                    'code_id' => 3,
+                    'values' => 'Primary School',
+                    'reference' => 'PRSC',
+                    'isactive' => 1,
+                ),
+            5 =>
+                array (
+                    'id' => 6,
+                    'code_id' => 3,
+                    'values' => 'Secondary Schools',
+                    'reference' => 'SECO',
+                    'isactive' => 1,
+                ),
+            6 =>
+                array (
+                    'id' => 7,
+                    'code_id' => 3,
+                    'values' => 'Extra Primary Schools',
+                    'reference' => 'EXPR',
+                    'isactive' => 1,
+                ),
+            7 =>
+                array (
+                    'id' => 8,
+                    'code_id' => 3,
+                    'values' => 'Extra Secondary Schools',
+                    'reference' => 'EXTS',
                     'isactive' => 1,
                 ),
 

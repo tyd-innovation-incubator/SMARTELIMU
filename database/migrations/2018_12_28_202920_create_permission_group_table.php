@@ -13,13 +13,13 @@ class CreatePermissionGroupTable extends Migration
      */
     public function up()
     {
-        Schema::create('permission_groups', function(Blueprint $table)
-        {
-            $table->increments('id');
-            $table->string('name', 100)->unique();
-            $table->timestamps();
-            $table->softDeletes();
-        });
+//        Schema::create('permission_groups', function(Blueprint $table)
+//        {
+//            $table->increments('id');
+//            $table->string('name', 100)->unique();
+//            $table->timestamps();
+//            $table->softDeletes();
+//        });
 
 
     }

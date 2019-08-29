@@ -2,6 +2,7 @@
 
 namespace App\Repositories\Access;
 
+use App\Notifications\UserConfirmationNotification;
 use App\Repositories\BaseRepository;
 use App\User;
 use Propaganistas\LaravelPhone\PhoneNumber;
@@ -119,6 +120,8 @@ class UserRepository extends BaseRepository
                 'confirmation_code' => mt_rand(100000,999999),
                 'roles' =>2,
             ]);
+
+            $user->notify(new UserConfirmationNotification());
             return $user;
 
         });

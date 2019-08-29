@@ -6,80 +6,24 @@
 
     <header>
         <div class="ct-slick ct-js-slick ct-slick-defaultNavigation" data-height="500" data-adaptiveHeight="true" data-animations="true" data-autoplay="true" data-infinite="true" data-autoplaySpeed="6000" data-draggable="false" data-touchMove="false" data-arrows="true" data-items="1">
-            <div class="item" data-bg="assets/images/content/HOME_PAGE_BANNER_3.jpg">
-                <div class="ct-slick-inner">
-                    <div class="ct-slick-content">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-5 ">
-                                    <h3 class="text-capitalize ct-fw-900 ct-u-marginBottom40 animated" data-fx="bounceInDown" data-time="200">Created For Education Business</h3>
-                                    <p class="ct-u-marginBottom40 ct-fw-600 animated" data-fx="bounceInLeft" data-time="400">The European languages are members of the same family. Their separ
-                                        vocabulary. The languages only differ in their grammar, their
-                                        on and more common words. If several languages </p>
-                                    <a class="text-uppercase btn btn-primary btn-lg animated" data-fx="bounceInUp" data-time="200" href="courses-listing.html">view courses</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="item" data-bg="assets/images/content/HOME_PAGE_BANNER_2.jpg">
-                <div class="ct-slick-inner">
-                    <div class="ct-slick-content">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-5">
-                                    <h3 class="text-capitalize ct-fw-900 ct-u-marginBottom40 animated"  data-fx="bounceInDown" data-time="200">Created For Education Business</h3>
-                                    <p class="ct-u-marginBottom40 ct-fw-600 animated"  data-fx="bounceInDown" data-time="400">The European languages are members of the same family. Their separ
-                                        vocabulary. The languages only differ in their grammar, their pronunci
-                                        on and more common words. If several languages coalesce,
-                                        vidual languages.</p>
-                                    <a href="course-single.html" class="text-uppercase btn btn-primary btn-lg animated" data-fx="bounceInDown" data-time="600">view courses</a>
-                                    <a href="course-single.html" class="text-uppercase btn btn-transparent btn-bordered--dark btn-lg animated" data-fx="bounceInDown" data-time="800">take tour</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="item" data-bg="assets/images/content/HOME_PAGE_BANNER_1.jpg">
-                <div class="ct-slick-inner">
-                    <div class="ct-slick-content">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-6 ct-u-colorWhite col-md-offset-6" align="right">
-                                    <div class="ct-darkBackground ct-u-marginBottom40 animated" data-fx="fadeInLeft" data-time="200" >
-                                        <h3 class="text-capitalize ct-fw-900" >Created For Education Business</h3>
+            @foreach($homeslides as $homeslide)
+                <div class="item" data-bg="{!! url('/img/homeslides/'.$homeslide->image.'') !!}">
+                    <div class="ct-slick-inner">
+                        <div class="ct-slick-content">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-5 ">
+                                        <h3 class="text-capitalize ct-fw-900 ct-u-marginBottom40 animated" data-fx="bounceInDown" data-time="200">{!! $homeslide->title !!}</h3>
+                                        <p class="ct-u-marginBottom40 ct-fw-600 animated" data-fx="bounceInLeft" data-time="400">{!! $homeslide->content !!} </p>
+                                        <a class="text-uppercase btn btn-primary btn-lg animated" data-fx="bounceInUp" data-time="200" href="courses-listing.html">view courses</a>
                                     </div>
-                                    <p class="ct-u-marginBottom40 ct-fw-600 animated" data-fx="fadeInLeft" data-time="800" align="right">The European languages are members of the same family. Their separ
-                                        vocabulary. The languages only differ in their grammar, their
-                                        on and more common words. If several languages </p>
-                                    <a href="courses-listing.html" class="text-uppercase btn btn-dark btn-lg animated" data-fx="fadeInLeft" data-time="1200">view courses</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="item" data-bg="assets/images/content/HOME_PAGE_BANNER_4.jpg">
-                <div class="ct-slick-inner">
-                    <div class="ct-slick-content">
-                        <div class="container">
-                            <div class="row">
-                                <!-- <div class="col-md-5 ct-u-colorWhite col-md-offset-6">
-                                    <div class="ct-darkBackground ct-u-marginBottom40 animated" data-fx="fadeInLeft" data-time="200">
-                                        <h3 class="text-capitalize ct-fw-900">Created For Education Business</h3>
-                                    </div>
-                                    <p class="ct-u-marginBottom40 ct-fw-600 animated" data-fx="fadeInLeft" data-time="800">The European languages are members of the same family. Their separ
-                                        vocabulary. The languages only differ in their grammar, their
-                                        on and more common words. If several languages </p>
-                                    <a href="courses-listing.html" class="text-uppercase btn btn-dark btn-lg animated" data-fx="fadeInLeft" data-time="1200">view courses</a>
-                                </div> -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            @endforeach
+
         </div>
     </header>
 

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Information\Homeslide;
 use App\Models\Information\Partner;
 use App\Models\Information\Testimony;
 use Illuminate\Http\Request;
@@ -26,10 +27,11 @@ class HomeController extends Controller
     public function index()
     {
         $partners = Partner::all();
-        dd($partners);
         $testimonies = Testimony::all();
+        $homesliders = Homeslide::all();
         return view('home')
             ->with('partners',$partners)
+            ->with('homesliders',$homesliders)
             ->with('testimonies',$testimonies);
     }
 }

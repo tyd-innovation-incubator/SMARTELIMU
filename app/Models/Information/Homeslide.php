@@ -11,8 +11,10 @@ namespace App\Models\Information;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Homeslider extends Model
+class Homeslide extends Model
 {
 
+
+    protected $table = 'homeslide';
 
 }

@@ -14,9 +14,11 @@
 Route::get('/', function () {
     $partners = \App\Models\Information\Partner::all();
     $testimonies = \App\Models\Information\Testimony::all();
+        $homesliders = \App\Models\Information\Homeslide::all();
 
     return view('welcome')
         ->with('partners',$partners)
+        ->with('homeslides',$homesliders)
         ->with('testimonies',$testimonies);
 });
 
