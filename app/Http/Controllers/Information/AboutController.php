@@ -10,6 +10,7 @@ namespace App\Http\Controllers\Information;
 
 
 use App\Http\Controllers\Controller;
+use App\Models\Information\About;
 
 class AboutController extends Controller
 {
@@ -23,6 +24,8 @@ class AboutController extends Controller
 
     public function showAboutUs()
     {
-        return view('information.about.index');
+        $about = About::get()->first();
+        return view('information.about.index')
+            ->with('about',$about);
     }
 }

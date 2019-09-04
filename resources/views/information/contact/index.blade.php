@@ -78,17 +78,17 @@
                     <div class="col-md-4">
                         <div class="ct-addressInformation">
                             <h4 class="text-uppercase ct-fw-700 ct-u-marginBottom20 ct-u-textNormal">Sanduku La Posta :</h4>
-                            <p class="ct-u-marginBottom20"> S.L.P 25444, Dar Es Salaam, Tanzania.
+                            <p class="ct-u-marginBottom20"> {!! $contact->address !!},{!! $contact->location !!}
                             </p>
                             <h4 class="text-uppercase ct-fw-700 ct-u-marginBottom20 ct-u-textNormal">Makao Makuu :</h4>
                             <p class="ct-u-marginBottom20">Ex-Daya Building, Uhuru Street No. 23, Ilala Shariff Shamba
                             </p>
                             <h4 class="text-uppercase ct-fw-700 ct-u-marginBottom20 ct-u-textNormal">Number ya simu :</h4>
-                            <span><a href="http://wa.me/255735717253" target = "blank"><i class="fa fa-whatsapp"></i>WhatsApp:</a> +255 735 717 253</li>  </span>
-                            <span><a href="http://wa.me/255783973428" target = "blank"><i class="fa fa-phone"></i>Nambari ya simu:</a> +255 713 518 549</li>  </span>
+                            <span><a href="http://wa.me/255735717253" target = "blank"><i class="fa fa-whatsapp"></i>WhatsApp:</a> {!! $contact->mobile1 !!}</li>  </span>
+                            <span><a href="http://wa.me/255783973428" target = "blank"><i class="fa fa-phone"></i>Nambari ya simu:</a>{!! $contact->mobile2 !!}</li>  </span>
                             <br>
                             <h4 class="text-uppercase ct-fw-700 ct-u-marginBottom20 ct-u-textNormal">Barua Pepe :</h4>
-                            <span><a href="http://mailto:info@tyd.or.tz" target = "blank"><i class="fa fa-envelope-o"></i>Barua pepe :</a> info@tyd.or.tz</span>
+                            <span><a href="http://mailto:info@tyd.or.tz" target = "blank"><i class="fa fa-envelope-o"></i>Barua pepe :</a> {!! $contact->email !!}</span>
 
                         </div>
                     </div>

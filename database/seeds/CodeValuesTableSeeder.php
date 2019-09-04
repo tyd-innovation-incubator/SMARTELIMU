@@ -86,6 +86,62 @@ class CodeValuesTableSeeder extends Seeder
                     'reference' => 'EXTS',
                     'isactive' => 1,
                 ),
+            8 =>
+                array (
+                    'id' => 9,
+                    'code_id' => 4,
+                    'values' => 'Standard One',
+                    'reference' => 'STON',
+                    'isactive' => 1,
+                ),
+            9 =>
+                array (
+                    'id' => 10,
+                    'code_id' => 4,
+                    'values' => 'Standard Two',
+                    'reference' => 'STTW',
+                    'isactive' => 1,
+                ),
+            10 =>
+                array (
+                    'id' => 11,
+                    'code_id' => 4,
+                    'values' => 'Standard Three',
+                    'reference' => 'STTH',
+                    'isactive' => 1,
+                ),
+            11 =>
+                array (
+                    'id' => 12,
+                    'code_id' => 4,
+                    'values' => 'Standard Four',
+                    'reference' => 'STFR',
+                    'isactive' => 1,
+                ),
+            12 =>
+                array (
+                    'id' => 13,
+                    'code_id' => 4,
+                    'values' => 'Standard Five',
+                    'reference' => 'STFV',
+                    'isactive' => 1,
+                ),
+            13 =>
+                array (
+                    'id' => 14,
+                    'code_id' => 4,
+                    'values' => 'Standard Six',
+                    'reference' => 'STSI',
+                    'isactive' => 1,
+                ),
+            14 =>
+                array (
+                    'id' => 15,
+                    'code_id' => 4,
+                    'values' => 'Standard Seven',
+                    'reference' => 'STSV',
+                    'isactive' => 1,
+                ),
 
         ));
         $this->enableForeignKeys("code_values");

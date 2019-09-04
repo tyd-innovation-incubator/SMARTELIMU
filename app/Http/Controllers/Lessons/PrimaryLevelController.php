@@ -18,4 +18,12 @@ class PrimaryLevelController extends Controller
     {
         return view('lessons.primary_level.index');
     }
+
+    public function view($reference)
+    {
+        $package = code_value()->getCodeValueByReference($reference);
+
+        return view('lessons.primary_level.show.show')
+            ->with('package',$package);
+    }
 }

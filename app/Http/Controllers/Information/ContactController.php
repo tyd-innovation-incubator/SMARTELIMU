@@ -10,6 +10,7 @@ namespace App\Http\Controllers\Information;
 
 
 use App\Http\Controllers\Controller;
+use App\Models\Information\Contact;
 
 class ContactController extends  Controller
 {
@@ -21,7 +22,10 @@ class ContactController extends  Controller
 
     public function contactUs()
     {
-        return view('information.contact.index');
+
+        $contact = Contact::get()->first();
+        return view('information.contact.index')
+            ->with('contact',$contact);
     }
 
 }

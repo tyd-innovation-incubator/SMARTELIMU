@@ -63,12 +63,12 @@ class RegisterController extends Controller
     {
 
         $user = $this->users->create($request->all());
-//        return redirect()->route('auth.registered', $user->uuid)->withFlashSuccess(__('alert.registration.registered'));
+       return redirect()->route('auth.registered', $user->uuid)->withFlashSuccess(__('alert.registration.registered'));
 
-        $this->guard()->login($user);
-
-        return $this->registered($request, $user)
-            ?: redirect($this->redirectPath());
+//        $this->guard()->login($user);
+//
+//        return $this->registered($request, $user)
+//            ?: redirect($this->redirectPath());
 
     }
 
@@ -94,8 +94,10 @@ class RegisterController extends Controller
      * @param User $user
      * @return $this
      */
-    public function showRegisteredForm(User $user)
+    public function showRegisteredForm($user)
     {
+        $user = $this->users->getOneByUuid($user);
+
         return view("auth/registered")
             ->with("user", $user);
     }

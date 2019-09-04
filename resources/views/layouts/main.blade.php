@@ -164,13 +164,18 @@
                             <li>
                                 <div class="yamm-content">
                                     <div class="row">
+                                            {{--{!! dd($package_category) !!}--}}
                                         <div class="col-sm-3">
                                             <a href="{!! route('lessons.primary') !!}">Elimu ya Msingi</a>
+                                            @foreach(code_value()->getCodeValuesByReferenceForSelect(4) as $package_level)
+                                                <a href="{!! route('lessons.view',$package_level->reference) !!}">{!! $package_level->values !!}</a>
+
+                                            @endforeach
 
                                         </div>
                                         <div class="col-sm-3">
                                             <a href="{!! route('lessons.secondary') !!}">Elimu ya Sekondari</a>
-                                            {{--<a href="course-single8.html">Kidato Cha Kwanza</a>--}}
+                                            <a href="course-single8.html">Kidato Cha Kwanza</a>
 
                                         </div>
                                         <div class="col-sm-3">
@@ -182,7 +187,7 @@
                                             <a href="{!! route('lessons.extra_secondary') !!}">Ziada elimu ya Sekondari</a>
 
 
-                                        </div>
+                                        {{--</div>--}}
                                     </div>
                                 </div>
                             </li>
@@ -355,6 +360,7 @@
     @php
 
     $partners = \App\Models\Information\Partner::all();
+    $about = \App\Models\Information\About::get()->first();
     @endphp
 
 
@@ -396,11 +402,7 @@
                                     <div class="widget-inner">
                                         <a href="{!! url('/') !!}"><img class="ct-u-marginBottom30" src="{!! url('assets/images/content/logo.png') !!}" alt="logo"></a>
                                         <p class="ct-u-marginBottom40" align="justify">
-                                            Smart Elimu ni jukwaa la kisasa la kujifunzia masomo kwa njia ya Picha Jongefu,
-                                            Picha Mnato, Sauti na Maandishi. Jukwaa hili lililozingatia Mtaala wa elimu ya Tanzania
-                                            lina mfumo uliorahisishwa zaidi ili kumfanya kila mtumiaji afurahie. Smart Elimu inaruhusu
-                                            kujifunza mtandaoni na nje ya mtandao kupitia kompyuta, “tablet”, simu za mkononi na nje ya
-                                            mtandao kupitia DVD / CD, na Luninga kupitia Vitunza kumbukumbu maalum.
+                                          {!! truncateString($about->utangulizi) !!}
                                             <br>
                                             <a class="ct-u-textUnderline" href="features-typography.html">Soma zaidi</a>
                                         </p></div>

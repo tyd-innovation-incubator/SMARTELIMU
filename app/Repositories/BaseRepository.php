@@ -51,6 +51,10 @@ class BaseRepository
         return call_user_func(static::MODEL.'::all');
     }
 
+    public function getOneByUuid($uuid)
+    {
+        return $this->query()->where('uuid', $uuid)->first();
+    }
     /**
      * @param array $input
      * @return mixed

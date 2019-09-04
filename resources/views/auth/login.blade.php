@@ -13,7 +13,7 @@
                         <div class="row">
                             <div class="col-md-8">
                                 <div class="form-group">
-                                    <label for="email" class=" col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
+                                    <label for="email" class=" col-form-label text-md-right">{{ __('label.email') }}</label>
 
                                     <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
 
@@ -30,7 +30,7 @@
                         <div class="row">
                             <div class="col-md-8">
                                 <div class="form-group">
-                                    <label for="password" class=" col-form-label text-md-right">{{ __('Password') }}</label>
+                                    <label for="password" class=" col-form-label text-md-right">{{ __('label.password') }}</label>
 
                                     <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
 
@@ -56,6 +56,8 @@
                             </div>
                         </div>
 
+
+
                         <div class="form-group row mb-0">
                             <div class="col-md-8 offset-md-4">
                                 <button type="submit" class="btn btn-primary">
@@ -69,6 +71,18 @@
                                 @endif
                             </div>
                         </div>
+
+                        <div class=" row mb-0">
+                            <div class="col-md-8 mb-2">
+                                <h3  style="font-size: 15px">{!! trans('label.register_help') !!} <a href="{!! route('register') !!}">
+                                        {!! trans('label.register') !!}
+                                    </a></h3>
+                            </div>
+
+
+
+                        </div>
+
                     </form>
                 </div>
             </div>

@@ -28,10 +28,10 @@ class HomeController extends Controller
     {
         $partners = Partner::all();
         $testimonies = Testimony::all();
-        $homesliders = Homeslide::all();
+        $homeslides = Homeslide::all();
         return view('home')
             ->with('partners',$partners)
-            ->with('homesliders',$homesliders)
+            ->with('homeslides',$homeslides)
             ->with('testimonies',$testimonies);
     }
 }

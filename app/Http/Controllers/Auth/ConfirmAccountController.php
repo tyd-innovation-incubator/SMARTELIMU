@@ -49,14 +49,11 @@ class ConfirmAccountController extends Controller
     }
 
 
-    public function confirmTmxUser($token)
-    {
-        $this->user->confirmAccount($token);
-        return redirect()->route('welcome_tmx')->withFlashSuccess(__('exceptions.auth.confirmation.success'));
-    }
 
-    public  function smsConfirm(Request $request,User $user)
+    public  function smsConfirm(Request $request,$user)
     {
+
+        $user = $this->user->getOneByUuid($user);
         $code = $request->token;
         $token = $user->confirmation_code;
         if(strcmp($code,$token) == 0){

@@ -12,6 +12,9 @@
 */
 
 Route::get('/', function () {
+//    dd(code_value()->getCodeForSelect(4));
+
+    $about = \App\Models\Information\About::get()->first();
     $partners = \App\Models\Information\Partner::all();
     $testimonies = \App\Models\Information\Testimony::all();
         $homesliders = \App\Models\Information\Homeslide::all();
@@ -19,7 +22,8 @@ Route::get('/', function () {
     return view('welcome')
         ->with('partners',$partners)
         ->with('homeslides',$homesliders)
-        ->with('testimonies',$testimonies);
+        ->with('testimonies',$testimonies)
+        ->with('about',$about);
 });
 
 Auth::routes();

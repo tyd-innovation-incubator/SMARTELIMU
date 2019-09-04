@@ -150,7 +150,7 @@ class CodeValueRepository extends BaseRepository
      */
     public function getAllByCode($code_id)
     {
-        return $this->queryActive()->select(['id', 'name', 'code_id', 'reference'])->where("code_id", $code_id)->get();
+        return $this->queryActive()->select(['id', 'values', 'code_id', 'reference'])->where("code_id", $code_id)->get();
     }
 
     /*
@@ -160,7 +160,7 @@ class CodeValueRepository extends BaseRepository
     {
         $query = $this->queryActive()->select(['id'])
             ->where("code_id", $code_id)
-            ->orderBy('values', 'asc')
+            ->orderBy('id', 'asc')
             ->get();
         $return = $this->mapIdsForLang($query)->pluck('name', 'id');
         return $return;
@@ -183,10 +183,10 @@ class CodeValueRepository extends BaseRepository
      */
     public function getCodeValuesByReferenceForSelect($id)
     {
-        $query = $this->queryActive()->select(['name', 'reference', 'id'])->where("code_id", $id)->get();
-        $return = $query->pluck("name", "reference");
+        $query = $this->queryActive()->select(['values', 'reference', 'id'])->where("code_id", $id)->get();
+//        $return = $query->pluck("values", "reference");
 //        $return = $this->mapIdsForLang($query)->pluck('name', 'reference');
-        return $return;
+        return $query;
     }
 
 
@@ -196,7 +196,7 @@ class CodeValueRepository extends BaseRepository
      * @return mixed
      */
     public function getCodeValueByReference($reference){
-        return $return = $this->queryActive()->select(['id'])->where("reference", $reference)->first();
+        return $return = $this->queryActive()->where("reference", $reference)->first();
     }
 
     /*
@@ -331,7 +331,7 @@ class CodeValueRepository extends BaseRepository
     }
 
     /*Get Logistic service for tenders for select*/
-    public function getLogisticServiceForTenderForSelect()
+    public function getPackageLevelForSelect()
     {
         $query =   $this->queryLogisticServicesForTender()->select(['id'])->get();
         $return = $this->mapIdsForLang($query)->pluck('name', 'id');

@@ -36,6 +36,26 @@ class CodesTableSeeder extends Seeder
                 'id' => 3,
                 'name' => 'Package Category',
             ),
+            3 =>
+                array (
+                    'id' => 4,
+                    'name' => 'Primary Level',
+                ),
+            4 =>
+                array (
+                    'id' => 5,
+                    'name' => 'Secondary Level',
+                ),
+            5 =>
+                array (
+                    'id' => 6,
+                    'name' => 'Extra Primary Level',
+                ),
+            6 =>
+                array (
+                    'id' => 7,
+                    'name' => 'Extra Secondary Level',
+                ),
 
 
         ));

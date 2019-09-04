@@ -10,6 +10,8 @@ Route::group([
 
         Route::get('/primary', 'PrimaryLevelController@index')->name('primary');
 
+        Route::get('/view/{reference}', 'PrimaryLevelController@view')->name('view');
+
     });
 });
 
