@@ -31,6 +31,11 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/registered/{user}', 'Auth\RegisterController@showRegisteredForm')->name("auth.registered");
+Route::post('/register_from_welcome', 'Auth\RegisterController@registerFromWelcomePage')->name("auth.register_from_welcome");
+Route::post('/update_user/{user}', 'Auth\RegisterController@update')->name("update_user");
+
+
+
 
 Route::get('/verification/{user}', 'Auth\LoginController@verification')->name("auth.verification");
 Route::get('/account/confirm/{responce}', 'Auth\ConfirmAccountController@confirm')->name("auth.account.confirm");

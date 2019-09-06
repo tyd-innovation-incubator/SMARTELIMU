@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Auth;
 
 
+use App\Notifications\UserConfirmationNotification;
 use App\Repositories\Access\UserRepository;
 use App\Http\Controllers\Controller;
 use App\User;
@@ -32,7 +33,7 @@ class ConfirmAccountController extends Controller
         $new_token = mt_rand(100000,999999);
         $user->confirmation_code = $new_token;
         $user->save();
-        $user->notify(new UserNeedsConfirmation());
+        $user->notify(new UserConfirmationNotification());
         SendSms::dispatch($user, trans("strings.sms.registered").$user->confirmation_code);
         return redirect()->back()->withFlashSuccess(trans('alert.auth.confirmation_sent'));
     }

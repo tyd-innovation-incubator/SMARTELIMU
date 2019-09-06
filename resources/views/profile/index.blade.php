@@ -26,103 +26,241 @@
         </div>
     </div>
 
-    <div class="main-content">
-        <div class="container mt-7">
-            <!-- Table -->
-            <h2 class="mb-5">My Account Card</h2>
-            <div class="row">
-                <div class="col-xl-8 m-auto order-xl-1">
-                    <div class="card bg-secondary shadow">
-                        <div class="card-header bg-white border-0">
-                            <div class="row align-items-center">
-                                <div class="col-8">
-                                    <h3 class="mb-0">My account</h3>
-                                </div>
-                                <div class="col-4 text-right">
-                                    <a href="#!" class="btn btn-sm btn-primary">Settings</a>
+
+    <div class="container " style="margin-top: 40px">
+        <div class="row">
+            <div class="col-md-3 ">
+                <div class="profile-sidebar">
+                    <!-- SIDEBAR USERPIC -->
+                    <div class="profile-userpic">
+                        <!-- <img src="http://keenthemes.com/preview/metronic/theme/assets/admin/pages/media/profile/profile_user.jpg" class="img-responsive" alt=""> -->
+
+
+                    </div>
+                    <!-- END SIDEBAR USERPIC -->
+                    <!-- SIDEBAR USER TITLE -->
+                    <div class="profile-usertitle">
+                        <div class="profile-usertitle-name">
+                            <span class="hidden-xs">Hareesh Vudari</span>
+                        </div>
+                        <div class="profile-usertitle-job">
+                        </div>
+                    </div>
+                    <!-- END SIDEBAR USER TITLE -->
+                    <!-- SIDEBAR MENU -->
+                    <div class="profile-usermenu">
+                        <ul class="nav">
+                            <li class="active">
+                                <a href="#">
+                                    <i class="glyphicon glyphicon-home"></i>
+                                    <span class="hidden-xs">@lang('label.personal_contacts')</span> </a>
+                            </li>
+                            {{--<li>--}}
+                                {{--<a href="#">--}}
+                                    {{--<i class="glyphicon glyphicon-user"></i>--}}
+                                    {{--<span class="hidden-xs">Delivery Address</span> </a>--}}
+                            {{--</li>--}}
+                            {{--<li>--}}
+                                {{--<a href="#">--}}
+                                    {{--<i class="glyphicon glyphicon-ok"></i>--}}
+                                    {{--<span class="hidden-xs">Orders </span></a>--}}
+                            {{--</li>--}}
+                            {{--<li>--}}
+                                {{--<a href="#">--}}
+                                    {{--<i class="glyphicon glyphicon-flag"></i>--}}
+                                    {{--<span class="hidden-xs">My Wishlist </span></a>--}}
+                            {{--</li>--}}
+                            {{--<li>--}}
+                                {{--<a href="#">--}}
+                                    {{--<i class="glyphicon glyphicon-shopping-cart"></i>--}}
+                                    {{--<span class="hidden-xs">Shopping Bag</span> </a>--}}
+
+                            </li>
+
+                        </ul>
+                    </div>
+                    <!-- END MENU -->
+                </div>
+            </div>
+            <div class="col-md-9">
+
+                <div class="form_main col-md-6 col-sm-5 col-xs-7">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="heading"><strong>@lang('label.personal_contacts') </strong>  <span></span></h4>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <form method="POST" action="{{ route('update_user',$user) }}">
+                                        @csrf
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="name" class=" col-form-label text-md-right">{{ __('label.first_name') }}</label>
+                                                    <input id="name"  type="text" class="form-control @error('first_name') is-invalid @enderror" name="first_name" value="{{ $user->first_name }}"  autocomplete="first_name" autofocus>
+
+                                                    @error('first_name')
+                                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                                    @enderror
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="name" class=" col-form-label text-md-right">{{ __('label.last_name') }}</label>
+                                                    <input id="name" type="text" class="form-control @error('last_name') is-invalid @enderror" name="last_name" value="{{ $user->last_name }}"  autocomplete="last_name" autofocus>
+
+                                                    @error('last_name')
+                                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                                    @enderror
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="name" class=" col-form-label text-md-right">{{ __('label.username') }}</label>
+                                                    <input id="name" type="text" class="form-control @error('username') is-invalid @enderror" name="username" value="{{ $user->username }}"  autocomplete="username" autofocus>
+
+                                                    @error('username')
+                                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                                    @enderror
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-6">
+                                                <div class="form-group ">
+                                                    <label for="email" class=" ol-form-label text-md-right">{{ __('label.email') }}</label>
+
+                                                    <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ $user->email }}"  autocomplete="email">
+
+                                                    @error('email')
+                                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                                    @enderror
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="name" class=" col-form-label text-md-right">{{ __('label.phone') }}</label>
+                                                    <input id="name" type="text" class="form-control @error('phone') is-invalid @enderror" name="phone" value="{{ $user->phone }}" required autocomplete="phone" autofocus>
+
+                                                    @error('phone')
+                                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                                    @enderror
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-6">
+                                                <div class="form-group ">
+                                                    <label for="gender" class=" ol-form-label text-md-right">{{ __('label.gender') }}</label>
+
+                                                    {!! Form::select('gender', code_value()->getCodeForSelect(1), $user->gender, ['class' => 'form-control select2', 'placeholder' => '', 'autocomplete' => 'off', 'id' => 'country', 'aria-describedby' => 'countryHelp',]) !!}
+                                                    {{--<input id="email" type="text" class="form-control @error('gender') is-invalid @enderror" name="gender" value="{{ old('gender') }}" required autocomplete="gender">--}}
+
+                                                    @error('email')
+                                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                                    @enderror
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="name" class=" col-form-label text-md-right">{{ __('label.address') }}</label>
+                                                    <input id="name" type="text" class="form-control @error('address') is-invalid @enderror" name="address" value="{{ $user->address  }}"  autocomplete="address" autofocus>
+
+                                                    @error('address')
+                                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                                    @enderror
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-6">
+                                                <div class="form-group ">
+                                                    <label for="email" class=" ol-form-label text-md-right">{{ __('label.account_category') }}</label>
+
+                                                    {!! Form::select('account_category', code_value()->getCodeForSelect(2), [], ['class' => 'form-control select2', 'placeholder' => '', 'autocomplete' => 'off', 'id' => 'country', 'aria-describedby' => 'countryHelp',]) !!}
+                                                    {{--<input id="gender" type="text" class="form-control @error('gender') is-invalid @enderror" name="account_category" value="{{ old('gender') }}" required autocomplete="account_category">--}}
+
+                                                    @error('gender')
+                                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                                    @enderror
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <h5><strong>**{!! trans('label.change_password') !!}**</strong></h5>
+
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="password" class=" col-form-label text-md-right">{{ trans('label.new_password') }}</label>
+
+                                                    <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password"  autocomplete="new-password">
+
+                                                    @error('password')
+                                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                                    @enderror
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group ">
+                                                    <label for="password-confirm" class="col-form-label text-md-right">{{ trans('label.new_password_confirmation') }}</label>
+
+                                                    <input id="password-confirm" type="password" class="form-control" name="password_confirmation"  autocomplete="new-password">
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+
+
+
+
+
+                                        <div class="form-group row mb-0">
+                                            <div class="col-md-6 offset-md-4">
+                                                <button type="submit" class="btn btn-primary">
+                                                    {{ trans('buttons.general.crud.update') }}
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </form>
                                 </div>
                             </div>
-                        </div>
-                        <div class="card-body">
-                            <form>
-                                <h6 class="heading-small text-muted mb-4">User information</h6>
-                                <div class="pl-lg-4">
-                                    <div class="row">
-                                        <div class="col-lg-6">
-                                            <div class="form-group focused">
-                                                <label class="form-control-label" for="input-username">Username</label>
-                                                <input type="text" id="input-username" class="form-control form-control-alternative" placeholder="Username" value="lucky.jesse">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <div class="form-group">
-                                                <label class="form-control-label" for="input-email">Email address</label>
-                                                <input type="email" id="input-email" class="form-control form-control-alternative" placeholder="jesse@example.com">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-lg-6">
-                                            <div class="form-group focused">
-                                                <label class="form-control-label" for="input-first-name">First name</label>
-                                                <input type="text" id="input-first-name" class="form-control form-control-alternative" placeholder="First name" value="Lucky">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <div class="form-group focused">
-                                                <label class="form-control-label" for="input-last-name">Last name</label>
-                                                <input type="text" id="input-last-name" class="form-control form-control-alternative" placeholder="Last name" value="Jesse">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <hr class="my-4">
-                                <!-- Address -->
-                                <h6 class="heading-small text-muted mb-4">Contact information</h6>
-                                <div class="pl-lg-4">
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <div class="form-group focused">
-                                                <label class="form-control-label" for="input-address">Address</label>
-                                                <input id="input-address" class="form-control form-control-alternative" placeholder="Home Address" value="Bld Mihail Kogalniceanu, nr. 8 Bl 1, Sc 1, Ap 09" type="text">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-lg-4">
-                                            <div class="form-group focused">
-                                                <label class="form-control-label" for="input-city">City</label>
-                                                <input type="text" id="input-city" class="form-control form-control-alternative" placeholder="City" value="New York">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-4">
-                                            <div class="form-group focused">
-                                                <label class="form-control-label" for="input-country">Country</label>
-                                                <input type="text" id="input-country" class="form-control form-control-alternative" placeholder="Country" value="United States">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-4">
-                                            <div class="form-group">
-                                                <label class="form-control-label" for="input-country">Postal code</label>
-                                                <input type="number" id="input-postal-code" class="form-control form-control-alternative" placeholder="Postal code">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <hr class="my-4">
-                                <!-- Description -->
-                                <h6 class="heading-small text-muted mb-4">About me</h6>
-                                <div class="pl-lg-4">
-                                    <div class="form-group focused">
-                                        <label>About Me</label>
-                                        <textarea rows="4" class="form-control form-control-alternative" placeholder="A few words about you ...">A beautiful Dashboard for Bootstrap 4. It is Free and Open Source.</textarea>
-                                    </div>
-                                </div>
-                            </form>
+
+
                         </div>
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
 @endsection

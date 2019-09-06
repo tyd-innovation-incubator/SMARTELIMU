@@ -17,7 +17,8 @@
                 {{--<div class="card-header">{{ __('Register') }}</div>--}}
 
                 <div class="card-body" style="margin-top: 20px">
-                    {!! Form::open(['route' => ["auth.account.sms_confirm",$user->uuid],'method'=>'get', 'autocomplete' => 'off', 'class' => 'needs-validation', 'novalidate']) !!}                        @csrf
+                    {!! Form::open(['route' => ["auth.account.sms_confirm",$user->uuid],'method'=>'get', 'autocomplete' => 'off', 'class' => 'needs-validation', 'novalidate']) !!}
+                    @csrf
 
                         <div class="row">
                             <div class="col-md-4">

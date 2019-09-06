@@ -130,6 +130,7 @@ class UserRepository extends BaseRepository
     }
 
 
+
     /*Attach accounts when registering user */
     public function attachAccounts(Model $user, $input){
         /*Re sync*/
@@ -169,18 +170,21 @@ class UserRepository extends BaseRepository
      * Update user info to user table
      */
     public function updateUser(array $input, Model $user){
-        $countries = new CountryRepository();
-        $data = ['phone' => PhoneNumber::make($input['phone'], $input['country'])->formatE164()];
-        $this->checkIfPhoneIsUnique($data['phone'], 'phone', 2, $user->id);
-        return DB::transaction(function () use ($input, $data,$countries,$user) {
+        $data = ['email' => $input['email'], 'phone' => PhoneNumber::make($input['phone'],'TZ')->formatE164()];
+        $this->checkIfPhoneIsUnique($data['phone'], 'phone', 1, null);
+        return DB::transaction(function () use ($input, $data,$user) {
             $user->update([
-                'name' => $input['name'],
-                'othernames' => $input['othernames'],
-                'email' => isset($input['email']) ? $input['email'] : $user->email,
+                'first_name' => $input['first_name'],
+                'last_name' => $input['last_name'],
+                'username' => $input['username'],
+                'gender' => $input['gender'],
+                'address' => $input['address'],
+                'category_cv_id' => $input['account_category'],
                 'phone' => $data['phone'],
-                'country_id' => $countries->getCountryByCode($input['country'])->id,
-                'region_id' => array_key_exists('region', $input) ? $input['region'] : null,
-                'province' => array_key_exists('province', $input) ? $input['province'] : null
+                'email' => $input['email'],
+                'password' => $input['password'],
+                'confirmation_code' => mt_rand(100000,999999),
+                'roles' =>2,
             ]);
 
             return $user;
@@ -189,27 +193,30 @@ class UserRepository extends BaseRepository
     }
 
 
-    /*Create company user: Add new user for the company */
-    public function createCompanyUser(array $input, Company $company)
+
+
+
+    public function saveUserFromWelcome(array $input)
     {
-        return DB::transaction(function () use ($input, $company) {
-            $user = $this->saveUser($input);
-            //Register user account type
-            $this->attachAccounts($user, $input);
+        $data = ['email' => $input['email'], 'phone' => PhoneNumber::make($input['phone'],'TZ')->formatE164()];
+        $this->checkIfPhoneIsUnique($data['phone'], 'phone', 1, null);
+        $user = DB::transaction(function () use ($input, $data) {
+            $input['password'] = bcrypt($input['password']);
+            $user = $this->query()->create([
+                'first_name' => $input['first_name'],
+                'phone' => $data['phone'],
+                'email' => $input['email'],
+                'password' => $input['password'],
+                'confirmation_code' => mt_rand(100000,999999),
+                'roles' =>2,
+            ]);
 
-            $admin_user= access()->user();
-            //update Attachment: inherit attributes from admin user of the company
-            /*Role*/
-            $role = $admin_user->roles()->first();
-            $user->roles()->sync($role->id);
-            /*company*/
-            $company->users()->attach($user->id);
-            /**/
-
-            /*notification*/
-            $this->registrationNotification($user);
+            $user->notify(new UserConfirmationNotification());
             return $user;
+
         });
+
+        return $user;
     }
 
     /*Create system user */

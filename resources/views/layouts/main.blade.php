@@ -144,7 +144,8 @@
             @endforeach
         </div>
     </li>
-</ul>        </span>
+</ul>
+                     </span>
             </div>
             <div class="clearfix"></div>
         </div>

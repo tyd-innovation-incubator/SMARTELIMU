@@ -159,14 +159,16 @@
                 <div class="row">
                     <div class="col-md-3">
                         <div class="alert alert-info ct-u-marginTop50" >
-                            <form class="ct-u-paddingBottom100">
-                                <input placeholder="Jina" type="text" required="" name="field[]" class="form-control ct-input--type1 input-hg ct-u-marginBottom50" title="Name">
-                                <input placeholder="Namba ya Simu" type="text" required="" name="field[]" class="form-control ct-input--type1 input-hg ct-u-marginBottom50" title="Namba ya simu">
-                                <input placeholder="Barua pepe" type="text" required="" name="field[]" class="form-control ct-input--type1 input-hg ct-u-marginBottom50" title="Password">
-                                <input placeholder="Nywila" type="text" required="" name="field[]" class="form-control ct-input--type1 input-hg ct-u-marginBottom50" title="Repeat">
-                                <input placeholder="Rudia Nywila" type="text" required="" name="field[]" class="form-control ct-input--type1 input-hg ct-u-marginBottom50" title="Repeat">
+                            <form class="ct-u-paddingBottom100" method="POST" action="{{ route('auth.register_from_welcome') }}">
+                                {{--<form method="POST" action="{{ route('register') }}">--}}
+                                    @csrf
+                                <input placeholder="Jina" type="text" required="" name="first_name" class="form-control ct-input--type1 input-hg ct-u-marginBottom50" title="Name">
+                                <input placeholder="Namba ya Simu" type="text" required="" name="phone" class="form-control ct-input--type1 input-hg ct-u-marginBottom50" title="Namba ya simu">
+                                <input placeholder="Barua pepe" type="text" required="" name="email" class="form-control ct-input--type1 input-hg ct-u-marginBottom50" title="Password">
+                                <input placeholder="Nywila" type="password" required="" name="password" class="form-control ct-input--type1 input-hg ct-u-marginBottom50" title="Repeat">
+                                <input placeholder="Rudia Nywila" type="password" required="" name="password_confirmation" class="form-control ct-input--type1 input-hg ct-u-marginBottom50" title="Repeat">
 
-                                <P>Je wewe unasubiri nini?	<a class="text-uppercase btn btn-primary btn-lg ct-u-marginBottom30 btn-fullWidth" href="">Jiunge Sasa</a></P>
+                                <P>Je wewe unasubiri nini?	<button type="submit" class="text-uppercase btn btn-primary btn-lg ct-u-marginBottom30 btn-fullWidth">Jiunge Sasa</button></P>
                             </form>
                         </div>
                     </div>

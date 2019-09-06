@@ -72,6 +72,24 @@ class RegisterController extends Controller
 
     }
 
+
+    public function updateUser(Request $request,$user)
+    {
+        dd($user);
+        $user = $this->users->update($request->all(),$user);
+        return redirect()->back();
+
+    }
+
+
+    //register user from welcome page
+    public function registerFromWelcomePage(Request $request)
+    {
+        $user = $this->users->saveUserFromWelcome($request->all());
+        return redirect()->route('auth.registered', $user->uuid)->withFlashSuccess(__('alert.registration.registered'));
+
+    }
+
     /**
      * Create a new user instance after a valid registration.
      *

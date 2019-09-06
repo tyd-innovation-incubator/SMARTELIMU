@@ -12,12 +12,15 @@ return [
     'username' =>'Jina la mtumiaji',
     'email' => 'Barua Pepe',
     'password' => 'Neno la siri',
+    'change_password' => 'Badilisha Neno la Siri',
+    'new_password' => 'Nywila mpya',
+    'new_password_confirmation'  => '
+Uthibitisho mpya wa nenosiri',
     'phone' => 'Namba ya simu',
     'gender' =>'Jinsia',
     'submit' =>'Wasilisha',
     'resend_email' =>'Tuma tena Uthibitisho',
     'confirmation_code' =>'Namba ya uthibitisho',
-
 
     'address' =>'Anuani',
     'account_category'=>'Aina ya Akaunti',
@@ -76,7 +79,9 @@ return [
     'email_helper' => 'Hatuwezi gawa barua pepe yako kwa mtu mwingine yeyote.',
     'confirmation_helper' =>'Ingiza msimbo wa uthibitisho uliotumwa kwenye Nambari yako ya Simu',
     'news_categories' =>'Makundi ya Habari',
-    'about_smart_elimu' => 'SIFA YA SMART ELIMU'
+    'about_smart_elimu' => 'SIFA YA SMART ELIMU',
+    'personal_contacts' => 'Maelezo ya Binafsi
+',
 
 
 ];

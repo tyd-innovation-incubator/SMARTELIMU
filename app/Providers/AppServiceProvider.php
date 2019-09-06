@@ -3,7 +3,7 @@
 namespace App\Providers;
 
 use App\Repositories\Sysdef\CodeValueRepository;
-use App\Services\Access\Facades\Access;
+use App\Services\Access\Access;
 use App\Services\Sysdef\System;
 use Illuminate\Foundation\AliasLoader;
 use Illuminate\Support\Facades\Schema;
