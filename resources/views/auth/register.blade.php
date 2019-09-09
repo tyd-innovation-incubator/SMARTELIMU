@@ -105,9 +105,8 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label for="name" class=" col-form-label text-md-right">{{ __('label.address') }}</label>
-                                    <input id="name" type="text" class="form-control @error('address') is-invalid @enderror" name="address" value="{{ old('address') }}" required autocomplete="address" autofocus>
-
+                                    {!! Form::label('country', __("label.country"), ['class' => 'required_asterik']) !!}
+                                    {!! Form::select('country', code_value()->getCountryIdsForSelect(), [], ['class' => 'form-control select2', 'placeholder' => '', 'autocomplete' => 'off', 'id' => 'country', 'aria-describedby' => 'countryHelp', 'required']) !!}
                                     @error('address')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
@@ -131,6 +130,35 @@
                                 </div>
                             </div>
                         </div>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    {!! Form::label('region', __("label.region"), ['class' => 'required_asterik']) !!}
+                                    {!! Form::select('region',  code_value()->getRegionForSelect(), [], [ 'class' => 'form-control select2', 'placeholder' => '', 'autocomplete' => 'off', 'id' => 'region', 'aria-describedby' => '', 'required']) !!}
+                                    @error('address')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                    @enderror
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="form-group ">
+                                    {{--{!! Form::label('city', __("label.city"), ['class' => 'required_asterik']) !!}--}}
+                                    {{--{!! Form::text('province', null, ['class' => 'form-control', 'autocomplete' => 'off', 'id' => 'province', 'aria-describedby' => '', 'required']) !!}--}}
+                                    {{--<input id="gender" type="text" class="form-control @error('gender') is-invalid @enderror" name="account_category" value="{{ old('gender') }}" required autocomplete="account_category">--}}
+
+                                    @error('gender')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                    @enderror
+                                </div>
+                            </div>
+                        </div>
+
 
                         <div class="row">
                             <div class="col-md-6">
@@ -180,3 +208,75 @@
     </div>
 </div>
 @endsection
+@push('after-scripts')
+
+<script>
+    $(function() {
+        $(".select2").select2();
+
+        region_province_option('country', 'region', 'province', 'region_origin_div', 'province_origin_div');
+        $("#country").on('change', function (e){
+            region_province_option('country', 'region', 'province', 'region_origin_div', 'province_origin_div');
+        });
+
+        provider_type_option();
+        $("#user_account_cv_id").on('change', function (e){
+            provider_type_option();
+        });
+
+        /*Region / city input option depend on country selected*/
+        function region_province_option(country_id, region_id, city_id, $region_div, $city_div) {
+            var choice = $("#"+country_id).val();
+            switch (choice) {
+                case 'TZ':
+                    enable_disable('enable', region_id);
+                    enable_disable('disable', city_id);
+                    $("#" + city_id).val(' ').change();
+                    break;
+                default:
+                    $("#" + region_id).val('0').change();
+                    enable_disable('disable', region_id);
+                    enable_disable('enable', city_id);
+            }
+        }
+
+
+        /*Enable / disable inputs*/
+        function enable_disable(choice, element_id){
+            switch (choice) {
+                case 'enable':
+                    $("#"+element_id).prop("disabled", false);
+                    break;
+                case 'disable':
+                    $("#"+element_id).prop("disabled", true);
+                    break;
+            }
+        }
+
+
+
+
+
+        /*Provider option*/
+        function provider_type_option()
+        {
+            var choice = $("#user_account_cv_id").val();
+            if(choice == 2){
+                $('#provider_type_div').show();
+                $('#service_provider_type').prop('disabled', false);
+            }else{
+                $('#provider_type_div').hide();
+                $('#service_provider_type').prop('disabled', true);
+            }
+        }
+
+
+    });
+
+    //        function showfield(name){
+    //
+    //            if(name=='Other')document.getElementById('div1').innerHTML='Other: <input type="text" name="other" />';
+    //            else document.getElementById('div1').innerHTML='';
+    //        }
+</script>
+@endpush

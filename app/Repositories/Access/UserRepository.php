@@ -4,6 +4,7 @@ namespace App\Repositories\Access;
 
 use App\Notifications\UserConfirmationNotification;
 use App\Repositories\BaseRepository;
+use App\Repositories\Sysdef\CountryRepository;
 use App\User;
 use Propaganistas\LaravelPhone\PhoneNumber;
 use Illuminate\Database\Eloquent\Model;
@@ -15,10 +16,13 @@ class UserRepository extends BaseRepository
     const MODEL = User::class;
 
     protected $staffs;
+    protected $countries;
 
-//    public function __construct()
-//    {
-//    }
+
+    public function __construct()
+    {
+        $countries = new CountryRepository();
+    }
 
 
     public function create(array $input)
@@ -112,10 +116,11 @@ class UserRepository extends BaseRepository
                 'last_name' => $input['last_name'],
                 'username' => $input['username'],
                 'gender' => $input['gender'],
-                'address' => $input['address'],
                 'category_cv_id' => $input['account_category'],
                 'phone' => $data['phone'],
                 'email' => $input['email'],
+                'country_id' => $input['country'],
+                'region_id' => $input['region'],
                 'password' => $input['password'],
                 'confirmation_code' => mt_rand(100000,999999),
                 'roles' =>2,

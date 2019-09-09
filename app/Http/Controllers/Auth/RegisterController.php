@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\Auth\RegisterRequest;
 use App\Repositories\Access\UserRepository;
 use App\User;
 use Illuminate\Http\Request;
@@ -53,15 +54,21 @@ class RegisterController extends Controller
     protected function validator(array $data)
     {
         return Validator::make($data, [
-            'name' => ['required', 'string', 'max:255'],
-            'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
-            'password' => ['required', 'string', 'min:8', 'confirmed'],
+            'first_name' => 'required|string|max:255|alpha_spaces',
+            'last_name' => 'required|string|max:255|alpha_spaces',
+
+            'username' => 'required|string|max:255|alpha_spaces',
+            'phone' => 'required|unique:users' ,
+            'email' => 'required|string|email|max:255|unique:users',
+            'category_cv_id' => 'required',
+            'password' => 'required|string|min:6|confirmed',
         ]);
     }
 
     public function register(Request $request)
     {
 
+        $this->validator($request->all());
         $user = $this->users->create($request->all());
        return redirect()->route('auth.registered', $user->uuid)->withFlashSuccess(__('alert.registration.registered'));
 

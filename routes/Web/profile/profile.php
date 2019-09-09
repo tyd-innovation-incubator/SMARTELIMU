@@ -12,6 +12,8 @@ Route::group([
         Route::get('/packages', 'ProfileController@packages')->name('packages');
 
 
+        Route::get('/create_candidate', 'ProfileController@createCandidate')->name('create_candidate');
+
     });
 });
 

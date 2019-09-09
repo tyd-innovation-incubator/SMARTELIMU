@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Profile;
 
 use App\Http\Controllers\Controller;
-use App\Models\Auth\User;
+use App\User;
 use Illuminate\Http\Request;
 
 class ProfileController extends Controller
@@ -27,6 +27,13 @@ class ProfileController extends Controller
     public function packages()
     {
         return view('profile.packages');
+    }
+
+
+    //create or add candidate informations
+    public function createCandidate()
+    {
+        return view('profile.includes.candidate.create');
     }
 
 }

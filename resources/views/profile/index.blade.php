@@ -27,6 +27,20 @@
     </div>
 
 
+    <div class="container">
+
+        @if(count(access()->user()->candidates) > 0)
+
+            @else
+        <div class="alert alert-danger " style="margin-top: 30px;width: 60%;margin-left: 100px">
+            <a href="{!! route('profile.create_candidate') !!}" class="btn btn-xs btn-danger pull-right">Sajili taarifa za mtoto</a>
+            <strong>Umejisajili kama mzazi</strong>
+        </div>
+
+            @endif
+    </div>
+
+
     <div class="container " style="margin-top: 40px">
         <div class="row">
             <div class="col-md-3 ">
@@ -37,15 +51,7 @@
 
 
                     </div>
-                    <!-- END SIDEBAR USERPIC -->
-                    <!-- SIDEBAR USER TITLE -->
-                    <div class="profile-usertitle">
-                        <div class="profile-usertitle-name">
-                            <span class="hidden-xs">Hareesh Vudari</span>
-                        </div>
-                        <div class="profile-usertitle-job">
-                        </div>
-                    </div>
+
                     <!-- END SIDEBAR USER TITLE -->
                     <!-- SIDEBAR MENU -->
                     <div class="profile-usermenu">
