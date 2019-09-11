@@ -225,27 +225,26 @@ class UserRepository extends BaseRepository
     }
 
     /*Create system user */
-    public function createSystemUser(array $input)
+    public function createCandidate(array $input)
     {
-        $user = DB::transaction(function () use ($input) {
-            $user = $this->saveUser($input);
-            //Register user account type
-            $this->attachAccounts($user, $input);
-            /*Save Staff Attribute*/
-            $this->staffs->create($input, $user);
+        $user = access()->user();
 
-            /*Role*/
-            $this->attachRoles($input, $user);
+        $candidate = DB::transaction(function () use ($input,$user) {
+            $candidate = $user->candidates()->create([
+                'first_name' => $input['first_name'],
+                'last_name' => $input['first_name'],
+                'className' => $input['class_name'],
+                'yearOfStudy' => $input['year_of_study'],
+                'DOB' => $input['date_of_birth'],
+                'gender' => $input['gender'],
+                'nationality' => $input['country'],
+                'user_id' =>$user->id,
 
-            /*Permissions*/
-            $this->attachRolePermissions($user);
-            /**/
+            ]);
 
-            /*notification*/
-            $this->registrationNotification($user);
-            return $user;
+            return $candidate;
         });
-        return $user;
+        return $candidate;
     }
 
 

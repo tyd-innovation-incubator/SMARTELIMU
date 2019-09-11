@@ -84,8 +84,11 @@ Uthibitisho mpya wa nenosiri',
     'confirmation_helper' =>'Ingiza msimbo wa uthibitisho uliotumwa kwenye Nambari yako ya Simu',
     'news_categories' =>'Makundi ya Habari',
     'about_smart_elimu' => 'SIFA YA SMART ELIMU',
-    'personal_contacts' => 'Maelezo ya Binafsi
-',
+    'personal_contacts' => 'Maelezo ya Binafsi',
+    'candidate_information' => 'Taarifa za Mwanafunzi',
+    'class_name'  => 'Jina la Darasa',
+    'year_of_study' => 'Mwaka wa masomo',
+    'date_of_birth' => 'Tarehe ya kuzaliwa'
 
 
 ];

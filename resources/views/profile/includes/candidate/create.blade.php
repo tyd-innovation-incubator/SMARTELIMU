@@ -80,7 +80,7 @@
             </div>
             <div class="col-md-6">
 
-                <form method="POST" action="{{ route('register') }}">
+                <form method="POST" action="{{ route('profile.store_candidate') }}">
                     @csrf
 
                     <div class="row">

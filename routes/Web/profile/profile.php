@@ -13,6 +13,8 @@ Route::group([
 
 
         Route::get('/create_candidate', 'ProfileController@createCandidate')->name('create_candidate');
+        Route::post('/store_candidate', 'ProfileController@storeCandidate')->name('store_candidate');
+
 
     });
 });
