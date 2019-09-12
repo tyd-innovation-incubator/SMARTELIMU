@@ -4,6 +4,7 @@ namespace App\Repositories\Sysdef;
 
 use App\Models\Sysdef\CodeValue;
 use App\Repositories\BaseRepository;
+use App\Repositories\Package\PackageRepository;
 use App\Repositories\Stakeholder\AssociationsRepository;
 use App\Repositories\Stakeholder\CompanyRepository;
 use App\Repositories\Sysdef\CountryRepository;
@@ -279,39 +280,11 @@ class CodeValueRepository extends BaseRepository
     }
 
 
-    /**
-     * @return mixed
-     * Get Designations for select
-     */
-    public function getDesignationsForSelect()
-    {
-        $repo = new DesignationRepository();
-        $query = $repo->query()->select(['id', 'name'])->get();
-        $return = $query->pluck("name", "id");
-        return $return;
-    }
 
 
-    /**
-     * @return mixed
-     * Get Designations for select
-     */
-    public function getUnitsForSelect()
-    {
-        $repo = new UnitRepository();
-        $query = $repo->query()->select(['id', 'name'])->get();
-        $return = $query->pluck("name", "id");
-        return $return;
-    }
 
 
-    /*
-     * Get Code instance from code_id
-     */
-    public function getCodeInstanceById($code_id)
-    {
-        return $this->code_repo->find($code_id);
-    }
+
 
     /*
      * Get code values by code for data table
@@ -320,88 +293,19 @@ class CodeValueRepository extends BaseRepository
         return $this->query()->where('code_id', $code_id);
     }
 
-    //--Tenders
-    /*Get instances of all logistic services for tendering - Business center------*/
-    public function queryLogisticServicesForTender(){
-        return $this->queryActive()->where("code_id", 2)->whereNotIn('id', [8,12,13,14,15,16,83,241]);
-    }
-    public function getLogisticServiceForTender()
-    {
-        return $this->queryLogisticServicesForTender()->select(['id', 'name', 'reference'])->orderBy("id", "asc")->get();
-    }
 
     /*Get Logistic service for tenders for select*/
-    public function getPackageLevelForSelect()
+    public function getPrimaryLevelPackages()
     {
-        $query =   $this->queryLogisticServicesForTender()->select(['id'])->get();
-        $return = $this->mapIdsForLang($query)->pluck('name', 'id');
-        return $return;
-    }
-
-    /*Get Logistic service for tenders for select*/
-    public function getLogisticServiceForTenderWithCountForSelect()
-    {
-        $query =   $this->queryLogisticServicesForTender()->select(['id'])->get();
-        $return = $query->pluck('name_with_tenders_pending_count', 'id');
-        return $return;
-    }
-
-    //end --tender
-
-    //Offers -----
-    /*Get instances of all logistic services for offers - Business center------*/
-    public function queryLogisticServicesForOffer(){
-        return $this->queryActive()->where("code_id", 2)->whereNotIn('id', [8,10,11,12,13,14,15,16,83,]);
+        $repo = new PackageRepository();
+        $query = $repo->query()->get();
+        return $query;
     }
 
 
 
-    public function getLogisticServiceForOffer()
-    {
-        return $this->queryLogisticServicesForOffer()->select(['id', 'name', 'reference'])->orderBy("id", "asc")->get();
-    }
 
-    /*Get Logistic service for offers for select*/
-    public function getLogisticServiceForOfferForSelect()
-    {
-        $query =   $this->queryLogisticServicesForOffer()->select(['id'])->get();
-        $return = $this->mapIdsForLang($query)->pluck('name', 'id');
-        return $return;
-    }
-    /*Get Logistic service for offers for select*/
-    public function getLogisticServiceForOfferWithCountForSelect()
-    {
-        $query =   $this->queryLogisticServicesForOffer()->select(['id'])->get();
-        $return = $query->pluck('name_with_offers_pending_count', 'id');
-        return $return;
-    }
-    //--end offer--
 
-    /*start  services for directory*/
-    public function queryLogisticServicesForDirectory(){
-        return $this->queryActive()->where("code_id", 2)->whereNotIn('id', [8,83,241]);
-    }
-
-    /*Get Logistic service for directory for select*/
-    public function getLogisticServiceForDirectoryForSelect()
-    {
-        $query =   $this->queryLogisticServicesForDirectory()->select(['id'])->get();
-        $return = $this->mapIdsForLang($query)->pluck('name', 'id');
-        return $return;
-    }
-
-    public function getLogisticServiceForDirectory()
-    {
-        return $this->queryLogisticServicesForDirectory()->select(['id', 'name', 'reference'])->orderBy("id", "asc")->get();
-    }
-/* --end directory - logistic service*/
-    /*--------end logistic service for tender*/
-
-    /**
-     * get the maximum number of sort of a given code value
-     * @param $code_id
-     * @return mixed
-     */
     public function getMaxSort($code_id){
         $code_values = $this->query()->select('sort')
             ->where('code_id', $code_id)

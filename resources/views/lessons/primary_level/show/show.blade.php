@@ -7,7 +7,7 @@
             <div class="ct-u-displayTableVertical text-capitalize">
                 <div class="ct-u-displayTableCell">
                 <span class="ct-u-textBig">
-                    DARASA LA KWANZA
+                    {!! $package->name !!}
                 </span>
                 </div>
                 <div class="ct-u-displayTableCell text-right">
@@ -26,12 +26,10 @@
                         <div class="ct-productBox">
                             <a href="course-single.html">
                                 <div class="ct-productImage">
-                                    <img src="assets/images/content/GRADE_1.jpg" alt="Product">
+                                    <img src="{!! url('img/content/'.$package->image.'') !!}" alt="Product">
                                 </div>
                                 <div class="ct-productDescription">
-                                    <h4 class="ct-fw-600">Et harum quidem rerum facili est et
-                                        expedita distinctio.</h4>
-                                    <span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean .</span>
+                                    <h4 class="ct-fw-600">{!! $package->category !!}</h4>
                                 </div>
                             </a>
                             <div class="ct-productMeta">
@@ -40,8 +38,7 @@
                                         <div class="starrr" data-rating='4'></div>
                                     </div>
                                     <div class="ct-u-displayTableCell">
-                                        <span class="ct-u-colorMotive">190$</span>
-                                        <span class="ct-u-textLineThrough">290$</span>
+                                        <span class="ct-u-colorMotive">{!! number_1_format($package->price) !!}Tsh</span>
                                     </div>
                                     <div class="ct-u-displayTableCell">
                                         <a href="#">83 Student <i class="fa fa-user"></i></a>
@@ -65,7 +62,7 @@
                 <div class="col-md-8">
                     <div class="ct-textBox ct-textBox--price ct-u-displayTableVertical ct-u-marginBottom30">
                         <div class="ct-u-displayTableCell text-left">
-                            <span class="ct-fw-600">Price :</span> <span class="ct-u-colorMotive">190$ <span class="ct-u-textLineThrough"> 290$</span></span>
+                            <span class="ct-fw-600">Price :</span> <span class="ct-u-colorMotive">{!! number_1_format($package->price) !!} Tsh</span>
                         </div>
                         <div class="ct-u-displayTableCell text-right">
                             <button type="submit" class="btn btn-primary text-capitalize">
@@ -74,7 +71,9 @@
                         </div>
                     </div>
                     <div class="ct-textBox">
-                        <h4 class="ct-fw-600 ct-u-marginBottom40">Jiunge na wanafunzi wenzako zaidi ya 36,000, na ujifunze kwa njia iliorahisisha zaidi</h4>
+                        <h4 class="ct-fw-600 ct-u-marginBottom40" style="color: #0b0b0b">
+                            {!! $package->description !!}
+                        </h4>
                         <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                             <div class="panel panel-default">
                                 <div class="panel-heading" role="tab" id="headingOne">
