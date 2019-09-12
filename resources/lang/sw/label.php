@@ -28,8 +28,7 @@ Uthibitisho mpya wa nenosiri',
 
     'address' =>'Anuani',
     'account_category'=>'Aina ya Akaunti',
-
-
+    'select' =>'Chagua',
     'tasks'=>'Kazi',
     'download' => 'Pakua',
     'downloads' => 'Pakua',
@@ -88,7 +87,8 @@ Uthibitisho mpya wa nenosiri',
     'candidate_information' => 'Taarifa za Mwanafunzi',
     'class_name'  => 'Jina la Darasa',
     'year_of_study' => 'Mwaka wa masomo',
-    'date_of_birth' => 'Tarehe ya kuzaliwa'
+    'date_of_birth' => 'Tarehe ya kuzaliwa',
+    'choose_payment_aggrigator' => 'Chagua Njia ya malipo'
 
 
 ];

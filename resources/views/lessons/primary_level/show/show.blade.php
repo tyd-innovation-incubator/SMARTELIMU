@@ -11,9 +11,9 @@
                 </span>
                 </div>
                 <div class="ct-u-displayTableCell text-right">
-                <span class="ct-u-textNormal ct-u-textItalic">
-                    <a href="course-single.html">Nyumbani</a> / <a href="course-single2.html">Darasa linalofata</a>
-                </span>
+                {{--<span class="ct-u-textNormal ct-u-textItalic">--}}
+                    {{--<a href="course-single.html">Nyumbani</a> / <a href="course-single2.html">Darasa linalofata</a>--}}
+                {{--</span>--}}
                 </div>
             </div>
         </div>
@@ -24,7 +24,7 @@
                 <div class="col-md-4">
                     <div class="ct-sidebarProducts">
                         <div class="ct-productBox">
-                            <a href="course-single.html">
+                            <a href="{!! route('lessons.view',$package->uuid) !!}">
                                 <div class="ct-productImage">
                                     <img src="{!! url('img/content/'.$package->image.'') !!}" alt="Product">
                                 </div>
@@ -65,9 +65,12 @@
                             <span class="ct-fw-600">Price :</span> <span class="ct-u-colorMotive">{!! number_1_format($package->price) !!} Tsh</span>
                         </div>
                         <div class="ct-u-displayTableCell text-right">
-                            <button type="submit" class="btn btn-primary text-capitalize">
-                                take this course
-                            </button>
+                            <form action="{!! route('package.create_invoice',$package->uuid) !!}" method="get">
+                                <button type="submit" class="btn btn-primary text-capitalize">
+                                    take this course
+                                </button>
+                            </form>
+
                         </div>
                     </div>
                     <div class="ct-textBox">
@@ -75,85 +78,22 @@
                             {!! $package->description !!}
                         </h4>
                         <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                            @foreach($package->subjects as $subject)
                             <div class="panel panel-default">
                                 <div class="panel-heading" role="tab" id="headingOne">
                                     <h4 class="panel-title">
                                         <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                            <i class="fa fa-list-alt"></i> Kuhesabu
+                                            <i class="fa fa-list-alt"></i> {!! $subject->name !!}
                                         </a>
                                     </h4>
                                 </div>
                                 <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
                                     <div class="panel-body">
-                                        One morning, when Gregor Samsa woke from troubled dreams, he found him
-                                        self transformed in his bed into a horrible vermin. He lay on his armour-like ba
-                                        ck, and if he lifted his head a little he could see his brown belly, slightly domed
-                                        and divided by arches into stiff sections. The bedding was hardly able to cover
-                                        it and seemed ready
+                                      {!! truncateString($subject->description,150) !!}
                                     </div>
                                 </div>
                             </div>
-                            <div class="panel panel-default">
-                                <div class="panel-heading" role="tab" id="headingTwo">
-                                    <h4 class="panel-title">
-                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                            <i class="fa fa-angellist"></i> Kuandika
-                                        </a>
-                                    </h4>
-                                </div>
-                                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                                    <div class="panel-body">
-                                        One morning, when Gregor Samsa woke from troubled dreams, he found him
-                                        self transformed in his bed into a horrible vermin. He lay on his armour-like ba
-                                        ck, and if he lifted his head a little he could see his brown belly, slightly domed
-                                        and divided by arches into stiff sections. The bedding was hardly able to cover
-                                        it and seemed ready
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="panel panel-default">
-                                <div class="panel-heading" role="tab" id="headingThree">
-                                    <h4 class="panel-title">
-                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                            <i class="fa fa-files-o"></i> Kingereza
-                                        </a>
-                                    </h4>
-                                </div>
-                                <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                                    <div class="panel-heading" role="tab" id="headingThree">
-                                        <h4 class="panel-title">
-                                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                                <i class="fa fa-files-o"></i> Touchable Slider
-                                            </a>
-                                        </h4>
-                                    </div>
-                                    <div class="panel-body">
-                                        One morning, when Gregor Samsa woke from troubled dreams, he found him
-                                        self transformed in his bed into a horrible vermin. He lay on his armour-like ba
-                                        ck, and if he lifted his head a little he could see his brown belly, slightly domed
-                                        and divided by arches into stiff sections. The bedding was hardly able to cover
-                                        it and seemed ready
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="panel panel-default">
-                                <div class="panel-heading" role="tab" id="headingFour">
-                                    <h4 class="panel-title">
-                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                            <i class="fa fa-desktop"></i> Kusoma
-                                        </a>
-                                    </h4>
-                                </div>
-                                <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
-                                    <div class="panel-body">
-                                        One morning, when Gregor Samsa woke from troubled dreams, he found him
-                                        self transformed in his bed into a horrible vermin. He lay on his armour-like ba
-                                        ck, and if he lifted his head a little he could see his brown belly, slightly domed
-                                        and divided by arches into stiff sections. The bedding was hardly able to cover
-                                        it and seemed ready
-                                    </div>
-                                </div>
-                            </div>
+                                @endforeach
                         </div>
                     </div>
                 </div>

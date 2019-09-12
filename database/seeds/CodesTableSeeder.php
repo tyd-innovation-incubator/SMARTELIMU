@@ -56,6 +56,12 @@ class CodesTableSeeder extends Seeder
                     'id' => 7,
                     'name' => 'Extra Secondary Level',
                 ),
+            7 =>
+                array (
+                    'id' => 8,
+                    'name' => 'Payment Aggregator',
+
+                ),
 
 
         ));

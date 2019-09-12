@@ -16,6 +16,9 @@ return [
     13 => "Dalasa la tano",
     14 => "Dalasa la sita",
     15 => "Dalasa la saba",
+    16 => "Pesapal",
+
+
 
 
 ];

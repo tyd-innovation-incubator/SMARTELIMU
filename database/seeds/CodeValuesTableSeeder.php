@@ -142,6 +142,15 @@ class CodeValuesTableSeeder extends Seeder
                     'reference' => 'STSV',
                     'isactive' => 1,
                 ),
+            15 =>
+                array (
+                    'id' => 16,
+                    'code_id' => 8,
+                    'values' => 'Pesapal',
+                    'reference' => 'PESAPAL',
+                    'isactive' => 1,
+
+                ),
 
         ));
         $this->enableForeignKeys("code_values");

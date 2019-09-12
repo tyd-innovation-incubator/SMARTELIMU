@@ -14,6 +14,8 @@
     <title>Smart Elimu</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="{!! url('assets/css/bootstrap.css') !!}">
+    {{--<link rel="stylesheet" type="text/css" href="{!! url('assets/css/bootstrap.min.css') !!}">--}}
+
     <link rel="stylesheet" type="text/css" href="{!! url('assets/css/style.css') !!}">
     <link href= "{!! url('assets/css/gothic/font.css') !!}" rel="stylesheet">
     <script src="{!! url('assets/js/modernizr.custom.js') !!}"></script>

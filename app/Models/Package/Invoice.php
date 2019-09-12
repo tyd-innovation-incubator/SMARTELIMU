@@ -2,17 +2,17 @@
 
 namespace App\Models\Package;
 
-use App\Models\Package\Attribute\PackageAttribute;
-use App\Models\Package\Relationship\PackageRelationship;
+use App\Models\Package\Attribute\InvoiceAttribute;
+use App\Models\Package\Relationship\InvoiceRelationship;
 use Illuminate\Database\Eloquent\Model;
 use Webpatser\Uuid\Uuid;
 
-class Package extends Model
+class Invoice extends Model
 {
+    use InvoiceRelationship,InvoiceAttribute;
     //
-    use PackageAttribute,PackageRelationship;
 
-    protected $table = 'package';
+    protected $guarded = [];
 
     public function getRouteKeyName()
     {
