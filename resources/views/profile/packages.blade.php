@@ -10,8 +10,39 @@
             </ul>
             <!--content iliolipiwa hapa-->
 
-            <p class="alart">Hakuna masomo yaliolopiwa kwa sasa!<a href = "#"> soma zaidi</a></p>
+            <div class="row">
+                @foreach($paid_invoices as $invoice)
 
+                <div class="col-sm-6 col-md-3">
+                    <div class="ct-productBox">
+                        <a href="{!! route('lessons.view',$invoice->package->uuid) !!}">
+                            <div class="ct-productImage">
+                                <img src="{!! url('assets/images/content/GRADE_1.jpg') !!}" alt="Product">
+                            </div>
+                            <div class="ct-productDescription">
+                                <h5 class="ct-fw-600 ct-u-marginBottom10">{!! $invoice->package->name !!}</h5>
+                                <span>{!! $invoice->package->category !!}</span>
+                            </div>
+                        </a>
+                        <div class="ct-productMeta">
+                            <div class="ct-u-displayTableVertical">
+                                <div class="ct-u-displayTableCell">
+                                    <div class="starrr" data-rating='4'></div>
+                                </div>
+                                <div class="ct-u-displayTableCell">
+                                    <span class="ct-u-colorMotive">{!! $invoice->package->price !!}Tsh</span>
+                                </div>
+                                <div class="ct-u-displayTableCell">
+                                    <button class="btn btn-motive"><a href="{!! route('lessons.view',$invoice->package->uuid) !!}">{!! trans('label.view') !!}</a></button>
+                                </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    @endforeach
+
+            </div>
             <ul class="ct-gallery-filters ct-js-gallery-filters text-uppercase ct-u-doubleBorder" align = "center">
                 <li><a data-filter="*" class="btn btn-motive active"><span>Masomo ya ziada</span></a></li>
 

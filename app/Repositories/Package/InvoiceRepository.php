@@ -76,4 +76,10 @@ class InvoiceRepository extends BaseRepository
             $this->destroy($invoice);
         }
     }
+
+    public function getPaidInvoicesByUserId($user_id){
+        return $this->query()->where('user_id', $user_id)
+            ->where('ispaid',1)
+            ->get();
+    }
 }

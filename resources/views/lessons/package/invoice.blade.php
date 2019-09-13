@@ -7,7 +7,7 @@
             <div class="ct-u-displayTableVertical text-capitalize">
                 <div class="ct-u-displayTableCell">
                 <span class="ct-u-textBig">
-                    {!! $package->name !!}
+                    {!! $invoice->package->name !!}
                 </span>
                 </div>
                 <div class="ct-u-displayTableCell text-right">
@@ -83,20 +83,20 @@
                                         <tbody>
                                         <!-- foreach ($order->lineItems as $line) or some such thing here -->
                                         <tr>
-                                            <td>{!! $package->name !!}</td>
+                                            <td>{!! $invoice->package->name !!}</td>
                                             <td class="text-center">1</td>
-                                            <td class="text-right">{!! number_0_format($package->price) !!} Tsh</td>
+                                            <td class="text-right">{!! number_0_format($invoice->package->price) !!} Tsh</td>
                                         </tr>
 
                                         <tr>
                                             <td class="no-line"></td>
                                             <td class="no-line text-center"><strong>Total</strong></td>
-                                            <td class="no-line text-right">{!! number_0_format($package->price) !!} Tsh</td>
+                                            <td class="no-line text-right">{!! number_0_format($invoice->package->price) !!} Tsh</td>
                                         </tr>
                                         </tbody>
                                     </table>
                                 </div>
-
+                                {!! Form::open(['route' => ['payment.payment', $invoice->uuid], 'class' => '', 'novalidate','enctype'=>'multipart/form-data']) !!}
                                 @if(!$invoice->ispaid)
                                     <div class="card">
                                         <div class="card-body">

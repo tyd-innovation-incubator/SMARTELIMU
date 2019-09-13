@@ -13,9 +13,9 @@ trait PackageRelationship
         return $this->hasMany(Subject::class);
     }
 
-    public function invoices()
+    public function invoice()
     {
-        return $this->hasMany(Invoice::class);
+        return $this->hasOne(Invoice::class);
     }
 
 

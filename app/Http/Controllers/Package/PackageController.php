@@ -26,8 +26,13 @@ class PackageController extends Controller
         $package = $this->packages->getOneByUuid($package);
         $invoice = $this->invoices->store($package);
 
+     return redirect()->route('package.invoice_profile',$invoice->uuid);
+    }
+
+    public function invoiceProfile($uuid)
+    {
+        $invoice = $this->invoices->getOneByUuid($uuid);
         return view('lessons.package.invoice')
-            ->with('package',$package)
             ->with('invoice',$invoice);
     }
 }

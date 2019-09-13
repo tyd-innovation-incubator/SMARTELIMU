@@ -66,9 +66,17 @@
                         </div>
                         <div class="ct-u-displayTableCell text-right">
                             <form action="{!! route('package.create_invoice',$package->uuid) !!}" method="get">
-                                <button type="submit" class="btn btn-primary text-capitalize">
-                                    take this course
-                                </button>
+
+                              @if(count($package->invoice) ? $package->invoice->ispaid :'')
+
+                                    {{--<button type="submit" class="btn btn-primary text-capitalize">--}}
+                                        {{--view--}}
+                                    {{--</button>--}}
+                                  @else
+                                    <button type="submit" class="btn btn-primary text-capitalize">
+                                        take this course
+                                    </button>
+                                  @endif
                             </form>
 
                         </div>
