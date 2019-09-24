@@ -31,60 +31,19 @@
     </div>
 
 
-    <div class="container " style="margin-top: 40px">
+    <div class="container " style="margin-top: 10px">
         <div class="row">
-            <div class="col-md-3 ">
-                <div class="profile-sidebar">
-                    <!-- SIDEBAR USERPIC -->
-                    <div class="profile-userpic">
-                        <!-- <img src="http://keenthemes.com/preview/metronic/theme/assets/admin/pages/media/profile/profile_user.jpg" class="img-responsive" alt=""> -->
+            <div class="col-md-3" style="margin-left: 0px">
 
-
-                    </div>
-
-                    <!-- END SIDEBAR USER TITLE -->
-                    <!-- SIDEBAR MENU -->
-                    <div class="profile-usermenu">
-                        <ul class="nav">
-                            <li class="active">
-                                <a href="#">
-                                    <i class="glyphicon glyphicon-home"></i>
-                                    <span class="hidden-xs">@lang('label.personal_contacts')</span> </a>
-                            </li>
-                            {{--<li>--}}
-                            {{--<a href="#">--}}
-                            {{--<i class="glyphicon glyphicon-user"></i>--}}
-                            {{--<span class="hidden-xs">Delivery Address</span> </a>--}}
-                            {{--</li>--}}
-                            {{--<li>--}}
-                            {{--<a href="#">--}}
-                            {{--<i class="glyphicon glyphicon-ok"></i>--}}
-                            {{--<span class="hidden-xs">Orders </span></a>--}}
-                            {{--</li>--}}
-                            {{--<li>--}}
-                            {{--<a href="#">--}}
-                            {{--<i class="glyphicon glyphicon-flag"></i>--}}
-                            {{--<span class="hidden-xs">My Wishlist </span></a>--}}
-                            {{--</li>--}}
-                            {{--<li>--}}
-                            {{--<a href="#">--}}
-                            {{--<i class="glyphicon glyphicon-shopping-cart"></i>--}}
-                            {{--<span class="hidden-xs">Shopping Bag</span> </a>--}}
-
-                            </li>
-
-                        </ul>
-                    </div>
-                    <!-- END MENU -->
-                </div>
+                @include('profile.includes.left_sidebar')
             </div>
-            <div class="col-md-6">
+            <div class="col-md-9" style="margin-top: 20px">
 
                 <form method="POST" action="{{ route('profile.store_candidate') }}">
                     @csrf
 
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-6" >
                             <div class="form-group">
                                 <label for="first_name" class=" col-form-label text-md-right">{{ __('label.first_name') }}</label>
                                 <input id="first_name" type="text" class="form-control @error('first_name') is-invalid @enderror" name="first_name" value="{{ old('first_name') }}" required autocomplete="first_name" autofocus>

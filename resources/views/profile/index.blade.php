@@ -33,6 +33,7 @@
 
     <div class="container">
 
+        @if(access()->user()->category_cv_id == 2)
         @if(count(access()->user()->candidates) > 0)
 
             @else
@@ -42,6 +43,7 @@
         </div>
 
             @endif
+            @endif
     </div>
 
 
@@ -49,12 +51,7 @@
         <div class="col-md-2" style="margin-left: 40px">
             <div class="list-group" style="margin-top: 30px">
 
-                <a href="#" class="list-group-item active"><i class="fa fa-key"></i> <span>Profile Ya akaunti</span></a>
-                <a href="#" class="list-group-item"><i class="fa fa-credit-card"></i> <span>Taarifa Binafsi</span></a>
-                <a href="#" class="list-group-item"><i class="fa fa-question-circle"></i> <span>Taarifa za Mwanafunzi</span></a>
-                <a href="#" class="list-group-item"><i class="fa fa-arrow-circle-o-left"></i> <span>Sandbox Account</span></a>
-                <a href="#" class="list-group-item"><i class="fa fa-book"></i> <span>QuickStart Overview</span></a>
-                <a href="#" class="list-group-item"><i class="fa fa-compass"></i> <span>Documentation</span></a>
+                @include('profile.includes.left_sidebar')
 
 
             </div>
@@ -62,6 +59,11 @@
 
         <div class="col-md-9">
 
+            <div class="panel">
+                <div class="panel-danger">
+
+                </div>
+            </div>
         </div>
     </div>
 

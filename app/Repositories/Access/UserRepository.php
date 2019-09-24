@@ -228,11 +228,10 @@ class UserRepository extends BaseRepository
     public function createCandidate(array $input)
     {
         $user = access()->user();
-
         $candidate = DB::transaction(function () use ($input,$user) {
             $candidate = $user->candidates()->create([
                 'first_name' => $input['first_name'],
-                'last_name' => $input['first_name'],
+                'last_name' => $input['last_name'],
                 'className' => $input['class_name'],
                 'yearOfStudy' => $input['year_of_study'],
                 'DOB' => $input['date_of_birth'],
@@ -250,27 +249,25 @@ class UserRepository extends BaseRepository
 
 
     /* Update system user information */
-    public function updateSystemUser(array $input, Model $user)
+    public function updateCandidate(array $input,$candidate)
     {
-        return DB::transaction(function () use ($input, $user) {
-            /*Start update user*/
-            $this->updateUser($input, $user);
-            /*end updating user table*/
-
-            /*Update Staff information*/
-            $staff = $user->staff;
-            $this->staffs->update($input, $staff);
-
-            /*Role*/
-            $this->attachRoles($input, $user);
-
-            /*Permissions*/
-            $this->attachRolePermissions($user);
-            /**/
-            return $user;
+        $user = access()->user();
+        return DB::transaction(function () use ($user,$input, $candidate) {
+            $candidate = $candidate->update([
+                'first_name' => $input['first_name'],
+                'last_name' => $input['last_name'],
+                'className' => $input['class_name'],
+                'yearOfStudy' => $input['year_of_study'],
+                'DOB' => $input['date_of_birth'],
+                'gender' => $input['gender'],
+                'nationality' => $input['country'],
+                'user_id' =>$user->id,
+            ]);
+            return $candidate;
         });
 
     }
+
 
 
     /**
@@ -354,92 +351,10 @@ class UserRepository extends BaseRepository
     }
 
 
-    /*Get System User for admin datatable*/
-    public function getAllSystemUsersForDataTable($user){
-        $system_user = $user->whereHas('userAccounts', function ($q) {
-            $q->where('user_account_cv_id', 1);
-        })->withoutGlobalScopes();
-        return $system_user;
-    }
 
 
-    /*Get Portal User for admin datatable*/
-    public function getAllPortalUsersForDataTable($user){
-        $system_user = $user->whereHas('userAccounts', function ($q) {
-            $q->where('user_account_cv_id', '<>', 1);
-        })->withoutGlobalScopes();
-        return $system_user;
-    }
 
-    /*deactivate a company User*/
-    public  function  deactivateCompanyUser($id){
-        $user =  User::find($id);
-        return   DB::transaction(function () use ($user) {
-            $user->update([
-                'isactive'=>0,
-            ]);
-            return $user;
-        });
-    }
 
-    /**
-     * set the user status, either active or inactive
-     * @param $user
-     * @param $status
-     * @return mixed
-     */
-    public  function  setUserStatus($user, $status){
-        return   DB::transaction(function () use ($user, $status) {
-            if($status == 1) {
-                //ACTIVATED
-                //send sms to user
-                if (isset($user->phone)) {
-                    SendSms::dispatch($user, trans('alert.stakeholder.company.sms.activated', ['name' => $user->name]));
-                }
-                //send email to user
-                //@TODO add a general email function with template support
-                $user->notify(new ActivateUserAccountNotification());
-            }else{
-                //DEACTIVATED
-                //send sms to user
-                if (isset($user->phone)) {
-                    SendSms::dispatch($user, trans('alert.stakeholder.company.sms.deactivated', ['name' => $user->name]));
-                }
-                //send email to user
-                //@TODO add a general email function with template support
-                $user->notify(new DeactivateUserAccountNotification());
-            }
-
-            /*update isactive*/
-            $user->update([
-                'isactive' => $status
-            ]);
-
-            return $user;
-        });
-    }
-
-    /**
-     * Self deactivate / activate account
-     * @param $status - stand for action type i.e. 1 => deactivate, 0 => activate
-     */
-    public function selfDeactivateActivateAccount($status, Model $user)
-    {
-        $user_account_type = $user->user_account_type;
-        if ($user_account_type != 2)
-        {
-            /*Other user types i.e. cargo owner, associations and forums*/
-            $user->update(['isself_deactivated' => $status]);
-
-        }else{
-            /*User type - service provider -> may have more than 1 users*/
-            $company = $user->getCompanyAdministeredByUser();
-            foreach($company->users as $user){
-                $user->update(['isself_deactivated' => $status]);
-            }
-        }
-
-    }
 
 
 

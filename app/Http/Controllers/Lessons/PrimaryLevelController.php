@@ -26,6 +26,7 @@ class PrimaryLevelController extends Controller
     public function view($package)
     {
 
+
         $package = $this->packages->getOneByUuid($package);
         return view('lessons.primary_level.show.show')
             ->with('package',$package);

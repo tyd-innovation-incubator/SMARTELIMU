@@ -9,5 +9,9 @@ use Illuminate\Database\Eloquent\Model;
 class Section extends Model
 {
     use SectionAttribute,SectionRelationship;
+
+
     //
+
+    protected $table = 'section';
 }

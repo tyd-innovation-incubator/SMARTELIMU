@@ -16,4 +16,11 @@ class PackageRepository extends BaseRepository
 
 
 
+    public function attachPackageUser()
+    {
+
+    }
+
+
+
 }

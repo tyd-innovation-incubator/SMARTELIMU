@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Profile;
 
 use App\Http\Controllers\Controller;
+use App\Models\Auth\Candidate;
 use App\Repositories\Access\UserRepository;
 use App\Repositories\Package\InvoiceRepository;
 use App\User;
@@ -25,9 +26,11 @@ class ProfileController extends Controller
     public function index()
     {
 
+
         $user = access()->user();
-        return view('profile.index')
-            ->with('user',$user);
+        return redirect()->route('profile.personal_info');
+//        return view('profile.index')
+//            ->with('user',$user);
     }
 
     public function packages()
@@ -50,8 +53,49 @@ class ProfileController extends Controller
 
         $input = $request->all();
         $candidate = $this->users->createCandidate($input);
-
-        return redirect()->back();
+        return redirect()->route('profile.candidate_info');
     }
 
+
+    public function personalInformation()
+    {
+
+        $user = access()->user();
+        return view('profile.personal_info')
+            ->with('user',$user);
+    }
+
+
+    public function candidateInformation()
+    {
+        $user = access()->user();
+        return view('profile.candidate_info')
+            ->with('user',$user);
+    }
+
+    public function editCandidate($candidate)
+    {
+        $user = access()->user();
+
+        $candidate = $user->candidates()->where('uuid',$candidate)->get()->first();
+        return view('profile.includes.candidate.edit')
+            ->with('candidate',$candidate);
+    }
+
+    public function updateCandidate(Request $request,$candidate)
+    {
+        $input = $request->all();
+        $user = access()->user();
+        $candidate = $user->candidates()->where('uuid',$candidate)->get()->first();
+        $candidate = $this->users->updateCandidate($input,$candidate);
+        return redirect()->route('profile.candidate_info');
+    }
+
+
+
+
 }
+
+
+
+

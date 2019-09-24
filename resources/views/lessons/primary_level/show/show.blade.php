@@ -67,6 +67,8 @@
                         <div class="ct-u-displayTableCell text-right">
                             <form action="{!! route('package.create_invoice',$package->uuid) !!}" method="get">
 
+                                {{--{!! dd(access()->user()->packages) !!}--}}
+                                {{--@foreach(access()->user()->packages as $package)--}}
                               @if(count($package->invoice) ? $package->invoice->ispaid :'')
 
                                     {{--<button type="submit" class="btn btn-primary text-capitalize">--}}
@@ -77,6 +79,10 @@
                                         take this course
                                     </button>
                                   @endif
+                                    {{--@endforeach--}}
+
+
+
                             </form>
 
                         </div>
@@ -98,6 +104,31 @@
                                 <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
                                     <div class="panel-body">
                                       {!! truncateString($subject->description,150) !!}
+
+
+                                        @if(count($package->invoice) ? $package->invoice->ispaid :'')
+
+                                        @foreach($subject->chapters as $chapter)
+                                        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                                            <div class="panel-body">
+                                                <strong>{!! $chapter->name !!}</strong>
+
+                                                @foreach($chapter->sections as $section)
+                                                    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                                                        <div class="panel-body">
+                                                            {!! $section->section_name !!} <br>
+                                                            <a href="{!! $section->video_file !!}">Video link</a> <br>
+                                                            <a href="{!! $section->audio_file !!}">Audio link</a> <br>
+
+
+
+                                                        </div>
+                                                    </div>
+                                                @endforeach
+                                            </div>
+                                        </div>
+                                            @endforeach
+                                            @endif
                                     </div>
                                 </div>
                             </div>

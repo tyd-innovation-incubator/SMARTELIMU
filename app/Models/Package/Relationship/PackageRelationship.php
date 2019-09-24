@@ -4,6 +4,7 @@ namespace App\Models\Package\Relationship;
 
 use App\Models\Package\Invoice;
 use App\Models\Package\Subject;
+use App\User;
 
 trait PackageRelationship
 {
@@ -18,5 +19,9 @@ trait PackageRelationship
         return $this->hasOne(Invoice::class);
     }
 
+    public  function users()
+    {
+        return $this->belongsToMany(User::class);
+    }
 
 }

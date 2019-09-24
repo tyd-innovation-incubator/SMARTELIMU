@@ -42,7 +42,7 @@ class CodeValuesTableSeeder extends Seeder
                 array (
                     'id' => 3,
                     'code_id' => 2,
-                    'values' => 'Teacher',
+                    'values' => 'Parent',
                     'reference' => 'TECH',
                     'isactive' => 1,
                 ),

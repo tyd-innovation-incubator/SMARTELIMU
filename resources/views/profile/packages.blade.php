@@ -11,17 +11,17 @@
             <!--content iliolipiwa hapa-->
 
             <div class="row">
-                @foreach($paid_invoices as $invoice)
-
+                @foreach(access()->user()->packages as $package)
+                    @if($package->invoice->ispaid)
                 <div class="col-sm-6 col-md-3">
                     <div class="ct-productBox">
-                        <a href="{!! route('lessons.view',$invoice->package->uuid) !!}">
+                        <a href="{!! route('lessons.view',$package->uuid) !!}">
                             <div class="ct-productImage">
                                 <img src="{!! url('assets/images/content/GRADE_1.jpg') !!}" alt="Product">
                             </div>
                             <div class="ct-productDescription">
-                                <h5 class="ct-fw-600 ct-u-marginBottom10">{!! $invoice->package->name !!}</h5>
-                                <span>{!! $invoice->package->category !!}</span>
+                                <h5 class="ct-fw-600 ct-u-marginBottom10">{!! $package->name !!}</h5>
+                                <span>{!! $package->category !!}</span>
                             </div>
                         </a>
                         <div class="ct-productMeta">
@@ -30,16 +30,17 @@
                                     <div class="starrr" data-rating='4'></div>
                                 </div>
                                 <div class="ct-u-displayTableCell">
-                                    <span class="ct-u-colorMotive">{!! $invoice->package->price !!}Tsh</span>
+                                    <span class="ct-u-colorMotive">{!! $package->price !!}Tsh</span>
                                 </div>
                                 <div class="ct-u-displayTableCell">
-                                    <button class="btn btn-motive"><a href="{!! route('lessons.view',$invoice->package->uuid) !!}">{!! trans('label.view') !!}</a></button>
+                                    <button class="btn btn-motive"><a href="{!! route('lessons.view',$package->uuid) !!}">{!! trans('label.view') !!}</a></button>
                                 </div>
                                 </a>
                             </div>
                         </div>
                     </div>
                 </div>
+                    @endif
                     @endforeach
 
             </div>
