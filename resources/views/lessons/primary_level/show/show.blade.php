@@ -104,10 +104,7 @@
                                 <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
                                     <div class="panel-body">
                                       {!! truncateString($subject->description,150) !!}
-
-
                                         @if(count($package->invoice) ? $package->invoice->ispaid :'')
-
                                         @foreach($subject->chapters as $chapter)
                                         <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
                                             <div class="panel-body">
@@ -119,8 +116,6 @@
                                                             {!! $section->section_name !!} <br>
                                                             <a href="{!! $section->video_file !!}">Video link</a> <br>
                                                             <a href="{!! $section->audio_file !!}">Audio link</a> <br>
-
-
 
                                                         </div>
                                                     </div>
