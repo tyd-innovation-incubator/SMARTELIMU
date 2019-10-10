@@ -69,7 +69,7 @@
 
                                 {{--{!! dd(access()->user()->packages) !!}--}}
                                 {{--@foreach(access()->user()->packages as $package)--}}
-                              @if(count($package->invoice) ? $package->invoice->ispaid :'')
+                              @if(isset($package->invoice) ? $package->invoice->ispaid :'')
 
                                     {{--<button type="submit" class="btn btn-primary text-capitalize">--}}
                                         {{--view--}}
