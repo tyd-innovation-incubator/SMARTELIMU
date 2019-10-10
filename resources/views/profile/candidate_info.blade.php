@@ -117,7 +117,7 @@
             {{--</div>--}}
                 {{--@endforeach--}}
 
-                    <div class="row col-md-12  custyle" style="margin-top: 30px">
+                    <div class="row col-md-12  custyle" style="margin-top: 20px">
                         <table class="table table-striped custab">
                             <thead>
                             <a href="{!! route('profile.create_candidate') !!}" class="btn btn-primary btn-xs pull-right"><b>+</b> Add Candidate</a>
