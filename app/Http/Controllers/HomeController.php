@@ -7,6 +7,7 @@ use App\Models\Information\Partner;
 use App\Models\Information\Testimony;
 use App\Models\Package\Package;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class HomeController extends Controller
 {
@@ -27,10 +28,11 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $partners = Partner::all();
-        $testimonies = Testimony::all();
+        $partners = DB::table('partners')->paginate(4);
+        $testimonies = DB::table('testimonies')->paginate(4);
         $homeslides = Homeslide::all();
-        $packages = Package::query()->get();
+        $packages = DB::table('package')->paginate(4);
+
         return view('home')
             ->with('partners',$partners)
             ->with('homeslides',$homeslides)

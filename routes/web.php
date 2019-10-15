@@ -15,15 +15,19 @@ Route::get('/', function () {
 //    dd(code_value()->getCodeForSelect(4));
 
     $about = \App\Models\Information\About::get()->first();
-    $partners = \App\Models\Information\Partner::all();
-    $testimonies = \App\Models\Information\Testimony::all();
-        $homesliders = \App\Models\Information\Homeslide::all();
+    $partners = \Illuminate\Support\Facades\DB::table('partners')->paginate(4);
+    $testimonies = \Illuminate\Support\Facades\DB::table('testimonies')->paginate(4);
+    $homesliders = \App\Models\Information\Homeslide::all();
+    $packages = \Illuminate\Support\Facades\DB::table('package')->paginate(4);
+
+
 
     return view('welcome')
         ->with('partners',$partners)
         ->with('homeslides',$homesliders)
         ->with('testimonies',$testimonies)
-        ->with('about',$about);
+        ->with('about',$about)
+        ->with('packages',$packages);
 });
 
 Auth::routes();
