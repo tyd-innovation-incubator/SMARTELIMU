@@ -228,7 +228,8 @@
 
                     </div>
 
-                </div><a align="center" class="text-uppercase btn btn-primary btn-lg" href="courses-listing3.html" >Peruzi Masomo</a>
+                </div>
+                {{--<a align="center" class="text-uppercase btn btn-primary btn-lg" href="courses-listing3.html" >Peruzi Masomo</a>--}}
             </div>
         </div>
     </section>
