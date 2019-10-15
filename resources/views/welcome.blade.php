@@ -7,7 +7,7 @@
     <header>
         <div class="ct-slick ct-js-slick ct-slick-defaultNavigation" data-height="500" data-adaptiveHeight="true" data-animations="true" data-autoplay="true" data-infinite="true" data-autoplaySpeed="6000" data-draggable="false" data-touchMove="false" data-arrows="true" data-items="1">
             @foreach($homeslides as $homeslide)
-                <div class="item" data-bg="{!! url('/img/homeslides/'.$homeslide->image.'') !!}">
+                <div class="item" data-bg="{!! url('http://admin.smartelimu.ac.tz/img/homeslides/'.$homeslide->image.'') !!}">
                     <div class="ct-slick-inner">
                         <div class="ct-slick-content">
                             <div class="container">
@@ -513,7 +513,7 @@
                 <div class="ct-personMedia ct-u-displayTableVertical">
                     <div class="ct-u-displayTableCell">
                         <div class="ct-personImage">
-                            <img src="{!! url('img/testimonials/'.$testimony->image.'') !!}" alt="person">
+                            <img src="{!! url('http://admin.smartelimu.ac.tz/img/testimonials/'.$testimony->image.'') !!}" alt="person">
                         </div>
                     </div>
                     <div class="ct-u-displayTableCell">

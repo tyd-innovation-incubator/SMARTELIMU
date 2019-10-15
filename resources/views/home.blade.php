@@ -7,7 +7,7 @@
     <header>
         <div class="ct-slick ct-js-slick ct-slick-defaultNavigation" data-height="500" data-adaptiveHeight="true" data-animations="true" data-autoplay="true" data-infinite="true" data-autoplaySpeed="6000" data-draggable="false" data-touchMove="false" data-arrows="true" data-items="1">
             @foreach($homeslides as $homeslide)
-                <div class="item" data-bg="{!! url('/img/homeslides/'.$homeslide->image.'') !!}">
+                <div class="item" data-bg="{!! url('http://admin.smartelimu.ac.tz/img/homeslides/'.$homeslide->image.'') !!}">
                     <div class="ct-slick-inner">
                         <div class="ct-slick-content">
                             <div class="container">
@@ -247,15 +247,16 @@
 
                     </p>
                     <div class="row">
+                        @foreach($packages as $package)
                         <div class="col-sm-6 col-md-3">
                             <div class="ct-productBox">
-                                <a href="course-single.html">
+                                <a href="{!! route('lessons.view',$package->uuid) !!}">
                                     <div class="ct-productImage">
-                                        <img src="assets/images/content/FORM_1_(370_X_350).jpg" alt="Product">
+                                        <img src="{!! url('http://admin.smartelimu.ac.tz/img/content/'.$package->image.'') !!}" alt="Product">
                                     </div>
                                     <div class="ct-productDescription">
-                                        <h5 class="ct-fw-600 ct-u-marginBottom10">Kidato cha kwanza</h5>
-                                        <span>Hii ni pakeji maalumu kwa masomo yote yanayo someshwa kidato cha kwanza kwa mujibu wa silabasi ya Tanzania.</span>
+                                        <h5 class="ct-fw-600 ct-u-marginBottom10">{!! $package->name !!}</h5>
+                                        <span>{!! truncateString($package->description,100) !!}</span>
                                     </div>
                                 </a>
                                 <div class="ct-productMeta">
@@ -264,8 +265,8 @@
                                             <div class="starrr" data-rating='4'></div>
                                         </div>
                                         <div class="ct-u-displayTableCell">
-                                            <span class="ct-u-colorMotive">499Tsh</span>
-                                            <span class="ct-u-textLineThrough">1000$</span>
+                                            <span class="ct-u-colorMotive">{!! number_1_format($package->price) !!}Tsh</span>
+                                            {{--<span class="ct-u-textLineThrough">1000$</span>--}}
                                         </div>
                                         <a href="#">
                                             <div class="ct-u-displayTableCell">
@@ -276,221 +277,135 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-md-3">
-                            <div class="ct-productBox">
-                                <a href="course-single.html">
-                                    <div class="ct-productImage">
-                                        <img src="assets/images/content/FORM_2_(370_X_350).jpg" alt="Product">
-                                    </div>
-                                    <div class="ct-productDescription">
-                                        <h5 class="ct-fw-600 ct-u-marginBottom10">Kidato cha Pili</h5>
-                                        <span>Hii ni pakeji maalumu kwa masomo yote yanayo someshwa kidato cha pili kwa mujibu wa silabasi ya Tanzania.</span>
-                                    </div>
-                                </a>
-                                <div class="ct-productMeta">
-                                    <div class="ct-u-displayTableVertical">
-                                        <div class="ct-u-displayTableCell">
-                                            <div class="starrr" data-rating='4'></div>
-                                        </div>
-                                        <div class="ct-u-displayTableCell">
-                                            <span class="ct-u-colorMotive">499Tsh</span>
-                                            <span class="ct-u-textLineThrough">600Tsh</span>
-                                        </div>
-                                        <a href="#">
-                                            <div class="ct-u-displayTableCell">
-                                                15 <i class="fa fa-user"></i>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-3">
-                            <div class="ct-productBox">
-                                <a href="course-single.html">
-                                    <div class="ct-productImage">
-                                        <img src="assets/images/content/FORM_3_(370_X_350).jpg" alt="Product">
-                                    </div>
-                                    <div class="ct-productDescription">
-                                        <h5 class="ct-fw-600 ct-u-marginBottom10">Kidato cha Tatu</h5>
-                                        <span>Hii ni pakeji maalumu kwa masomo yote yanayo someshwa kidato cha tatu kwa mujibu wa silabasi ya Tanzania.</span>
-                                    </div>
-                                </a>
-                                <div class="ct-productMeta">
-                                    <div class="ct-u-displayTableVertical">
-                                        <div class="ct-u-displayTableCell">
-                                            <div class="starrr" data-rating='4'></div>
-                                        </div>
-                                        <div class="ct-u-displayTableCell">
-                                            <span class="ct-u-colorMotive">599Tsh</span>
-                                            <span class="ct-u-textLineThrough">725Tsh</span>
-                                        </div>
-                                        <a href="#">
-                                            <div class="ct-u-displayTableCell">
-                                                15 <i class="fa fa-user"></i>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-3">
-                            <div class="ct-productBox">
-                                <a href="course-single.html">
-                                    <div class="ct-productImage">
-                                        <img src="assets/images/content/FORM_4_(370_X_350).jpg" alt="Product">
-                                    </div>
-                                    <div class="ct-productDescription">
-                                        <h5 class="ct-fw-600 ct-u-marginBottom10">Kidato cha nne</h5>
-                                        <span>Hii ni pakeji maalumu kwa masomo yote yanayo someshwa kidato cha nne kwa mujibu wa silabasi ya Tanzania.</span>
-                                    </div>
-                                </a>
-                                <div class="ct-productMeta">
-                                    <div class="ct-u-displayTableVertical">
-                                        <div class="ct-u-displayTableCell">
-                                            <div class="starrr" data-rating='4'></div>
-                                        </div>
-                                        <div class="ct-u-displayTableCell">
-                                            <span class="ct-u-colorMotive">699Tsh</span>
-                                            <span class="ct-u-textLineThrough">799Tsh</span>
-                                        </div>
-                                        <a href="#">
-                                            <div class="ct-u-displayTableCell">
-                                                15 <i class="fa fa-user"></i>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                            @endforeach
                     </div>
                 </div>
-                <div class="item">
-                    <h2 class="ct-fw-500">Masomo yanayotembelewa zaidi Mtandaoni</h2>
-                    <div class="ct-divider ct-u-marginBoth30"></div>
-                    <p class="ct-u-marginBottom90">
-                        Haya ndo Masomo Yanayotembelewa zaidi.
+                {{--<div class="item">--}}
+                    {{--<h2 class="ct-fw-500">Masomo yanayotembelewa zaidi Mtandaoni</h2>--}}
+                    {{--<div class="ct-divider ct-u-marginBoth30"></div>--}}
+                    {{--<p class="ct-u-marginBottom90">--}}
+                        {{--Haya ndo Masomo Yanayotembelewa zaidi.--}}
 
-                    </p>
-                    <div class="row">
-                        <div class="col-sm-6 col-md-3">
-                            <div class="ct-productBox">
-                                <a href="#">
-                                    <div class="ct-productImage">
-                                        <img src="assets/images/content/GRADE_3_SLIDING_(270_X_170).jpg" alt="Product">
-                                    </div>
-                                    <div class="ct-productDescription">
-                                        <h5 class="ct-fw-600 ct-u-marginBottom10">Darasa la Tatu</h5>
-                                        <span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean .</span>
-                                    </div>
-                                </a>
-                                <div class="ct-productMeta">
-                                    <div class="ct-u-displayTableVertical">
-                                        <div class="ct-u-displayTableCell">
-                                            <div class="starrr" data-rating='4'></div>
-                                        </div>
-                                        <div class="ct-u-displayTableCell">
-                                            <span class="ct-u-colorMotive">499Tsh</span>
-                                            <span class="ct-u-textLineThrough">500Tsh</span>
-                                        </div>
-                                        <a href="#">
-                                            <div class="ct-u-displayTableCell">
-                                                15 <i class="fa fa-user"></i>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-3">
-                            <div class="ct-productBox">
-                                <a href="#">
-                                    <div class="ct-productImage">
-                                        <img src="assets/images/content/GRADE_4_SLIDING_(270_X_170).jpg" alt="Product">
-                                    </div>
-                                    <div class="ct-productDescription">
-                                        <h5 class="ct-fw-600 ct-u-marginBottom10">Darasa la nne</h5>
-                                        <span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean .</span>
-                                    </div>
-                                </a>
-                                <div class="ct-productMeta">
-                                    <div class="ct-u-displayTableVertical">
-                                        <div class="ct-u-displayTableCell">
-                                            <div class="starrr" data-rating='4'></div>
-                                        </div>
-                                        <div class="ct-u-displayTableCell">
-                                            <span class="ct-u-colorMotive">599Tsh<span>
-                                            <span class="ct-u-textLineThrough">700Tsh</span>
-                                        </div>
-                                        <a href="#">
-                                            <div class="ct-u-displayTableCell">
-                                                15 <i class="fa fa-user"></i>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-3">
-                            <div class="ct-productBox">
-                                <a href="#">
-                                    <div class="ct-productImage">
-                                        <img src="assets/images/content/GRADE_1_SLIDING_(270_X_170).jpg" alt="Product">
-                                    </div>
-                                    <div class="ct-productDescription">
-                                        <h5 class="ct-fw-600 ct-u-marginBottom10">Darasa la kwanza</h5>
-                                        <span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean .</span>
-                                    </div>
-                                </a>
-                                <div class="ct-productMeta">
-                                    <div class="ct-u-displayTableVertical">
-                                        <div class="ct-u-displayTableCell">
-                                            <div class="starrr" data-rating='4'></div>
-                                        </div>
-                                        <div class="ct-u-displayTableCell">
-                                            <span class="ct-u-colorMotive">499Tsh</span>
-                                            <span class="ct-u-textLineThrough">699Tsh</span>
-                                        </div>
-                                        <a href="#">
-                                            <div class="ct-u-displayTableCell">
-                                                15 <i class="fa fa-user"></i>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-3">
-                            <div class="ct-productBox">
-                                <a href="#">
-                                    <div class="ct-productImage">
-                                        <img src="assets/images/content/GRADE_2_SLIDING_(270_X_170).jpg" alt="Product">
-                                    </div>
-                                    <div class="ct-productDescription">
-                                        <h5 class="ct-fw-600 ct-u-marginBottom10">Darasa la pili</h5>
-                                        <span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean .</span>
-                                    </div>
-                                </a>
-                                <div class="ct-productMeta">
-                                    <div class="ct-u-displayTableVertical">
-                                        <div class="ct-u-displayTableCell">
-                                            <div class="starrr" data-rating='4'></div>
-                                        </div>
-                                        <div class="ct-u-displayTableCell">
-                                            <span class="ct-u-colorMotive">499Tsh</span>
-                                            <span class="ct-u-textLineThrough">699Tsh</span>
-                                        </div>
-                                        <a href="#">
-                                            <div class="ct-u-displayTableCell">
-                                                15 <i class="fa fa-user"></i>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                    {{--</p>--}}
+                    {{--<div class="row">--}}
+                        {{--<div class="col-sm-6 col-md-3">--}}
+                            {{--<div class="ct-productBox">--}}
+                                {{--<a href="#">--}}
+                                    {{--<div class="ct-productImage">--}}
+                                        {{--<img src="assets/images/content/GRADE_3_SLIDING_(270_X_170).jpg" alt="Product">--}}
+                                    {{--</div>--}}
+                                    {{--<div class="ct-productDescription">--}}
+                                        {{--<h5 class="ct-fw-600 ct-u-marginBottom10">Darasa la Tatu</h5>--}}
+                                        {{--<span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean .</span>--}}
+                                    {{--</div>--}}
+                                {{--</a>--}}
+                                {{--<div class="ct-productMeta">--}}
+                                    {{--<div class="ct-u-displayTableVertical">--}}
+                                        {{--<div class="ct-u-displayTableCell">--}}
+                                            {{--<div class="starrr" data-rating='4'></div>--}}
+                                        {{--</div>--}}
+                                        {{--<div class="ct-u-displayTableCell">--}}
+                                            {{--<span class="ct-u-colorMotive">499Tsh</span>--}}
+                                            {{--<span class="ct-u-textLineThrough">500Tsh</span>--}}
+                                        {{--</div>--}}
+                                        {{--<a href="#">--}}
+                                            {{--<div class="ct-u-displayTableCell">--}}
+                                                {{--15 <i class="fa fa-user"></i>--}}
+                                            {{--</div>--}}
+                                        {{--</a>--}}
+                                    {{--</div>--}}
+                                {{--</div>--}}
+                            {{--</div>--}}
+                        {{--</div>--}}
+                        {{--<div class="col-sm-6 col-md-3">--}}
+                            {{--<div class="ct-productBox">--}}
+                                {{--<a href="#">--}}
+                                    {{--<div class="ct-productImage">--}}
+                                        {{--<img src="assets/images/content/GRADE_4_SLIDING_(270_X_170).jpg" alt="Product">--}}
+                                    {{--</div>--}}
+                                    {{--<div class="ct-productDescription">--}}
+                                        {{--<h5 class="ct-fw-600 ct-u-marginBottom10">Darasa la nne</h5>--}}
+                                        {{--<span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean .</span>--}}
+                                    {{--</div>--}}
+                                {{--</a>--}}
+                                {{--<div class="ct-productMeta">--}}
+                                    {{--<div class="ct-u-displayTableVertical">--}}
+                                        {{--<div class="ct-u-displayTableCell">--}}
+                                            {{--<div class="starrr" data-rating='4'></div>--}}
+                                        {{--</div>--}}
+                                        {{--<div class="ct-u-displayTableCell">--}}
+                                            {{--<span class="ct-u-colorMotive">599Tsh<span>--}}
+                                            {{--<span class="ct-u-textLineThrough">700Tsh</span>--}}
+                                        {{--</div>--}}
+                                        {{--<a href="#">--}}
+                                            {{--<div class="ct-u-displayTableCell">--}}
+                                                {{--15 <i class="fa fa-user"></i>--}}
+                                            {{--</div>--}}
+                                        {{--</a>--}}
+                                    {{--</div>--}}
+                                {{--</div>--}}
+                            {{--</div>--}}
+                        {{--</div>--}}
+                        {{--<div class="col-sm-6 col-md-3">--}}
+                            {{--<div class="ct-productBox">--}}
+                                {{--<a href="#">--}}
+                                    {{--<div class="ct-productImage">--}}
+                                        {{--<img src="assets/images/content/GRADE_1_SLIDING_(270_X_170).jpg" alt="Product">--}}
+                                    {{--</div>--}}
+                                    {{--<div class="ct-productDescription">--}}
+                                        {{--<h5 class="ct-fw-600 ct-u-marginBottom10">Darasa la kwanza</h5>--}}
+                                        {{--<span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean .</span>--}}
+                                    {{--</div>--}}
+                                {{--</a>--}}
+                                {{--<div class="ct-productMeta">--}}
+                                    {{--<div class="ct-u-displayTableVertical">--}}
+                                        {{--<div class="ct-u-displayTableCell">--}}
+                                            {{--<div class="starrr" data-rating='4'></div>--}}
+                                        {{--</div>--}}
+                                        {{--<div class="ct-u-displayTableCell">--}}
+                                            {{--<span class="ct-u-colorMotive">499Tsh</span>--}}
+                                            {{--<span class="ct-u-textLineThrough">699Tsh</span>--}}
+                                        {{--</div>--}}
+                                        {{--<a href="#">--}}
+                                            {{--<div class="ct-u-displayTableCell">--}}
+                                                {{--15 <i class="fa fa-user"></i>--}}
+                                            {{--</div>--}}
+                                        {{--</a>--}}
+                                    {{--</div>--}}
+                                {{--</div>--}}
+                            {{--</div>--}}
+                        {{--</div>--}}
+                        {{--<div class="col-sm-6 col-md-3">--}}
+                            {{--<div class="ct-productBox">--}}
+                                {{--<a href="#">--}}
+                                    {{--<div class="ct-productImage">--}}
+                                        {{--<img src="assets/images/content/GRADE_2_SLIDING_(270_X_170).jpg" alt="Product">--}}
+                                    {{--</div>--}}
+                                    {{--<div class="ct-productDescription">--}}
+                                        {{--<h5 class="ct-fw-600 ct-u-marginBottom10">Darasa la pili</h5>--}}
+                                        {{--<span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean .</span>--}}
+                                    {{--</div>--}}
+                                {{--</a>--}}
+                                {{--<div class="ct-productMeta">--}}
+                                    {{--<div class="ct-u-displayTableVertical">--}}
+                                        {{--<div class="ct-u-displayTableCell">--}}
+                                            {{--<div class="starrr" data-rating='4'></div>--}}
+                                        {{--</div>--}}
+                                        {{--<div class="ct-u-displayTableCell">--}}
+                                            {{--<span class="ct-u-colorMotive">499Tsh</span>--}}
+                                            {{--<span class="ct-u-textLineThrough">699Tsh</span>--}}
+                                        {{--</div>--}}
+                                        {{--<a href="#">--}}
+                                            {{--<div class="ct-u-displayTableCell">--}}
+                                                {{--15 <i class="fa fa-user"></i>--}}
+                                            {{--</div>--}}
+                                        {{--</a>--}}
+                                    {{--</div>--}}
+                                {{--</div>--}}
+                            {{--</div>--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
+                {{--</div>--}}
             </div>
         </div>
 
@@ -505,92 +420,35 @@
     </div>
 
     <div class="row ct-u-marginBottom100" align="center">
-        <div class="col-md-4">
-            <div class="ct-personBox ct-personBox--inline ct-u-marginBottom30">
-                <div class="ct-personMedia ct-u-displayTableVertical">
-                    <div class="ct-u-displayTableCell">
-                        <div class="ct-personImage">
-                            <img src="assets/images/content/MY-PROFILE-PICTURE.png" alt="person">
+
+        @foreach($testimonies as $testimony)
+            <div class="col-md-4">
+                <div class="ct-personBox ct-personBox--inline">
+                    <div class="ct-personMedia ct-u-displayTableVertical">
+                        <div class="ct-u-displayTableCell">
+                            <div class="ct-personImage">
+                                <img src="{!! url('http://admin.smartelimu.ac.tz/img/testimonials/'.$testimony->image.'') !!}" alt="person">
+                            </div>
                         </div>
-                    </div>
-                    <div class="ct-u-displayTableCell">
-                        <div class="ct-personName">
+                        <div class="ct-u-displayTableCell">
+                            <div class="ct-personName">
                                 <span class="ct-personName--title ct-fw-700">
-                                    Mohamed Omar
+                                    {!! $testimony->name !!}
                                 </span>
-                            <span class="ct-personName--meta text-lowercase">
-                                    Web Designer
+                                <span class="ct-personName--meta text-lowercase">
+                                    {!! $testimony->occupation !!}
                                 </span>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="ct-personDescription">
-                    <p>
-                        In just 2 years Smart Elimu has become one of the most
-                        successful instructors on the web. This site has incred
-                        ble rising story and been covered on the Wall Stre
-                        et Journal <a href="#">Moree..</a>
-                    </p>
+                    <div class="ct-personDescription">
+                        <p>
+                            {!! truncateString($testimony->message,150) !!}
+                            <a href="#">Moree..</a>
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="col-md-4">
-            <div class="ct-personBox ct-personBox--inline ct-u-marginBottom30">
-                <div class="ct-personMedia ct-u-displayTableVertical">
-                    <div class="ct-u-displayTableCell">
-                        <div class="ct-personImage">
-                            <img src="assets/images/content/MY-PROFILE-PICTURE.png" alt="person">
-                        </div>
-                    </div>
-                    <div class="ct-u-displayTableCell">
-                        <div class="ct-personName">
-                                <span class="ct-personName--title ct-fw-700">
-                                    Mohamed Omar
-                                </span>
-                            <span class="ct-personName--meta text-lowercase">
-                                    Web Developer
-                                </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="ct-personDescription">
-                    <p>
-                        In just 2 years Smart Elimu has become one of the most
-                        successful instructors on the web. This site has incred
-                        ble rising story and been covered on the Wall Stre
-                        et Journal <a href="#">Moree..</a>
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="ct-personBox ct-personBox--inline">
-                <div class="ct-personMedia ct-u-displayTableVertical">
-                    <div class="ct-u-displayTableCell">
-                        <div class="ct-personImage">
-                            <img src="assets/images/content/MY-PROFILE-PICTURE.png" alt="person">
-                        </div>
-                    </div>
-                    <div class="ct-u-displayTableCell">
-                        <div class="ct-personName">
-                                <span class="ct-personName--title ct-fw-700">
-                                    Mohamed Said
-                                </span>
-                            <span class="ct-personName--meta text-lowercase">
-                                    Database Intergrater
-                                </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="ct-personDescription">
-                    <p>
-                        In just 2 years Smart Elimu has become one of the most
-                        successful instructors on the web. This site has incred
-                        ble rising story and been covered on the Wall Stre
-                        et Journal <a href="#">Moree..</a>
-                    </p>
-                </div>
-            </div>
-        </div>
+        @endforeach
     </div>
 @endsection

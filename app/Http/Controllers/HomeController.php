@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Information\Homeslide;
 use App\Models\Information\Partner;
 use App\Models\Information\Testimony;
+use App\Models\Package\Package;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -29,9 +30,11 @@ class HomeController extends Controller
         $partners = Partner::all();
         $testimonies = Testimony::all();
         $homeslides = Homeslide::all();
+        $packages = Package::query()->get();
         return view('home')
             ->with('partners',$partners)
             ->with('homeslides',$homeslides)
-            ->with('testimonies',$testimonies);
+            ->with('testimonies',$testimonies)
+            ->with('packages',$packages);
     }
 }

@@ -395,7 +395,7 @@
 
                                 @foreach($partners as $partner)
                                     <div class="item ct-u-marginTop40" >
-                                        <a href="#" ><img src="{!! url('img/partners/'.$partner->image.'') !!}" height = "80px" width = "80px"></a>
+                                        <a href="#" ><img src="{!! url('http://admin.smartelimu.ac.tz/img/partners/'.$partner->image.'') !!}" height = "80px" width = "80px"></a>
                                     </div>
 
                             @endforeach

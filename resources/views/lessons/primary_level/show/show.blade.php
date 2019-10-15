@@ -26,7 +26,7 @@
                         <div class="ct-productBox">
                             <a href="{!! route('lessons.view',$package->uuid) !!}">
                                 <div class="ct-productImage">
-                                    <img src="{!! url('img/content/'.$package->image.'') !!}" alt="Product">
+                                    <img src="{!! url('admin.smartelimu.ac.tz/img/content/'.$package->image.'') !!}" alt="Product">
                                 </div>
                                 <div class="ct-productDescription">
                                     <h4 class="ct-fw-600">{!! $package->category !!}</h4>
