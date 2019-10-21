@@ -95,12 +95,12 @@
                                                         <div class="col-md-6">
                                                             {!! trans('label.first_name') !!} :   <strong>{!! $user->first_name !!} </strong> <br>
                                                             {!! trans('label.email') !!} :  <strong>{!! $user->email !!}</strong>              <br>
-                                                            {!! trans('label.gender') !!}:  <strong>{!!  count($user->gender)? code_value()->find($user->gender)->values :'' !!}</strong>        <br>
+                                                            {!! trans('label.gender') !!}:  <strong>{!!  isset($user->gender)? code_value()->find($user->gender)->values :'' !!}</strong>        <br>
                                                         </div>
                                                         <div class="col-md-6 ">
                                                             {!! trans('label.last_name') !!} : <strong>{!! $user->last_name !!} </strong><br>
                                                             {!! trans('label.phone') !!} : <strong>{!! $user->phone !!}</strong><br>
-                                                            {!! trans('label.account_type') !!} :<strong>{!! count($user->category_cv_id)? code_value()->find($user->category_cv_id)->values :'' !!}</strong> <br>
+                                                            {!! trans('label.account_type') !!} :<strong>{!! isset($user->category_cv_id)? code_value()->find($user->category_cv_id)->values :'' !!}</strong> <br>
                                                         </div>
 
 
