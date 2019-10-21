@@ -144,28 +144,6 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="item">
-                                    <div class="testimonial pt-10">
-                                        <div class="thumb pull-left mb-0 mr-0 pr-20">
-                                            <img  class="img-circle" alt="" src="{!! url('http://admin.smartelimu.ac.tz/img/testimonials/'.$testimony->image.'') !!}">
-                                        </div>
-                                        <div class="ml-100 ">
-                                            <h4 class="text-white mt-0">{!! ($testimony->message) !!}</h4>
-                                            <p class="author mt-20">- <span class="text-theme-color-2">{!! $testimony->name !!},</span> <small><em class="text-gray-lightgray">{!! $testimony->occupation !!}</em></small></p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="testimonial pt-10">
-                                        <div class="thumb pull-left mb-0 mr-0 pr-20">
-                                            <img  class="img-circle" alt="" src="{!! url('http://admin.smartelimu.ac.tz/img/testimonials/'.$testimony->image.'') !!}">
-                                        </div>
-                                        <div class="ml-100 ">
-                                            <h4 class="text-white mt-0">{!! ($testimony->message) !!}</h4>
-                                            <p class="author mt-20">- <span class="text-theme-color-2">{!! $testimony->name !!},</span> <small><em class="text-gray-lightgray">{!! $testimony->occupation !!}</em></small></p>
-                                        </div>
-                                    </div>
-                                </div>
                             @endforeach
 
 

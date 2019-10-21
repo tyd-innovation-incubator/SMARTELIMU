@@ -224,55 +224,15 @@
                             <li><a href="{!! url('/home') !!}">{!! trans('label.news') !!}</a></li>
 
 
+                            <li><a href="#">Pages</a>
+
+                            </li>
+                            <li><a href="#">Pages</a>
+
+                            </li>
 
                             <li><a href="#">Blog</a>
-                                <ul class="dropdown">
-                                    <li><a href="#">Blog Classic</a>
-                                        <ul class="dropdown">
-                                            <li><a href="blog-classic-no-sidebar.html">Blog Classic No Sidebar</a></li>
-                                            <li><a href="blog-classic-left-sidebar.html">Blog Classic Left Sidebar</a></li>
-                                            <li><a href="blog-classic-right-sidebar.html">Blog Classic Right Sidebar</a></li>
-                                            <li><a href="blog-classic-both-sidebar.html">Blog Classic Both Sidebar</a></li>
-                                            <li><a href="blog-classic-left-thumbs.html">Blog Classic Left Thumbs</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="#">Blog Grid</a>
-                                        <ul class="dropdown">
-                                            <li><a href="blog-grid-2-column.html">Blog Grid 2 Column</a></li>
-                                            <li><a href="blog-grid-3-column.html">Blog Grid 3 Column</a></li>
-                                            <li><a href="blog-grid-4-column.html">Blog Grid 4 Column</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="#">Blog Masonry</a>
-                                        <ul class="dropdown">
-                                            <li><a href="blog-masonry-2-column.html">Blog Masonry 2 Column</a></li>
-                                            <li><a href="blog-masonry-3-column.html">Blog Masonry 3 Column</a></li>
-                                            <li><a href="blog-masonry-4-column.html">Blog Masonry 4 Column</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="#">Blog Single</a>
-                                        <ul class="dropdown">
-                                            <li><a href="blog-single-no-sidebar.html">Blog Single No Sidebar</a></li>
-                                            <li><a href="blog-single-left-sidebar.html">Blog Single Left Sidebar</a></li>
-                                            <li><a href="blog-single-right-sidebar.html">Blog Single Right Sidebar</a></li>
-                                            <li><a href="blog-single-both-sidebar.html">Blog Single Both Sidebar</a></li>
-                                            <li><a href="blog-single-disqus-comments.html">Blog Single Discuss Comments</a></li>
-                                            <li><a href="blog-single-facebook-comments.html">Blog Single Facebook Comments</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="#">Blog Infinity Scroll</a>
-                                        <ul class="dropdown">
-                                            <li><a href="blog-extra-infinity-scroll.html">Blog Infinity Scroll Default</a></li>
-                                            <li><a href="blog-extra-infinity-scroll-lazyload.html">Blog Infinity Scroll Lazyload</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="#">Blog Timeline</a>
-                                        <ul class="dropdown">
-                                            <li><a href="blog-timeline.html">Blog Timeline Default</a></li>
-                                            <li><a href="blog-timeline-masonry.html">Blog Timeline Masonry</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
+
                             </li>
 
                             @guest
@@ -342,14 +302,14 @@
                     <!-- Section: Clients -->
                     <div class="owl-carousel-6col clients-logo transparent text-center owl-nav-top">
                         @foreach($partners as $partner)
-                            <div class="item"> <a href="#"><img src="{!! url('img/partners/'.$partner->image.'') !!}" alt=""></a> </div>
-                            <div class="item"> <a href="#"><img src="{!! url('img/partners/'.$partner->image.'') !!}" alt=""></a> </div>
-                            <div class="item"> <a href="#"><img src="{!! url('img/partners/'.$partner->image.'') !!}" alt=""></a> </div>
-                            <div class="item"> <a href="#"><img src="{!! url('img/partners/'.$partner->image.'') !!}" alt=""></a> </div>
-                            <div class="item"> <a href="#"><img src="{!! url('img/partners/'.$partner->image.'') !!}" alt=""></a> </div>
-                            <div class="item"> <a href="#"><img src="{!! url('img/partners/'.$partner->image.'') !!}" alt=""></a> </div>
-                            <div class="item"> <a href="#"><img src="{!! url('img/partners/'.$partner->image.'') !!}" alt=""></a> </div>
-                            <div class="item"> <a href="#"><img src="{!! url('img/partners/'.$partner->image.'') !!}" alt=""></a> </div>
+                            <div class="item"> <a href="#"><img src="{!! url('http://admin.smartelimu.ac.tz/img/partners/'.$partner->image.'') !!}" alt=""></a> </div>
+                            <div class="item"> <a href="#"><img src="{!! url('http://admin.smartelimu.ac.tz/img/partners/'.$partner->image.'') !!}" alt=""></a> </div>
+                            <div class="item"> <a href="#"><img src="{!! url('http://admin.smartelimu.ac.tz/img/partners/'.$partner->image.'') !!}" alt=""></a> </div>
+                            <div class="item"> <a href="#"><img src="{!! url('http://admin.smartelimu.ac.tz/img/partners/'.$partner->image.'') !!}" alt=""></a> </div>
+                            <div class="item"> <a href="#"><img src="{!! url('http://admin.smartelimu.ac.tz/img/partners/'.$partner->image.'') !!}" alt=""></a> </div>
+                            <div class="item"> <a href="#"><img src="{!! url('http://admin.smartelimu.ac.tz/img/partners/'.$partner->image.'') !!}" alt=""></a> </div>
+                            <div class="item"> <a href="#"><img src="{!! url('http://admin.smartelimu.ac.tz/img/partners/'.$partner->image.'') !!}" alt=""></a> </div>
+                            <div class="item"> <a href="#"><img src="{!! url('http://admin.smartelimu.ac.tz/img/partners/'.$partner->image.'') !!}" alt=""></a> </div>
 
                         @endforeach
                     </div>
