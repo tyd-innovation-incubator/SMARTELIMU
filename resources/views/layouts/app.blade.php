@@ -202,19 +202,19 @@
                                         </div>
                                         <div class="col3">
                                             <ul class="list-unstyled list-dashed">
-                                                <li><a href="shortcode-datetime-datetimepicker.html"><i class="fa fa-calendar"></i> {!! trans('label.secondary_level') !!}</a></li>
+                                                <li><a href="shortcode-datetime-datetimepicker.html"><i class="fa fa-list-ul"></i> {!! trans('label.secondary_level') !!}</a></li>
 
                                             </ul>
                                         </div>
                                         <div class="col3">
                                             <ul class="list-unstyled list-dashed">
-                                                <li><a href="shortcode-listgroup-panels.html"><i class="fa fa-th-list"></i> {!! trans('label.extra_primary') !!}</a></li>
+                                                <li><a href="shortcode-listgroup-panels.html"><i class="fa fa-list-ul"></i> {!! trans('label.extra_primary') !!}</a></li>
 
                                             </ul>
                                         </div>
                                         <div class="col3">
                                             <ul class="list-unstyled list-dashed">
-                                                <li><a href="shortcode-styled-icons.html"><i class="fa fa-facebook-square"></i> {!! trans('label.extra_secondary') !!}</a></li>
+                                                <li><a href="shortcode-styled-icons.html"><i class="fa fa-list-ul"></i> {!! trans('label.extra_secondary') !!}</a></li>
 
                                             </ul>
                                         </div>
