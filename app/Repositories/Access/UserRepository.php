@@ -216,7 +216,7 @@ class UserRepository extends BaseRepository
                 'roles' =>2,
             ]);
 
-            $user->notify(new UserConfirmationNotification());
+//            $user->notify(new UserConfirmationNotification());
             return $user;
 
         });

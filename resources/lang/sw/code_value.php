@@ -3,7 +3,7 @@
 return [
     1 => "Kiume",
     2 => "Kike",
-    3 => "Mwalimu",
+    3 => "Mzazi",
     4 => "Mwanafunzi Binafsi",
     5 => "Elimu ya msingi",
     6 => "Elimu ya secondary",

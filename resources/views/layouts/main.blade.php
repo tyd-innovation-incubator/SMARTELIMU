@@ -477,16 +477,16 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-7 col-md-push-6">
-                            <ul class="list-unstyled list-inline text-right ct-fw-300 ct-navbar--footer">
-                                <li><a href="index.html">Nyumbani</a></li>
-                                <li><a href="courses-listing.html">Masomo</a></li>
-                                <li><a href="blog.html">Habari</a></li>
-                                <li><a href="features-typography.html">Wasifu</a></li>
-                                <li><a href="contact.html">mawasiliano</a></li>
-                                <li><a href="gallery.html">Picha</a></li>
-                            </ul>
+                            {{--<ul class="list-unstyled list-inline text-right ct-fw-300 ct-navbar--footer">--}}
+                                {{--<li><a href="">Nyumbani</a></li>--}}
+                                {{--<li><a href="courses-listing.html">Masomo</a></li>--}}
+                                {{--<li><a href="blog.html">Habari</a></li>--}}
+                                {{--<li><a href="features-typography.html">Wasifu</a></li>--}}
+                                {{--<li><a href="contact.html">mawasiliano</a></li>--}}
+                                {{--<li><a href="gallery.html">Picha</a></li>--}}
+                            {{--</ul>--}}
                         </div>
-                        <div class="col-md-5 col-md-pull-6">
+                        <div class="col-md-5 col-md-pull-3">
                             <ul class="list-unstyled list-inline ct-copyright">
                                 <li>Hatimiliki 2019</li>
                                 <li><a href="http://www.tyd.or.tz/">TYD Innovation incubator</a></li>

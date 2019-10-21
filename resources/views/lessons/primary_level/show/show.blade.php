@@ -26,7 +26,7 @@
                         <div class="ct-productBox">
                             <a href="{!! route('lessons.view',$package->uuid) !!}">
                                 <div class="ct-productImage">
-                                    <img src="{!! url('admin.smartelimu.ac.tz/img/content/'.$package->image.'') !!}" alt="Product">
+                                    <img src="{!! url('http://admin.smartelimu.ac.tz/img/packages/'.$package->image.'') !!}" alt="Product">
                                 </div>
                                 <div class="ct-productDescription">
                                     <h4 class="ct-fw-600">{!! $package->category !!}</h4>
@@ -62,7 +62,7 @@
                 <div class="col-md-8">
                     <div class="ct-textBox ct-textBox--price ct-u-displayTableVertical ct-u-marginBottom30">
                         <div class="ct-u-displayTableCell text-left">
-                            <span class="ct-fw-600">Price :</span> <span class="ct-u-colorMotive">{!! number_1_format($package->price) !!} Tsh</span>
+                            <span class="ct-fw-600">{!! trans('label.price') !!} :</span> <span class="ct-u-colorMotive">{!! number_1_format($package->price) !!} Tsh</span>
                         </div>
                         <div class="ct-u-displayTableCell text-right">
                             <form action="{!! route('package.create_invoice',$package->uuid) !!}" method="get">
@@ -76,7 +76,8 @@
                                     {{--</button>--}}
                                   @else
                                     <button type="submit" class="btn btn-primary text-capitalize">
-                                        take this course
+                                        {!! trans('label.take_course') !!}
+
                                     </button>
                                   @endif
                                     {{--@endforeach--}}

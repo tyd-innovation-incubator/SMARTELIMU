@@ -15,7 +15,7 @@
                                     <div class="col-md-5 ">
                                         <h3 class="text-capitalize ct-fw-900 ct-u-marginBottom40 animated" data-fx="bounceInDown" data-time="200">{!! $homeslide->title !!}</h3>
                                         <p class="ct-u-marginBottom40 ct-fw-600 animated" data-fx="bounceInLeft" data-time="400">{!! $homeslide->content !!} </p>
-                                        <a class="text-uppercase btn btn-primary btn-lg animated" data-fx="bounceInUp" data-time="200" href="courses-listing.html">view courses</a>
+                                        <a class="text-uppercase btn btn-primary btn-lg animated" data-fx="bounceInUp" data-time="200" href="#packages">view courses</a>
                                     </div>
                                 </div>
                             </div>
@@ -236,7 +236,7 @@
 
 
     {{--subjects / courses--}}
-    <section class="ct-u-paddingBoth100 ct-u-backgroundLightGreen">
+    <section class="ct-u-paddingBoth100 ct-u-backgroundLightGreen" id="packages">
 
         <div class="container">
             <div class="ct-slick ct-js-slick" data-adaptiveHeight="true" data-animations="true" data-autoplay="true" data-infinite="true" data-autoplaySpeed="6000" data-draggable="false" data-touchMove="false" data-arrows="true" data-items="1">
@@ -253,7 +253,7 @@
                             <div class="ct-productBox">
                                 <a href="{!! route('lessons.view',$package->uuid) !!}">
                                     <div class="ct-productImage">
-                                        <img src="{!! url('http://admin.smartelimu.ac.tz/img/content/'.$package->image.'') !!}" alt="Product">
+                                        <img src="{!! url('http://admin.smartelimu.ac.tz/img/packages/'.$package->image.'') !!}" alt="Product">
                                     </div>
                                     <div class="ct-productDescription">
                                         <h5 class="ct-fw-600 ct-u-marginBottom10">{!! $package->name !!}</h5>

@@ -163,7 +163,7 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label for="password" class=" col-form-label text-md-right">{{ __('Password') }}</label>
+                                    <label for="password" class=" col-form-label text-md-right">{{ trans('label.password') }}</label>
 
                                     <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
 
@@ -176,7 +176,7 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group ">
-                                    <label for="password-confirm" class="col-form-label text-md-right">{{ __('Confirm Password') }}</label>
+                                    <label for="password-confirm" class="col-form-label text-md-right">{{ trans('label.password_confirmation') }}</label>
 
                                     <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
                                 </div>
@@ -192,7 +192,7 @@
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
                                 <button type="submit" class="btn btn-primary">
-                                    {{ __('Register') }}
+                                    {{ trans('label.register') }}
                                 </button>
                             </div>
                         </div>
@@ -202,7 +202,7 @@
         </div>
 
         <div class="col-md-6">
-            <h3 class="text-center " style="margin-top: 10px">Registration Information</h3>
+            <h3 class="text-center " style="margin-top: 10px">{!! trans('label.registration_introduction.title') !!}</h3>
             <hr>
         </div>
     </div>
