@@ -24,6 +24,7 @@ Uthibitisho mpya wa nenosiri',
     'district' => 'Wilaya',
     'gender' =>'Jinsia',
     'price' => 'Bei',
+    'course' => 'Masomo',
     'submit' =>'Wasilisha',
     'resend_email' =>'Tuma tena Uthibitisho',
     'confirmation_code' =>'Namba ya uthibitisho',
@@ -91,6 +92,12 @@ Uthibitisho mpya wa nenosiri',
     'date_of_birth' => 'Tarehe ya kuzaliwa',
     'choose_payment_aggrigator' => 'Chagua Njia ya malipo',
     'take_course' => 'Chagua Somo Hili',
+    'primary_level' => 'ELimu ya msingi',
+    'secondary_level' => 'Elimu ya secondary',
+    'extra_primary' => 'Ziada elimu ya msingi',
+    'extra_secondary' => 'Ziada elimu ya sekondari',
+    'partners' => 'Wadau wetu',
+    'testimonial'  => 'Ushuhuda'
 
 
 ];
