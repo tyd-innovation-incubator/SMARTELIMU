@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="08d93d0e-5c1d-42d8-82c3-2dc7bd1f714f" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/lang/sw/label.php" afterPath="$PROJECT_DIR$/resources/lang/sw/label.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/home.blade.php" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Repositories/Access/UserRepository.php" afterPath="$PROJECT_DIR$/app/Repositories/Access/UserRepository.php" />
     </list>
     <ignored path="SMARTELIMU.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,18 +27,8 @@
       <file leaf-file-name="label.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/lang/sw/label.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="766">
+            <state relative-caret-position="736">
               <caret line="99" column="31" selection-start-line="99" selection-start-column="31" selection-end-line="99" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="email.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/auth/passwords/email.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="55" selection-start-line="6" selection-start-column="55" selection-end-line="6" selection-end-column="55" />
               <folding />
             </state>
           </provider>
@@ -49,7 +37,7 @@
       <file leaf-file-name="app.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
+            <state relative-caret-position="219">
               <caret line="849" column="14" selection-start-line="849" selection-start-column="14" selection-end-line="849" selection-end-column="14" />
               <folding>
                 <element signature="e#9447#9453#0#HTML" expanded="true" />
@@ -83,22 +71,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RegisterController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="900">
-              <caret line="67" column="36" selection-start-line="67" selection-start-column="36" selection-end-line="67" selection-end-column="36" />
-              <folding>
-                <element signature="e#45#81#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="main.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/layouts/main.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="151">
+            <state relative-caret-position="61">
               <caret line="419" column="79" selection-start-line="419" selection-start-column="46" selection-end-line="419" selection-end-column="79" />
               <folding>
                 <element signature="n#li#5;n#ul#0;n#div#1;n#div#0;n#nav#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -111,10 +87,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.blade.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="home.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
+            <state relative-caret-position="135">
               <caret line="252" column="57" selection-start-line="252" selection-start-column="57" selection-end-line="252" selection-end-column="57" />
               <folding>
                 <marker date="1571666731227" expanded="false" signature="33180:33197" ph="..." />
@@ -123,21 +99,41 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="welcome.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/welcome.blade.php">
+      <file leaf-file-name=".env" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.env">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="300">
-              <caret line="17" column="180" selection-start-line="17" selection-start-column="169" selection-end-line="17" selection-end-column="180" />
+              <caret line="26" column="26" selection-start-line="25" selection-start-column="0" selection-end-line="35" selection-end-column="28" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="show.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/lessons/primary_level/show/show.blade.php">
+      <file leaf-file-name="UserRepository.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Repositories/Access/UserRepository.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="960">
-              <caret line="64" column="74" selection-start-line="64" selection-start-column="74" selection-end-line="64" selection-end-column="74" />
+            <state relative-caret-position="138">
+              <caret line="333" column="5" selection-start-line="333" selection-start-column="5" selection-end-line="333" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".env.example" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.env.example">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="23" column="15" selection-start-line="23" selection-start-column="15" selection-end-line="23" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="welcome.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/welcome.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" column="180" selection-start-line="17" selection-start-column="169" selection-end-line="17" selection-end-column="180" />
               <folding />
             </state>
           </provider>
@@ -151,7 +147,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/Models/Package/Invoice.php" />
         <option value="$PROJECT_DIR$/app/Models/Package/Relationship/InvoiceRelationship.php" />
         <option value="$PROJECT_DIR$/database/seeds/CodesTableSeeder.php" />
         <option value="$PROJECT_DIR$/app/Models/Payment/Payment.php" />
@@ -192,7 +187,6 @@
         <option value="$PROJECT_DIR$/resources/views/auth/login.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/auth/passwords/reset.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/auth/passwords/email.blade.php" />
-        <option value="$PROJECT_DIR$/app/Repositories/Access/UserRepository.php" />
         <option value="$PROJECT_DIR$/app/Http/Requests/Auth/RegisterRequest.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" />
         <option value="$PROJECT_DIR$/resources/views/welcome.blade.php" />
@@ -202,6 +196,8 @@
         <option value="$PROJECT_DIR$/resources/lang/sw/label.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/app.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/home.blade.php" />
+        <option value="$PROJECT_DIR$/.env.example" />
+        <option value="$PROJECT_DIR$/app/Repositories/Access/UserRepository.php" />
       </list>
     </option>
   </component>
@@ -495,7 +491,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
-    <property name="SearchEverywhereHistoryKey" value="menu&#9;FILE&#9;file:///home/dontito/SMARTELIMU/public/themes/css/menuzord-skins/menuzord-rounded-boxed.css&#10;theme&#9;FILE&#9;file:///home/dontito/SMARTELIMU/public/themes/css/colors/theme-skin-color-set-1.css&#10;user&#9;FILE&#9;file:///home/dontito/SMARTELIMU/app/Repositories/Access/UserRepository.php&#10;label&#9;FILE&#9;file:///home/dontito/SMARTELIMU/resources/lang/sw/label.php&#10;paymentco&#9;FILE&#9;file:///home/dontito/SMARTELIMU/app/Http/Controllers/Payment/PaymentController.php&#10;style.css&#9;FILE&#9;file:///home/dontito/SMARTELIMU/public/assets/css/style.css&#10;labe&#9;FILE&#9;file:///home/dontito/SMARTELIMU/resources/lang/sw/label.php&#10;regis&#9;FILE&#9;file:///home/dontito/SMARTELIMU/app/Http/Controllers/Auth/RegisterController.php&#10;userre&#9;FILE&#9;file:///home/dontito/SMARTELIMU/app/Repositories/Access/UserRepository.php&#10;abel&#9;FILE&#9;file:///home/dontito/SMARTELIMU/resources/lang/sw/label.php&#10;userrepo&#9;FILE&#9;file:///home/dontito/SMARTELIMU/app/Repositories/Access/UserRepository.php&#10;codevalu&#9;FILE&#9;file:///home/dontito/SMARTELIMU/app/Repositories/Sysdef/CodeValueRepository.php&#10;profi&#9;FILE&#9;file:///home/dontito/SMARTELIMU/app/Http/Controllers/Profile/ProfileController.php&#10;larave&#9;FILE&#9;file:///home/dontito/SMARTELIMU/storage/logs/laravel-2019-07-30.log" />
+    <property name="SearchEverywhereHistoryKey" value="userreposi&#9;FILE&#9;file:///home/dontito/SMARTELIMU/app/Repositories/Access/UserRepository.php&#10;menu&#9;FILE&#9;file:///home/dontito/SMARTELIMU/public/themes/css/menuzord-skins/menuzord-rounded-boxed.css&#10;theme&#9;FILE&#9;file:///home/dontito/SMARTELIMU/public/themes/css/colors/theme-skin-color-set-1.css&#10;user&#9;FILE&#9;file:///home/dontito/SMARTELIMU/app/Repositories/Access/UserRepository.php&#10;label&#9;FILE&#9;file:///home/dontito/SMARTELIMU/resources/lang/sw/label.php&#10;paymentco&#9;FILE&#9;file:///home/dontito/SMARTELIMU/app/Http/Controllers/Payment/PaymentController.php&#10;style.css&#9;FILE&#9;file:///home/dontito/SMARTELIMU/public/assets/css/style.css&#10;labe&#9;FILE&#9;file:///home/dontito/SMARTELIMU/resources/lang/sw/label.php&#10;regis&#9;FILE&#9;file:///home/dontito/SMARTELIMU/app/Http/Controllers/Auth/RegisterController.php&#10;userre&#9;FILE&#9;file:///home/dontito/SMARTELIMU/app/Repositories/Access/UserRepository.php&#10;abel&#9;FILE&#9;file:///home/dontito/SMARTELIMU/resources/lang/sw/label.php&#10;userrepo&#9;FILE&#9;file:///home/dontito/SMARTELIMU/app/Repositories/Access/UserRepository.php&#10;codevalu&#9;FILE&#9;file:///home/dontito/SMARTELIMU/app/Repositories/Sysdef/CodeValueRepository.php&#10;profi&#9;FILE&#9;file:///home/dontito/SMARTELIMU/app/Http/Controllers/Profile/ProfileController.php&#10;larave&#9;FILE&#9;file:///home/dontito/SMARTELIMU/storage/logs/laravel-2019-07-30.log" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -633,12 +629,12 @@
       <workItem from="1571480795054" duration="4553000" />
       <workItem from="1571506543618" duration="5319000" />
       <workItem from="1571639502708" duration="2816000" />
-      <workItem from="1571648119659" duration="12578000" />
+      <workItem from="1571648119659" duration="14113000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="294412000" />
+    <option name="totallyTimeSpent" value="295947000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -660,7 +656,7 @@
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919255" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36335403" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36285096" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2098179" sideWeight="0.5092593" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32937366" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
@@ -701,20 +697,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/Models/Package/Package.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="12" column="33" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/Package/Relationship/SubjectRelationship.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Models/Package/Chapter.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -925,6 +907,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="385">
           <caret line="44" column="39" selection-start-line="44" selection-start-column="39" selection-end-line="44" selection-end-column="39" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -932,6 +915,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -939,6 +923,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="15" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -960,14 +945,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="660">
           <caret line="44" column="109" selection-start-line="44" selection-start-column="107" selection-end-line="44" selection-end-column="109" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Repositories/Access/UserRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1500">
-          <caret line="107" column="20" selection-start-line="107" selection-start-column="20" selection-end-line="107" selection-end-column="20" />
           <folding />
         </state>
       </provider>
@@ -1017,7 +994,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/welcome.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
+        <state relative-caret-position="255">
           <caret line="17" column="180" selection-start-line="17" selection-start-column="169" selection-end-line="17" selection-end-column="180" />
           <folding />
         </state>
@@ -1041,7 +1018,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/lang/sw/label.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="766">
+        <state relative-caret-position="736">
           <caret line="99" column="31" selection-start-line="99" selection-start-column="31" selection-end-line="99" selection-end-column="31" />
           <folding />
         </state>
@@ -1049,7 +1026,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/layouts/main.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
+        <state relative-caret-position="61">
           <caret line="419" column="79" selection-start-line="419" selection-start-column="46" selection-end-line="419" selection-end-column="79" />
           <folding>
             <element signature="n#li#5;n#ul#0;n#div#1;n#div#0;n#nav#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -1063,7 +1040,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
+        <state relative-caret-position="219">
           <caret line="849" column="14" selection-start-line="849" selection-start-column="14" selection-end-line="849" selection-end-column="14" />
           <folding>
             <element signature="e#9447#9453#0#HTML" expanded="true" />
@@ -1078,11 +1055,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
+        <state relative-caret-position="135">
           <caret line="252" column="57" selection-start-line="252" selection-start-column="57" selection-end-line="252" selection-end-column="57" />
           <folding>
             <marker date="1571666731227" expanded="false" signature="33180:33197" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env.example">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="15" selection-start-line="23" selection-start-column="15" selection-end-line="23" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="26" column="26" selection-start-line="25" selection-start-column="0" selection-end-line="35" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Repositories/Access/UserRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="333" column="5" selection-start-line="333" selection-start-column="5" selection-end-line="333" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>

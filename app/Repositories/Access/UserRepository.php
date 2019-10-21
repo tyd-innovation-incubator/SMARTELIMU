@@ -333,12 +333,12 @@ class UserRepository extends BaseRepository
     public function confirmAccount($token)
     {
         $user = $this->findByConfirmationToken($token);
-        if ($user->confirmed == 'true') {
+        if ($user->confirmed == 1) {
             throw new GeneralException(__('exceptions.auth.confirmation.already_confirmed'));
         }
 
         if ($user->confirmation_code == $token) {
-            $user->confirmed = 't';
+            $user->confirmed = 1;
             $user->save();
             return access()->login($user);
         }
