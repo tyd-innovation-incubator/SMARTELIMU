@@ -150,7 +150,7 @@
                                         </div>
                                     </div>
                                     <p class="mt-10">{!! truncateString($new->content,50) !!}</p>
-                                    <a href="{!! route('news.show',$news->slug) !!}" class="btn-read-more">{!! trans('label.read_more') !!}</a>
+                                    <a href="{!! route('news.show',$new->slug) !!}" class="btn-read-more">{!! trans('label.read_more') !!}</a>
                                     <div class="clearfix"></div>
                                 </div>
                             </article>
