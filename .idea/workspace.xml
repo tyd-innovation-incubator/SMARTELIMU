@@ -3,29 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="08d93d0e-5c1d-42d8-82c3-2dc7bd1f714f" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Information/NewsController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Information/NewsController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Lessons/ExtraPrimaryLevelController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Lessons/ExtraPrimaryLevelController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Lessons/ExtraSecondaryLevelController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Lessons/ExtraSecondaryLevelController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Lessons/PrimaryLevelController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Lessons/PrimaryLevelController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Lessons/SecondaryLevelController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Lessons/SecondaryLevelController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Models/Package/Package.php" afterPath="$PROJECT_DIR$/app/Models/Package/Package.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Repositories/Information/NewsRepository.php" afterPath="$PROJECT_DIR$/app/Repositories/Information/NewsRepository.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Repositories/Package/PackageRepository.php" afterPath="$PROJECT_DIR$/app/Repositories/Package/PackageRepository.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/lang/sw/label.php" afterPath="$PROJECT_DIR$/resources/lang/sw/label.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/home.blade.php" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/information/news/search/search.blade.php" afterPath="$PROJECT_DIR$/resources/views/information/news/search/search.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/information/news/show/show.blade.php" afterPath="$PROJECT_DIR$/resources/views/information/news/show/show.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/layouts/main.blade.php" afterPath="$PROJECT_DIR$/resources/views/layouts/main.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/lessons/package/invoice.blade.php" afterPath="$PROJECT_DIR$/resources/views/lessons/package/invoice.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/lessons/package/payment.blade.php" afterPath="$PROJECT_DIR$/resources/views/lessons/package/payment.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/lessons/primary_level/show/show.blade.php" afterPath="$PROJECT_DIR$/resources/views/lessons/primary_level/show/show.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/profile/personal_info.blade.php" afterPath="$PROJECT_DIR$/resources/views/profile/personal_info.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/Web/informations/news.php" afterPath="$PROJECT_DIR$/routes/Web/informations/news.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/Web/lessons/primary_level.php" afterPath="$PROJECT_DIR$/routes/Web/lessons/primary_level.php" />
     </list>
     <ignored path="SMARTELIMU.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -109,8 +88,8 @@
       <file leaf-file-name="search.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/information/news/search/search.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="48" column="90" selection-start-line="48" selection-start-column="90" selection-end-line="48" selection-end-column="90" />
+            <state relative-caret-position="-207">
+              <caret line="48" column="89" selection-start-line="48" selection-start-column="89" selection-end-line="48" selection-end-column="89" />
               <folding />
             </state>
           </provider>
@@ -129,10 +108,10 @@
       <file leaf-file-name="home.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
-              <caret line="132" column="89" selection-start-line="132" selection-start-column="50" selection-end-line="132" selection-end-column="89" />
+            <state relative-caret-position="331">
+              <caret line="132" column="89" selection-start-line="132" selection-start-column="89" selection-end-line="132" selection-end-column="89" />
               <folding>
-                <marker date="1571917129309" expanded="false" signature="22261:22278" ph="..." />
+                <marker date="1571921364409" expanded="false" signature="22291:22308" ph="..." />
               </folding>
             </state>
           </provider>
@@ -190,12 +169,12 @@
         <option value="$PROJECT_DIR$/resources/views/layouts/main.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/app.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" />
-        <option value="$PROJECT_DIR$/resources/views/home.blade.php" />
         <option value="$PROJECT_DIR$/resources/lang/sw/label.php" />
         <option value="$PROJECT_DIR$/app/Repositories/Information/NewsRepository.php" />
         <option value="$PROJECT_DIR$/routes/Web/informations/news.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Information/NewsController.php" />
         <option value="$PROJECT_DIR$/resources/views/information/news/show/show.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/home.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/information/news/search/search.blade.php" />
       </list>
     </option>
@@ -808,12 +787,12 @@
       <workItem from="1571758194713" duration="3110000" />
       <workItem from="1571808159319" duration="13075000" />
       <workItem from="1571895092445" duration="3973000" />
-      <workItem from="1571900925415" duration="15905000" />
+      <workItem from="1571900925415" duration="16252000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="335788000" />
+    <option name="totallyTimeSpent" value="336135000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1195,16 +1174,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="132" column="89" selection-start-line="132" selection-start-column="50" selection-end-line="132" selection-end-column="89" />
-          <folding>
-            <marker date="1571917129309" expanded="false" signature="22261:22278" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Lessons/PrimaryLevelController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="303">
@@ -1269,10 +1238,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="132" column="89" selection-start-line="132" selection-start-column="89" selection-end-line="132" selection-end-column="89" />
+          <folding>
+            <marker date="1571921364409" expanded="false" signature="22291:22308" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/information/news/search/search.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="48" column="90" selection-start-line="48" selection-start-column="90" selection-end-line="48" selection-end-column="90" />
+        <state relative-caret-position="-207">
+          <caret line="48" column="89" selection-start-line="48" selection-start-column="89" selection-end-line="48" selection-end-column="89" />
           <folding />
         </state>
       </provider>
