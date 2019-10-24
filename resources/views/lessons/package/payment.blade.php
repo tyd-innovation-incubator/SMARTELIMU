@@ -1,4 +1,4 @@
-@extends('layouts.main', ['title' => __('label.service.payment.payment'), 'header' => __('label.service.payment.payment')])
+@extends('layouts.app', ['title' => __('label.service.payment.payment'), 'header' => __('label.service.payment.payment')])
 
 @push('after-styles')
 {{ Html::style(url('vendor/select2/css/select2.min.css')) }}

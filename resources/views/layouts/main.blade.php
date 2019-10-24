@@ -208,14 +208,14 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="dropdown yamm-fw"><a href="{!! route('news.search') !!}">Habari</a>
+                    <li class="dropdown yamm-fw"><a href="{!! route('news.search') !!}">{!! trans('label.news') !!}</a>
                     </li>
 
                     <li class="dropdown yamm-fw">
-                        <a href="{!! route('information.about_us') !!}">Wasifu Wetu</a>
+                        <a href="{!! route('information.about_us') !!}">{!! trans('label.about') !!}</a>
 
                     </li>
-                    <li class="dropdown"><a href="{!! route('information.contact_us') !!}">Wasiliana Nasi</a></li>
+                    <li class="dropdown"><a href="{!! route('information.contact_us') !!}">{!! trans('label.contact_us') !!}</a></li>
 
                             <!-- Authentication Links -->
                             @guest

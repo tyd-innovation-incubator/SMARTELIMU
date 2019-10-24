@@ -7,6 +7,8 @@ return [
     'detail' => 'Maelezo',
     'details' => 'Maelezo',
     'refresh'=>'Fanyiza Upya',
+    'search'  => 'Tafuta',
+    'type'  => 'Aina',
     'first_name' =>'Jina la Kwanza',
     'last_name' =>'Jina la Mwisho',
     'username' =>'Jina la Akaunti',
@@ -97,7 +99,14 @@ Uthibitisho mpya wa nenosiri',
     'extra_primary' => 'Ziada elimu ya msingi',
     'extra_secondary' => 'Ziada elimu ya sekondari',
     'partners' => 'Wadau wetu',
-    'testimonial'  => 'Ushuhuda'
+    'testimonial'  => 'Ushuhuda',
+    'add_cart'  => 'Ongeza kwenye Kati',
+    'package_name' => 'Jina la Kifurushi',
+    'package_category' => 'Aina ya kifurushi',
+    'total' => 'Jumla',
+    'payment_information' => 'Taarifa za Malipo',
+    'read_more' => 'Soma Zaidi',
+    'contact_us' => 'Wasiliana nasi',
 
 
 ];

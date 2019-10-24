@@ -72,6 +72,14 @@ class NewsRepository extends BaseRepository
         return $query;
     }
 
+    public function getOneBySlug($slug){
+        $query = $this->query()
+            ->where('slug',$slug)->get()->first();
+        return $query;
+    }
+
+
+
 
 
     public function queryGetGeneralNews()
@@ -90,31 +98,8 @@ class NewsRepository extends BaseRepository
     }
 
 
-    /**
-     * Get all news by service
-     * @param $logistic_service_cv_id
-     * @return mixed
-     */
-    public function getAllByService($logistic_service_cv_id){
-        $query = $this->query()
-            ->where('logistic_service_cv_id', $logistic_service_cv_id)
-            ->orderBy('id', 'desc')
-            ->paginate(sysdef()->name('pagination_low'));
-        return $query;
-    }
 
-    /*
-     * Get $limit news by category, for similar news display
-     */
-    public function getAllByServiceLimit($id, $logistic_service_cv_id, $limit = 4){
-        $query = $this->query()
-            ->where('logistic_service_cv_id', $logistic_service_cv_id)
-            ->where('id','<>', $id)
-            ->orderBy('id', 'desc')
-            ->limit($limit)
-            ->get()->chunk(4);
-        return $query;
-    }
+
 
     /**
      * Display latest $limit news on homepage

@@ -12,6 +12,9 @@ Route::group([
 
         Route::get('/view/{reference}', 'PrimaryLevelController@view')->name('view');
 
+        Route::post('/search', 'PrimaryLevelController@search')->name('search');
+
+
     });
 });
 

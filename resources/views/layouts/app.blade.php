@@ -17,37 +17,37 @@
     <!-- Favicon and Touch Icons -->
     <link rel="shortcut icon" href="{!! url('assets/images/content/logo1.png') !!}">
     <link rel="apple-touch-icon" href="{!! url('assets/images/content/logo1.png') !!}">
-    <link href="themes/images/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72">
-    <link href="themes/images/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114">
-    <link href="themes/images/apple-touch-icon-144x144.png" rel="apple-touch-icon" sizes="144x144">
+    <link href="{!! url('themes/images/apple-touch-icon-72x72.png') !!}" rel="apple-touch-icon" sizes="72x72">
+    <link href="{!! url('themes/images/apple-touch-icon-114x114.png') !!}" rel="apple-touch-icon" sizes="114x114">
+    <link href="{!! url('themes/images/apple-touch-icon-144x144.png') !!}" rel="apple-touch-icon" sizes="144x144">
 
     <!-- Stylesheet -->
-    <link href="themes/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link href="themes/css/jquery-ui.min.css" rel="stylesheet" type="text/css">
-    <link href="themes/css/animate.css" rel="stylesheet" type="text/css">
-    <link href="themes/css/css-plugin-collections.css" rel="stylesheet"/>
+    <link href="{!! url('themes/css/bootstrap.min.css') !!}" rel="stylesheet" type="text/css">
+    <link href="{!! url('themes/css/jquery-ui.min.css') !!}" rel="stylesheet" type="text/css">
+    <link href="{!! url('themes/css/animate.css') !!}" rel="stylesheet" type="text/css">
+    <link href="{!! url('themes/css/css-plugin-collections.css') !!}" rel="stylesheet"/>
     <!-- CSS | menuzord megamenu skins -->
-    <link id="menuzord-menu-skins" href="themes/css/menuzord-skins/menuzord-rounded-boxed.css" rel="stylesheet"/>
+    <link id="menuzord-menu-skins" href="{!! url('themes/css/menuzord-skins/menuzord-rounded-boxed.css') !!}" rel="stylesheet"/>
     <!-- CSS | Main style file -->
-    <link href="themes/css/style-main.css" rel="stylesheet" type="text/css">
+    <link href="{!! url('themes/css/style-main.css') !!}" rel="stylesheet" type="text/css">
     <!-- CSS | Preloader Styles -->
-    <link href="themes/css/preloader.css" rel="stylesheet" type="text/css">
+    <link href="{!! url('themes/css/preloader.css') !!}" rel="stylesheet" type="text/css">
     <!-- CSS | Custom Margin Padding Collection -->
-    <link href="themes/css/custom-bootstrap-margin-padding.css" rel="stylesheet" type="text/css">
+    <link href="{!! url('themes/css/custom-bootstrap-margin-padding.css') !!}" rel="stylesheet" type="text/css">
     <!-- CSS | Responsive media queries -->
-    <link href="themes/css/responsive.css" rel="stylesheet" type="text/css">
+    <link href="{!! url('themes/css/responsive.css') !!}" rel="stylesheet" type="text/css">
     <!-- CSS | Style css. This is the file where you can place your own custom css code. Just uncomment it and use it. -->
     <!-- <link href="css/style.css" rel="stylesheet" type="text/css"> -->
 
     <!-- CSS | Theme Color -->
-    <link href="themes/css/colors/theme-skin-color-set-1.css" rel="stylesheet" type="text/css">
+    <link href="{!! url('themes/css/colors/theme-skin-color-set-1.css') !!}" rel="stylesheet" type="text/css">
 
     <!-- external javascripts -->
-    <script src="themes/js/jquery-2.2.4.min.js"></script>
-    <script src="themes/js/jquery-ui.min.js"></script>
-    <script src="themes/js/bootstrap.min.js"></script>
+    <script src="{!! url('themes/js/jquery-2.2.4.min.js') !!}"></script>
+    <script src="{!! url('themes/js/jquery-ui.min.js') !!}"></script>
+    <script src="{!! url('themes/js/bootstrap.min.js') !!}"></script>
     <!-- JS | jquery plugin collection for this theme -->
-    <script src="themes/js/jquery-plugin-collection.js"></script>
+    <script src="{!! url('themes/js/jquery-plugin-collection.js') !!}"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -185,12 +185,12 @@
                         </a>
                         <ul class="menuzord-menu dark">
                             <li><a href="{!! url('/home') !!}">{!! trans('label.home') !!}</a></li>
-                            <li><a href="javascript:void(0)">{!! trans('label.course') !!}</a>
+                            <li><a href="ja/home/dontito/html.kodesolution.live/s/studypress/v6.0/demo/js/chart.jsvascript:void(0)">{!! trans('label.course') !!}</a>
                                 <div class="megamenu">
                                     <div class="megamenu-row">
                                         <div class="col3">
                                             <ul class="list-unstyled list-dashed">
-                                                <li><a href="shortcode-accordion.html"><i class="fa fa-list-ul"></i> {!! trans('label.primary_level') !!}</a></li>
+                                                <li><a href="{!! route('lessons.primary') !!}"><i class="fa fa-list-ul"></i> {!! trans('label.primary_level') !!}</a></li>
                                                 @foreach(code_value()->getPrimaryLevelPackages() as $package)
                                                     <li><a href="{!! route('lessons.view',$package->uuid) !!}">{!! $package->name !!}</a></li>
 
@@ -202,26 +202,26 @@
                                         </div>
                                         <div class="col3">
                                             <ul class="list-unstyled list-dashed">
-                                                <li><a href="shortcode-datetime-datetimepicker.html"><i class="fa fa-list-ul"></i> {!! trans('label.secondary_level') !!}</a></li>
+                                                <li><a href="{!! route('lessons.secondary') !!}"><i class="fa fa-list-ul"></i> {!! trans('label.secondary_level') !!}</a></li>
 
                                             </ul>
                                         </div>
                                         <div class="col3">
                                             <ul class="list-unstyled list-dashed">
-                                                <li><a href="shortcode-listgroup-panels.html"><i class="fa fa-list-ul"></i> {!! trans('label.extra_primary') !!}</a></li>
+                                                <li><a href="{!! route('lessons.extra_primary') !!}"><i class="fa fa-list-ul"></i> {!! trans('label.extra_primary') !!}</a></li>
 
                                             </ul>
                                         </div>
                                         <div class="col3">
                                             <ul class="list-unstyled list-dashed">
-                                                <li><a href="shortcode-styled-icons.html"><i class="fa fa-list-ul"></i> {!! trans('label.extra_secondary') !!}</a></li>
+                                                <li><a href="{!! route('lessons.extra_secondary') !!}"><i class="fa fa-list-ul"></i> {!! trans('label.extra_secondary') !!}</a></li>
 
                                             </ul>
                                         </div>
                                     </div>
                                 </div>
                             </li>
-                            <li><a href="{!! url('/home') !!}">{!! trans('label.news') !!}</a></li>
+                            <li><a href="{!! route('news.search') !!}">{!! trans('label.news') !!}</a></li>
 
 
                             <li><a href="#">Pages</a>
@@ -394,7 +394,7 @@
 
 <!-- Footer Scripts -->
 <!-- JS | Custom script for all pages -->
-<script src="themes/js/custom.js"></script>
+<script src="{!! url('themes/js/custom.js') !!}"></script>
 
 </body>
 

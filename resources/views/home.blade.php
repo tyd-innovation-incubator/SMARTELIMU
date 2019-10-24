@@ -19,66 +19,23 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="owl-carousel-4col" data-dots="true">
-                                <div class="item ">
-                                    <div class="service-block bg-white">
-                                        <div class="thumb"> <img alt="featured project" src="themes/images/project/4.jpg" class="img-fullwidth">
-                                            <h4 class="text-white mt-0 mb-0"><span class="price">$125</span></h4>
-                                        </div>
-                                        <div class="content text-left flip p-25 pt-0">
-                                            <h4 class="line-bottom mb-10">Accounting Technologies</h4>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam ipsum quis ipsum facilisis sit amet.</p>
-                                            <a class="btn btn-dark btn-theme-colored btn-sm text-uppercase mt-10" href="page-courses-accounting-technologies.html">view details</a>
-                                        </div>
-                                    </div>
-                                </div>
+
+
+                                @foreach($packages as $package)
                                 <div class="item">
                                     <div class="service-block mb-md-30 bg-white">
-                                        <div class="thumb"> <img alt="featured project" src="themes/images/project/5.jpg" class="img-responsive img-fullwidth">
-                                            <h4 class="text-white mt-0 mb-0"><span class="price">$125</span></h4>
+                                        <div class="thumb"> <img alt="featured project" src="{!! url('http://admin.smartelimu.ac.tz/img/packages/'.$package->image.'') !!}" class="img-responsive img-fullwidth">
+                                            <h4 class="text-white mt-0 mb-0"><span class="price">{!! $package->price !!}TSH</span></h4>
                                         </div>
                                         <div class="content text-left flip p-25 pt-0">
-                                            <h4 class="line-bottom mb-10">Computer Technologies</h4>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam ipsum quis ipsum facilisis sit amet.</p>
-                                            <a class="btn btn-dark btn-theme-colored btn-sm text-uppercase mt-10" href="page-courses-accounting-technologies.html">view details</a>
+                                            <h4 class="line-bottom mb-10">{!! $package->name !!}</h4>
+                                            <p>{!! truncateString($package->description,30) !!}</p>
+                                            <a class="btn btn-dark btn-theme-colored btn-sm text-uppercase mt-10" href="{!! route('lessons.view',$package->uuid) !!}">{!! trans('label.view') !!}</a>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="item">
-                                    <div class="service-block mb-md-30 bg-white">
-                                        <div class="thumb"> <img alt="featured project" src="themes/images/project/6.jpg" class="img-responsive img-fullwidth">
-                                            <h4 class="text-white mt-0 mb-0"><span class="price">$125</span></h4>
-                                        </div>
-                                        <div class="content text-left flip p-25 pt-0">
-                                            <h4 class="line-bottom mb-10">Development Studies</h4>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam ipsum quis ipsum facilisis sit amet.</p>
-                                            <a class="btn btn-dark btn-theme-colored btn-sm text-uppercase mt-10" href="page-courses-accounting-technologies.html">view details</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="service-block mb-md-30 bg-white">
-                                        <div class="thumb"> <img alt="featured project" src="themes/images/project/7.jpg" class="img-responsive img-fullwidth">
-                                            <h4 class="text-white mt-0 mb-0"><span class="price">$125</span></h4>
-                                        </div>
-                                        <div class="content text-left flip p-25 pt-0">
-                                            <h4 class="line-bottom mb-10">Electrical & Electronic</h4>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam ipsum quis ipsum facilisis sit amet.</p>
-                                            <a class="btn btn-dark btn-theme-colored btn-sm text-uppercase mt-10" href="page-courses-accounting-technologies.html">view details</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="service-block mb-md-30 bg-white">
-                                        <div class="thumb"> <img alt="featured project" src="themes/images/project/8.jpg" class="img-responsive img-fullwidth">
-                                            <h4 class="text-white mt-0 mb-0"><span class="price">$125</span></h4>
-                                        </div>
-                                        <div class="content text-left flip p-25 pt-0">
-                                            <h4 class="line-bottom mb-10">Chemical Engineering</h4>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam ipsum quis ipsum facilisis sit amet.</p>
-                                            <a class="btn btn-dark btn-theme-colored btn-sm text-uppercase mt-10" href="page-courses-accounting-technologies.html">view details</a>
-                                        </div>
-                                    </div>
-                                </div>
+
+                                    @endforeach
                             </div>
                         </div>
                     </div>
@@ -164,95 +121,42 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="section-content">
                     <div class="row">
+                        @foreach($news as $new)
+
                         <div class="col-xs-12 col-sm-6 col-md-4 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
                             <article class="post clearfix mb-sm-30">
                                 <div class="entry-header">
                                     <div class="post-thumb thumb">
-                                        <img src="themes/images/blog/7.jpg" alt="" class="img-responsive img-fullwidth">
+                                        <img src="{!! url('img/news/'.$new->image.'') !!}" alt="" class="img-responsive img-fullwidth">
                                     </div>
                                 </div>
                                 <div class="entry-content p-20 pr-10 bg-white">
                                     <div class="entry-meta media mt-0 no-bg no-border">
                                         <div class="entry-date media-left text-center flip bg-theme-colored pt-5 pr-15 pb-5 pl-15">
                                             <ul>
-                                                <li class="font-16 text-white font-weight-600 border-bottom">28</li>
-                                                <li class="font-12 text-white text-uppercase">Feb</li>
+                                                <li class="font-16 text-white font-weight-600 border-bottom">{!! $new->created_at->format('d') !!}</li>
+                                                <li class="font-12 text-white text-uppercase">{!! $new->created_at->format('M') !!}</li>
                                             </ul>
                                         </div>
                                         <div class="media-body pl-15">
                                             <div class="event-content pull-left flip">
-                                                <h4 class="entry-title text-white text-uppercase m-0 mt-5"><a href="#">Post title here</a></h4>
+                                                <h4 class="entry-title text-white text-uppercase m-0 mt-5"><a href="#"><b>{!! $new->title !!}</b></a></h4>
                                                 <span class="mb-10 text-gray-darkgray mr-10 font-13"><i class="fa fa-commenting-o mr-5 text-theme-colored"></i> 214 Comments</span>
                                                 <span class="mb-10 text-gray-darkgray mr-10 font-13"><i class="fa fa-heart-o mr-5 text-theme-colored"></i> 895 Likes</span>
                                             </div>
                                         </div>
                                     </div>
-                                    <p class="mt-10">Lorem ipsum dolor sit amet, consectetur adipisi cing elit. Molestias eius illum libero dolor nobis deleniti, sint assumenda Pariatur iste.</p>
-                                    <a href="#" class="btn-read-more">Read more</a>
+                                    <p class="mt-10">{!! truncateString($new->content,50) !!}</p>
+                                    <a href="#" class="btn-read-more">{!! trans('label.read_more') !!}</a>
                                     <div class="clearfix"></div>
                                 </div>
                             </article>
                         </div>
-                        <div class="col-xs-12 col-sm-6 col-md-4 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.4s">
-                            <article class="post clearfix mb-sm-30">
-                                <div class="entry-header">
-                                    <div class="post-thumb thumb">
-                                        <img src="themes/images/blog/2.jpg" alt="" class="img-responsive img-fullwidth">
-                                    </div>
-                                </div>
-                                <div class="entry-content p-20 pr-10 bg-white">
-                                    <div class="entry-meta media mt-0 no-bg no-border">
-                                        <div class="entry-date media-left text-center flip bg-theme-colored pt-5 pr-15 pb-5 pl-15">
-                                            <ul>
-                                                <li class="font-16 text-white font-weight-600 border-bottom">28</li>
-                                                <li class="font-12 text-white text-uppercase">Feb</li>
-                                            </ul>
-                                        </div>
-                                        <div class="media-body pl-15">
-                                            <div class="event-content pull-left flip">
-                                                <h4 class="entry-title text-white text-uppercase m-0 mt-5"><a href="#">Post title here</a></h4>
-                                                <span class="mb-10 text-gray-darkgray mr-10 font-13"><i class="fa fa-commenting-o mr-5 text-theme-colored"></i> 214 Comments</span>
-                                                <span class="mb-10 text-gray-darkgray mr-10 font-13"><i class="fa fa-heart-o mr-5 text-theme-colored"></i> 895 Likes</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <p class="mt-10">Lorem ipsum dolor sit amet, consectetur adipisi cing elit. Molestias eius illum libero dolor nobis deleniti, sint assumenda Pariatur iste.</p>
-                                    <a href="#" class="btn-read-more">Read more</a>
-                                    <div class="clearfix"></div>
-                                </div>
-                            </article>
-                        </div>
-                        <div class="col-xs-12 col-sm-6 col-md-4 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.4s">
-                            <article class="post clearfix">
-                                <div class="entry-header">
-                                    <div class="post-thumb thumb">
-                                        <img src="themes/images/blog/5.jpg" alt="" class="img-responsive img-fullwidth">
-                                    </div>
-                                </div>
-                                <div class="entry-content p-20 pr-10 bg-white">
-                                    <div class="entry-meta media mt-0 no-bg no-border">
-                                        <div class="entry-date media-left text-center flip bg-theme-colored pt-5 pr-15 pb-5 pl-15">
-                                            <ul>
-                                                <li class="font-16 text-white font-weight-600 border-bottom">28</li>
-                                                <li class="font-12 text-white text-uppercase">Feb</li>
-                                            </ul>
-                                        </div>
-                                        <div class="media-body pl-15">
-                                            <div class="event-content pull-left flip">
-                                                <h4 class="entry-title text-white text-uppercase m-0 mt-5"><a href="#">Post title here</a></h4>
-                                                <span class="mb-10 text-gray-darkgray mr-10 font-13"><i class="fa fa-commenting-o mr-5 text-theme-colored"></i> 214 Comments</span>
-                                                <span class="mb-10 text-gray-darkgray mr-10 font-13"><i class="fa fa-heart-o mr-5 text-theme-colored"></i> 895 Likes</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <p class="mt-10">Lorem ipsum dolor sit amet, consectetur adipisi cing elit. Molestias eius illum libero dolor nobis deleniti, sint assumenda Pariatur iste.</p>
-                                    <a href="#" class="btn-read-more">Read more</a>
-                                    <div class="clearfix"></div>
-                                </div>
-                            </article>
-                        </div>
+                            @endforeach
+
                     </div>
                 </div>
             </div>

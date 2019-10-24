@@ -6,6 +6,7 @@ use App\Models\Information\Homeslide;
 use App\Models\Information\Partner;
 use App\Models\Information\Testimony;
 use App\Models\Package\Package;
+use App\Repositories\Information\NewsRepository;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -16,9 +17,11 @@ class HomeController extends Controller
      *
      * @return void
      */
+    protected $news;
     public function __construct()
     {
         $this->middleware('auth');
+        $this->news = new NewsRepository();
     }
 
     /**
@@ -31,12 +34,14 @@ class HomeController extends Controller
         $partners = DB::table('partners')->paginate(4);
         $testimonies = DB::table('testimonies')->paginate(4);
         $homeslides = Homeslide::all();
-        $packages = DB::table('package')->paginate(4);
+        $packages = DB::table('package')->get();
+        $news = $this->news->getAll();
 
         return view('home')
             ->with('partners',$partners)
             ->with('homeslides',$homeslides)
             ->with('testimonies',$testimonies)
+            ->with('news',$news)
             ->with('packages',$packages);
     }
 }
