@@ -117,7 +117,7 @@
                 <div class="section-title mb-10">
                     <div class="row">
                         <div class="col-md-8">
-                            <h2 class="mt-0 text-uppercase font-28 line-bottom line-height-1">Latest <span class="text-theme-color-2 font-weight-400">News</span></h2>
+                            <h2 class="mt-0 text-uppercase font-28 line-bottom line-height-1"> <span class="text-theme-color-2 font-weight-400">{!! trans('label.news_latest') !!}</span></h2>
                         </div>
                     </div>
                 </div>
