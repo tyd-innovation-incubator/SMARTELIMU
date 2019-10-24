@@ -224,10 +224,10 @@
                             <li><a href="{!! route('news.search') !!}">{!! trans('label.news') !!}</a></li>
 
 
-                            <li><a href="#">Pages</a>
+                            <li><a href="#">{!! trans('label.about') !!}</a>
 
                             </li>
-                            <li><a href="#">Pages</a>
+                            <li><a href="#">{!! trans('label.contact_us') !!}</a>
 
                             </li>
 
