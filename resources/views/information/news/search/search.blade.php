@@ -46,7 +46,7 @@
                             <article class="post clearfix mb-30 mb-sm-30">
                                 <div class="entry-header">
                                     <div class="post-thumb thumb">
-                                        <img src="{!! url('img/news/'.$news->image.'') !!}" alt="" class="img-responsive img-fullwidth">
+                                        <img src="{!! url('http://admin.smartelimu.ac.tz/img/news/'.$news->image.'') !!}" alt="" class="img-responsive img-fullwidth">
                                     </div>
                                 </div>
                                 <div class="entry-content p-20 pr-10 bg-lighter">
