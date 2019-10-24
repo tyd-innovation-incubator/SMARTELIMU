@@ -219,14 +219,14 @@
 
                             <!-- Authentication Links -->
                             @guest
-                    <li class="dropdown yamm-fw"><a href="#">Account</a>
+                    <li class="dropdown yamm-fw"><a href="#">{!! trans('label.account') !!}</a>
                         <ul class="dropdown-menu">
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                                <a class="nav-link" href="{{ route('login') }}">{{ trans('label.login') }}</a>
                             </li>
                             @if (Route::has('register'))
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                                    <a class="nav-link" href="{{ route('register') }}">{{ trans('label.register') }}</a>
                                 </li>
 
                             @endif

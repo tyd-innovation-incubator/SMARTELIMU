@@ -231,19 +231,16 @@
 
                             </li>
 
-                            <li><a href="#">Blog</a>
-
-                            </li>
 
                             @guest
-                            <li><a href="#">Account</a>
+                            <li><a href="#">{!! trans('label.account') !!}</a>
                                 <ul class="dropdown">
                                     <li>
-                                        <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                                        <a class="nav-link" href="{{ route('login') }}">{{ trans('label.login') }}</a>
                                     </li>
                                     @if (Route::has('register'))
                                         <li>
-                                            <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                                            <a class="nav-link" href="{{ route('register') }}">{{ trans('label.register') }}</a>
                                         </li>
                                     @endif
                                 </ul>

@@ -107,6 +107,7 @@ Uthibitisho mpya wa nenosiri',
     'payment_information' => 'Taarifa za Malipo',
     'read_more' => 'Soma Zaidi',
     'contact_us' => 'Wasiliana nasi',
+    'account' => 'Akaunti',
 
 
 ];
