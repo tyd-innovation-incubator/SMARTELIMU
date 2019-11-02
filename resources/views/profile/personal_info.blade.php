@@ -182,8 +182,8 @@
                             <ul class="nav nav-tabs">
                                 <li class="active"><a href="#tab16" data-toggle="tab">{!! trans('label.personal_contacts') !!}</a></li>
                                 <li><a href="#tab17" data-toggle="tab">{!! trans('label.candidate_information') !!}</a></li>
-                                <li><a href="#tab18" data-toggle="tab">Development</a></li>
-                                <li><a href="#tab19" data-toggle="tab">Testing</a></li>
+                                <li><a href="#tab18" data-toggle="tab">{!! trans('label.course') !!}</a></li>
+{{--                                <li><a href="#tab19" data-toggle="tab">Testing</a></li>--}}
                             </ul>
                         </div>
                     </div>
@@ -191,139 +191,58 @@
                         <div class="tab-content">
                             <div class="tab-pane fade in active" id="tab16">
                                 <div class="row">
-                                    <div class="col-xs-12 col-sm-8 col-md-8">
-                                        <div>
-                                            <!-- Nav tabs -->
-                                            <ul class="nav nav-tabs" role="tablist">
-                                                <li role="presentation" class="active"><a href="#orders" aria-controls="orders" role="tab" data-toggle="tab" class="font-15 text-uppercase">Orders <span class="badge">4</span></a></li>
-                                                <li role="presentation"><a href="#free-orders" aria-controls="free-orders" role="tab" data-toggle="tab" class="font-15 text-uppercase">Free Orders <span class="badge">3</span></a></li>
-                                                <li role="presentation"><a href="#bookmarks" aria-controls="bookmarks" role="tab" data-toggle="tab" class="font-15 text-uppercase">Bookmarks <span class="badge">5</span></a></li>
-                                            </ul>
-
-                                            <!-- Tab panes -->
-                                            <div class="tab-content">
-                                                <div role="tabpanel" class="tab-pane active" id="orders">
-                                                    <div class="table-responsive">
-                                                        <table class="table table-hover">
-                                                            <thead>
-                                                            <tr>
-                                                                <th>Order ID</th>
-                                                                <th>Date</th>
-                                                                <th>Payment</th>
-                                                                <th>Total</th>
-                                                                <th></th>
-                                                            </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                            <tr>
-                                                                <th scope="row">#1264</th>
-                                                                <td>24/07/2016</td>
-                                                                <td>PayPal</td>
-                                                                <td>$127.50</td>
-                                                                <td><a class="btn btn-success btn-xs" href="#">View Order</a></td>
-                                                            </tr>
-                                                            <tr>
-                                                                <th scope="row">#1264</th>
-                                                                <td>24/07/2016</td>
-                                                                <td>PayPal</td>
-                                                                <td>$127.50</td>
-                                                                <td><a class="btn btn-success btn-xs" href="#">View Order</a></td>
-                                                            </tr>
-                                                            <tr>
-                                                                <th scope="row">#1264</th>
-                                                                <td>24/07/2016</td>
-                                                                <td>PayPal</td>
-                                                                <td>$127.50</td>
-                                                                <td><a class="btn btn-success btn-xs" href="#">View Order</a></td>
-                                                            </tr>
-                                                            <tr>
-                                                                <th scope="row">#1264</th>
-                                                                <td>24/07/2016</td>
-                                                                <td>PayPal</td>
-                                                                <td>$127.50</td>
-                                                                <td><a class="btn btn-success btn-xs" href="#">View Order</a></td>
-                                                            </tr>
-                                                            </tbody>
-                                                        </table>
-                                                    </div>
-                                                </div>
-                                                <div role="tabpanel" class="tab-pane" id="free-orders">
-                                                    <table class="table table-hover">
-                                                        <thead>
-                                                        <tr>
-                                                            <th>Order ID</th>
-                                                            <th>Date</th>
-                                                            <th>Payment</th>
-                                                            <th>Total</th>
-                                                            <th></th>
-                                                        </tr>
-                                                        </thead>
-                                                        <tbody>
-                                                        <tr>
-                                                            <th scope="row">#1189</th>
-                                                            <td>24/07/2016</td>
-                                                            <td>PayPal</td>
-                                                            <td>$127.50</td>
-                                                            <td><a class="btn btn-success btn-xs" href="#">View Order</a></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <th scope="row">#1189</th>
-                                                            <td>24/07/2016</td>
-                                                            <td>PayPal</td>
-                                                            <td>$127.50</td>
-                                                            <td><a class="btn btn-success btn-xs" href="#">View Order</a></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <th scope="row">#1189</th>
-                                                            <td>24/07/2016</td>
-                                                            <td>PayPal</td>
-                                                            <td>$127.50</td>
-                                                            <td><a class="btn btn-success btn-xs" href="#">View Order</a></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <th scope="row">#1189</th>
-                                                            <td>24/07/2016</td>
-                                                            <td>PayPal</td>
-                                                            <td>$127.50</td>
-                                                            <td><a class="btn btn-success btn-xs" href="#">View Order</a></td>
-                                                        </tr>
-                                                        </tbody>
-                                                    </table>
-                                                </div>
-                                                <div role="tabpanel" class="tab-pane" id="bookmarks">
-                                                    <table class="table">
-                                                        <tbody>
-                                                        <tr>
-                                                            <th scope="row"><img src="http://placehold.it/100x50" alt=""></th>
-                                                            <td><h4>Web Development Course</h3></h4>
-                                                            <td><h4>$127.50</h3></h4>
-                                                            <td><h4><a href="#"><i class="fa fa-close"></i></a></h3></h4>
-                                                        </tr>
-                                                        <tr>
-                                                            <th scope="row"><img src="http://placehold.it/100x50" alt=""></th>
-                                                            <td><h4>Software Development Course</h3></h4>
-                                                            <td><h4>$127.50</h3></h4>
-                                                            <td><h4><a href="#"><i class="fa fa-close"></i></a></h3></h4>
-                                                        </tr>
-                                                        <tr>
-                                                            <th scope="row"><img src="http://placehold.it/100x50" alt=""></th>
-                                                            <td><h4>App Development Course</h3></h4>
-                                                            <td><h4>$127.50</h3></h4>
-                                                            <td><h4><a href="#"><i class="fa fa-close"></i></a></h3></h4>
-                                                        </tr>
-                                                        <tr>
-                                                            <th scope="row"><img src="http://placehold.it/100x50" alt=""></th>
-                                                            <td><h4>Photoshop Course</h3></h4>
-                                                            <td><h4>$127.50</h3></h4>
-                                                            <td><h4><a href="#"><i class="fa fa-close"></i></a></h3></h4>
-                                                        </tr>
-                                                        </tbody>
-                                                    </table>
+                                    <div class="col-xs-12 col-sm-8 col-md-12">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="volunteer-address">
+                                                    <ul>
+                                                        <li>
+                                                            <div class="bg-light media border-bottom p-15 mb-20">
+                                                                <div class="media-left">
+                                                                    <i class="pe-7s-pen text-theme-colored font-24 mt-5"></i>
+                                                                </div>
+                                                                <div class="media-body">
+                                                                    <h5 class="mt-0 mb-0">{!! trans('label.personal_contacts') !!}:</h5>
+                                                                    <p><span>{!! trans('label.name') !!}:</span> {!! $user->first_name !!} {!! $user->last_name !!}<br>
+                                                                        <span>{!! trans('label.username') !!}:</span> {!! isset($user->userName) ? $user->userName :'' !!}<br><span>{!! trans('label.gender') !!}:</span> {!! isset($user->gender)? code_value()->find($user->gender)->values :'' !!}<br><span>{!! trans('label.account_category') !!}:</span> {!! isset($user->category_cv_id)? code_value()->find($user->category_cv_id)->values :'' !!}</p>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="bg-light media border-bottom p-15 mb-20">
+                                                                <div class="media-left">
+                                                                    <i class="fa fa-map-marker text-theme-colored font-24 mt-5"></i>
+                                                                </div>
+                                                                <div class="media-body">
+                                                                    <h5 class="mt-0 mb-0">{!! trans('label.address') !!}:</h5>
+                                                                    <p>{!! isset($user->address)? $user->address :'' !!}<br>
+                                                                        {!! count($user->country)? $user->country->name:'' !!} <br> {!! count($user->region) ? $user->region->name:'' !!}</p>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="bg-light media border-bottom p-15">
+                                                                <div class="media-left">
+                                                                    <i class="fa fa-phone text-theme-colored font-24 mt-5"></i>
+                                                                </div>
+                                                                <div class="media-body">
+                                                                    <h5 class="mt-0 mb-0">{!! trans('label.contacts') !!}:</h5>
+                                                                    <p><span>{!! trans('label.phone') !!}:</span> {!! $user->phone !!}<br><span>{!! trans('label.email') !!}:</span> {!! $user->email !!}</p>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
                                                 </div>
                                             </div>
+
+
                                         </div>
                                     </div>
+
+
                                 </div>
+                                <a href="#" class="btn btn-default btn-theme-colored btn-circled btn-lg" style="margin-left: 350px;margin-top: 29px">{!! trans('buttons.general.crud.edit') !!}</a>
+
                             </div>
                             <div class="tab-pane fade" id="tab17">
                                 <div class="row">
@@ -331,42 +250,26 @@
                                         <table class="table table-hover">
                                             <thead>
                                             <tr>
-                                                <th>Order ID</th>
-                                                <th>Date</th>
-                                                <th>Payment</th>
-                                                <th>Total</th>
-                                                <th></th>
+                                                <th>#</th>
+
+                                                <th>{!! trans('label.first_name') !!}</th>
+                                                <th>{!! trans('label.last_name') !!}</th>
+                                                <th>{!! trans('label.year_of_study') !!}</th>
+{{--                                                <th>{!!  !!}</th>--}}
+                                                <th>{!! trans('label.action') !!}</th>
                                             </tr>
                                             </thead>
                                             <tbody>
+                                            @foreach($user->candidates as $candidate)
                                             <tr>
                                                 <th scope="row">#1189</th>
-                                                <td>24/07/2016</td>
-                                                <td>PayPal</td>
-                                                <td>$127.50</td>
-                                                <td><a class="btn btn-success btn-xs" href="#">View Order</a></td>
+                                                <td>{!! $candidate->first_name !!}</td>
+                                                <td>{!! $candidate->last_name !!}</td>
+                                                <td>{!! $candidate->year_of_study !!}</td>
+                                                <td><a class="btn btn-success btn-xs" href="#">{!! trans('label.view') !!}</a></td>
                                             </tr>
-                                            <tr>
-                                                <th scope="row">#1189</th>
-                                                <td>24/07/2016</td>
-                                                <td>PayPal</td>
-                                                <td>$127.50</td>
-                                                <td><a class="btn btn-success btn-xs" href="#">View Order</a></td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">#1189</th>
-                                                <td>24/07/2016</td>
-                                                <td>PayPal</td>
-                                                <td>$127.50</td>
-                                                <td><a class="btn btn-success btn-xs" href="#">View Order</a></td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">#1189</th>
-                                                <td>24/07/2016</td>
-                                                <td>PayPal</td>
-                                                <td>$127.50</td>
-                                                <td><a class="btn btn-success btn-xs" href="#">View Order</a></td>
-                                            </tr>
+                                                @endforeach
+
                                             </tbody>
                                         </table>
                                     </div>
@@ -375,16 +278,28 @@
                             <div class="tab-pane fade" id="tab18">
                                 <div class="row">
                                     <div class="col-md-12">
-                                        <img class="pull-left flip pr-20" width="300" src="http://placehold.it/155x90" alt="">
-                                        <p>One Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, iste, architecto ullam tenetur quia nemo ratione tempora consectetur quos minus ut quo nulla ipsa aliquid neque molestias et qui sunt. Odit, molestiae.consectetur adipisicing elit. Quaerat, iste, architecto ullam tenetur quia nemo ratione tempora consectetur quos minus ut quo nulla ipsa aliquid neque molestias et qui sunt. Odit, molestiae.tenetur quia nemo ratione tempora consectetur quos minus ut quo nulla ipsa aliquid neque molestias et qui sunt. Odit, molestiae. molestiae.consectetur adipisicing elit. Quaerat, iste, architecto ullam tenetur quia nemo ratione tempora consectetur quos minus ut quo nulla ipsa aliquid neque molestias et qui sunt. Odit, molestiae.tenetur quia nemo ratione tempora consectetur quos minus ut quo nulla ipsa aliquid neque molestias et qui sunt. Odit, molestiae.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tab-pane fade" id="tab19">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <img class="pull-left flip pr-20" width="300" src="http://placehold.it/155x90" alt="">
-                                        <p>One Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, iste, architecto ullam tenetur quia nemo ratione tempora consectetur quos minus ut quo nulla ipsa aliquid neque molestias et qui sunt. Odit, molestiae.consectetur adipisicing elit. Quaerat, iste, architecto ullam tenetur quia nemo ratione tempora consectetur quos minus ut quo nulla ipsa aliquid neque molestias et qui sunt. Odit, molestiae.tenetur quia nemo ratione tempora consectetur quos minus ut quo nulla ipsa aliquid neque molestias et qui sunt. Odit, molestiae. molestiae.consectetur adipisicing elit. Quaerat, iste, architecto ullam tenetur quia nemo ratione tempora consectetur quos minus ut quo nulla ipsa aliquid neque molestias et qui sunt. Odit, molestiae.tenetur quia nemo ratione tempora consectetur quos minus ut quo nulla ipsa aliquid neque molestias et qui sunt. Odit, molestiae.</p>
+                                        <table class="table table-hover">
+                                            <thead>
+                                            <tr>
+                                                <th>#</th>
+                                                <th>{!! trans('label.package_name') !!}</th>
+                                                <th>{!! trans('label.package_category') !!}</th>
+                                                <th>{!! trans('label.price') !!}</th>
+                                                <th>{!! trans('label.action') !!}</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            @foreach($user->packages as $package)
+                                            <tr>
+                                                <th scope="row"></th>
+                                                <td>{!! $package->name !!}</td>
+                                                <td>{!! $package->category !!}</td>
+                                                <td>{!! $package->price !!}</td>
+                                                <td><a class="btn btn-success btn-xs" href="#">{!! trans('label.view_course') !!}</a></td>
+                                            </tr>
+                                            @endforeach
+                                            </tbody>
+                                        </table>
                                     </div>
                                 </div>
                             </div>

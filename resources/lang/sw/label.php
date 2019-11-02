@@ -82,6 +82,8 @@ Uthibitisho mpya wa nenosiri',
 
     'news' => 'Habari',
     'news_latest' => 'Habari',
+    'contacts' => 'Mawasiliano',
+    'name' => 'Jina',
     'news_all' => 'Habari Zote',
     'email_helper' => 'Hatuwezi gawa barua pepe yako kwa mtu mwingine yeyote.',
     'confirmation_helper' =>'Ingiza msimbo wa uthibitisho uliotumwa kwenye Nambari yako ya Simu',

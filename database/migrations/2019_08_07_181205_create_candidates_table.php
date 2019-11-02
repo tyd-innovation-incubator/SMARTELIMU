@@ -10,12 +10,12 @@ class CreateCandidatesTable extends Migration {
 		Schema::create('candidates', function(Blueprint $table) {
 			$table->increments('id');
 			$table->timestamps();
-			$table->integer('userID')->unsigned();
-			$table->string('fname', 255);
-			$table->string('lname', 255);
-			$table->string('className');
-			$table->string('yearOfStudy', 255);
-			$table->date('DOB');
+			$table->integer('user_id')->unsigned();
+			$table->string('first_name', 255);
+			$table->string('last_name', 255);
+			$table->string('class_name');
+			$table->string('year_of_study', 255);
+			$table->date('date_of_birth');
 			$table->string('gender', 255);
 			$table->string('nationality', 255);
 		});

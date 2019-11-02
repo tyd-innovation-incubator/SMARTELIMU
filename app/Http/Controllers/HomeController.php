@@ -35,7 +35,7 @@ class HomeController extends Controller
         $testimonies = DB::table('testimonies')->paginate(4);
         $homeslides = Homeslide::all();
         $packages = DB::table('package')->get();
-        $news = $this->news->getAll();
+        $news = $this->news->getAllForHomePage();
 
         return view('home')
             ->with('partners',$partners)

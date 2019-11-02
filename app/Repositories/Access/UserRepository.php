@@ -107,17 +107,17 @@ class UserRepository extends BaseRepository
      */
     public function saveUser(array $input)
     {
-        $data = ['email' => $input['email'], 'phone' => PhoneNumber::make($input['phone'],'TZ')->formatE164()];
-        $this->checkIfPhoneIsUnique($data['phone'], 'phone', 1, null);
-        $user = DB::transaction(function () use ($input, $data) {
+//        $data = ['email' => $input['email'], 'phone' => PhoneNumber::make($input['phone'],'TZ')->formatE164()];
+//        $this->checkIfPhoneIsUnique($data['phone'], 'phone', 1, null);
+        $user = DB::transaction(function () use ($input) {
             $input['password'] = bcrypt($input['password']);
             $user = $this->query()->create([
                 'first_name' => $input['first_name'],
                 'last_name' => $input['last_name'],
-                'username' => $input['username'],
+                'userName' => $input['username'],
                 'gender' => $input['gender'],
                 'category_cv_id' => $input['account_category'],
-                'phone' => $data['phone'],
+                'phone' => $input['phone'],
                 'email' => $input['email'],
                 'country_id' => $input['country'],
                 'region_id' => $input['region'],

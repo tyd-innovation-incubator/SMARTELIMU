@@ -1,4 +1,4 @@
-@extends('layouts.main', ['title' => 'Habari', 'header' =>'Habari'])
+@extends('layouts.app', ['title' => 'Habari', 'header' =>'Habari'])
 
 @push('after-styles')
 
@@ -13,148 +13,168 @@
 @endpush
 
 @section('content')
+    <!-- Start main-content -->
+    <div class="main-content">
 
-    <div class="ct-site--map ct-u-backgroundGradient">
-        <div class="container">
-            <div class="ct-u-displayTableVertical text-capitalize">
-                <div class="ct-u-displayTableCell">
-                <span class="ct-u-textBig">
+        <!-- Section: About -->
+        <section class="">
+            <div class="container">
+                <div class="section-content">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h6 class="letter-space-4 text-gray-darkgray text-uppercase mt-0 mb-0">{!! trans('label.about_smart_elimu') !!}</h6>
+                            <h2 class="text-uppercase font-weight-600 mt-0 font-28 line-bottom">{!! trans('label.smart_elimu_intro') !!}</h2>
+                            <h4 class="text-theme-colored">Lorem ipsum dolor sit amet soluta saepe odit error, maxime praesentium sunt udiandae!</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore atque officiis maxime suscipit expedita obcaecati nulla in ducimus iure quos quam recusandae dolor quas et perspiciatis voluptatum accusantium delectus nisi reprehenderit, eveniet fuga modi pariatur, eius vero. Ea vitae maiores.</p>
+                            <a class="btn btn-theme-colored btn-flat btn-lg mt-10 mb-sm-30" href="#">Know More →</a>
+                        </div>
 
-                    @lang('label.about_smart_elimu')
-
-                </span>
-                </div>
-                <!-- <div class="ct-u-displayTableCell text-right">
-                    <span class="ct-u-textNormal ct-u-textItalic">
-                        <a href="index.html">Features</a> / <a href="#">Wasifu</a>
-                    </span>
-                </div> -->
-            </div>
-        </div>
-    </div>
-    <section class="ct-u-backgroundLightGreen">
-        <div class="container">
-            <div class="text-center ct-u-marginBottom30">
-
-            </div>
-            <div class="row">
-                <div class="col-sm-12">
-                    <h3>1.   Utangulizi</h3><hr>
-
-                    <blockquote class="ct-blockquote--light ct-fw-400" align="justify">
-                        {!! $about->utangulizi !!}
-                        <br>
-                    </blockquote>
-
+                    </div>
                 </div>
             </div>
+        </section>
 
-            <div class="row ct-u-paddingTop20">
-                <div class="col-sm-4">
-                    <h3>2.	Dira yetu</h3><hr>
+        <!-- Section: Services -->
+        <section id="services" class="bg-lighter">
+            <div class="container">
 
-                    <blockquote class="ct-blockquote--light ct-fw-400">{!! $about->dira !!}</blockquote>
-                </div>
-                <div class="col-sm-4">
-                    <h3>3.	Dhima yetu</h3><hr>
+                <div class="row mtli-row-clearfix">
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="icon-box iconbox-theme-colored bg-white p-15 mb-30 border-1px">
+                            <a class="icon icon-dark border-left-theme-color-2-3px pull-left flip mb-0 mr-0 mt-5" href="#">
+                                <i class="pe-7s-scissors"></i>
+                            </a>
+                            <div class="icon-box-details">
+                                <h4 class="icon-box-title font-16 font-weight-600 m-0 mb-5">{!! trans('label.mission') !!}</h4>
+                                <p class="text-gray font-13 mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias non null</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="icon-box iconbox-theme-colored bg-white p-15 mb-30 border-1px">
+                            <a class="icon icon-dark border-left-theme-color-2-3px pull-left flip mb-0 mr-0 mt-5" href="#">
+                                <i class="pe-7s-pen"></i>
+                            </a>
+                            <div class="icon-box-details">
+                                <h4 class="icon-box-title font-16 font-weight-600 m-0 mb-5">{!! trans('label.vision') !!}</h4>
+                                <p class="text-gray font-13 mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias non null</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="icon-box iconbox-theme-colored bg-white p-15 mb-30 border-1px">
+                            <a class="icon icon-dark border-left-theme-color-2-3px pull-left flip mb-0 mr-0 mt-5" href="#">
+                                <i class="pe-7s-tools"></i>
+                            </a>
+                            <div class="icon-box-details">
+                                <h4 class="icon-box-title font-16 font-weight-600 m-0 mb-5">{!! trans('label.partners') !!}</h4>
+                                <p class="text-gray font-13 mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias non null</p>
+                            </div>
+                        </div>
+                    </div>
 
-                    <blockquote class="ct-blockquote--light ct-fw-400">{!! $about->dhima !!}</blockquote>
-                </div>
-                <div class="col-sm-4">
-                    <h3>4.	Wadau wetu</h3><hr>
-
-                    <blockquote class="ct-blockquote--light ct-fw-400">
-                        {!! $about->wadau !!}
-                    </blockquote>
                 </div>
             </div>
+        </section>
 
+        <section class="">
+            <div class="container">
+                <div class="section-content">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h6 class="letter-space-4 text-gray-darkgray text-uppercase mt-0 mb-0">{!! trans('label.about_smart_elimu') !!}</h6>
+                            <h4 class="text-theme-colored">Lorem ipsum dolor sit amet soluta saepe odit error, maxime praesentium sunt udiandae!</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore atque officiis maxime suscipit expedita obcaecati nulla in ducimus iure quos quam recusandae dolor quas et perspiciatis voluptatum accusantium delectus nisi reprehenderit, eveniet fuga modi pariatur, eius vero. Ea vitae maiores.</p>
+                        </div>
 
-            <div class="ct-u-paddingBoth100">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Divider: Funfact -->
+        <section class="divider parallax layer-overlay overlay-theme-colored-9" data-bg-img="themes/images/bg/bg2.jpg" data-parallax-ratio="0.7" >
+            <div class="container">
                 <div class="row">
-                    <div class="col-md-12">
-                        <blockquote class="ct-blockquote--light ct-fw-400">
-                            Tunapenda kumhimiza kila mzazi / mlezi kumnunulia
-                            mtoto wake “tablet” ya bei rahisi ambayo tumeipendekeza ili kunufaika na fursa hii adhimu.
-                            <span class="ct-blockquote-author ct-u-colorMotive ct-fw-700 text-uppercase"><a href = "">Smart Elimu Team</a></span>
-                        </blockquote>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-        {{--<div class=" text-center ct-u-marginBottom60">--}}
-            {{--<h3 class="text-uppercase ct-fw-600">SMART ELIMU NI CHAGUO LA KILA MZAZI, MLEZI NA MWANAFUNZI</h3>--}}
-        {{--</div>--}}
-
-
-
-        {{--<section class="ct-mediaSection ct-u-colorWhite text-left" data-stellar-background-ratio="1" data-height="600" data-type="parallax" data-background="assets/images/content/STATISTICS_1.jpg" data-background-mobile="assets/images/content/banner-image2.jpg">--}}
-            {{--<div class="ct-mediaSection-inner">--}}
-                {{--<div class="container">--}}
-                    {{--<div class="ct-showcaseBox">--}}
-                        {{--<div class="alert alert-info " role="alert" >--}}
-
-                            {{--<form class="ct-u-paddingBottom100">--}}
-                                {{--<input placeholder="Jina" type="text" required="" name="field[]" class="form-control ct-input--type1 input-hg ct-u-marginBottom50" title="Name">--}}
-                                {{--<input placeholder="Namba ya Simu" type="text" required="" name="field[]" class="form-control ct-input--type1 input-hg ct-u-marginBottom50" title="Namba ya simu">--}}
-                                {{--<input placeholder="Barua pepe" type="text" required="" name="field[]" class="form-control ct-input--type1 input-hg ct-u-marginBottom50" title="Password">--}}
-                                {{--<input placeholder="Nywila" type="text" required="" name="field[]" class="form-control ct-input--type1 input-hg ct-u-marginBottom50" title="Repeat">--}}
-                                {{--<input placeholder="Rudia Nywila" type="text" required="" name="field[]" class="form-control ct-input--type1 input-hg ct-u-marginBottom50" title="Repeat">--}}
-
-                                {{--<P>Je wewe unasubiri nini?	<a class="text-uppercase btn btn-primary btn-lg ct-u-marginBottom30 btn-fullWidth" href="">Jiunge Sasa</a></P>--}}
-                            {{--</form>--}}
-                        {{--</div>--}}
-                    {{--</div>--}}
-                {{--</div>--}}
-            {{--</div>--}}
-        {{--</section>--}}
-    {{--</section>--}}
-    <div class="ct-u-backgroundGradient ct-u-paddingBoth100">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6 col-md-3">
-                    <div class="ct-counterBox ct-counterBox-circle text-center ct-fw-300">
-                        <div class="ct-counterBox--body">
-                            <span class="ct-js-counter ct-counter" data-ct-to="567" data-ct-speed="5000">0</span>
-                            <p class="text-capitalize">
-                                Wanafunzi
-                            </p>
+                    <div class="col-xs-12 col-sm-6 col-md-3 mb-md-50">
+                        <div class="funfact text-center">
+                            <i class="pe-7s-smile mt-5 text-theme-color-2"></i>
+                            <h2 data-animation-duration="2000" data-value="5248" class="animate-number text-white mt-0 font-38 font-weight-500">0</h2>
+                            <h5 class="text-white text-uppercase mb-0">{!! trans('label.candidate') !!}</h5>
                         </div>
                     </div>
-                </div>
-                <div class="col-sm-6 col-md-3">
-                    <div class="ct-counterBox ct-counterBox-circle text-center ct-fw-300">
-                        <div class="ct-counterBox--body">
-                            <span class="ct-js-counter ct-counter" data-ct-to="998" data-ct-speed="5000">0</span>
-                            <p class="text-capitalize">
-                                Wazazi / Walezi
-                            </p>
+                    <div class="col-xs-12 col-sm-6 col-md-3 mb-md-50">
+                        <div class="funfact text-center">
+                            <i class="pe-7s-note2 mt-5 text-theme-color-2"></i>
+                            <h2 data-animation-duration="2000" data-value="675" class="animate-number text-white mt-0 font-38 font-weight-500">0</h2>
+                            <h5 class="text-white text-uppercase mb-0">{!! trans('label.parents') !!}</h5>
                         </div>
                     </div>
-                </div>
-                <div class="col-sm-6 col-md-3">
-                    <div class="ct-counterBox ct-counterBox-circle text-center ct-fw-300">
-                        <div class="ct-counterBox--body">
-                            <span class="ct-js-counter ct-counter" data-ct-to="735" data-ct-speed="5000">0</span>
-                            <p class="text-capitalize">
-                                Walimu
-                            </p>
+                    <div class="col-xs-12 col-sm-6 col-md-3 mb-md-50">
+                        <div class="funfact text-center">
+                            <i class="pe-7s-users mt-5 text-theme-color-2"></i>
+                            <h2 data-animation-duration="2000" data-value="248" class="animate-number text-white mt-0 font-38 font-weight-500">0</h2>
+                            <h5 class="text-white text-uppercase mb-0">{!! trans('label.teachers') !!}</h5>
                         </div>
                     </div>
-                </div>
-                <div class="col-sm-6 col-md-3">
-                    <div class="ct-counterBox ct-counterBox-circle text-center ct-fw-300">
-                        <div class="ct-counterBox--body">
-                            <span class="ct-js-counter ct-counter" data-ct-to="888" data-ct-speed="5000">0</span>
-                            <p class="text-capitalize">
-                                Wadau
-                            </p>
+                    <div class="col-xs-12 col-sm-6 col-md-3 mb-md-0">
+                        <div class="funfact text-center">
+                            <i class="pe-7s-cup mt-5 text-theme-color-2"></i>
+                            <h2 data-animation-duration="2000" data-value="24" class="animate-number text-white mt-0 font-38 font-weight-500">0</h2>
+                            <h5 class="text-white text-uppercase mb-0">{!! trans('label.partners') !!}</h5>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
+
+
+        <!-- Divider: Call To Action -->
+        <section class="bg-theme-color-2">
+            <div class="container pt-10 pb-20">
+                <div class="row">
+                    <div class="call-to-action">
+                        <div class="col-md-6">
+                            <h3 class="mt-5 mb-5 text-white vertical-align-middle"><i class="pe-7s-mail mr-10 font-48 vertical-align-middle"></i> SUBSCRIBE TO OUR NEWSLETTER</h3>
+                        </div>
+                        <div class="col-md-6">
+                            <!-- Mailchimp Subscription Form Starts Here -->
+                            <form id="mailchimp-subscription-form" class="newsletter-form mt-10">
+                                <div class="input-group">
+                                    <input type="email" value="" name="EMAIL" placeholder="Your Email" class="form-control input-lg font-16" data-height="45px" id="mce-EMAIL-footer">
+                                    <span class="input-group-btn">
+                    <button data-height="45px" class="btn bg-theme-colored text-white btn-xs m-0 font-14" type="submit">Subscribe</button>
+                  </span>
+                                </div>
+                            </form>
+                            <!-- Mailchimp Subscription Form Validation-->
+                            <script type="text/javascript">
+                                $('#mailchimp-subscription-form').ajaxChimp({
+                                    callback: mailChimpCallBack,
+                                    url: '//thememascot.us9.list-manage.com/subscribe/post?u=a01f440178e35febc8cf4e51f&amp;id=49d6d30e1e'
+                                });
+
+                                function mailChimpCallBack(resp) {
+                                    // Hide any previous response text
+                                    var $mailchimpform = $('#mailchimp-subscription-form'),
+                                        $response = '';
+                                    $mailchimpform.children(".alert").remove();
+                                    if (resp.result === 'success') {
+                                        $response = '<div class="alert alert-success"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>' + resp.msg + '</div>';
+                                    } else if (resp.result === 'error') {
+                                        $response = '<div class="alert alert-danger"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>' + resp.msg + '</div>';
+                                    }
+                                    $mailchimpform.prepend($response);
+                                }
+                            </script>
+                            <!-- Mailchimp Subscription Form Ends Here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </div>
+    <!-- end main-content -->
 
 @endsection

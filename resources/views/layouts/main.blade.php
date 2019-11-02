@@ -417,7 +417,7 @@
                                     <div class="widget-inner">
                                         <a href="{!! url('/') !!}"><img class="ct-u-marginBottom30" src="{!! url('assets/images/content/logo.png') !!}" alt="logo"></a>
                                         <p class="ct-u-marginBottom40" align="justify">
-                                          {!! truncateString($about->utangulizi) !!}
+                                          {!! isset($about->utangulizi)? truncateString($about->utangulizi) : ''!!}
                                             <br>
                                             <a class="ct-u-textUnderline" href="features-typography.html">Soma zaidi</a>
                                         </p></div>

@@ -17,7 +17,7 @@ class RenameColumnsOnUsersTable extends Migration
         Schema::table('users', function(Blueprint $table) {
             $table->renameColumn('fname', 'first_name');
             $table->renameColumn('lname', 'last_name');
-            $table->renameColumn('userName', 'username');
+//            $table->renameColumn('userName', 'username');
             $table->renameColumn('category', 'category_cv_id');
         });
     }

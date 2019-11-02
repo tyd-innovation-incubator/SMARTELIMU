@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class ChangeCoulmnsNameOnCandidatesTable extends Migration
+class CreatePartnersTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,11 @@ class ChangeCoulmnsNameOnCandidatesTable extends Migration
      */
     public function up()
     {
-        //
-        Schema::table('candidates', function(Blueprint $table) {
-            $table->renameColumn('fname', 'first_name');
-            $table->renameColumn('lname', 'last_name');
-//            $table->renameColumn('userID', 'user_id');
+        Schema::create('partners', function (Blueprint $table) {
+            $table->bigIncrements('id');
+            $table->string('name', 255);
+            $table->string('image', 255);
+            $table->timestamps();
         });
     }
 
@@ -28,6 +28,6 @@ class ChangeCoulmnsNameOnCandidatesTable extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('partners');
     }
 }

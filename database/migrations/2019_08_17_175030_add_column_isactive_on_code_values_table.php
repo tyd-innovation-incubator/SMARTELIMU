@@ -14,10 +14,10 @@ class AddColumnIsactiveOnCodeValuesTable extends Migration
     public function up()
     {
         //
-        Schema::table('code_values', function(Blueprint $table) {
-            $table->smallInteger('isactive')->default(1);
-
-        });
+//        Schema::table('code_values', function(Blueprint $table) {
+//            $table->smallInteger('isactive')->default(1);
+//
+//        });
 
     }
 

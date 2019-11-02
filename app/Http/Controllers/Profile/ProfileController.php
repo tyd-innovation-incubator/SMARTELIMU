@@ -59,7 +59,6 @@ class ProfileController extends Controller
 
     public function personalInformation()
     {
-
         $user = access()->user();
         return view('profile.personal_info')
             ->with('user',$user);

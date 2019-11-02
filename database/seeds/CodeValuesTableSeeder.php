@@ -16,9 +16,9 @@ class CodeValuesTableSeeder extends Seeder
     public function run()
     {
 
-        $this->disableForeignKeys("code_values");
-        $condition = 'where isactive = 1';
-        $this->deleteWithCondition('code_values', $condition);
+//        $this->disableForeignKeys("code_values");
+//        $condition = 'where isactive = 1';
+//        $this->deleteWithCondition('code_values', $condition);
 
         \DB::table('code_values')->insert(array (
             0 =>

@@ -44,7 +44,6 @@ Route::post('/update_user/{user}', 'Auth\RegisterController@update')->name("upda
 Route::get('/verification/{user}', 'Auth\LoginController@verification')->name("auth.verification");
 Route::get('/account/confirm/{responce}', 'Auth\ConfirmAccountController@confirm')->name("auth.account.confirm");
 
-Route::get('/account/confirm_tmx/{token}', 'Auth\ConfirmAccountController@confirmTmxUser')->name("auth.account.confirm_tmx");
 
 Route::get('/account/sms_confirm/{user}', 'Auth\ConfirmAccountController@smsConfirm')->name("auth.account.sms_confirm");
 

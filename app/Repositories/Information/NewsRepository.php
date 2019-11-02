@@ -65,6 +65,14 @@ class NewsRepository extends BaseRepository
         return $query;
     }
 
+    public function getAllForHomePage()
+    {
+        $query = $this->query()
+            ->orderBy('id', 'desc')
+            ->paginate(3);
+        return $query;
+    }
+
     public function getMostViewed(){
         $query = $this->query()
             ->orderBy('views', 'desc')

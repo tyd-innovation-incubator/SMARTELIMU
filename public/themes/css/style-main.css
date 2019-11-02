@@ -34,7 +34,7 @@ This file contains the common styles of this theme.
 	* Services.less
 	* Shop.less
 	* Blog.less
-	* Shortcode.less 
+	* Shortcode.less
 		* Alerts.less
 		* Buttons.less
 		* Blockquote.less
@@ -751,8 +751,8 @@ section > .container-fluid {
   background: rgba(0, 0, 0, 0.6);
   text-decoration: none;
 }
-/*  
- * Extra.less 
+/*
+ * Extra.less
  * -----------------------------------------------
 */
 /* -------- Heading Style ---------- */
@@ -3575,7 +3575,7 @@ table.no-border td {
   padding: 0 8px 0 3px;
 }
 /*
- * blog.less 
+ * blog.less
  * -----------------------------------------------
 */
 .post {
