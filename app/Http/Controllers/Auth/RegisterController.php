@@ -82,7 +82,7 @@ class RegisterController extends Controller
 
     public function updateUser(Request $request,$user)
     {
-        dd($user);
+        dd($request);
         $user = $this->users->update($request->all(),$user);
         return redirect()->back();
 

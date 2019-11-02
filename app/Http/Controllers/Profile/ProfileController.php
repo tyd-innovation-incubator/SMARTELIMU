@@ -64,6 +64,13 @@ class ProfileController extends Controller
             ->with('user',$user);
     }
 
+    public function editPersonalInformation($user)
+    {
+        $user = $this->users->getOneByUuid($user);
+        return view('profile.includes.edit_personal_information')
+            ->with('user',$user);
+    }
+
 
     public function candidateInformation()
     {

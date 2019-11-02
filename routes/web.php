@@ -36,7 +36,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/registered/{user}', 'Auth\RegisterController@showRegisteredForm')->name("auth.registered");
 Route::post('/register_from_welcome', 'Auth\RegisterController@registerFromWelcomePage')->name("auth.register_from_welcome");
-Route::post('/update_user/{user}', 'Auth\RegisterController@update')->name("update_user");
+Route::post('/update_user/{user}', 'Auth\RegisterController@updateUser')->name("update_user");
 
 
 

@@ -20,6 +20,8 @@ Route::group([
         Route::post('/store_candidate', 'ProfileController@storeCandidate')->name('store_candidate');
 
         Route::get('/personal_info', 'ProfileController@personalInformation')->name('personal_info');
+        Route::get('/personal_info/edit/{user}', 'ProfileController@editPersonalInformation')->name('edit_personal_info');
+
         Route::get('/candidate_info', 'ProfileController@candidateInformation')->name('candidate_info');
 
 

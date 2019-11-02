@@ -241,7 +241,7 @@
 
 
                                 </div>
-                                <a href="#" class="btn btn-default btn-theme-colored btn-circled btn-lg" style="margin-left: 350px;margin-top: 29px">{!! trans('buttons.general.crud.edit') !!}</a>
+                                <a href="{!! route('profile.edit_personal_info',$user->uuid) !!}" class="btn btn-default btn-theme-colored btn-circled btn-lg" style="margin-left: 350px;margin-top: 29px">{!! trans('buttons.general.crud.edit') !!}</a>
 
                             </div>
                             <div class="tab-pane fade" id="tab17">
