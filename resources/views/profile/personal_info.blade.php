@@ -216,7 +216,7 @@
                                                                 <div class="media-body">
                                                                     <h5 class="mt-0 mb-0">{!! trans('label.address') !!}:</h5>
                                                                     <p>{!! isset($user->address)? $user->address :'' !!}<br>
-                                                                        {!! count($user->country)? $user->country->name:'' !!} <br> {!! count($user->region) ? $user->region->name:'' !!}</p>
+                                                                        {!! isset($user->country)? $user->country->name:'' !!} <br> {!! isset($user->region) ? $user->region->name:'' !!}</p>
                                                                 </div>
                                                             </div>
                                                         </li>
