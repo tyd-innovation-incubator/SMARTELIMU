@@ -49,10 +49,10 @@
                                     </p>
                                     <h5 style="margin-top: 30px">{!! trans('label.course_include') !!}</h5>
                                     <ul class="list-icon">
-                                        <li><i class="fa fa-clock-o"></i>Lorem ipsum dolor sit elit</li>
-                                        <li><i class="fa fa-hand-o-right"></i>Lorem ipsum dolor sit elit</li>
-                                        <li><i class="fa fa-thumbs-o-up"></i>Lorem ipsum dolor sit elit</li>
-                                        <li><i class="fa fa-pencil-square-o"></i>Lorem ipsum dolor sit elit</li>
+                                        <li><i class="fa fa-clock-o"></i>27hrs for videos</li>
+                                        <li><i class="fa fa-hand-o-right"></i>75 articles for download</li>
+                                        <li><i class="fa fa-thumbs-o-up"></i>3hrs for examinations</li>
+                                        <li><i class="fa fa-pencil-square-o"></i>Certificate for complete </li>
                                     </ul>
 
 
@@ -109,9 +109,9 @@
                                                                         </div>
                                                                         <div id="detail-{!! $chapter->id !!}">
                                                                             <ul class="list theme-colored angle-double-right">
-                                                                                <li>Lorem ipsum dolor sit elit</li>
-                                                                                <li>Lorem ipsum, consectetur adipisicing elit</li>
-                                                                                <li>Lorem ipsum dolor sit amet</li>
+                                                                                <li>link for a video </li>
+                                                                                <li>Link for download article</li>
+                                                                                <li>Link for examinations </li>
                                                                             </ul>
 
                                                                         </div>

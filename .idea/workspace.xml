@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="08d93d0e-5c1d-42d8-82c3-2dc7bd1f714f" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/themes/css/animate.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/themes/css/animate.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/themes/css/utility-classes.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/themes/css/utility-classes.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/themes/js/custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/themes/js/custom.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/sw/label.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/sw/label.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/lessons/primary_level/show/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/lessons/primary_level/show/show.blade.php" afterDir="false" />
-    </list>
+    <list default="true" id="08d93d0e-5c1d-42d8-82c3-2dc7bd1f714f" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -295,7 +288,7 @@
       <workItem from="1572608441995" duration="7953000" />
       <workItem from="1572640725624" duration="608000" />
       <workItem from="1572676848161" duration="15223000" />
-      <workItem from="1572849984081" duration="19589000" />
+      <workItem from="1572849984081" duration="19997000" />
     </task>
     <servers />
   </component>
