@@ -1,30 +1,53 @@
-@extends('layouts.main')
+@extends('layouts.app')
 
 @section('content')
 
     {{--Header--}}
+    <section id="home" class="divider">
+        <div class="fullwidth-carousel" data-nav="true">
+                        @foreach($homeslides as $homeslide)
 
-    <header>
-        <div class="ct-slick ct-js-slick ct-slick-defaultNavigation" data-height="500" data-adaptiveHeight="true" data-animations="true" data-autoplay="true" data-infinite="true" data-autoplaySpeed="6000" data-draggable="false" data-touchMove="false" data-arrows="true" data-items="1">
-            @foreach($homeslides as $homeslide)
-                <div class="item" data-bg="{!! url('http://admin.smartelimu.ac.tz/img/homeslides/'.$homeslide->image.'') !!}">
-                    <div class="ct-slick-inner">
-                        <div class="ct-slick-content">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-md-5 ">
-                                        <h3 class="text-capitalize ct-fw-900 ct-u-marginBottom40 animated" data-fx="bounceInDown" data-time="200">{!! $homeslide->title !!}</h3>
-                                        <p class="ct-u-marginBottom40 ct-fw-600 animated" data-fx="bounceInLeft" data-time="400">{!! $homeslide->content !!} </p>
-                                        <a class="text-uppercase btn btn-primary btn-lg animated" data-fx="bounceInUp" data-time="200" href="#packages">{!! trans('label.view_course') !!}</a>
+            <div class="item bg-img-cover" data-bg-img="{!! url('http://admin.smartelimu.ac.tz/img/homeslides/'.$homeslide->image.'') !!}" style="height: 60%">
+                <div class="display-table">
+                    <div class="display-table-cell">
+                        <div class="container pt-150 pb-150">
+                            <div class="row">
+                                <div class="col-md-8 col-md-offset-2 text-center">
+                                    <div class="inline-block mt-40 pb-60 pl-60 pr-60 pt-40" data-bg-color="rgba(255,255,255, 0.8)">
+                                        <h1 class="text-uppercase text-theme-colored font-raleway font-weight-800 mb-0 mt-0 font-48" >We Are <span class="text-theme-color-2">SMART ELIMU</span></h1>
+                                        <p class="font-16 text-black font-raleway letter-spacing-1 mb-20">Every day we bring hope to millions of children in the world's<br>  hardest places as a sign of God's unconditional love.</p>
+                                        <a class="btn btn-colored btn-theme-colored" href="#">Book Now</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            @endforeach
+            </div>
+                            @endforeach
         </div>
-    </header>
+    </section>
+{{--    <header>--}}
+{{--        <div class="ct-slick ct-js-slick ct-slick-defaultNavigation" data-height="500" data-adaptiveHeight="true" data-animations="true" data-autoplay="true" data-infinite="true" data-autoplaySpeed="6000" data-draggable="false" data-touchMove="false" data-arrows="true" data-items="1">--}}
+{{--            @foreach($homeslides as $homeslide)--}}
+{{--                <div class="item" data-bg="{!! url('http://admin.smartelimu.ac.tz/img/homeslides/'.$homeslide->image.'') !!}">--}}
+{{--                    <div class="ct-slick-inner">--}}
+{{--                        <div class="ct-slick-content">--}}
+{{--                            <div class="container">--}}
+{{--                                <div class="row">--}}
+{{--                                    <div class="col-md-5 ">--}}
+{{--                                        <h3 class="text-capitalize ct-fw-900 ct-u-marginBottom40 animated" data-fx="bounceInDown" data-time="200">{!! $homeslide->title !!}</h3>--}}
+{{--                                        <p class="ct-u-marginBottom40 ct-fw-600 animated" data-fx="bounceInLeft" data-time="400">{!! $homeslide->content !!} </p>--}}
+{{--                                        <a class="text-uppercase btn btn-primary btn-lg animated" data-fx="bounceInUp" data-time="200" href="#packages">{!! trans('label.view_course') !!}</a>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--            @endforeach--}}
+{{--        </div>--}}
+{{--    </header>--}}
 
 
      {{--our services--}}

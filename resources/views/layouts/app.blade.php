@@ -26,6 +26,7 @@
     <link href="{!! url('themes/css/jquery-ui.min.css') !!}" rel="stylesheet" type="text/css">
     <link href="{!! url('themes/css/animate.css') !!}" rel="stylesheet" type="text/css">
     <link href="{!! url('themes/css/css-plugin-collections.css') !!}" rel="stylesheet"/>
+
     <!-- CSS | menuzord megamenu skins -->
     <link id="menuzord-menu-skins" href="{!! url('themes/css/menuzord-skins/menuzord-rounded-boxed.css') !!}" rel="stylesheet"/>
     <!-- CSS | Main style file -->
