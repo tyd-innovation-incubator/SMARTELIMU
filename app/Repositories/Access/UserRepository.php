@@ -203,13 +203,11 @@ class UserRepository extends BaseRepository
 
     public function saveUserFromWelcome(array $input)
     {
-        $data = ['email' => $input['email'], 'phone' => PhoneNumber::make($input['phone'],'TZ')->formatE164()];
-        $this->checkIfPhoneIsUnique($data['phone'], 'phone', 1, null);
-        $user = DB::transaction(function () use ($input, $data) {
+        $user = DB::transaction(function () use ($input) {
             $input['password'] = bcrypt($input['password']);
             $user = $this->query()->create([
                 'first_name' => $input['first_name'],
-                'phone' => $data['phone'],
+                'phone' => $input['phone'],
                 'email' => $input['email'],
                 'password' => $input['password'],
                 'confirmation_code' => mt_rand(100000,999999),
