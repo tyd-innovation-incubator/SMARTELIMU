@@ -203,66 +203,21 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="owl-carousel-4col" data-dots="true">
-                            <div class="item ">
-                                <div class="service-block bg-white">
-                                    <div class="thumb"> <img alt="featured project" src="images/project/4.jpg" class="img-fullwidth">
-                                        <h4 class="text-white mt-0 mb-0"><span class="price">$125</span></h4>
-                                    </div>
-                                    <div class="content text-left flip p-25 pt-0">
-                                        <h4 class="line-bottom mb-10">Accounting Technologies</h4>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam ipsum quis ipsum facilisis sit amet.</p>
-                                        <a class="btn btn-dark btn-theme-colored btn-sm text-uppercase mt-10" href="page-courses-accounting-technologies.html">view details</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="service-block mb-md-30 bg-white">
-                                    <div class="thumb"> <img alt="featured project" src="images/project/5.jpg" class="img-responsive img-fullwidth">
-                                        <h4 class="text-white mt-0 mb-0"><span class="price">$125</span></h4>
-                                    </div>
-                                    <div class="content text-left flip p-25 pt-0">
-                                        <h4 class="line-bottom mb-10">Computer Technologies</h4>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam ipsum quis ipsum facilisis sit amet.</p>
-                                        <a class="btn btn-dark btn-theme-colored btn-sm text-uppercase mt-10" href="page-courses-accounting-technologies.html">view details</a>
+                            @foreach($packages as $package)
+                                <div class="item">
+                                    <div class="service-block mb-md-30 bg-white">
+                                        <div class="thumb"> <img alt="featured project" src="{!! url('http://admin.smartelimu.ac.tz/img/packages/'.$package->image.'') !!}" class="img-responsive img-fullwidth">
+                                            <h4 class="text-white mt-0 mb-0"><span class="price">{!! $package->price !!}TSH</span></h4>
+                                        </div>
+                                        <div class="content text-left flip p-25 pt-0">
+                                            <h4 class="line-bottom mb-10">{!! $package->name !!}</h4>
+                                            <p>{!! truncateString($package->description,30) !!}</p>
+                                            <a class="btn btn-dark btn-theme-colored btn-sm text-uppercase mt-10" href="{!! route('lessons.view',$package->uuid) !!}">{!! trans('label.view') !!}</a>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="item">
-                                <div class="service-block mb-md-30 bg-white">
-                                    <div class="thumb"> <img alt="featured project" src="images/project/6.jpg" class="img-responsive img-fullwidth">
-                                        <h4 class="text-white mt-0 mb-0"><span class="price">$125</span></h4>
-                                    </div>
-                                    <div class="content text-left flip p-25 pt-0">
-                                        <h4 class="line-bottom mb-10">Development Studies</h4>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam ipsum quis ipsum facilisis sit amet.</p>
-                                        <a class="btn btn-dark btn-theme-colored btn-sm text-uppercase mt-10" href="page-courses-accounting-technologies.html">view details</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="service-block mb-md-30 bg-white">
-                                    <div class="thumb"> <img alt="featured project" src="images/project/7.jpg" class="img-responsive img-fullwidth">
-                                        <h4 class="text-white mt-0 mb-0"><span class="price">$125</span></h4>
-                                    </div>
-                                    <div class="content text-left flip p-25 pt-0">
-                                        <h4 class="line-bottom mb-10">Electrical & Electronic</h4>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam ipsum quis ipsum facilisis sit amet.</p>
-                                        <a class="btn btn-dark btn-theme-colored btn-sm text-uppercase mt-10" href="page-courses-accounting-technologies.html">view details</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="service-block mb-md-30 bg-white">
-                                    <div class="thumb"> <img alt="featured project" src="images/project/8.jpg" class="img-responsive img-fullwidth">
-                                        <h4 class="text-white mt-0 mb-0"><span class="price">$125</span></h4>
-                                    </div>
-                                    <div class="content text-left flip p-25 pt-0">
-                                        <h4 class="line-bottom mb-10">Chemical Engineering</h4>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam ipsum quis ipsum facilisis sit amet.</p>
-                                        <a class="btn btn-dark btn-theme-colored btn-sm text-uppercase mt-10" href="page-courses-accounting-technologies.html">view details</a>
-                                    </div>
-                                </div>
-                            </div>
+
+                            @endforeach
                         </div>
                     </div>
                 </div>

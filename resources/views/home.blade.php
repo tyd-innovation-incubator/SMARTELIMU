@@ -19,8 +19,6 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="owl-carousel-4col" data-dots="true">
-
-
                                 @foreach($packages as $package)
                                 <div class="item">
                                     <div class="service-block mb-md-30 bg-white">
