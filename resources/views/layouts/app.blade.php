@@ -247,7 +247,7 @@
     $about = \App\Models\Information\About::get()->first();
 @endphp
     <!-- Divider: Clients -->
-    <section class="clients bg-theme-color-2">
+    <section class="clients">
         <div class="container pt-10 pb-0">
             <div class="row">
                 <div class="col-md-12">

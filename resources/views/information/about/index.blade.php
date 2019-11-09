@@ -100,7 +100,7 @@
                         <div class="funfact text-center">
                             <i class="pe-7s-smile mt-5 text-theme-color-2"></i>
                             <h2 data-animation-duration="2000" data-value="5248" class="animate-number text-white mt-0 font-38 font-weight-500">0</h2>
-                            <h5 class="text-white text-uppercase mb-0">{!! trans('label.candidate') !!}</h5>
+                            <h5 class="text-white text-uppercase mb-0">{!! trans('label.candidates') !!}</h5>
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-3 mb-md-50">
