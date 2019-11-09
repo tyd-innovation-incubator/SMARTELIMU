@@ -19,15 +19,15 @@ Route::get('/', function () {
     $testimonies = \Illuminate\Support\Facades\DB::table('testimonies')->paginate(4);
     $homesliders = \App\Models\Information\Homeslide::all();
     $packages = \Illuminate\Support\Facades\DB::table('package')->paginate(4);
-
-
+    $news = (new \App\Repositories\Information\NewsRepository())->getAllForHomePage();
 
     return view('welcome')
         ->with('partners',$partners)
         ->with('homeslides',$homesliders)
         ->with('testimonies',$testimonies)
         ->with('about',$about)
-        ->with('packages',$packages);
+        ->with('packages',$packages)
+        ->with('news',$news);
 });
 
 Auth::routes();
