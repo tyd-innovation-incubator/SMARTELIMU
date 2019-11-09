@@ -313,49 +313,29 @@
 {{--    <div class=" text-center ct-u-marginBottom60">--}}
 {{--        <h3 class="ct-fw-600 text-uppercase">USHUHUDA</h3>--}}
 {{--    </div>--}}
-    <section class="bg-lighter">
-        <div class="container pb-60">
-            <div class="section-title mb-10">
-                <div class="row">
-                    <div class="col-md-8">
-                        <h2 class="mt-0 text-uppercase font-28 line-bottom line-height-1"><span class="text-theme-color-2 font-weight-400">USHUHUDA</span></h2>
-                    </div>
-                </div>
-            </div>
-            <div class="section-content">
-                <div class="row ct-u-marginBottom100" align="center">
-
-                    @foreach($testimonies as $testimony)
-                        <div class="col-md-4">
-                            <div class="ct-personBox ct-personBox--inline">
-                                <div class="ct-personMedia ct-u-displayTableVertical">
-                                    <div class="ct-u-displayTableCell">
-                                        <div class="ct-personImage">
-                                            <img src="{!! url('http://admin.smartelimu.ac.tz/img/testimonials/'.$testimony->image.'') !!}" alt="person">
-                                        </div>
+    <section class="divider parallax layer-overlay overlay-theme-colored-9" data-background-ratio="0.5" data-bg-img="images/bg/bg2.jpg">
+        <div class="container pt-60 pb-60">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <h2 class="line-bottom-center text-gray-lightgray text-center mt-0 mb-30">{!! trans('label.testimonial') !!}</h2>
+                    <div class="owl-carousel-1col" data-dots="true">
+                        @foreach($testimonies as $testimony)
+                            <div class="item">
+                                <div class="testimonial pt-10">
+                                    <div class="thumb pull-left mb-0 mr-0 pr-20">
+                                        <img  class="img-circle" alt="" src="{!! url('http://admin.smartelimu.ac.tz/img/testimonials/'.$testimony->image.'') !!}">
                                     </div>
-                                    <div class="ct-u-displayTableCell">
-                                        <div class="ct-personName">
-                                <span class="ct-personName--title ct-fw-700">
-                                    {!! $testimony->name !!}
-                                </span>
-                                            <span class="ct-personName--meta text-lowercase">
-                                    {!! $testimony->occupation !!}
-                                </span>
-                                        </div>
+                                    <div class="ml-100 ">
+                                        <h4 class="text-white mt-0">{!! ($testimony->message) !!}</h4>
+                                        <p class="author mt-20">- <span class="text-theme-color-2">{!! $testimony->name !!},</span> <small><em class="text-gray-lightgray">{!! $testimony->occupation !!}</em></small></p>
                                     </div>
-                                </div>
-                                <div class="ct-personDescription">
-                                    <p>
-                                        {!! truncateString($testimony->message,150) !!}
-                                        <a href="#">Moree..</a>
-                                    </p>
                                 </div>
                             </div>
-                        </div>
-                    @endforeach
-                </div>
+                        @endforeach
 
+
+                    </div>
+                </div>
             </div>
         </div>
     </section>
