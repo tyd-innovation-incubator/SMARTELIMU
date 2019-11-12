@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="container">
-    <div class="row" style="margin-top: 30px;background-color: whitesmoke;margin-bottom: 20px">
+    <div class="row" style="margin-top: 30px;background-color: whitesmoke;margin-bottom: 20px;padding: 20px">
         <form method="POST" action="{{ route('register') }}">
 
         <div class="col-md-6">

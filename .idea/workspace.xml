@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="08d93d0e-5c1d-42d8-82c3-2dc7bd1f714f" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Information/NewsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Information/NewsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/registered.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/registered.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/information/news/search/results.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/information/news/search/results.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/information/news/search/search.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/information/news/search/search.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/information/news/show/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/information/news/show/show.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -302,7 +295,7 @@
       <workItem from="1573242156270" duration="8715000" />
       <workItem from="1573451744101" duration="31000" />
       <workItem from="1573500197862" duration="7804000" />
-      <workItem from="1573584699184" duration="8079000" />
+      <workItem from="1573584699184" duration="8446000" />
     </task>
     <servers />
   </component>
