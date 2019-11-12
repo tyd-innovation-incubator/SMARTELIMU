@@ -16,7 +16,7 @@
                                     <div class="inline-block mt-40 pb-60 pl-60 pr-60 pt-40" data-bg-color="rgba(255,255,255, 0.8)">
                                         <h1 class="text-uppercase text-theme-colored font-raleway font-weight-800 mb-0 mt-0 font-48" > <span class="text-theme-color-2">{!! $homeslide->title !!}</span></h1>
                                         <p class="font-16 text-black font-raleway letter-spacing-1 mb-20">{!! $homeslide->content !!}</p>
-                                        <a class="btn btn-colored btn-theme-colored" href="#">Book Now</a>
+                                        <a class="btn btn-colored btn-theme-colored" href="#">{!! trans('label.view_course') !!}</a>
                                     </div>
                                 </div>
                             </div>
