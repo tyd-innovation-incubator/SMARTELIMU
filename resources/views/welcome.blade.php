@@ -111,7 +111,7 @@
                     </div>
                     <div class="col-md-4">
                         <div class="p-30 mt-0 bg-theme-colored">
-                            <h3 class="title-pattern mt-0"><span class="text-white">Request <span class="text-theme-color-2">Information</span></span></h3>
+                            <h3 class="title-pattern mt-0"><span class="text-white"> <span class="text-theme-color-2">{!! trans('label.register_here') !!}</span></span></h3>
                             <!-- Appilication Form Start-->
                             <form id="reservation_form" name="reservation_form" class="reservation-form mt-20" method="post"  action="{{ route('auth.register_from_welcome') }}">
                                 @csrf
@@ -147,7 +147,7 @@
                                     <div class="col-sm-12">
                                         <div class="form-group mb-0 mt-10">
 {{--                                            <input name="form_botcheck" class="form-control" type="hidden" value="">--}}
-                                            <button type="submit" class="btn btn-colored btn-theme-color-2 text-white btn-lg btn-block">Submit Request</button>
+                                            <button type="submit" class="btn btn-colored btn-theme-color-2 text-white btn-lg btn-block">{!! trans('label.register_now') !!}</button>
                                         </div>
                                     </div>
                                 </div>
@@ -194,8 +194,9 @@
         <div class="container pb-60">
             <div class="section-title mb-10">
                 <div class="row">
-                    <div class="col-md-8">
-                        <h2 class="mt-0 text-uppercase font-28 line-bottom line-height-1"><span class="text-theme-color-2 font-weight-400">{!! trans('label.course') !!}</span></h2>
+                    <div class="col-md-12">
+                        <h2 class="mt-0 text-uppercase font-28 line-bottom line-height-1"><span class="text-theme-color-2 font-weight-400">{!! trans('label.extra_courses') !!}</span></h2>
+                        <h4 class="pb-20">{!! trans('label.extra_course_description') !!}</h4>
                     </div>
                 </div>
             </div>
@@ -263,56 +264,6 @@
     </section>
 
 
-    <!-- Section: blog -->
-    <section id="blog" class="bg-lighter">
-        <div class="container">
-            <div class="section-title mb-10">
-                <div class="row">
-                    <div class="col-md-8">
-                        <h2 class="mt-0 text-uppercase font-28 line-bottom line-height-1"> <span class="text-theme-color-2 font-weight-400">{!! trans('label.news_latest') !!}</span></h2>
-                    </div>
-                </div>
-            </div>
-
-            <div class="section-content">
-                <div class="row">
-                    @foreach($news as $new)
-
-                        <div class="col-xs-12 col-sm-6 col-md-4 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
-                            <article class="post clearfix mb-sm-30">
-                                <div class="entry-header">
-                                    <div class="post-thumb thumb">
-                                        <img src="{!! url('http://admin.smartelimu.ac.tz/img/news/'.$new->image.'') !!}" alt="" class="img-responsive img-fullwidth">
-                                    </div>
-                                </div>
-                                <div class="entry-content p-20 pr-10 bg-white">
-                                    <div class="entry-meta media mt-0 no-bg no-border">
-                                        <div class="entry-date media-left text-center flip bg-theme-colored pt-5 pr-15 pb-5 pl-15">
-                                            <ul>
-                                                <li class="font-16 text-white font-weight-600 border-bottom">{!! $new->created_at->format('d') !!}</li>
-                                                <li class="font-12 text-white text-uppercase">{!! $new->created_at->format('M') !!}</li>
-                                            </ul>
-                                        </div>
-                                        <div class="media-body pl-15">
-                                            <div class="event-content pull-left flip">
-                                                <h4 class="entry-title text-white text-uppercase m-0 mt-5"><a href="#"><b>{!! $new->title !!}</b></a></h4>
-                                                <span class="mb-10 text-gray-darkgray mr-10 font-13"><i class="fa fa-commenting-o mr-5 text-theme-colored"></i> 214 Comments</span>
-                                                <span class="mb-10 text-gray-darkgray mr-10 font-13"><i class="fa fa-heart-o mr-5 text-theme-colored"></i> 895 Likes</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <p class="mt-10">{!! truncateString($new->content,50) !!}</p>
-                                    <a href="{!! route('news.show',$new->slug) !!}" class="btn-read-more">{!! trans('label.read_more') !!}</a>
-                                    <div class="clearfix"></div>
-                                </div>
-                            </article>
-                        </div>
-                    @endforeach
-
-                </div>
-            </div>
-        </div>
-    </section>
 
     {{--testimonial--}}
 

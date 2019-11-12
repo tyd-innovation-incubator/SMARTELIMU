@@ -94,6 +94,7 @@ Uthibitisho mpya wa nenosiri',
     'testimonial'  => 'Ushuhuda',
     'add_cart'  => 'Ongeza kwenye Kati',
     'package_name' => 'Jina la Kifurushi',
+    'register_now' => 'Jiunge sasa',
     'package_category' => 'Aina ya kifurushi',
     'course_name' => 'Jina la Kozi',
     'course_category' =>'Aina ya kozi',
@@ -107,6 +108,8 @@ Yote yaliyomo kwenye kozi',
     'read_more' => 'Soma Zaidi',
     'contact_us' => 'Wasiliana nasi',
     'account' => 'Akaunti',
+    'extra_courses' =>'Masomo ya ziada',
+    'extra_course_description' => 'Haya ni Masomo ambayo hayamo kwenye silabasi yetu ya Tanzania lakini yatamuongezea mwanafunzi maarifa ya ziada'
 
 
 ];
