@@ -27,16 +27,7 @@ class SecondaryLevelController extends Controller
         $secondary_level = $this->packages->getSecondaryLevelPackages();
         $extra_primary_level = $this->packages->getExtraPrimaryLevelPackages();
         $extra_secondary_level = $this->packages->getExtralSecondaryLevelPackages();
-        if (Auth::guest()){
-            return view('lessons.secondary_level.index')
-                ->with('packages',$packages)
-                ->with('primary_level',$primary_level)
-                ->with('secondary_level',$secondary_level)
-                ->with('extra_primary_level',$extra_primary_level)
-                ->with('extra_secondary_level',$extra_secondary_level);
 
-        }
-        else{
             return view('lessons.secondary_level.includes.package_list')
                 ->with('packages',$packages)
                 ->with('primary_level',$primary_level)
@@ -44,5 +35,5 @@ class SecondaryLevelController extends Controller
                 ->with('extra_primary_level',$extra_primary_level)
                 ->with('extra_secondary_level',$extra_secondary_level);;
 
-        }    }
+        }
 }
