@@ -1,4 +1,4 @@
-@extends('layouts.main', ['title' => __("label.home"), 'header' => __("label.registered")])
+@extends('layouts.app', ['title' => __("label.home"), 'header' => __("label.registered")])
 
 @push('after-styles-end')
     <style>
@@ -13,10 +13,7 @@
 
         </div>
         <div class="col-md-6">
-            <div class="card">
-                {{--<div class="card-header">{{ __('Register') }}</div>--}}
 
-                <div class="card-body" style="margin-top: 20px">
                     {!! Form::open(['route' => ["auth.account.sms_confirm",$user->uuid],'method'=>'get', 'autocomplete' => 'off', 'class' => 'needs-validation', 'novalidate']) !!}
                     @csrf
 
@@ -45,10 +42,8 @@
                             </div>
                         </div>
                     </form>
-                </div>
-            </div>
-        </div>
 
+        </div>
 
     </div>
 

@@ -81,9 +81,11 @@
                             <div class="widget">
                                 <h5 class="widget-title line-bottom">Search box</h5>
                                 <div class="search-form">
-                                    <form>
+                                    <form action="{!! route('news.search') !!}" method="post">
+                                        {{ csrf_field() }}
+
                                         <div class="input-group">
-                                            <input type="text" placeholder="Click to Search" class="form-control search-input">
+                                            <input type="text" name="keyword" placeholder="{!! trans('label.search') !!}....." class="form-control search-input">
                                             <span class="input-group-btn">
                       <button type="submit" class="btn search-button"><i class="fa fa-search"></i></button>
                       </span>
@@ -92,7 +94,7 @@
                                 </div>
                             </div>
                             <div class="widget">
-                                <h5 class="widget-title line-bottom">Categories</h5>
+                                <h5 class="widget-title line-bottom">{!! trans('label.news_categories') !!}</h5>
                                 <div class="categories">
                                     <ul class="list list-border angle-double-right">
                                         <li><a href="#">Ubunifu<span>(0)</span></a></li>

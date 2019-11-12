@@ -37,8 +37,10 @@ class NewsController extends Controller
     public function searchResult(Request $request)
     {
         $keyword = $request->input('keyword');
-        $news = News::where('title', 'LIKE','%'.$keyword.'%')->paginate(9);
-        dd($news);
+        $all_news = News::where('title', 'LIKE','%'.$keyword.'%')->paginate(9);
+
+        return view('information.news.search.results')
+            ->with('all_news',$all_news);
 
     }
 }

@@ -130,11 +130,11 @@
                                 <h5 class="widget-title line-bottom">{!! trans('label.news_categories') !!}</h5>
                                 <div class="categories">
                                     <ul class="list list-border angle-double-right">
-                                        <li><a href="#">Creative<span>(19)</span></a></li>
-                                        <li><a href="#">Portfolio<span>(21)</span></a></li>
-                                        <li><a href="#">Fitness<span>(15)</span></a></li>
-                                        <li><a href="#">Gym<span>(35)</span></a></li>
-                                        <li><a href="#">Personal<span>(16)</span></a></li>
+                                        <li><a href="#">Ubunifu<span>(0)</span></a></li>
+                                        <li><a href="#">Tehama<span>(0)</span></a></li>
+                                        <li><a href="#">Ugunduzi<span>(0)</span></a></li>
+                                        <li><a href="#">Maonyesho<span>(0)</span></a></li>
+                                        <li><a href="#">Michezo<span>(0)</span></a></li>
                                     </ul>
                                 </div>
                             </div>

@@ -1,19 +1,16 @@
-@extends('layouts.main')
+@extends('layouts.app')
 
 @section('content')
 <div class="container">
     <div class="row" style="margin-top: 30px;background-color: whitesmoke;margin-bottom: 20px">
         <div class="col-md-6">
-            <div class="card">
-
-                <div class="card-body" style="margin-top: 20px">
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
 
                         <div class="row">
                             <div class="col-md-8">
-                                <div class="form-group">
-                                    <label for="email" class=" col-form-label text-md-right">{{ __('label.email') }}</label>
+                                <div class="form-group col-md-12">
+                                    <label>{{ __('label.email') }}</label>
 
                                     <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
 
@@ -29,8 +26,8 @@
 
                         <div class="row">
                             <div class="col-md-8">
-                                <div class="form-group">
-                                    <label for="password" class=" col-form-label text-md-right">{{ __('label.password') }}</label>
+                                <div class="form-group col-md-12">
+                                    <label>{{ __('label.password') }}</label>
 
                                     <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
 
@@ -84,8 +81,7 @@
                         </div>
 
                     </form>
-                </div>
-            </div>
+
         </div>
 
         <div class="col-md-6">

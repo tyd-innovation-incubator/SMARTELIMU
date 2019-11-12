@@ -1,14 +1,12 @@
-@extends('layouts.main')
+@extends('layouts.app')
 
 @section('content')
 <div class="container">
     <div class="row" style="margin-top: 30px;background-color: whitesmoke;margin-bottom: 20px">
-        <div class="col-md-6">
-            <div class="card">
-                {{--<div class="card-header">{{ __('Register') }}</div>--}}
+        <form method="POST" action="{{ route('register') }}">
 
-                <div class="card-body" style="margin-top: 20px">
-                    <form method="POST" action="{{ route('register') }}">
+        <div class="col-md-6">
+
                         @csrf
 
                         <div class="row">
@@ -101,110 +99,101 @@
                             </div>
                         </div>
 
+        </div>
 
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    {!! Form::label('country', __("label.country"), ['class' => 'required_asterik']) !!}
-                                    {!! Form::select('country', code_value()->getCountryIdsForSelect(), [], ['class' => 'form-control select2', 'placeholder' => '', 'autocomplete' => 'off', 'id' => 'country', 'aria-describedby' => 'countryHelp', 'required']) !!}
-                                    @error('address')
-                                    <span class="invalid-feedback" role="alert">
+        <div class="col-md-6">
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        {!! Form::label('country', __("label.country"), ['class' => 'required_asterik']) !!}
+                        {!! Form::select('country', code_value()->getCountryIdsForSelect(), [], ['class' => 'form-control select2', 'placeholder' => '', 'autocomplete' => 'off', 'id' => 'country', 'aria-describedby' => 'countryHelp', 'required']) !!}
+                        @error('address')
+                        <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
-                                    @enderror
-                                </div>
-                            </div>
+                        @enderror
+                    </div>
+                </div>
 
-                            <div class="col-md-6">
-                                <div class="form-group ">
-                                    <label for="email" class=" ol-form-label text-md-right">{{ __('label.account_category') }}</label>
+                <div class="col-md-6">
+                    <div class="form-group ">
+                        <label for="email" class=" ol-form-label text-md-right">{{ __('label.account_category') }}</label>
 
-                                    {!! Form::select('account_category', code_value()->getCodeForSelect(2), [], ['class' => 'form-control select2', 'placeholder' => '', 'autocomplete' => 'off', 'id' => 'country', 'aria-describedby' => 'countryHelp', 'required']) !!}
-                                    {{--<input id="gender" type="text" class="form-control @error('gender') is-invalid @enderror" name="account_category" value="{{ old('gender') }}" required autocomplete="account_category">--}}
+                        {!! Form::select('account_category', code_value()->getCodeForSelect(2), [], ['class' => 'form-control select2', 'placeholder' => '', 'autocomplete' => 'off', 'id' => 'country', 'aria-describedby' => 'countryHelp', 'required']) !!}
+                        {{--<input id="gender" type="text" class="form-control @error('gender') is-invalid @enderror" name="account_category" value="{{ old('gender') }}" required autocomplete="account_category">--}}
 
-                                    @error('gender')
-                                    <span class="invalid-feedback" role="alert">
+                        @error('gender')
+                        <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
-                                    @enderror
-                                </div>
-                            </div>
-                        </div>
+                        @enderror
+                    </div>
+                </div>
+            </div>
 
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    {!! Form::label('region', __("label.region"), ['class' => 'required_asterik']) !!}
-                                    {!! Form::select('region',  code_value()->getRegionForSelect(), [], [ 'class' => 'form-control select2', 'placeholder' => '', 'autocomplete' => 'off', 'id' => 'region', 'aria-describedby' => '', 'required']) !!}
-                                    @error('address')
-                                    <span class="invalid-feedback" role="alert">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        {!! Form::label('region', __("label.region"), ['class' => 'required_asterik']) !!}
+                        {!! Form::select('region',  code_value()->getRegionForSelect(), [], [ 'class' => 'form-control select2', 'placeholder' => '', 'autocomplete' => 'off', 'id' => 'region', 'aria-describedby' => '', 'required']) !!}
+                        @error('address')
+                        <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
-                                    @enderror
-                                </div>
-                            </div>
+                        @enderror
+                    </div>
+                </div>
 
-                            <div class="col-md-6">
-                                <div class="form-group ">
-                                    {{--{!! Form::label('city', __("label.city"), ['class' => 'required_asterik']) !!}--}}
-                                    {{--{!! Form::text('province', null, ['class' => 'form-control', 'autocomplete' => 'off', 'id' => 'province', 'aria-describedby' => '', 'required']) !!}--}}
-                                    {{--<input id="gender" type="text" class="form-control @error('gender') is-invalid @enderror" name="account_category" value="{{ old('gender') }}" required autocomplete="account_category">--}}
+                <div class="col-md-6">
+                    <div class="form-group ">
+                        {{--{!! Form::label('city', __("label.city"), ['class' => 'required_asterik']) !!}--}}
+                        {{--{!! Form::text('province', null, ['class' => 'form-control', 'autocomplete' => 'off', 'id' => 'province', 'aria-describedby' => '', 'required']) !!}--}}
+                        {{--<input id="gender" type="text" class="form-control @error('gender') is-invalid @enderror" name="account_category" value="{{ old('gender') }}" required autocomplete="account_category">--}}
 
-                                    @error('gender')
-                                    <span class="invalid-feedback" role="alert">
+                        @error('gender')
+                        <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
-                                    @enderror
-                                </div>
-                            </div>
-                        </div>
+                        @enderror
+                    </div>
+                </div>
+            </div>
 
 
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="password" class=" col-form-label text-md-right">{{ trans('label.password') }}</label>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="password" class=" col-form-label text-md-right">{{ trans('label.password') }}</label>
 
-                                    <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
+                        <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
 
-                                    @error('password')
-                                    <span class="invalid-feedback" role="alert">
+                        @error('password')
+                        <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
-                                    @enderror
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group ">
-                                    <label for="password-confirm" class="col-form-label text-md-right">{{ trans('label.password_confirmation') }}</label>
+                        @enderror
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group ">
+                        <label for="password-confirm" class="col-form-label text-md-right">{{ trans('label.password_confirmation') }}</label>
 
-                                    <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
-                                </div>
-                            </div>
-                        </div>
+                        <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
+                    </div>
+                </div>
+            </div>
 
-
-
-
-
-
-
-                        <div class="form-group row mb-0">
-                            <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
-                                    {{ trans('label.register') }}
-                                </button>
-                            </div>
-                        </div>
-                    </form>
+            <div class="form-group row mb-0">
+                <div class="col-md-6 ">
+                    <button type="submit" class="btn btn-primary">
+                        {{ trans('label.register') }}
+                    </button>
                 </div>
             </div>
         </div>
 
-        <div class="col-md-6">
-            <h3 class="text-center " style="margin-top: 10px">{!! trans('label.registration_introduction.title') !!}</h3>
-            <hr>
-        </div>
+        </form>
     </div>
 </div>
 @endsection
