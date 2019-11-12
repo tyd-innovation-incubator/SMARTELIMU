@@ -14,8 +14,8 @@
                             <div class="row">
                                 <div class="col-md-8 col-md-offset-2 text-center">
                                     <div class="inline-block mt-40 pb-60 pl-60 pr-60 pt-40" data-bg-color="rgba(255,255,255, 0.8)">
-                                        <h1 class="text-uppercase text-theme-colored font-raleway font-weight-800 mb-0 mt-0 font-48" >We Are <span class="text-theme-color-2">SMART ELIMU</span></h1>
-                                        <p class="font-16 text-black font-raleway letter-spacing-1 mb-20">Every day we bring hope to millions of children in the world's<br>  hardest places as a sign of God's unconditional love.</p>
+                                        <h1 class="text-uppercase text-theme-colored font-raleway font-weight-800 mb-0 mt-0 font-48" > <span class="text-theme-color-2">{!! $homeslide->title !!}</span></h1>
+                                        <p class="font-16 text-black font-raleway letter-spacing-1 mb-20">{!! $homeslide->content !!}</p>
                                         <a class="btn btn-colored btn-theme-colored" href="#">Book Now</a>
                                     </div>
                                 </div>
