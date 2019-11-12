@@ -12,7 +12,7 @@
     <meta name="author" content="ThemeMascot" />
 
     <!-- Page Title -->
-    <title>StudyPress | Education & Courses HTML Template</title>
+    <title>SMART ELIMU |ELIMU NI UHALISIA,IPATE</title>
 
     <!-- Favicon and Touch Icons -->
     <link rel="shortcut icon" href="{!! url('assets/images/content/logo1.png') !!}">
