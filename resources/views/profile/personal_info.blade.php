@@ -130,7 +130,7 @@
                                                 <td>{!! $package->name !!}</td>
                                                 <td>{!! $package->category !!}</td>
                                                 <td>{!! $package->price !!}</td>
-                                                <td><a class="btn btn-success btn-xs" href="#">{!! trans('label.view_course') !!}</a></td>
+                                                <td><a class="btn btn-success btn-xs" href="{!! route('lessons.view',$package->uuid) !!}">{!! trans('label.view') !!}</a></td>
                                             </tr>
                                             @endforeach
                                             </tbody>
