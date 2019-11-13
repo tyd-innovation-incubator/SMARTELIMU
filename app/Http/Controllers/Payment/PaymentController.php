@@ -126,6 +126,10 @@ class PaymentController extends Controller
         $invoice->ispaid = 1;
         $invoice->save();
 
+        $package = $invoice->package;
+        $package->status = 1;
+        $package->save();
+
         $payment = $this->payments->pesapalConfirm($request, $pesapal_transaction_tracking_id, $pesapal_merchant_reference,$invoice);
 
         //updates payments according to portal service
