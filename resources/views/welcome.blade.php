@@ -297,4 +297,32 @@
         </div>
     </section>
 
+    @php
+        $partners = \App\Models\Information\Partner::all();
+        $about = \App\Models\Information\About::get()->first();
+    @endphp
+    <!-- Divider: Clients -->
+    <section class="clients">
+        <div class="container pt-10 pb-0">
+            <div class="row">
+                <div class="col-md-12">
+                    <!-- Section: Clients -->
+                    <div class="owl-carousel-6col clients-logo transparent text-center owl-nav-top">
+                        @foreach($partners as $partner)
+                            <div class="item"> <a href="#"><img src="{!! url('http://admin.smartelimu.ac.tz/img/partners/'.$partner->image.'') !!}" alt=""></a> </div>
+                            <div class="item"> <a href="#"><img src="{!! url('http://admin.smartelimu.ac.tz/img/partners/'.$partner->image.'') !!}" alt=""></a> </div>
+                            <div class="item"> <a href="#"><img src="{!! url('http://admin.smartelimu.ac.tz/img/partners/'.$partner->image.'') !!}" alt=""></a> </div>
+                            <div class="item"> <a href="#"><img src="{!! url('http://admin.smartelimu.ac.tz/img/partners/'.$partner->image.'') !!}" alt=""></a> </div>
+                            <div class="item"> <a href="#"><img src="{!! url('http://admin.smartelimu.ac.tz/img/partners/'.$partner->image.'') !!}" alt=""></a> </div>
+                            <div class="item"> <a href="#"><img src="{!! url('http://admin.smartelimu.ac.tz/img/partners/'.$partner->image.'') !!}" alt=""></a> </div>
+                            <div class="item"> <a href="#"><img src="{!! url('http://admin.smartelimu.ac.tz/img/partners/'.$partner->image.'') !!}" alt=""></a> </div>
+                            <div class="item"> <a href="#"><img src="{!! url('http://admin.smartelimu.ac.tz/img/partners/'.$partner->image.'') !!}" alt=""></a> </div>
+
+                        @endforeach
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 @endsection

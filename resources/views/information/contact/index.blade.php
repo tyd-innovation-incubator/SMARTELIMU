@@ -48,9 +48,13 @@
                                 <div class="icon-box left media bg-deep">
                                     <div class="media-body">
                                        <p>
-                                        <ul class="styled-icons flat small list-inline ">
+                                        <ul class=" list-inline ">
                                             <li><a href="#"><i class="fa fa-facebook"></i></a> </li>
                                             <li><a href="#"><i class="fa fa-twitter"></i></a> </li>
+                                            <li><a href="#"><i class="fa fa-instagram"></i></a> </li>
+                                            <li><a href="#"><i class="fa fa-youtube"></i></a> </li>
+                                            <li><a href="#"><i class="fa fa-google"></i></a> </li>
+                                            <li><a href="#"><i class="fa fa-linkedin"></i></a> </li>
                                         </ul>
                                        </p>
 
