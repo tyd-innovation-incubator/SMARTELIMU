@@ -95,8 +95,7 @@
                                         </button>
                                         <ul class="dropdown-menu" role="menu">
                                             <li><a href="#"><img src="{!! url('img/flags/png/england.png') !!}" alt="UK">English</a></li>
-                                            <li><a href="#"><img src="{!! url('img/flags/png/de.png') !!}" alt="GER">German</a></li>
-                                            <li><a href="#"><img src="{!! url('img/flags/png/pl.png') !!}" alt="PL">Polish</a></li>
+                                            <li><a href="#"><img src="{!! url('img/flags/png/tz.png') !!}" alt="GER">Swahili</a></li>
                                         </ul>
                                     </div>
                                 </li>
