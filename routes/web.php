@@ -18,7 +18,7 @@ Route::get('/', function () {
     $partners = \Illuminate\Support\Facades\DB::table('partners')->paginate(4);
     $testimonies = \Illuminate\Support\Facades\DB::table('testimonies')->paginate(4);
     $homesliders = \App\Models\Information\Homeslide::all();
-    $packages = \Illuminate\Support\Facades\DB::table('package')->paginate(4);
+    $packages = \Illuminate\Support\Facades\DB::table('package')->whereNotIn('category',[4,5])->paginate(4);
     $news = (new \App\Repositories\Information\NewsRepository())->getAllForHomePage();
 
     return view('welcome')

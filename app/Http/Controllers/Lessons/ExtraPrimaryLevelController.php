@@ -21,7 +21,7 @@ class ExtraPrimaryLevelController extends Controller
 
     public function index()
     {
-        $packages = Package::where('category','Ziada elimu ya msingi')->paginate(9);
+        $packages = Package::where('category',6)->paginate(9);
         $primary_level = $this->packages->getPrimaryLevelPackages();
         $secondary_level = $this->packages->getSecondaryLevelPackages();
         $extra_primary_level = $this->packages->getExtraPrimaryLevelPackages();

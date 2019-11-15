@@ -23,26 +23,22 @@ class PackageRepository extends BaseRepository
 
     public function getPrimaryLevelPackages()
     {
-        $packages = Package::where('category','Elimu ya msingi')->get();
-
+        $packages = Package::where('category',5)->get();
         return $packages;
     }
     public function getSecondaryLevelPackages()
     {
-        $packages = Package::where('category','Elimu ya sekondari')->get();
-
+        $packages = Package::where('category',4)->get();
         return $packages;
     }
     public function getExtraPrimaryLevelPackages()
     {
-        $packages = Package::where('category','Ziada elimu ya msingi')->get();
-
+        $packages = Package::where('category',6)->get();
         return $packages;
     }
     public function getExtralSecondaryLevelPackages()
     {
-        $packages = Package::where('category','Ziada elimu ya sekondari')->get();
-
+        $packages = Package::where('category',7)->get();
         return $packages;
     }
 
