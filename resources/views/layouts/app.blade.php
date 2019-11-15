@@ -139,7 +139,14 @@
                             <img src="{!! url('assets/images/content/logo.png') !!}" alt="">
                         </a>
                         <ul class="menuzord-menu dark">
-                            <li><a href="{!! url('/home') !!}">{!! trans('label.home') !!}</a></li>
+                            @auth
+
+                                <li><a href="{!! url('/home') !!}">{!! trans('label.home') !!}</a></li>
+
+                            @else
+                                <li><a href="{!! url('/') !!}">{!! trans('label.home') !!}</a></li>
+
+                            @endauth
                             <li><a href="">{!! trans('label.course') !!}</a>
                                 <div class="megamenu">
                                     <div class="megamenu-row">
