@@ -55,14 +55,6 @@
                         <div class="owl-carousel-6col clients-logo transparent text-center owl-nav-top">
                             @foreach($partners as $partner)
                                 <div class="item"> <a href="#"><img src="{!! url('http://admin.smartelimu.ac.tz/img/partners/'.$partner->image.'') !!}" alt=""></a> </div>
-                                <div class="item"> <a href="#"><img src="{!! url('http://admin.smartelimu.ac.tz/img/partners/'.$partner->image.'') !!}" alt=""></a> </div>
-                                <div class="item"> <a href="#"><img src="{!! url('http://admin.smartelimu.ac.tz/img/partners/'.$partner->image.'') !!}" alt=""></a> </div>
-                                <div class="item"> <a href="#"><img src="{!! url('http://admin.smartelimu.ac.tz/img/partners/'.$partner->image.'') !!}" alt=""></a> </div>
-                                <div class="item"> <a href="#"><img src="{!! url('http://admin.smartelimu.ac.tz/img/partners/'.$partner->image.'') !!}" alt=""></a> </div>
-                                <div class="item"> <a href="#"><img src="{!! url('http://admin.smartelimu.ac.tz/img/partners/'.$partner->image.'') !!}" alt=""></a> </div>
-                                <div class="item"> <a href="#"><img src="{!! url('http://admin.smartelimu.ac.tz/img/partners/'.$partner->image.'') !!}" alt=""></a> </div>
-                                <div class="item"> <a href="#"><img src="{!! url('http://admin.smartelimu.ac.tz/img/partners/'.$partner->image.'') !!}" alt=""></a> </div>
-
                             @endforeach
                         </div>
                     </div>

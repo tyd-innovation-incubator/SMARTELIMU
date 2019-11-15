@@ -245,10 +245,7 @@
     <!-- Start main-content -->
 
          @yield('content')
-
 <!-- end main-content -->
-
-
 
     <!-- Footer -->
     <footer id="footer" class="footer" data-bg-color="#1f1f1f">
