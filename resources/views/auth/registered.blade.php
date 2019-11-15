@@ -17,19 +17,35 @@
                     {!! Form::open(['route' => ["auth.account.sms_confirm",$user->uuid],'method'=>'get', 'autocomplete' => 'off', 'class' => 'needs-validation', 'novalidate']) !!}
                     @csrf
 
+            <div class="row">
+                <center>
+                    <i class="far fa-check-square" style="font-size: 50px;"></i>
+                </center>
+                <p>
+                    @lang("label.dear"),
+                </p>
+                <p>
+                    Ahsante kwa kujisajili kwenye Smart
+                    Elimu. Ujumbe wa kukamilisha kujiunga umetumwa kwenye barua pepe yako uliyotumia kujisajili. Tafadhali fungua barua pepe yako ili uweze kukamilisha kujisajili
+                </p>
+
+                <h2 style="text-align: center"><strong>OR</strong></h2>
+                <p>
+                    {!! trans('auth.confirmation_code_title',['phone' => $user->phone]) !!}
+                </p>
+            </div>
                         <div class="row">
-                            <div class="col-md-4">
+                            <div class="col-md-4 mt-2" style="margin-top: 10px">
+                                {!! Form::label('token', trans("label.confirmation_code")) !!} :
 
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-6" style="margin-top: 10px">
                                 <div class="form-group">
-                                    {!! Form::label('token', trans("label.confirmation_code")) !!}
                                     {!! Form::text('token', null, ['class' => 'form-control create', 'autocomplete' => 'off', 'id' => 'email', 'aria-describedby' => 'emailHelp', 'required']) !!}
                                     {{--<small id="emailHelp" class="form-text text-muted">{{ trans('label.confirmation_helper') }}</small>--}}
                                     {!! $errors->first('token', '<span class="badge badge-danger">:message</span>') !!}
                                 </div>
                             </div>
-
                         </div>
 
                         <div class="form-group row mb-0">
