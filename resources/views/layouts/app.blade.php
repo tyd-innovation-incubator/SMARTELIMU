@@ -164,19 +164,36 @@
                                         <div class="col3">
                                             <ul class="list-unstyled list-dashed">
                                                 <li><a href="{!! route('lessons.secondary') !!}"><i class="fa fa-list-ul"></i> {!! trans('label.secondary_level') !!}</a></li>
+                                                @foreach(code_value()->getSecondaryLevelPackages() as $package)
+                                                    <li><a href="{!! route('lessons.view',$package->uuid) !!}">{!! $package->name !!}</a></li>
+
+                                                    {{--<a href="{!! route('lessons.view',$package->uuid) !!}">{!! $package->name !!}</a>--}}
+
+                                                @endforeach
 
                                             </ul>
                                         </div>
                                         <div class="col3">
                                             <ul class="list-unstyled list-dashed">
                                                 <li><a href="{!! route('lessons.extra_primary') !!}"><i class="fa fa-list-ul"></i> {!! trans('label.extra_primary') !!}</a></li>
+                                                @foreach(code_value()->getExtraPrimaryLevelPackages() as $package)
+                                                    <li><a href="{!! route('lessons.view',$package->uuid) !!}">{!! $package->name !!}</a></li>
+
+                                                    {{--<a href="{!! route('lessons.view',$package->uuid) !!}">{!! $package->name !!}</a>--}}
+
+                                                @endforeach
 
                                             </ul>
                                         </div>
                                         <div class="col3">
                                             <ul class="list-unstyled list-dashed">
                                                 <li><a href="{!! route('lessons.extra_secondary') !!}"><i class="fa fa-list-ul"></i> {!! trans('label.extra_secondary') !!}</a></li>
+                                                @foreach(code_value()->getExtraSecondaryLevelPackages() as $package)
+                                                    <li><a href="{!! route('lessons.view',$package->uuid) !!}">{!! $package->name !!}</a></li>
 
+                                                    {{--<a href="{!! route('lessons.view',$package->uuid) !!}">{!! $package->name !!}</a>--}}
+
+                                                @endforeach
                                             </ul>
                                         </div>
                                     </div>
