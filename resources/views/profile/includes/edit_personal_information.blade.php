@@ -22,7 +22,7 @@
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-8 col-md-8">
-                    <form method="POST" action="{{ route('update_user',$user->uuid) }}">
+                    <form method="POST" action="{{ route('profile.update_personal_info',$user->uuid) }}">
                         @csrf
                         <div class="icon-box mb-0 p-0">
                             <a href="#" class="icon icon-bordered icon-rounded icon-sm pull-left mb-0 mr-10">
@@ -44,7 +44,7 @@
                         <div class="row">
                             <div class="form-group col-md-6">
                                 <label>{!! trans('label.username') !!}</label>
-                                <input name="user_name" class="form-control" value="{!! $user->userName !!}" type="text">
+                                <input name="username" class="form-control" value="{!! $user->userName !!}" type="text">
                             </div>
                             <div class="form-group col-md-6">
                                 <label>{!! trans('label.email') !!}</label>

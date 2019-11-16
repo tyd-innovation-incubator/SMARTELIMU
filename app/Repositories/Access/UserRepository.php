@@ -163,7 +163,7 @@ class UserRepository extends BaseRepository
         return DB::transaction(function () use ($input,$user) {
             /*Update user info to user table*/
             $user = $this->updateUser($input, $user);
-            $this->attachAccounts($user, $input);
+//            $this->attachAccounts($user, $input);
             return $user;
         });
     }
@@ -183,12 +183,9 @@ class UserRepository extends BaseRepository
                 'last_name' => $input['last_name'],
                 'username' => $input['username'],
                 'gender' => $input['gender'],
-                'address' => $input['address'],
                 'category_cv_id' => $input['account_category'],
                 'phone' => $data['phone'],
                 'email' => $input['email'],
-                'password' => $input['password'],
-                'confirmation_code' => mt_rand(100000,999999),
                 'roles' =>2,
             ]);
 
