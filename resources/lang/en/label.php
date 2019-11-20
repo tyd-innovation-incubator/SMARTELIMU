@@ -14,6 +14,7 @@ return [
     'supported_by'=>'Supported by',
     'go_back' => 'Go Back',
     'date' => 'Date',
+    'subject' => 'Subject',
     'start_date'=>'Start Date',
     'about' => 'About',
     'dashboard' => 'Dashboard',
