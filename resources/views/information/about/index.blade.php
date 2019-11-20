@@ -23,7 +23,7 @@
                         <div class="col-md-12">
                             <h6 class="letter-space-4 text-gray-darkgray text-uppercase mt-0 mb-0">{!! trans('label.about_smart_elimu') !!}</h6>
                             <h2 class="text-uppercase font-weight-600 mt-0 font-28 line-bottom">{!! trans('label.smart_elimu_intro') !!}</h2>
-                            <h4 class="text-theme-colored">{!! $about->utangulizi !!}</h4>
+                            <h4 class="text-theme-colored">{!! $about->introduction !!}</h4>
                             <p>.</p>
                         </div>
 
@@ -44,7 +44,7 @@
                             </a>
                             <div class="icon-box-details">
                                 <h4 class="icon-box-title font-16 font-weight-600 m-0 mb-5">{!! trans('label.mission') !!}</h4>
-                                <p class="text-gray font-13 mb-0">{!! $about->dhima !!}</p>
+                                <p class="text-gray font-13 mb-0">{!! $about->mission !!}</p>
                             </div>
                         </div>
                     </div>
@@ -55,7 +55,7 @@
                             </a>
                             <div class="icon-box-details">
                                 <h4 class="icon-box-title font-16 font-weight-600 m-0 mb-5">{!! trans('label.vision') !!}</h4>
-                                <p class="text-gray font-13 mb-0">{!! $about->dira !!}</p>
+                                <p class="text-gray font-13 mb-0">{!! $about->vision !!}</p>
                             </div>
                         </div>
                     </div>
@@ -66,7 +66,7 @@
                             </a>
                             <div class="icon-box-details">
                                 <h4 class="icon-box-title font-16 font-weight-600 m-0 mb-5">{!! trans('label.partners') !!}</h4>
-                                <p class="text-gray font-13 mb-0">{!! $about->wadau !!}</p>
+                                <p class="text-gray font-13 mb-0">{!! $about->pioneers !!}</p>
                             </div>
                         </div>
                     </div>
@@ -127,50 +127,7 @@
         </section>
 
 
-{{--        <!-- Divider: Call To Action -->--}}
-{{--        <section class="bg-theme-color-2">--}}
-{{--            <div class="container pt-10 pb-20">--}}
-{{--                <div class="row">--}}
-{{--                    <div class="call-to-action">--}}
-{{--                        <div class="col-md-6">--}}
-{{--                            <h3 class="mt-5 mb-5 text-white vertical-align-middle"><i class="pe-7s-mail mr-10 font-48 vertical-align-middle"></i> </h3>--}}
-{{--                        </div>--}}
-{{--                        <div class="col-md-6">--}}
-{{--                            <!-- Mailchimp Subscription Form Starts Here -->--}}
-{{--                            <form id="mailchimp-subscription-form" class="newsletter-form mt-10">--}}
-{{--                                <div class="input-group">--}}
-{{--                                    <input type="email" value="" name="EMAIL" placeholder="Your Email" class="form-control input-lg font-16" data-height="45px" id="mce-EMAIL-footer">--}}
-{{--                                    <span class="input-group-btn">--}}
-{{--                    <button data-height="45px" class="btn bg-theme-colored text-white btn-xs m-0 font-14" type="submit">Subscribe</button>--}}
-{{--                  </span>--}}
-{{--                                </div>--}}
-{{--                            </form>--}}
-{{--                            <!-- Mailchimp Subscription Form Validation-->--}}
-{{--                            <script type="text/javascript">--}}
-{{--                                $('#mailchimp-subscription-form').ajaxChimp({--}}
-{{--                                    callback: mailChimpCallBack,--}}
-{{--                                    url: '//thememascot.us9.list-manage.com/subscribe/post?u=a01f440178e35febc8cf4e51f&amp;id=49d6d30e1e'--}}
-{{--                                });--}}
-
-{{--                                function mailChimpCallBack(resp) {--}}
-{{--                                    // Hide any previous response text--}}
-{{--                                    var $mailchimpform = $('#mailchimp-subscription-form'),--}}
-{{--                                        $response = '';--}}
-{{--                                    $mailchimpform.children(".alert").remove();--}}
-{{--                                    if (resp.result === 'success') {--}}
-{{--                                        $response = '<div class="alert alert-success"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>' + resp.msg + '</div>';--}}
-{{--                                    } else if (resp.result === 'error') {--}}
-{{--                                        $response = '<div class="alert alert-danger"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>' + resp.msg + '</div>';--}}
-{{--                                    }--}}
-{{--                                    $mailchimpform.prepend($response);--}}
-{{--                                }--}}
-{{--                            </script>--}}
-{{--                            <!-- Mailchimp Subscription Form Ends Here -->--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--        </section>--}}
+{{----}}
 
     </div>
     <!-- end main-content -->
