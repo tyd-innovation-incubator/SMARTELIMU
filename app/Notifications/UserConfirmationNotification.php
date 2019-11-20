@@ -41,7 +41,7 @@ class UserConfirmationNotification extends Notification implements ShouldQueue
     public function toMail($notifiable)
     {
         return (new MailMessage)
-            ->subject(trans("label.email.account_confirm"))
+            ->subject(trans("label.account_confirm"))
             ->markdown('emails.user.confirmation', ['confirmation_code' => $notifiable->confirmation_code, 'name' => $notifiable->name]);
     }
 

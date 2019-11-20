@@ -25,7 +25,7 @@
 
                         <p>@lang("strings.email.confirm_account.line_2")&nbsp;&nbsp;<a href="{{ route("auth.account.confirm", $confirmation_code) }}">{{ route("auth.account.confirm", $confirmation_code) }}</a></p>
 
-                        <b>- @lang("label.thanks") ( {{ config("env.app.name") }} )</b> </td>
+                        <b>- Asante ( {{ config("env.app.name") }} )</b> </td>
                 </tr>
                 </tbody>
             </table>

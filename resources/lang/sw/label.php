@@ -118,7 +118,10 @@ Yote yaliyomo kwenye kozi',
     'contact_us' => 'Wasiliana nasi',
     'account' => 'Akaunti',
     'extra_courses' =>'Masomo ya ziada',
-    'extra_course_description' => 'Haya ni Masomo ambayo hayamo kwenye silabasi yetu ya Tanzania lakini yatamuongezea mwanafunzi maarifa ya ziada'
+    'extra_course_description' => 'Haya ni Masomo ambayo hayamo kwenye silabasi yetu ya Tanzania lakini yatamuongezea mwanafunzi maarifa ya ziada',
 
+    'account_confirm' => 'Uthibitishaji wa Akaunti ya mtandaoni',
+    'account_activated' => 'Uthibitisho wa kuhamsha akaunti',
+    'account_deactivated' => 'Uthibitisho wa kufunga Akaunti',
 
 ];

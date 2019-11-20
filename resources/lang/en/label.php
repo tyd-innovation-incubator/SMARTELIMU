@@ -44,6 +44,13 @@ return [
         'association' => 'Association',
     ],
 
+        'index' => 'Email address',
+        'email' => 'Email',
+        'account_confirm' => 'Online account confirmation',
+        'account_activated' => 'Online account activated confirmation',
+        'account_deactivated' => 'Online account deactivated confirmation',
+
+
     'registration_no' => 'Registration number',
     'login' => 'Login',
     'tender' => 'Tender',
