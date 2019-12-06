@@ -22,8 +22,8 @@
 {{--                            </div>--}}
                             <div class="col-sx-12 col-sm-4 col-md-4">
                                 <div class="doctor-thumb">
-{{--                                    <img src="{!! url('http://admin.smartelimu.ac.tz/img/packages/'.$package->image.'') !!}" alt="">--}}
-                                    <img src="{!! url('img/content/1565768245.jpg') !!}" alt="">
+                                    <img src="{!! url('http://admin.smartelimu.ac.tz/img/packages/'.$package->image.'') !!}" alt="">
+{{--                                    <img src="{!! url('img/content/1565768245.jpg') !!}" alt="">--}}
                                 </div>
                                 <div class="info p-20 bg-black-333">
                                     <div class="font-36 pl-20 text-white text-left pr-20 p-10">
