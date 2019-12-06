@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="08d93d0e-5c1d-42d8-82c3-2dc7bd1f714f" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/lessons/primary_level/show/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/lessons/primary_level/show/show.blade.php" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -166,6 +166,11 @@
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="la&#9;FILE&#9;file:///home/dontito/SMARTELIMU/resources/lang/sw/label.php&#10;new&#9;FILE&#9;file:///home/dontito/SMARTELIMU/app/Repositories/Information/NewsRepository.php&#10;label&#9;FILE&#9;file:///home/dontito/SMARTELIMU/resources/lang/sw/label.php&#10;label.&#9;FILE&#9;file:///home/dontito/SMARTELIMU/resources/lang/sw/label.php&#10;codevaluesre&#9;null&#9;null&#10;userreposi&#9;FILE&#9;file:///home/dontito/SMARTELIMU/app/Repositories/Access/UserRepository.php&#10;menu&#9;FILE&#9;file:///home/dontito/SMARTELIMU/public/themes/css/menuzord-skins/menuzord-rounded-boxed.css&#10;theme&#9;FILE&#9;file:///home/dontito/SMARTELIMU/public/themes/css/colors/theme-skin-color-set-1.css&#10;user&#9;FILE&#9;file:///home/dontito/SMARTELIMU/app/Repositories/Access/UserRepository.php&#10;paymentco&#9;FILE&#9;file:///home/dontito/SMARTELIMU/app/Http/Controllers/Payment/PaymentController.php&#10;style.css&#9;FILE&#9;file:///home/dontito/SMARTELIMU/public/assets/css/style.css&#10;labe&#9;FILE&#9;file:///home/dontito/SMARTELIMU/resources/lang/sw/label.php&#10;regis&#9;FILE&#9;file:///home/dontito/SMARTELIMU/app/Http/Controllers/Auth/RegisterController.php&#10;userre&#9;FILE&#9;file:///home/dontito/SMARTELIMU/app/Repositories/Access/UserRepository.php&#10;abel&#9;FILE&#9;file:///home/dontito/SMARTELIMU/resources/lang/sw/label.php&#10;userrepo&#9;FILE&#9;file:///home/dontito/SMARTELIMU/app/Repositories/Access/UserRepository.php&#10;codevalu&#9;FILE&#9;file:///home/dontito/SMARTELIMU/app/Repositories/Sysdef/CodeValueRepository.php&#10;profi&#9;FILE&#9;file:///home/dontito/SMARTELIMU/app/Http/Controllers/Profile/ProfileController.php&#10;larave&#9;FILE&#9;file:///home/dontito/SMARTELIMU/storage/logs/laravel-2019-07-30.log" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -197,18 +202,6 @@
       <recent name="$PROJECT_DIR$/resources/views/lessons/secondary_level/includes" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner scope="XML" />
@@ -223,6 +216,18 @@
       <envs />
       <method v="2" />
     </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -321,6 +326,7 @@
       <workItem from="1574237072710" duration="2268000" />
       <workItem from="1574241343086" duration="707000" />
       <workItem from="1574324644188" duration="8000" />
+      <workItem from="1575627050219" duration="1035000" />
     </task>
     <servers />
   </component>

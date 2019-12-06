@@ -31,6 +31,7 @@
 
                                     </div>
                                     <p>
+                                    @auth
                                     @if($package->status == 0)
 {{--                                        <a class="btn btn-dark btn-theme-colored btn-xl" data-toggle="tooltip" data-placement="top" style="width: 100%" title="Tooltip on top"> {!! trans('label.take_course') !!}</a>--}}
                                     <form enctype="multipart/form-data" method="get" class="cart" action="{!! route('package.create_invoice',$package->uuid) !!}">
@@ -48,7 +49,27 @@
                                     </form>
 
                                     </p>
-                                    @endif
+                                        @endif
+                                        <a class="btn btn-dark btn-theme-colored btn-xl" data-toggle="tooltip" data-placement="top" style="width: 100%" title="Tooltip on top"> {!! trans('label.take_course') !!}</a>--}}
+                                        <form enctype="multipart/form-data" method="get" class="cart" action="{!! route('package.create_invoice',$package->uuid) !!}">
+                                            <input type="hidden" value=" {!! $package->uuid !!}
+                                                " name="package">
+                                            <button class="btn btn-dark btn-theme-colored btn-xl" style="width: 100%" href="{!! route('lessons.view',$package->uuid) !!}" type="submit">{!! trans('label.take_course') !!}</button>
+                                        </form>
+
+                                        </p>
+                                        <p>
+                                        <form enctype="multipart/form-data" method="get" class="cart" action="{!! route('package.create_invoice',$package->uuid) !!}">
+                                            <input type="hidden" value=" {!! $package->uuid !!}
+                                                " name="package">
+                                            <button class="btn btn-default btn-theme-colored btn-xl" style="width: 100%" href="{!! route('lessons.view',$package->uuid) !!}" type="submit">{!! trans('label.add_cart') !!}</button>
+                                        </form>
+
+                                        </p>
+                                        @else
+
+                                        @endauth
+
                                     <h5 style="margin-top: 30px">{!! trans('label.course_include') !!}</h5>
                                     <ul class="list-icon">
                                         <li><i class="fa fa-clock-o"></i>27hrs for videos</li>
