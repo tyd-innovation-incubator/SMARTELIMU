@@ -14,9 +14,9 @@
                             <div class="row">
                                 <div class="col-md-6 ct-u-colorWhite col-md-offset-6" >
                                     <div class="ct-darkBackground ct-u-marginBottom40 animated fadeInLeft activate" data-fx="fadeInLeft" data-time="200">
-                                        <h3 class="text-capitalize ct-fw-900">{!! $homeslide->title !!}</h3>
+                                        <h3 class="text-uppercase text-theme-color-2 font-raleway font-weight-800 mb-0 mt-0 font-30">{!! $homeslide->title !!}</h3>
                                     </div>
-                                    <p class="ct-u-marginBottom40 ct-fw-600 animated" data-fx="fadeInLeft" data-time="800" >{!! $homeslide->content !!} </p>
+                                    <p class="ct-u-marginBottom40 ct-fw-600 animated" data-fx="fadeInLeft" data-time="800" style="color: white">{!! strip_tags($homeslide->content) !!} </p>
                                     <a href="courses-listing.html" class="text-uppercase btn btn-dark btn-lg animated" data-fx="fadeInLeft" data-time="1200">{!! trans('label.view_course') !!}</a>
                                 </div>
 {{--                                <div class="col-md-8 col-md-offset-2 text-center">--}}
@@ -177,28 +177,28 @@
                     </h3>
                     <div class="col-xs-12 col-sm-6 col-md-3 mb-md-50">
                         <div class="funfact text-center">
-                            <i class="pe-7s-smile mt-5 text-theme-color-2"></i>
+                            <i class="fa fa-users mt-5 text-theme-color-2"></i>
                             <h2 data-animation-duration="2000" data-value="5248" class="animate-number text-white mt-0 font-38 font-weight-500">0</h2>
                             <h5 class="text-white text-uppercase mb-0">{!! trans('label.candidates') !!}</h5>
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-3 mb-md-50">
                         <div class="funfact text-center">
-                            <i class="pe-7s-note2 mt-5 text-theme-color-2"></i>
+                            <i class="fa fa-user mt-5 text-theme-color-2"></i>
                             <h2 data-animation-duration="2000" data-value="675" class="animate-number text-white mt-0 font-38 font-weight-500">0</h2>
                             <h5 class="text-white text-uppercase mb-0">{!! trans('label.parents') !!}</h5>
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-3 mb-md-50">
                         <div class="funfact text-center">
-                            <i class="pe-7s-users mt-5 text-theme-color-2"></i>
+                            <i class="fa fa-users mt-5 text-theme-color-2"></i>
                             <h2 data-animation-duration="2000" data-value="248" class="animate-number text-white mt-0 font-38 font-weight-500">0</h2>
                             <h5 class="text-white text-uppercase mb-0">{!! trans('label.teachers') !!}</h5>
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-3 mb-md-0">
                         <div class="funfact text-center">
-                            <i class="pe-7s-cup mt-5 text-theme-color-2"></i>
+                            <i class="fa fa-users mt-5 text-theme-color-2"></i>
                             <h2 data-animation-duration="2000" data-value="24" class="animate-number text-white mt-0 font-38 font-weight-500">0</h2>
                             <h5 class="text-white text-uppercase mb-0">{!! trans('label.partners') !!}</h5>
                         </div>
