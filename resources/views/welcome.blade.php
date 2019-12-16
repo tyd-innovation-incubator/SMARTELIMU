@@ -12,13 +12,20 @@
                     <div class="display-table-cell">
                         <div class="container pt-150 pb-150">
                             <div class="row">
-                                <div class="col-md-8 col-md-offset-2 text-center">
-                                    <div class="inline-block mt-40 pb-60 pl-60 pr-60 pt-40" data-bg-color="rgba(255,255,255, 0.8)">
-                                        <h1 class="text-uppercase text-theme-colored font-raleway font-weight-800 mb-0 mt-0 font-48" > <span class="text-theme-color-2">{!! $homeslide->title !!}</span></h1>
-                                        <p class="font-16 text-black font-raleway letter-spacing-1 mb-20">{!! $homeslide->content !!}</p>
-                                        <a class="btn btn-colored btn-theme-colored" href="#">{!! trans('label.view_course') !!}</a>
+                                <div class="col-md-6 ct-u-colorWhite col-md-offset-6" >
+                                    <div class="ct-darkBackground ct-u-marginBottom40 animated fadeInLeft activate" data-fx="fadeInLeft" data-time="200">
+                                        <h3 class="text-capitalize ct-fw-900">{!! $homeslide->title !!}</h3>
                                     </div>
+                                    <p class="ct-u-marginBottom40 ct-fw-600 animated" data-fx="fadeInLeft" data-time="800" >{!! $homeslide->content !!} </p>
+                                    <a href="courses-listing.html" class="text-uppercase btn btn-dark btn-lg animated" data-fx="fadeInLeft" data-time="1200">{!! trans('label.view_course') !!}</a>
                                 </div>
+{{--                                <div class="col-md-8 col-md-offset-2 text-center">--}}
+{{--                                    <div class="inline-block mt-40 pb-60 pl-60 pr-60 pt-40" data-bg-color="">--}}
+{{--                                        <h1 class="text-uppercase text-theme-colored font-raleway font-weight-800 mb-0 mt-0 font-48" > <span class="text-theme-color-2">{!! $homeslide->title !!}</span></h1>--}}
+{{--                                        <p class="font-16 text-white font-raleway letter-spacing-1 mb-20">{!! $homeslide->content !!}</p>--}}
+{{--                                        <a class="btn btn-colored btn-theme-colored" href="#">{!! trans('label.view_course') !!}</a>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
                             </div>
                         </div>
                     </div>
