@@ -23,22 +23,22 @@ class PackageRepository extends BaseRepository
 
     public function getPrimaryLevelPackages()
     {
-        $packages = Package::where('category',5)->get();
+        $packages = Package::where(['category',5,'status',1])->get();
         return $packages;
     }
     public function getSecondaryLevelPackages()
     {
-        $packages = Package::where('category',4)->get();
+        $packages = Package::where(['category',4,'status',1])->get();
         return $packages;
     }
     public function getExtraPrimaryLevelPackages()
     {
-        $packages = Package::where('category',6)->get();
+        $packages = Package::where(['category',6,'status',1])->get();
         return $packages;
     }
     public function getExtralSecondaryLevelPackages()
     {
-        $packages = Package::where('category',7)->get();
+        $packages = Package::where(['category',7,'status',1])->get();
         return $packages;
     }
 
