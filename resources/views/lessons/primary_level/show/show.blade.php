@@ -22,7 +22,7 @@
 {{--                            </div>--}}
                             <div class="col-sx-12 col-sm-4 col-md-4">
                                 <div class="doctor-thumb">
-                                    <img src="{!! url('http://admin.smartelimu.ac.tz/img/packages/'.$package->image.'') !!}" alt="">
+                                    <img src="{!! url('http://admin.smartelimu.ac.tz/img/packages/'.$package->image.'') !!}" alt="" width="400">
 {{--                                    <img src="{!! url('img/content/1565768245.jpg') !!}" alt="">--}}
                                 </div>
                                 <div class="info p-20 bg-black-333">
@@ -30,27 +30,11 @@
                                         <h2 style="text-decoration-color: black;font-weight: 700;text-align: center"><span>{!! trans('label.price') !!} : </span><sup>TSH</sup>{!! $package->price !!}</h2>
 
                                     </div>
-                                    <p>
-                                    @auth
-                                    @if($package->status == 0)
-{{--                                        <a class="btn btn-dark btn-theme-colored btn-xl" data-toggle="tooltip" data-placement="top" style="width: 100%" title="Tooltip on top"> {!! trans('label.take_course') !!}</a>--}}
-                                    <form enctype="multipart/form-data" method="get" class="cart" action="{!! route('package.create_invoice',$package->uuid) !!}">
-                                        <input type="hidden" value=" {!! $package->uuid !!}
-                                            " name="package">
-                                        <button class="btn btn-dark btn-theme-colored btn-xl" style="width: 100%" href="{!! route('lessons.view',$package->uuid) !!}" type="submit">{!! trans('label.take_course') !!}</button>
-                                    </form>
 
-                                    </p>
-                                    <p>
-                                    <form enctype="multipart/form-data" method="get" class="cart" action="{!! route('package.create_invoice',$package->uuid) !!}">
-                                        <input type="hidden" value=" {!! $package->uuid !!}
-                                            " name="package">
-                                        <button class="btn btn-default btn-theme-colored btn-xl" style="width: 100%" href="{!! route('lessons.view',$package->uuid) !!}" type="submit">{!! trans('label.add_cart') !!}</button>
-                                    </form>
 
-                                    </p>
-                                        @endif
-                                        <a class="btn btn-dark btn-theme-colored btn-xl" data-toggle="tooltip" data-placement="top" style="width: 100%" title="Tooltip on top"> {!! trans('label.take_course') !!}</a>--}}
+                                    @if(($package->invoice) && $package->invoice->ispaid == 1 )
+
+                                    @else
                                         <form enctype="multipart/form-data" method="get" class="cart" action="{!! route('package.create_invoice',$package->uuid) !!}">
                                             <input type="hidden" value=" {!! $package->uuid !!}
                                                 " name="package">
@@ -64,19 +48,18 @@
                                                 " name="package">
                                             <button class="btn btn-default btn-theme-colored btn-xl" style="width: 100%" href="{!! route('lessons.view',$package->uuid) !!}" type="submit">{!! trans('label.add_cart') !!}</button>
                                         </form>
-
                                         </p>
-                                        @else
 
-                                        @endauth
+                                        @endif
 
-                                    <h5 style="margin-top: 30px">{!! trans('label.course_include') !!}</h5>
-                                    <ul class="list-icon">
-                                        <li><i class="fa fa-clock-o"></i>27hrs for videos</li>
-                                        <li><i class="fa fa-hand-o-right"></i>75 articles for download</li>
-                                        <li><i class="fa fa-thumbs-o-up"></i>3hrs for examinations</li>
-                                        <li><i class="fa fa-pencil-square-o"></i>Certificate for complete </li>
-                                    </ul>
+
+{{--                                    <h5 style="margin-top: 30px">{!! trans('label.course_include') !!}</h5>--}}
+{{--                                    <ul class="list-icon">--}}
+{{--                                        <li><i class="fa fa-clock-o"></i>27hrs for videos</li>--}}
+{{--                                        <li><i class="fa fa-hand-o-right"></i>75 articles for download</li>--}}
+{{--                                        <li><i class="fa fa-thumbs-o-up"></i>3hrs for examinations</li>--}}
+{{--                                        <li><i class="fa fa-pencil-square-o"></i>Certificate for complete </li>--}}
+{{--                                    </ul>--}}
 
 
                                 </div>
@@ -95,11 +78,11 @@
                                                     </div>
                                                 </li>
 
-                                                <li>
-                                                    <div title="Rated 4.50 out of 5" class="star-rating"><span style="width: 90%;">4.50</span></div>
-                                                </li>
-                                                <li><a href="#"><span>2 </span>Reviews</a></li>
-                                                <li><a href="#">Add reviews</a></li>
+{{--                                                <li>--}}
+{{--                                                    <div title="Rated 4.50 out of 5" class="star-rating"><span style="width: 90%;">4.50</span></div>--}}
+{{--                                                </li>--}}
+{{--                                                <li><a href="#"><span>2 </span>Reviews</a></li>--}}
+{{--                                                <li><a href="#">Add reviews</a></li>--}}
                                             </ul>
                                         </div>
 
