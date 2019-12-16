@@ -55,7 +55,7 @@
         <div class="container pb-60">
             <div class="section-content">
                 <div class="row">
-                    <div class="col-md-8">
+                    <div class="col-md-12">
                         <div class="meet-doctors">
                             <h2 class="text-uppercase mt-0 line-height-1"><span class="text-theme-colored">MAADILI YETU YA MSINGI</span></h2>
                             <h6 class="text-uppercase letter-space-5 line-bottom title font-playfair text-uppercase"></h6>
@@ -66,10 +66,9 @@
                             <div class="col-sm-6 col-md-6">
                                 <div class="icon-box p-0 mb-20">
                                     <a class="icon bg-theme-colored icon-circled icon-border-effect effect-circle icon-sm pull-left sm-pull-none flip" href="#">
-                                        <i class="pe-7s-scissors text-white"></i>
-                                    </a>
+                                        <img class="item" src="{!! url('assets/images/content/UGUNDUZI_(130_X_130).png') !!}">                                    </a>
                                     <div class="ml-70 ml-sm-0">
-                                        <h5 class="icon-box-title mt-10 text-uppercase letter-space-2 mb-10">UGUNDUZI</h5>
+                                        <h5 class="icon-box-title mt-10 text-uppercase letter-space-2 mb-10"><b>UGUNDUZI</b></h5>
                                         <p class="text-gray">Silaha yetu kuu ni ugunduzi ili kutoa yaliyo bora kwenye elimu.</p>
                                     </div>
                                 </div>
@@ -77,10 +76,9 @@
                             <div class="col-sm-6 col-md-6">
                                 <div class="icon-box p-0 mb-20">
                                     <a class="icon bg-theme-color-2 icon-circled icon-border-effect effect-circle icon-sm pull-left sm-pull-none flip" href="#">
-                                        <i class="pe-7s-pen text-white"></i>
-                                    </a>
+                                        <img class="item" src="{!! url('assets/images/content/UWAJIBIKAJI_(130_X_130).png') !!}">                                                                     </a>
                                     <div class="ml-70 ml-sm-0">
-                                        <h5 class="icon-box-title mt-10 text-uppercase letter-space-2 mb-10">UWAJIBIKAJI</h5>
+                                        <h5 class="icon-box-title mt-10 text-uppercase letter-space-2 mb-10"><b>UWAJIBIKAJI</b></h5>
                                         <p class="text-gray">Sisi pamoja na Wadau wetu tunawajibika kwenye majukumu yetu</p>
                                     </div>
                                 </div>
@@ -88,10 +86,9 @@
                             <div class="col-sm-6 col-md-6">
                                 <div class="icon-box p-0 mb-20">
                                     <a class="icon bg-theme-color-2 icon-circled icon-border-effect effect-circle icon-sm pull-left sm-pull-none flip" href="#">
-                                        <i class="pe-7s-tools text-white"></i>
-                                    </a>
+                                        <img class="item" src="{!! url('assets/images/content/USHIRIKISHAJI_(130_X_130).png') !!}">                                                                  </a>
                                     <div class="ml-70 ml-sm-0">
-                                        <h5 class="icon-box-title mt-10 text-uppercase letter-space-2 mb-10">USHIRIKISHAJI</h5>
+                                        <h5 class="icon-box-title mt-10 text-uppercase letter-space-2 mb-10"><b>SHIRIKISHAJI</b></h5>
                                         <p class="text-gray">Fumbuzi zetu za kielimu ni shirikishi</p>
                                     </div>
                                 </div>
@@ -99,88 +96,17 @@
                             <div class="col-sm-6 col-md-6">
                                 <div class="icon-box p-0 mb-20">
                                     <a class="icon bg-theme-colored icon-circled icon-border-effect effect-circle icon-sm pull-left sm-pull-none flip" href="#">
-                                        <i class="pe-7s-vector text-white"></i>
-                                    </a>
+                                        <img class="item" src="{!! url('assets/images/content/UADILIFU_(130_X_130).png') !!}">                                                                      </a>
                                     <div class="ml-70 ml-sm-0">
-                                        <h5 class="icon-box-title mt-10 text-uppercase letter-space-2 mb-10">UADILIFU</h5>
+                                        <h5 class="icon-box-title mt-10 text-uppercase letter-space-2 mb-10"><b>UADILIFU</b></h5>
                                         <p class="text-gray">Tunawajali wateja wetu kwa kuwapa Fumbuzi za kuaminika.</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="p-30 mt-0 bg-theme-colored">
-                            <h3 class="title-pattern mt-0"><span class="text-white"> <span class="text-theme-color-2">{!! trans('label.register_here') !!}</span></span></h3>
-                            <!-- Appilication Form Start-->
-                            <form id="reservation_form" name="reservation_form" class="reservation-form mt-20" method="post"  action="{{ route('auth.register_from_welcome') }}">
-                                @csrf
 
-                                <div class="row">
-                                    <div class="col-sm-12">
-                                        <div class="form-group mb-20">
-                                            <input placeholder="{!! trans('label.first_name') !!}" type="text" id="reservation_name" name="first_name" required="" class="form-control">
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-12">
-                                        <div class="form-group mb-20">
-                                            <input placeholder="{!! trans('label.email') !!}" type="text" id="reservation_email" name="email" class="form-control" required="">
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-12">
-                                        <div class="form-group mb-20">
-                                            <input placeholder="{!! trans('label.phone') !!}" type="text" id="reservation_phone" name="phone" class="form-control" required="">
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-12">
-                                        <div class="form-group mb-20">
 
-                                            <input placeholder="{!! trans('label.password') !!}" type="password" id="reservation_phone" name="password" class="form-control" required="">
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-12">
-                                        <div class="form-group mb-20">
-                                            <input placeholder="{!! trans('label.password_confirmation') !!}" type="password" id="reservation_phone" name="password_confirmation" class="form-control" required="">
-                                        </div>
-                                    </div>
-
-                                    <div class="col-sm-12">
-                                        <div class="form-group mb-0 mt-10">
-{{--                                            <input name="form_botcheck" class="form-control" type="hidden" value="">--}}
-                                            <button type="submit" class="btn btn-colored btn-theme-color-2 text-white btn-lg btn-block">{!! trans('label.register_now') !!}</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
-                            <!-- Application Form End-->
-
-                            <!-- Application Form Validation Start-->
-{{--                            <script type="text/javascript">--}}
-{{--                                $("#reservation_form").validate({--}}
-{{--                                    submitHandler: function(form) {--}}
-{{--                                        var form_btn = $(form).find('button[type="submit"]');--}}
-{{--                                        var form_result_div = '#form-result';--}}
-{{--                                        $(form_result_div).remove();--}}
-{{--                                        form_btn.before('<div id="form-result" class="alert alert-success" role="alert" style="display: none;"></div>');--}}
-{{--                                        var form_btn_old_msg = form_btn.html();--}}
-{{--                                        form_btn.html(form_btn.prop('disabled', true).data("loading-text"));--}}
-{{--                                        $(form).ajaxSubmit({--}}
-{{--                                            dataType:  'json',--}}
-{{--                                            success: function(data) {--}}
-{{--                                                if( data.status == 'true' ) {--}}
-{{--                                                    $(form).find('.form-control').val('');--}}
-{{--                                                }--}}
-{{--                                                form_btn.prop('disabled', false).html(form_btn_old_msg);--}}
-{{--                                                $(form_result_div).html(data.message).fadeIn('slow');--}}
-{{--                                                setTimeout(function(){ $(form_result_div).fadeOut('slow') }, 6000);--}}
-{{--                                            }--}}
-{{--                                        });--}}
-{{--                                    }--}}
-{{--                                });--}}
-{{--                            </script>--}}
-                            <!-- Application Form Validation Start -->
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -228,37 +154,122 @@
 
 
     <!-- Divider: Funfact -->
-    <section class="divider parallax layer-overlay overlay-theme-colored-9" data-bg-img="images/bg/bg2.jpg" data-parallax-ratio="0.7">
+    <section class="divider parallax layer-overlay overlay-theme-colored-2" data-bg-img="images/bg/bg2.jpg" data-parallax-ratio="0.7">
         <div class="container">
             <div class="row">
-                <div class="col-xs-12 col-sm-6 col-md-3 mb-md-50">
-                    <div class="funfact text-center">
-                        <i class="pe-7s-smile mt-5 text-theme-color-2"></i>
-                        <h2 data-animation-duration="2000" data-value="5248" class="animate-number text-white mt-0 font-38 font-weight-500">0</h2>
-                        <h5 class="text-white text-uppercase mb-0">{!! trans('label.candidates') !!}</h5>
+                <div class="col-md-8" style="margin-top: 0px">
+                    <h3 class="ct-fw-500 ct-u-colorWhite ct-u-marginBottom60 ct-u-relative skrollable skrollable-between" data-bottom="bottom: 70px;
+		-moz-opacity: 0;
+			-khtml-opacity: 0;
+				-webkit-opacity: 0;
+					opacity: 0;" data-center-center="bottom: 0;
+				-moz-opacity: 1;
+					-khtml-opacity: 1;
+						-webkit-opacity: 1;
+							opacity: 1;" style="padding-left: 60px; bottom: 31.1111px; opacity: 0.555556;">Maelfu ya wanafunzi wanatumia Smart Elimu katika kujiongezea ufahamu wa taaluma zao, wewe unasubiri nini? jiunge nasi leo
+                    </h3>
+                    <div class="col-xs-12 col-sm-6 col-md-3 mb-md-50">
+                        <div class="funfact text-center">
+                            <i class="pe-7s-smile mt-5 text-theme-color-2"></i>
+                            <h2 data-animation-duration="2000" data-value="5248" class="animate-number text-white mt-0 font-38 font-weight-500">0</h2>
+                            <h5 class="text-white text-uppercase mb-0">{!! trans('label.candidates') !!}</h5>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3 mb-md-50">
+                        <div class="funfact text-center">
+                            <i class="pe-7s-note2 mt-5 text-theme-color-2"></i>
+                            <h2 data-animation-duration="2000" data-value="675" class="animate-number text-white mt-0 font-38 font-weight-500">0</h2>
+                            <h5 class="text-white text-uppercase mb-0">{!! trans('label.parents') !!}</h5>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3 mb-md-50">
+                        <div class="funfact text-center">
+                            <i class="pe-7s-users mt-5 text-theme-color-2"></i>
+                            <h2 data-animation-duration="2000" data-value="248" class="animate-number text-white mt-0 font-38 font-weight-500">0</h2>
+                            <h5 class="text-white text-uppercase mb-0">{!! trans('label.teachers') !!}</h5>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3 mb-md-0">
+                        <div class="funfact text-center">
+                            <i class="pe-7s-cup mt-5 text-theme-color-2"></i>
+                            <h2 data-animation-duration="2000" data-value="24" class="animate-number text-white mt-0 font-38 font-weight-500">0</h2>
+                            <h5 class="text-white text-uppercase mb-0">{!! trans('label.partners') !!}</h5>
+                        </div>
                     </div>
                 </div>
-                <div class="col-xs-12 col-sm-6 col-md-3 mb-md-50">
-                    <div class="funfact text-center">
-                        <i class="pe-7s-note2 mt-5 text-theme-color-2"></i>
-                        <h2 data-animation-duration="2000" data-value="675" class="animate-number text-white mt-0 font-38 font-weight-500">0</h2>
-                        <h5 class="text-white text-uppercase mb-0">{!! trans('label.parents') !!}</h5>
+                <div class="col-md-4">
+                    <div class="p-30 mt-0 bg-theme-colored">
+                        <h3 class="title-pattern mt-0"><span class="text-white"> <span class="text-theme-color-2">{!! trans('label.register_here') !!}</span></span></h3>
+                        <!-- Appilication Form Start-->
+                        <form id="reservation_form" name="reservation_form" class="reservation-form mt-20" method="post"  action="{{ route('auth.register_from_welcome') }}">
+                            @csrf
+
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="form-group mb-20">
+                                        <input placeholder="{!! trans('label.first_name') !!}" type="text" id="reservation_name" name="first_name" required="" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-sm-12">
+                                    <div class="form-group mb-20">
+                                        <input placeholder="{!! trans('label.email') !!}" type="text" id="reservation_email" name="email" class="form-control" required="">
+                                    </div>
+                                </div>
+                                <div class="col-sm-12">
+                                    <div class="form-group mb-20">
+                                        <input placeholder="{!! trans('label.phone') !!}" type="text" id="reservation_phone" name="phone" class="form-control" required="">
+                                    </div>
+                                </div>
+                                <div class="col-sm-12">
+                                    <div class="form-group mb-20">
+
+                                        <input placeholder="{!! trans('label.password') !!}" type="password" id="reservation_phone" name="password" class="form-control" required="">
+                                    </div>
+                                </div>
+                                <div class="col-sm-12">
+                                    <div class="form-group mb-20">
+                                        <input placeholder="{!! trans('label.password_confirmation') !!}" type="password" id="reservation_phone" name="password_confirmation" class="form-control" required="">
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-12">
+                                    <div class="form-group mb-0 mt-10">
+                                        {{--                                            <input name="form_botcheck" class="form-control" type="hidden" value="">--}}
+                                        <button type="submit" class="btn btn-colored btn-theme-color-2 text-white btn-lg btn-block">{!! trans('label.register_now') !!}</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        <!-- Application Form End-->
+
+                        <!-- Application Form Validation Start-->
+                    {{--                            <script type="text/javascript">--}}
+                    {{--                                $("#reservation_form").validate({--}}
+                    {{--                                    submitHandler: function(form) {--}}
+                    {{--                                        var form_btn = $(form).find('button[type="submit"]');--}}
+                    {{--                                        var form_result_div = '#form-result';--}}
+                    {{--                                        $(form_result_div).remove();--}}
+                    {{--                                        form_btn.before('<div id="form-result" class="alert alert-success" role="alert" style="display: none;"></div>');--}}
+                    {{--                                        var form_btn_old_msg = form_btn.html();--}}
+                    {{--                                        form_btn.html(form_btn.prop('disabled', true).data("loading-text"));--}}
+                    {{--                                        $(form).ajaxSubmit({--}}
+                    {{--                                            dataType:  'json',--}}
+                    {{--                                            success: function(data) {--}}
+                    {{--                                                if( data.status == 'true' ) {--}}
+                    {{--                                                    $(form).find('.form-control').val('');--}}
+                    {{--                                                }--}}
+                    {{--                                                form_btn.prop('disabled', false).html(form_btn_old_msg);--}}
+                    {{--                                                $(form_result_div).html(data.message).fadeIn('slow');--}}
+                    {{--                                                setTimeout(function(){ $(form_result_div).fadeOut('slow') }, 6000);--}}
+                    {{--                                            }--}}
+                    {{--                                        });--}}
+                    {{--                                    }--}}
+                    {{--                                });--}}
+                    {{--                            </script>--}}
+                    <!-- Application Form Validation Start -->
                     </div>
                 </div>
-                <div class="col-xs-12 col-sm-6 col-md-3 mb-md-50">
-                    <div class="funfact text-center">
-                        <i class="pe-7s-users mt-5 text-theme-color-2"></i>
-                        <h2 data-animation-duration="2000" data-value="248" class="animate-number text-white mt-0 font-38 font-weight-500">0</h2>
-                        <h5 class="text-white text-uppercase mb-0">{!! trans('label.teachers') !!}</h5>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-3 mb-md-0">
-                    <div class="funfact text-center">
-                        <i class="pe-7s-cup mt-5 text-theme-color-2"></i>
-                        <h2 data-animation-duration="2000" data-value="24" class="animate-number text-white mt-0 font-38 font-weight-500">0</h2>
-                        <h5 class="text-white text-uppercase mb-0">{!! trans('label.partners') !!}</h5>
-                    </div>
-                </div>
+
             </div>
         </div>
     </section>

@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="08d93d0e-5c1d-42d8-82c3-2dc7bd1f714f" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/lessons/primary_level/show/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/lessons/primary_level/show/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +31,47 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand />
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="smartelimu@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="smartelimu@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="smartelimu@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="smartelimu: database" type="162271b6:PgImplModel$Database" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="smartelimu@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="smartelimu: database" type="162271b6:PgImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="smartelimu@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="smartelimu: database" type="162271b6:PgImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="smartelimu@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="smartelimu: database" type="162271b6:PgImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
+        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+    </expand>
     <select />
   </component>
   <component name="FavoritesManager">
@@ -172,6 +213,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="postgresql" />
     <property name="SearchEverywhereHistoryKey" value="la&#9;FILE&#9;file:///home/dontito/SMARTELIMU/resources/lang/sw/label.php&#10;new&#9;FILE&#9;file:///home/dontito/SMARTELIMU/app/Repositories/Information/NewsRepository.php&#10;label&#9;FILE&#9;file:///home/dontito/SMARTELIMU/resources/lang/sw/label.php&#10;label.&#9;FILE&#9;file:///home/dontito/SMARTELIMU/resources/lang/sw/label.php&#10;codevaluesre&#9;null&#9;null&#10;userreposi&#9;FILE&#9;file:///home/dontito/SMARTELIMU/app/Repositories/Access/UserRepository.php&#10;menu&#9;FILE&#9;file:///home/dontito/SMARTELIMU/public/themes/css/menuzord-skins/menuzord-rounded-boxed.css&#10;theme&#9;FILE&#9;file:///home/dontito/SMARTELIMU/public/themes/css/colors/theme-skin-color-set-1.css&#10;user&#9;FILE&#9;file:///home/dontito/SMARTELIMU/app/Repositories/Access/UserRepository.php&#10;paymentco&#9;FILE&#9;file:///home/dontito/SMARTELIMU/app/Http/Controllers/Payment/PaymentController.php&#10;style.css&#9;FILE&#9;file:///home/dontito/SMARTELIMU/public/assets/css/style.css&#10;labe&#9;FILE&#9;file:///home/dontito/SMARTELIMU/resources/lang/sw/label.php&#10;regis&#9;FILE&#9;file:///home/dontito/SMARTELIMU/app/Http/Controllers/Auth/RegisterController.php&#10;userre&#9;FILE&#9;file:///home/dontito/SMARTELIMU/app/Repositories/Access/UserRepository.php&#10;abel&#9;FILE&#9;file:///home/dontito/SMARTELIMU/resources/lang/sw/label.php&#10;userrepo&#9;FILE&#9;file:///home/dontito/SMARTELIMU/app/Repositories/Access/UserRepository.php&#10;codevalu&#9;FILE&#9;file:///home/dontito/SMARTELIMU/app/Repositories/Sysdef/CodeValueRepository.php&#10;profi&#9;FILE&#9;file:///home/dontito/SMARTELIMU/app/Http/Controllers/Profile/ProfileController.php&#10;larave&#9;FILE&#9;file:///home/dontito/SMARTELIMU/storage/logs/laravel-2019-07-30.log" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
@@ -222,7 +264,22 @@
       <list>
         <serviceView>
           <treeState>
-            <expand />
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:smartelimu@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:smartelimu@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@69076dc1" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:smartelimu@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@24acfdf2" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+            </expand>
             <select />
           </treeState>
         </serviceView>
@@ -326,7 +383,9 @@
       <workItem from="1574237072710" duration="2268000" />
       <workItem from="1574241343086" duration="707000" />
       <workItem from="1574324644188" duration="8000" />
-      <workItem from="1575627050219" duration="1035000" />
+      <workItem from="1575627050219" duration="1784000" />
+      <workItem from="1576233850895" duration="604000" />
+      <workItem from="1576485113644" duration="3277000" />
     </task>
     <servers />
   </component>
@@ -362,6 +421,20 @@
     <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
       <collection />
     </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1801" y="185" width="800" height="677" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1576485382811">
+      <screen x="1366" y="0" width="1680" height="1050" />
+    </state>
+    <state x="1801" y="185" width="800" height="677" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1366.696/1366.0.1680.1050@1366.0.1680.1050" timestamp="1576485382811" />
+    <state width="263" height="500" key="HiddenNamespacesPopup" timestamp="1576485397524">
+      <screen x="1366" y="0" width="1680" height="1050" />
+    </state>
+    <state width="263" height="500" key="HiddenNamespacesPopup/0.27.1366.696/1366.0.1680.1050@1366.0.1680.1050" timestamp="1576485397524" />
+    <state x="1862" y="351" key="com.intellij.ide.util.TipDialog" timestamp="1576485338414">
+      <screen x="1366" y="0" width="1680" height="1050" />
+    </state>
+    <state x="1862" y="351" key="com.intellij.ide.util.TipDialog/0.27.1366.696/1366.0.1680.1050@1366.0.1680.1050" timestamp="1576485338414" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

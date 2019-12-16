@@ -90,9 +90,9 @@
                             <ul class="list-inline pull-right">
                                 <li class="mb-0 pb-0">
                                     <div class="top-dropdown-outer pt-5 pb-10">
-                                        <button type="button" class="btn btn-md btn-success dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                                            <img src="{!! url('img/flags/png/england.png') !!}" alt="UK">English <i class="fa fa-angle-down"></i>
-                                        </button>
+{{--                                        <button type="button" class="btn btn-md btn-success dropdown-toggle" data-toggle="dropdown" aria-expanded="false">--}}
+{{--                                            <img src="{!! url('img/flags/png/england.png') !!}" alt="UK">English <i class="fa fa-angle-down"></i>--}}
+{{--                                        </button>--}}
                                         <ul class="dropdown-menu" role="menu">
                                             <li><a href="#"><img src="{!! url('img/flags/png/england.png') !!}" alt="UK">English</a></li>
                                             <li><a href="#"><img src="{!! url('img/flags/png/tz.png') !!}" alt="GER">Swahili</a></li>
@@ -135,18 +135,18 @@
                 <div class="container">
                     <nav id="menuzord-right" class="menuzord orange">
                         <a class="menuzord-brand pull-left flip mt-15" href="javascript:void(0)">
-                            <img src="{!! url('assets/images/content/logo.png') !!}" alt="">
+                            <img src="{!! url('assets/images/content/logo.png') !!}" alt="" width="200">
                         </a>
                         <ul class="menuzord-menu dark">
                             @auth
 
-                                <li><a href="{!! url('/home') !!}">{!! trans('label.home') !!}</a></li>
+                                <li><a href="{!! url('/home') !!}"><b>{!! trans('label.home') !!}</b></a></li>
 
                             @else
-                                <li><a href="{!! url('/') !!}">{!! trans('label.home') !!}</a></li>
+                                <li><a href="{!! url('/') !!}"><b>{!! trans('label.home') !!}</b></a></li>
 
                             @endauth
-                            <li><a href="">{!! trans('label.course') !!}</a>
+                            <li><a href=""><b>{!! trans('label.course') !!}</b></a>
                                 <div class="megamenu">
                                     <div class="megamenu-row">
                                         <div class="col3">
@@ -199,19 +199,19 @@
                                     </div>
                                 </div>
                             </li>
-                            <li><a href="{!! route('news.search') !!}">{!! trans('label.news') !!}</a></li>
+                            <li><a href="{!! route('news.search') !!}"><b>{!! trans('label.news') !!}</b></a></li>
 
 
-                            <li><a href="{!! route('information.about_us') !!}">{!! trans('label.about') !!}</a>
+                            <li><a href="{!! route('information.about_us') !!}"><b>{!! trans('label.about') !!}</b></a>
 
                             </li>
-                            <li><a href="{!! route('information.contact_us') !!}">{!! trans('label.contact_us') !!}</a>
+                            <li><a href="{!! route('information.contact_us') !!}"><b>{!! trans('label.contact_us') !!}</b></a>
 
                             </li>
 
 
                             @guest
-                            <li><a href="#">{!! trans('label.account') !!}</a>
+                            <li><a href="#"><b>{!! trans('label.account') !!}</b></a>
                                 <ul class="dropdown">
                                     <li>
                                         <a class="nav-link" href="{{ route('login') }}">{{ trans('label.login') }}</a>
