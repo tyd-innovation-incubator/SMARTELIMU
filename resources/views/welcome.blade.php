@@ -175,34 +175,37 @@
 						-webkit-opacity: 1;
 							opacity: 1;" style="padding-left: 60px; bottom: 31.1111px; opacity: 0.555556;">Maelfu ya wanafunzi wanatumia Smart Elimu katika kujiongezea ufahamu wa taaluma zao, wewe unasubiri nini? jiunge nasi leo
                     </h3>
-                    <div class="col-xs-12 col-sm-6 col-md-3 mb-md-50">
-                        <div class="funfact text-center">
-                            <i class="fa fa-users mt-5 text-theme-color-2"></i>
-                            <h2 data-animation-duration="2000" data-value="5248" class="animate-number text-white mt-0 font-38 font-weight-500">0</h2>
-                            <h5 class="text-white text-uppercase mb-0">{!! trans('label.candidates') !!}</h5>
+                    <div class="mt-2" style="margin-top: 100px">
+                        <div class="col-xs-12 col-sm-6 col-md-3 mb-md-50">
+                            <div class="funfact text-center">
+                                <i class="fa fa-users mt-5 text-theme-color-2"></i>
+                                <h2 data-animation-duration="2000" data-value="5248" class="animate-number text-black mt-0 font-38 font-weight-500">0</h2>
+                                <h5 class="text-black text-uppercase mb-0">{!! trans('label.candidates') !!}</h5>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-3 mb-md-50">
+                            <div class="funfact text-center">
+                                <i class="fa fa-user mt-5 text-theme-color-2"></i>
+                                <h2 data-animation-duration="2000" data-value="675" class="animate-number text-black mt-0 font-38 font-weight-500">0</h2>
+                                <h5 class="text-black text-uppercase mb-0">{!! trans('label.parents') !!}</h5>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-3 mb-md-50">
+                            <div class="funfact text-center">
+                                <i class="fa fa-users mt-5 text-theme-color-2"></i>
+                                <h2 data-animation-duration="2000" data-value="248" class="animate-number text-black mt-0 font-38 font-weight-500">0</h2>
+                                <h5 class="text-black text-uppercase mb-0">{!! trans('label.teachers') !!}</h5>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-3 mb-md-0">
+                            <div class="funfact text-center">
+                                <i class="fa fa-users mt-5 text-theme-color-2"></i>
+                                <h2 data-animation-duration="2000" data-value="24" class="animate-number text-black mt-0 font-38 font-weight-500">0</h2>
+                                <h5 class="text-black text-uppercase mb-0">{!! trans('label.partners') !!}</h5>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-xs-12 col-sm-6 col-md-3 mb-md-50">
-                        <div class="funfact text-center">
-                            <i class="fa fa-user mt-5 text-theme-color-2"></i>
-                            <h2 data-animation-duration="2000" data-value="675" class="animate-number text-white mt-0 font-38 font-weight-500">0</h2>
-                            <h5 class="text-white text-uppercase mb-0">{!! trans('label.parents') !!}</h5>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-3 mb-md-50">
-                        <div class="funfact text-center">
-                            <i class="fa fa-users mt-5 text-theme-color-2"></i>
-                            <h2 data-animation-duration="2000" data-value="248" class="animate-number text-white mt-0 font-38 font-weight-500">0</h2>
-                            <h5 class="text-white text-uppercase mb-0">{!! trans('label.teachers') !!}</h5>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-3 mb-md-0">
-                        <div class="funfact text-center">
-                            <i class="fa fa-users mt-5 text-theme-color-2"></i>
-                            <h2 data-animation-duration="2000" data-value="24" class="animate-number text-white mt-0 font-38 font-weight-500">0</h2>
-                            <h5 class="text-white text-uppercase mb-0">{!! trans('label.partners') !!}</h5>
-                        </div>
-                    </div>
+
                 </div>
                 <div class="col-md-4">
                     <div class="p-30 mt-0 bg-theme-colored">

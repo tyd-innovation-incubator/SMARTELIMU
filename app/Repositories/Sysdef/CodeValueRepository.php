@@ -298,26 +298,30 @@ class CodeValueRepository extends BaseRepository
     public function getPrimaryLevelPackages()
     {
         $repo = new PackageRepository();
-        $query = $repo->query()->where('category',5)->get();
+        $query = $repo->query()->where('category',5)
+            ->where('status',1)->get();
         return $query;
     }
 
     public function getSecondaryLevelPackages()
     {
         $repo = new PackageRepository();
-        $query = $repo->query()->where('category',4)->get();
+        $query = $repo->query()->where('category',4)
+            ->where('status',1)->get();
         return $query;
     }
     public function getExtraPrimaryLevelPackages()
     {
         $repo = new PackageRepository();
-        $query = $repo->query()->where('category',6)->get();
+        $query = $repo->query()->where('category',6)
+            ->where('status',1)->get();
         return $query;
     }
     public function getExtraSecondaryLevelPackages()
     {
         $repo = new PackageRepository();
-        $query = $repo->query()->where('category',7)->get();
+        $query = $repo->query()->where('category',7)
+            ->where('status',1)->get();
         return $query;
     }
 

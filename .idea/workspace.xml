@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="08d93d0e-5c1d-42d8-82c3-2dc7bd1f714f" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Package/Relationship/PackageRelationship.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Package/Relationship/PackageRelationship.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/lessons/primary_level/show/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/lessons/primary_level/show/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repositories/Sysdef/CodeValueRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/Sysdef/CodeValueRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_09_09_113642_change_coulmns_name_on_candidates_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_09_09_113642_change_coulmns_name_on_candidates_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/Web/lessons/primary_level.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/Web/lessons/primary_level.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/Web/lessons/secondary_level.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/Web/lessons/secondary_level.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,16 +74,6 @@
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
         <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="smartelimu@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="smartelimu: database" type="162271b6:PgImplModel$Database" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
-        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="candidates: table" type="69fad909:PgImplModel$LocalTable" />
       </path>
     </expand>
     <select />
@@ -224,6 +218,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="postgresql" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SearchEverywhereHistoryKey" value="la&#9;FILE&#9;file:///home/dontito/SMARTELIMU/resources/lang/sw/label.php&#10;new&#9;FILE&#9;file:///home/dontito/SMARTELIMU/app/Repositories/Information/NewsRepository.php&#10;label&#9;FILE&#9;file:///home/dontito/SMARTELIMU/resources/lang/sw/label.php&#10;label.&#9;FILE&#9;file:///home/dontito/SMARTELIMU/resources/lang/sw/label.php&#10;codevaluesre&#9;null&#9;null&#10;userreposi&#9;FILE&#9;file:///home/dontito/SMARTELIMU/app/Repositories/Access/UserRepository.php&#10;menu&#9;FILE&#9;file:///home/dontito/SMARTELIMU/public/themes/css/menuzord-skins/menuzord-rounded-boxed.css&#10;theme&#9;FILE&#9;file:///home/dontito/SMARTELIMU/public/themes/css/colors/theme-skin-color-set-1.css&#10;user&#9;FILE&#9;file:///home/dontito/SMARTELIMU/app/Repositories/Access/UserRepository.php&#10;paymentco&#9;FILE&#9;file:///home/dontito/SMARTELIMU/app/Http/Controllers/Payment/PaymentController.php&#10;style.css&#9;FILE&#9;file:///home/dontito/SMARTELIMU/public/assets/css/style.css&#10;labe&#9;FILE&#9;file:///home/dontito/SMARTELIMU/resources/lang/sw/label.php&#10;regis&#9;FILE&#9;file:///home/dontito/SMARTELIMU/app/Http/Controllers/Auth/RegisterController.php&#10;userre&#9;FILE&#9;file:///home/dontito/SMARTELIMU/app/Repositories/Access/UserRepository.php&#10;abel&#9;FILE&#9;file:///home/dontito/SMARTELIMU/resources/lang/sw/label.php&#10;userrepo&#9;FILE&#9;file:///home/dontito/SMARTELIMU/app/Repositories/Access/UserRepository.php&#10;codevalu&#9;FILE&#9;file:///home/dontito/SMARTELIMU/app/Repositories/Sysdef/CodeValueRepository.php&#10;profi&#9;FILE&#9;file:///home/dontito/SMARTELIMU/app/Http/Controllers/Profile/ProfileController.php&#10;larave&#9;FILE&#9;file:///home/dontito/SMARTELIMU/storage/logs/laravel-2019-07-30.log" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
@@ -235,8 +230,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
-    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Console Font" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -282,7 +276,12 @@
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="root:smartelimu@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="com.intellij.database.console.session.MessageBusSession@69076dc1" type="9fbbdea:ServiceModel$ServiceNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@2e3ca6fd" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:smartelimu@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@53328aba" type="9fbbdea:ServiceModel$ServiceNode" />
               </path>
             </expand>
             <select />
@@ -391,6 +390,8 @@
       <workItem from="1575627050219" duration="1784000" />
       <workItem from="1576233850895" duration="604000" />
       <workItem from="1576485113644" duration="12958000" />
+      <workItem from="1576679184060" duration="1501000" />
+      <workItem from="1576733921125" duration="4276000" />
     </task>
     <servers />
   </component>
@@ -432,18 +433,41 @@
       <screen x="1366" y="0" width="1680" height="1050" />
     </state>
     <state x="1801" y="185" width="800" height="677" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1366.696/1366.0.1680.1050@1366.0.1680.1050" timestamp="1576485382811" />
-    <state width="263" height="500" key="HiddenNamespacesPopup" timestamp="1576485397524">
-      <screen x="1366" y="0" width="1680" height="1050" />
+    <state width="1289" height="263" key="GridCell.Tab.0.bottom" timestamp="1576733928440">
+      <screen x="0" y="28" width="1920" height="1018" />
+    </state>
+    <state width="1289" height="263" key="GridCell.Tab.0.bottom/0.28.1920.1018@0.28.1920.1018" timestamp="1576733928440" />
+    <state width="1289" height="263" key="GridCell.Tab.0.center" timestamp="1576733928440">
+      <screen x="0" y="28" width="1920" height="1018" />
+    </state>
+    <state width="1289" height="263" key="GridCell.Tab.0.center/0.28.1920.1018@0.28.1920.1018" timestamp="1576733928440" />
+    <state width="1289" height="263" key="GridCell.Tab.0.left" timestamp="1576733928439">
+      <screen x="0" y="28" width="1920" height="1018" />
+    </state>
+    <state width="1289" height="263" key="GridCell.Tab.0.left/0.28.1920.1018@0.28.1920.1018" timestamp="1576733928439" />
+    <state width="1289" height="263" key="GridCell.Tab.0.right" timestamp="1576733928440">
+      <screen x="0" y="28" width="1920" height="1018" />
+    </state>
+    <state width="1289" height="263" key="GridCell.Tab.0.right/0.28.1920.1018@0.28.1920.1018" timestamp="1576733928440" />
+    <state width="301" height="485" key="HiddenNamespacesPopup" timestamp="1576734941732">
+      <screen x="0" y="28" width="1920" height="1018" />
     </state>
     <state width="263" height="500" key="HiddenNamespacesPopup/0.27.1366.696/1366.0.1680.1050@1366.0.1680.1050" timestamp="1576485397524" />
+    <state width="263" height="500" key="HiddenNamespacesPopup/0.28.1920.1018/1920.0.1680.1050@1920.0.1680.1050" timestamp="1576680130480" />
+    <state width="301" height="485" key="HiddenNamespacesPopup/0.28.1920.1018@0.28.1920.1018" timestamp="1576734941732" />
+    <state x="2237" y="221" width="1007" height="737" key="SettingsEditor" timestamp="1576680447304">
+      <screen x="1920" y="0" width="1680" height="1050" />
+    </state>
+    <state x="2237" y="221" width="1007" height="737" key="SettingsEditor/0.28.1920.1018/1920.0.1680.1050@1920.0.1680.1050" timestamp="1576680447304" />
     <state x="1918" y="164" width="566" height="720" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1576497859429">
       <screen x="1366" y="0" width="1680" height="1050" />
     </state>
     <state x="1918" y="164" width="566" height="720" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.27.1366.696/1366.0.1680.1050@1366.0.1680.1050" timestamp="1576497859429" />
-    <state x="1862" y="351" key="com.intellij.ide.util.TipDialog" timestamp="1576485338414">
-      <screen x="1366" y="0" width="1680" height="1050" />
+    <state x="567" y="368" key="com.intellij.ide.util.TipDialog" timestamp="1576734895135">
+      <screen x="0" y="28" width="1920" height="1018" />
     </state>
     <state x="1862" y="351" key="com.intellij.ide.util.TipDialog/0.27.1366.696/1366.0.1680.1050@1366.0.1680.1050" timestamp="1576485338414" />
+    <state x="567" y="368" key="com.intellij.ide.util.TipDialog/0.28.1920.1018@0.28.1920.1018" timestamp="1576734895135" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

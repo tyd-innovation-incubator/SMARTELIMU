@@ -15,8 +15,8 @@ class ChangeCoulmnsNameOnCandidatesTable extends Migration
     {
         //
         Schema::table('candidates', function(Blueprint $table) {
-            $table->renameColumn('fname', 'first_name');
-            $table->renameColumn('lname', 'last_name');
+//            $table->renameColumn('fname', 'first_name');
+//            $table->renameColumn('lname', 'last_name');
 //            $table->renameColumn('userID', 'user_id');
         });
     }
