@@ -2,7 +2,101 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="08d93d0e-5c1d-42d8-82c3-2dc7bd1f714f" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/database/2014_10_12_100000_create_password_resets_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/2018_10_04_075744_create_countries_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/2018_10_04_075744_create_districts_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/2018_10_04_075744_create_jobs_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/2018_10_04_075744_create_permission_role_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/2018_10_04_075744_create_permissions_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/2018_10_04_075744_create_regions_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/2018_10_04_075744_create_role_charges_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/2018_10_04_075744_create_role_user_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/2018_10_04_075744_create_roles_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/2018_12_28_202920_create_permission_group_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/2019_06_21_174230_create_invoices_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/2019_06_21_174256_create_payments_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/2019_06_26_121947_create_partners_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/2019_07_25_191805_create_codes_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/2019_07_25_191840_create_code_values_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/2019_08_07_181109_create_about_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/2019_08_07_181109_create_contacts_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/2019_08_07_181109_create_galleries_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/2019_08_07_181109_create_news_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/2019_08_07_181109_create_testimonies_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/2019_08_07_181205_create_admin_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/2019_08_07_181205_create_authors_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/2019_08_07_181205_create_candidates_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/2019_08_07_181205_create_self_candidates_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/2019_08_07_181205_create_stakeholders_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/2019_08_07_181205_create_teachers_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/2019_08_07_181205_create_users_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/2019_08_08_130513_rename_columns_on_users_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/2019_08_09_204242_create_chapters_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/2019_08_09_204242_create_package_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/2019_08_09_204242_create_section_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/2019_08_09_204242_create_subjects_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/2019_08_09_204252_create_foreign_keys.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/2019_08_17_175030_add_column_isactive_on_code_values_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/2019_08_18_165639_add_columns_on_users_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/2019_09_03_100334_create_syllabus_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/2019_09_03_133810_create_examinations_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/2019_09_04_221514_change_columns_to_nullable_on_users_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/2019_09_05_110503_create_homeslide_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/2019_09_09_090914_add_sort_column_on_countries_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/2019_09_09_095233_add_country_id_on_users_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/2019_09_09_113642_change_coulmns_name_on_candidates_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/2019_09_11_104241_add_uuid_column_on_candidates_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/2019_09_12_122245_add_uuid_on_package_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/2019_09_23_104630_create_package_user_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/2019_10_24_090959_add_remember_token_on_users_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2018_10_04_075744_create_countries_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2018_10_04_075744_create_districts_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2018_10_04_075744_create_jobs_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2018_10_04_075744_create_permission_role_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2018_10_04_075744_create_permissions_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2018_10_04_075744_create_regions_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2018_10_04_075744_create_role_charges_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2018_10_04_075744_create_role_user_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2018_10_04_075744_create_roles_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2018_12_28_202920_create_permission_group_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_06_21_174230_create_invoices_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_06_21_174256_create_payments_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_06_26_121947_create_partners_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_07_25_191805_create_codes_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_07_25_191840_create_code_values_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_08_07_181109_create_about_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_08_07_181109_create_contacts_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_08_07_181109_create_galleries_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_08_07_181109_create_news_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_08_07_181109_create_testimonies_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_08_07_181205_create_admin_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_08_07_181205_create_authors_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_08_07_181205_create_candidates_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_08_07_181205_create_self_candidates_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_08_07_181205_create_stakeholders_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_08_07_181205_create_teachers_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_08_07_181205_create_users_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_08_08_130513_rename_columns_on_users_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_08_09_204242_create_chapters_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_08_09_204242_create_package_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_08_09_204242_create_section_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_08_09_204242_create_subjects_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_08_09_204252_create_foreign_keys.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_08_17_175030_add_column_isactive_on_code_values_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_08_18_165639_add_columns_on_users_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_09_03_100334_create_syllabus_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_09_03_133810_create_examinations_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_09_04_221514_change_columns_to_nullable_on_users_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_09_05_110503_create_homeslide_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_09_09_090914_add_sort_column_on_countries_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_09_09_095233_add_country_id_on_users_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_09_09_113642_change_coulmns_name_on_candidates_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_09_11_104241_add_uuid_column_on_candidates_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_09_12_122245_add_uuid_on_package_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_09_23_104630_create_package_user_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_10_24_090959_add_remember_token_on_users_table.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -380,7 +474,7 @@
       <workItem from="1576233850895" duration="604000" />
       <workItem from="1576485113644" duration="12958000" />
       <workItem from="1576679184060" duration="1501000" />
-      <workItem from="1576733921125" duration="9930000" />
+      <workItem from="1576733921125" duration="10592000" />
     </task>
     <servers />
   </component>
