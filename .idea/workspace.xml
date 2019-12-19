@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="08d93d0e-5c1d-42d8-82c3-2dc7bd1f714f" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repositories/Sysdef/CodeValueRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/Sysdef/CodeValueRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_09_09_113642_change_coulmns_name_on_candidates_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_09_09_113642_change_coulmns_name_on_candidates_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/Web/lessons/primary_level.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/Web/lessons/primary_level.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/Web/lessons/secondary_level.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/Web/lessons/secondary_level.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/sw/buttons.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/sw/buttons.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/lessons/package/invoice.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/lessons/package/invoice.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/profile/includes/edit_personal_information.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/profile/includes/edit_personal_information.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/profile/packages.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/profile/packages.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -268,22 +266,7 @@
       <list>
         <serviceView>
           <treeState>
-            <expand>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="root:smartelimu@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="root:smartelimu@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="com.intellij.database.console.session.MessageBusSession@2e3ca6fd" type="9fbbdea:ServiceModel$ServiceNode" />
-              </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="root:smartelimu@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="com.intellij.database.console.session.MessageBusSession@53328aba" type="9fbbdea:ServiceModel$ServiceNode" />
-              </path>
-            </expand>
+            <expand />
             <select />
           </treeState>
         </serviceView>
@@ -391,7 +374,7 @@
       <workItem from="1576233850895" duration="604000" />
       <workItem from="1576485113644" duration="12958000" />
       <workItem from="1576679184060" duration="1501000" />
-      <workItem from="1576733921125" duration="4829000" />
+      <workItem from="1576733921125" duration="8988000" />
     </task>
     <servers />
   </component>
@@ -468,6 +451,10 @@
     </state>
     <state x="1862" y="351" key="com.intellij.ide.util.TipDialog/0.27.1366.696/1366.0.1680.1050@1366.0.1680.1050" timestamp="1576485338414" />
     <state x="567" y="368" key="com.intellij.ide.util.TipDialog/0.28.1920.1018@0.28.1920.1018" timestamp="1576734895135" />
+    <state x="2423" y="231" width="672" height="678" key="search.everywhere.popup" timestamp="1576743883432">
+      <screen x="0" y="28" width="3600" height="1018" />
+    </state>
+    <state x="2423" y="231" width="672" height="678" key="search.everywhere.popup/0.28.3600.1018@0.28.3600.1018" timestamp="1576743883432" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -39,7 +39,7 @@
                                                                 <div class="media-body">
                                                                     <h5 class="mt-0 mb-0">{!! trans('label.personal_contacts') !!}:</h5>
                                                                     <p><span>{!! trans('label.name') !!}:</span> {!! $user->first_name !!} {!! $user->last_name !!}<br>
-                                                                        <span>{!! trans('label.username') !!}:</span> {!! isset($user->username) ? $user->username :'' !!}<br>
+                                                                        <span>{!! trans('label.username') !!}:</span> {!! isset($user->userName) ? $user->userName :'' !!}<br>
                                                                         <span>{!! trans('label.gender') !!}:</span> {!! isset($user->gender)? code_value()->find($user->gender)->values :'' !!}<br>
                                                                         <span>{!! trans('label.account_category') !!}:</span> {!! isset($user->category_cv_id)? code_value()->find($user->category_cv_id)->values :'' !!}</p>
                                                                 </div>

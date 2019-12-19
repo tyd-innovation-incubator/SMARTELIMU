@@ -26,7 +26,7 @@ return [
             'delete' => 'Futa',
             'delete_all' => 'Futa Yote',
             'edit'   => 'Hariri',
-            'update' => 'Sasisha',
+            'update' => 'Sahihisha',
             'view'   => 'Tazama',
             'review' => 'Tathmini',
             'review_all' => 'RTathmini Zote',

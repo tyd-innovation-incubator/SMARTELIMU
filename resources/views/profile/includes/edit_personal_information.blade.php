@@ -15,8 +15,8 @@
                     <div class="vertical-tab">
                         <ul class="nav nav-tabs">
                             <li class="active"><a href="#tab16" data-toggle="tab">{!! trans('label.personal_contacts') !!}</a></li>
-                            <li><a href="#tab17" data-toggle="tab">{!! trans('label.candidate_information') !!}</a></li>
-                            <li><a href="#tab18" data-toggle="tab">{!! trans('label.course') !!}</a></li>
+{{--                            <li><a href="#tab17" data-toggle="tab">{!! trans('label.candidate_information') !!}</a></li>--}}
+{{--                            <li><a href="#tab18" data-toggle="tab">{!! trans('label.course') !!}</a></li>--}}
                             {{--                                <li><a href="#tab19" data-toggle="tab">Testing</a></li>--}}
                         </ul>
                     </div>

@@ -181,7 +181,7 @@ class UserRepository extends BaseRepository
             $user->update([
                 'first_name' => $input['first_name'],
                 'last_name' => $input['last_name'],
-                'username' => $input['username'],
+                'userName' => $input['username'],
                 'gender' => $input['gender'],
                 'category_cv_id' => $input['account_category'],
                 'phone' => $data['phone'],
