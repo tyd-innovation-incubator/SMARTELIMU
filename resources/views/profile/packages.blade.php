@@ -14,7 +14,7 @@
                     <div class="col-md-12 blog-pull-right">
                         <div class="row">
                             @foreach(access()->user()->packages as $package)
-{{--                                @if($package->invoice->ispaid)--}}
+                                @if($package->ispaid = 1)
                             <div class="col-sm-6 col-md-4">
                                 <div class="service-block bg-white">
                                     <div class="thumb"> <img alt="featured project" src="{!! url('http://admin.smartelimu.ac.tz/img/packages/'.$package->image.'') !!}" class="img-fullwidth">
@@ -27,7 +27,7 @@
                                     </div>
                                 </div>
                             </div>
-{{--                                @endif--}}
+                                @endif
                                 @endforeach
                         </div>
                     </div>

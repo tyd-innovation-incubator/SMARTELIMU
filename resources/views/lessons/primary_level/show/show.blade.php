@@ -32,7 +32,8 @@
                                     </div>
 
 
-                                    @if(($package->invoice) && $package->invoice->ispaid == 1 )
+                                    @if($package->ispaid == 1 )
+{{--                                        <button class="btn btn-dark btn-theme-colored btn-xl" style="width: 100%" href="{!! route('lessons.view',$package->uuid) !!}" type="submit">{!! trans('label.view') !!}</button>--}}
 
                                     @else
                                         <form enctype="multipart/form-data" method="get" class="cart" action="{!! route('package.create_invoice',$package->uuid) !!}">

@@ -12,7 +12,7 @@
                     <div class="display-table-cell">
                         <div class="container pt-150 pb-150">
                             <div class="row">
-                                <div class="col-md-6 ct-u-colorWhite col-md-offset-6" >
+                                <div class="col-md-6 ct-u-colorWhite col-md-offset-8" >
                                     <div class="ct-darkBackground ct-u-marginBottom40 animated fadeInLeft activate" data-fx="fadeInLeft" data-time="200">
                                         <h3 class="text-uppercase text-theme-color-2 font-raleway font-weight-800 mb-0 mt-0 font-30">{!! $homeslide->title !!}</h3>
                                     </div>
