@@ -165,16 +165,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8" style="margin-top: 0px">
-                    <h3 class="ct-fw-500 ct-u-colorWhite ct-u-marginBottom60 ct-u-relative skrollable skrollable-between" data-bottom="bottom: 70px;
-		-moz-opacity: 0;
-			-khtml-opacity: 0;
-				-webkit-opacity: 0;
-					opacity: 0;" data-center-center="bottom: 0;
-				-moz-opacity: 1;
-					-khtml-opacity: 1;
-						-webkit-opacity: 1;
-							opacity: 1;" style="padding-left: 60px; bottom: 31.1111px; opacity: 0.555556;">Maelfu ya wanafunzi wanatumia Smart Elimu katika kujiongezea ufahamu wa taaluma zao, wewe unasubiri nini? jiunge nasi leo
-                    </h3>
+
+                    <h3 class=" mt-0 line-height-1"><span class="text-theme-colored">Maelfu ya wanafunzi wanatumia Smart Elimu katika kujiongezea ufahamu wa taaluma zao, wewe unasubiri nini? jiunge nasi leo</span></h3>
                     <div class="mt-2" style="margin-top: 100px">
                         <div class="col-xs-12 col-sm-6 col-md-3 mb-md-50">
                             <div class="funfact text-center">
