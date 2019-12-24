@@ -37,7 +37,7 @@
                                     </div>
                                     <div class="content text-left flip p-25 pt-0">
                                         <h4 class="line-bottom mb-10">{!! $package->name !!}</h4>
-                                        <p>{!! truncateString($package->description,50) !!}</p>
+                                        <p>{!! strip_tags(truncateString($package->description,50)) !!}</p>
                                         <a class="btn btn-dark btn-theme-colored btn-sm text-uppercase mt-10" href="{!! route('lessons.view',$package->uuid) !!}">{!! trans('label.view') !!}</a>
                                     </div>
                                 </div>
