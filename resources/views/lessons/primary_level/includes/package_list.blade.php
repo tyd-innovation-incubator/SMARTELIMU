@@ -32,7 +32,8 @@
                             @foreach($packages as $package)
                             <div class="col-sm-6 col-md-4">
                                 <div class="service-block bg-white">
-                                    <div class="thumb"> <img alt="featured project" src="{!! url('http://admin.smartelimu.ac.tz/img/packages/'.$package->image.'') !!}" class="img-fullwidth">
+                                    <div class="thumb">
+                                        <img alt="featured project" src="{!! url('http://admin.smartelimu.ac.tz/img/packages/'.$package->image.'') !!}" class="img-fullwidth">
                                         <h4 class="text-white mt-0 mb-0"><span class="price">{!! $package->price !!}</span></h4>
                                     </div>
                                     <div class="content text-left flip p-25 pt-0">
