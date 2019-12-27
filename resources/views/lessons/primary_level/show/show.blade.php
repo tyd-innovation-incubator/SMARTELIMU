@@ -98,7 +98,7 @@
 
                                             @if(isset($syllabus))
                                             <p>{!!  $syllabus->name !!}</p>
-                                            <img href="{!! url('https://admin.smartelimu.ac.tz/files/'.$syllabus->file.'') !!}" target="_blank">
+                                            <a href="{!! url('https://admin.smartelimu.ac.tz/files/'.$syllabus->file.'') !!}" target="_blank">{!! trans('label.view') !!}</a>
                                                 @endif
 
                                         </div>
