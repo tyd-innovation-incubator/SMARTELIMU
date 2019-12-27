@@ -12,9 +12,9 @@
                     <div class="display-table-cell">
                         <div class="container pt-150 pb-150">
                             <div class="row">
-                                <div class="col-md-6 ct-u-colorWhite col-md-offset-6" style="margin-left: 800px">
+                                <div class="col-md-6 ct-u-colorWhite col-md-offset-6" style="margin-left: 700px">
                                     <div class="ct-darkBackground ct-u-marginBottom40 animated fadeInLeft activate" data-fx="fadeInLeft" data-time="200">
-                                        <h3 class="text-uppercase text-theme-color-2 font-raleway font-weight-800 mb-0 mt-0 font-30">{!! $homeslide->title !!}</h3>
+                                        <h3 class="text-uppercase  font-raleway font-weight-800 mb-0 mt-0 font-30" style="color: #009738">{!! $homeslide->title !!}</h3>
                                     </div>
                                     <p class="ct-u-marginBottom40 ct-fw-600 animated" data-fx="fadeInLeft" data-time="800" style="color: white">{!! strip_tags($homeslide->content) !!} </p>
                                     <a href="courses-listing.html" class="text-uppercase btn btn-dark btn-lg animated" data-fx="fadeInLeft" data-time="1200">{!! trans('label.view_course') !!}</a>
