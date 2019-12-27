@@ -91,10 +91,21 @@
 
                                             <p>  {!! $package->description !!}
                                             </p>
+
                                             <h4 class="line-bottom mt-20 mb-20 text-theme-colored">{!! trans('label.all_course_content') !!}</h4>
+
+                                            <h5 class="line-bottom mt-20 mb-20 text-theme-colored">{!! trans('label.syllabus') !!}</h5>
+
+                                            @if(isset($syllabus))
+                                            <p>{!!  $syllabus->name !!}</p>
+                                            <a href="{!! url('https://admin.smartelimu.ac.tz/files/'.$syllabus->file.'') !!}"></a>
+                                                @endif
+
                                         </div>
 
 
+
+                                        <h5 class="line-bottom mt-20 mb-20 text-theme-colored">{!! trans('label.course') !!}</h5>
 
 
                                                 <div class="row">

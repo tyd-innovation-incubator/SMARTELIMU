@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Lessons;
 
 use App\Http\Controllers\Controller;
 use App\Models\Package\Package;
+use App\Models\Package\Syllabus;
 use App\Repositories\Package\PackageRepository;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -42,8 +43,10 @@ class PrimaryLevelController extends Controller
 
 
         $package = $this->packages->getOneByUuid($package);
+        $syllabus = Syllabus::where('name',$package->name)->first();
         return view('lessons.primary_level.show.show')
-            ->with('package',$package);
+            ->with('package',$package)
+            ->with('syllabus',$syllabus);
     }
 
     public function search(Request $request)
