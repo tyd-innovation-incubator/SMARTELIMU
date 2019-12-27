@@ -274,16 +274,6 @@
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="root:smartelimu@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="com.intellij.database.console.session.MessageBusSession@3e3d2259" type="9fbbdea:ServiceModel$ServiceNode" />
-              </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="root:smartelimu@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="com.intellij.database.console.session.MessageBusSession@325b2135" type="9fbbdea:ServiceModel$ServiceNode" />
-              </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="root:smartelimu@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
                 <item name="com.intellij.database.console.session.MessageBusSession@2e3161c" type="9fbbdea:ServiceModel$ServiceNode" />
               </path>
             </expand>
@@ -402,7 +392,7 @@
       <workItem from="1577001009412" duration="14000" />
       <workItem from="1577182348723" duration="2980000" />
       <workItem from="1577187402754" duration="4441000" />
-      <workItem from="1577423904610" duration="6952000" />
+      <workItem from="1577423904610" duration="7258000" />
     </task>
     <servers />
   </component>
