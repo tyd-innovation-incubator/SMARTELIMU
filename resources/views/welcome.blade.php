@@ -170,28 +170,28 @@
                     <div class="mt-2" style="margin-top: 100px">
                         <div class="col-xs-12 col-sm-6 col-md-3 mb-md-50">
                             <div class="funfact text-center">
-                                <i class="fa fa-users mt-5 text-theme-color-2"></i>
+                                <img class="item" src="{!! url('img/content/WANAFUNZI.png') !!}" width="100">                                    </a>
                                 <h2 data-animation-duration="2000" data-value="5248" class="animate-number text-black mt-0 font-38 font-weight-500">0</h2>
                                 <h5 class="text-black text-uppercase mb-0">{!! trans('label.candidates') !!}</h5>
                             </div>
                         </div>
                         <div class="col-xs-12 col-sm-6 col-md-3 mb-md-50">
                             <div class="funfact text-center">
-                                <i class="fa fa-user mt-5 text-theme-color-2"></i>
+                                <img class="item mt-1" src="{!! url('img/content/WAZAZI.png') !!}" width="100" style="margin-top: 10px">                                    </a>
                                 <h2 data-animation-duration="2000" data-value="675" class="animate-number text-black mt-0 font-38 font-weight-500">0</h2>
                                 <h5 class="text-black text-uppercase mb-0">{!! trans('label.parents') !!}</h5>
                             </div>
                         </div>
                         <div class="col-xs-12 col-sm-6 col-md-3 mb-md-50">
                             <div class="funfact text-center">
-                                <i class="fa fa-users mt-5 text-theme-color-2"></i>
+                                <img class="item" src="{!! url('img/content/WALIMU.png') !!}" width="100">                                    </a>
                                 <h2 data-animation-duration="2000" data-value="248" class="animate-number text-black mt-0 font-38 font-weight-500">0</h2>
                                 <h5 class="text-black text-uppercase mb-0">{!! trans('label.teachers') !!}</h5>
                             </div>
                         </div>
                         <div class="col-xs-12 col-sm-6 col-md-3 mb-md-0">
                             <div class="funfact text-center">
-                                <i class="fa fa-users mt-5 text-theme-color-2"></i>
+                                <img class="item" src="{!! url('img/content/WADAU.png') !!}" width="100" >                                    </a>
                                 <h2 data-animation-duration="2000" data-value="24" class="animate-number text-black mt-0 font-38 font-weight-500">0</h2>
                                 <h5 class="text-black text-uppercase mb-0">{!! trans('label.partners') !!}</h5>
                             </div>
