@@ -23,7 +23,7 @@
 
                         <a href="{{ route("auth.account.confirm", $confirmation_code) }}" style="display: inline-block; padding: 11px 30px; margin: 20px 0px 30px; font-size: 15px; color: #fff; background: #32CD32; border-radius: 60px; text-decoration:none;"> @lang("buttons.email.confirm_account") </a>
 
-                        <p>@lang("strings.email.confirm_account.line_2")&nbsp;&nbsp;<a href="{{ route("auth.account.confirm", $confirmation_code) }}">{{ route("auth.account.confirm", $confirmation_code) }}</a></p>
+{{--                        <p>@lang("strings.email.confirm_account.line_2")&nbsp;&nbsp;<a href="{{ route("auth.account.confirm", $confirmation_code) }}">{{ route("auth.account.confirm", $confirmation_code) }}</a></p>--}}
 
                         <b>- Asante ( {{ config("env.app.name") }} )</b> </td>
                 </tr>

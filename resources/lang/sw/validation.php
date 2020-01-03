@@ -13,109 +13,154 @@ return [
     |
     */
 
-    'accepted' => 'The :attribute must be accepted.',
-    'active_url' => 'The :attribute is not a valid URL.',
-    'after' => 'The :attribute must be a date after :date.',
-    'after_or_equal' => 'The :attribute must be a date after or equal to :date.',
-    'alpha' => 'The :attribute may only contain letters.',
-    'alpha_dash' => 'The :attribute may only contain letters, numbers, dashes and underscores.',
-    'alpha_num' => 'The :attribute may only contain letters and numbers.',
-    'array' => 'The :attribute must be an array.',
-    'before' => 'The :attribute must be a date before :date.',
-    'before_or_equal' => 'The :attribute must be a date before or equal to :date.',
-    'between' => [
-        'numeric' => 'The :attribute must be between :min and :max.',
-        'file' => 'The :attribute must be between :min and :max kilobytes.',
-        'string' => 'The :attribute must be between :min and :max characters.',
-        'array' => 'The :attribute must have between :min and :max items.',
+    'accepted'             => ':attribute
+lazima kukubaliwa.',
+    'active_url'           => ' :attribute
+si URL sahihi.',
+    'after'                => ' :attribute lazima iwe tarehe iliyofuata :date.',
+    'after_or_equal'       => ' :attribute Lazima iwe tarehe iliyofuata au sawa :date.',
+    'alpha'                => ' :attribute inaweza tu kuwa na herufi.',
+    'alpha_dash'           => ' :attribute
+Inaweza tu kuwa na herufi, namba, na kupasua.',
+    'alpha_num'            => ' :attribute inaweza tu kuwa na herufi na namba.',
+    'array'                => ' :attribute lazima iwe safu.',
+    'before'               => ' :attribute
+lazima iwe tarehe kabla :date.',
+    'before_or_equal'      => ' :attribute
+lazima iwe tarehe kabla au sawa :date.',
+    'between'              => [
+        'numeric' => ' :attribute lazima iwe kati ya :min na :max.',
+        'file'    => ' :attribute lazima iwe katikati :min na :max kilobytes.',
+        'string'  => ' :attribute lazima iwe katikati :min na :max characters.',
+        'array'   => ' :attribute
+lazima iwe kati :min na :max vifungu.',
     ],
-    'boolean' => 'The :attribute field must be true or false.',
-    'confirmed' => 'The :attribute confirmation does not match.',
-    'date' => 'The :attribute is not a valid date.',
-    'date_equals' => 'The :attribute must be a date equal to :date.',
-    'date_format' => 'The :attribute does not match the format :format.',
-    'different' => 'The :attribute and :other must be different.',
-    'digits' => 'The :attribute must be :digits digits.',
-    'digits_between' => 'The :attribute must be between :min and :max digits.',
-    'dimensions' => 'The :attribute has invalid image dimensions.',
-    'distinct' => 'The :attribute field has a duplicate value.',
-    'email' => 'The :attribute must be a valid email address.',
-    'ends_with' => 'The :attribute must end with one of the following: :values',
-    'exists' => 'The selected :attribute is invalid.',
-    'file' => 'The :attribute must be a file.',
-    'filled' => 'The :attribute field must have a value.',
-    'gt' => [
-        'numeric' => 'The :attribute must be greater than :value.',
-        'file' => 'The :attribute must be greater than :value kilobytes.',
-        'string' => 'The :attribute must be greater than :value characters.',
-        'array' => 'The :attribute must have more than :value items.',
+    'boolean'              => ' :attribute
+fieldi lazima iwe kweli au uongo.',
+    'confirmed'            => ' :attribute uthibitisho haufanani.',
+    'date'                 => ' :attribute i
+sio tarehe halali',
+    'date_format'          => ' :attribute hailingani na muundo :format.',
+    'different'            => ' :attribute na :other lazima iwe tofauti.',
+    'digits'               => ' :attribute lazima iwe :digits tarakimu.',
+    'digits_between'       => ' :attribute lazima iwe kati :min na :max tarakimu.',
+    'dimensions'           => ' :attribute ina vipimo vya picha batili.',
+    'distinct'             => ' :attribute
+fieldi lina thamani ya duplicate..',
+    'email'                => ' :attribute
+lazima iwe anwani sahihi ya barua pepe.',
+    'exists'               => ' selected :attribute ni batili
+.',
+    'file'                 => ' :attribute
+Lazima iwe faili.',
+    'filled'               => ' :attribute fieldi lazima liwe na thamani..',
+    'gt'                   => [
+        'numeric' => ' :attribute lazima iwe kubwa kuliko :value.',
+        'file'    => ' :attribute lazima iwe kubwa kuliko :value kilobytes.',
+        'string'  => ' :attribute lazima iwe kubwa kuliko :value characters.',
+        'array'   => ' :attribute lazima iwe zaidi ya :value items.',
     ],
-    'gte' => [
-        'numeric' => 'The :attribute must be greater than or equal :value.',
-        'file' => 'The :attribute must be greater than or equal :value kilobytes.',
-        'string' => 'The :attribute must be greater than or equal :value characters.',
-        'array' => 'The :attribute must have :value items or more.',
+    'gte'                  => [
+        'numeric' => ' :attribute lazima iwe kubwa kuliko au sawa na  :value.',
+        'file'    => ' :attribute lazima iwe kubwa au sawa na :value kilobytes.',
+        'string'  => ' :attribute lazima iwe kubwa au sawa na :value characters.',
+        'array'   => ' :attribute lazima uwe :value itemu au zaidi.',
     ],
-    'image' => 'The :attribute must be an image.',
-    'in' => 'The selected :attribute is invalid.',
-    'in_array' => 'The :attribute field does not exist in :other.',
-    'integer' => 'The :attribute must be an integer.',
-    'ip' => 'The :attribute must be a valid IP address.',
-    'ipv4' => 'The :attribute must be a valid IPv4 address.',
-    'ipv6' => 'The :attribute must be a valid IPv6 address.',
-    'json' => 'The :attribute must be a valid JSON string.',
-    'lt' => [
-        'numeric' => 'The :attribute must be less than :value.',
-        'file' => 'The :attribute must be less than :value kilobytes.',
-        'string' => 'The :attribute must be less than :value characters.',
-        'array' => 'The :attribute must have less than :value items.',
+    'image'                => ' :attribute lazima iwe picha',
+    'in'                   => ' selected :attribute ni batili.',
+    'in_array'             => ' :attribute field haipo
+ :other.',
+    'integer'              => ' :attribute lazima iwe ni integer.',
+    'ip'                   => ' :attribute lazima iwe anwani sahihi ya IP.',
+    'ipv4'                 => ' :attribute
+lazima iwe anwani sahihi ya IPv4.',
+    'ipv6'                 => ' :attribute
+lazima iwe anwani sahihi ya IPv6.',
+    'json'                 => ' :attribute
+Lazima iwe  JSON halali.',
+    'lt'                   => [
+        'numeric' => ' :attribute
+lazima iwe chini ya :value.',
+        'file'    => ' :attribute
+lazima iwe chini ya :value kilobytes.',
+        'string'  => ' :attribute
+lazima iwe chini ya :value characters.',
+        'array'   => ' :attribute
+lazima iwe chini ya :value items.',
     ],
-    'lte' => [
-        'numeric' => 'The :attribute must be less than or equal :value.',
-        'file' => 'The :attribute must be less than or equal :value kilobytes.',
-        'string' => 'The :attribute must be less than or equal :value characters.',
-        'array' => 'The :attribute must not have more than :value items.',
+    'lte'                  => [
+        'numeric' => ' :attribute
+lazima iwe chini au sawa :value.',
+        'file'    => ' :attribute
+lazima iwe chini au sawa :value kilobytes.',
+        'string'  => ' :attribute
+lazima iwe chini au sawa :value characters.',
+        'array'   => ' :attribute
+haipaswi kuwa na zaidi :value items.',
     ],
-    'max' => [
-        'numeric' => 'The :attribute may not be greater than :max.',
-        'file' => 'The :attribute may not be greater than :max kilobytes.',
-        'string' => 'The :attribute may not be greater than :max characters.',
-        'array' => 'The :attribute may not have more than :max items.',
+    'max'                  => [
+        'numeric' => ' :attribute
+haiwezi kuwa kubwa kuliko :max.',
+        'file'    => ' :attribute haiwezi kuwa kubwa kuliko :max kilobytes.',
+        'string'  => ' :attributehaiwezi kuwa kubwa kuliko :max characters.',
+        'array'   => ' :attribute haiwezi kuwa kubwa kuliko :max items.',
     ],
-    'mimes' => 'The :attribute must be a file of type: :values.',
-    'mimetypes' => 'The :attribute must be a file of type: :values.',
-    'min' => [
-        'numeric' => 'The :attribute must be at least :min.',
-        'file' => 'The :attribute must be at least :min kilobytes.',
-        'string' => 'The :attribute must be at least :min characters.',
-        'array' => 'The :attribute must have at least :min items.',
+    'mimes'                => ' :attribute Lazima iwe ya aina faili : :values.',
+    'mimetypes'            => ' :attribute Lazima iwe ya aina faili: :values.',
+    'min'                  => [
+        'numeric' => ' :attribute lazima iwe angalau
+ :min.',
+        'file'    => ' :attribute lazima iwe angalau
+ :min kilobytes.',
+        'string'  => ' :attribute lazima iwe angalau
+ :min characters.',
+        'array'   => ' :attribute lazima iwe angalau
+ :min items.',
     ],
-    'not_in' => 'The selected :attribute is invalid.',
-    'not_regex' => 'The :attribute format is invalid.',
-    'numeric' => 'The :attribute must be a number.',
-    'present' => 'The :attribute field must be present.',
-    'regex' => 'The :attribute format is invalid.',
-    'required' => 'The :attribute field is required.',
-    'required_if' => 'The :attribute field is required when :other is :value.',
-    'required_unless' => 'The :attribute field is required unless :other is in :values.',
-    'required_with' => 'The :attribute field is required when :values is present.',
-    'required_with_all' => 'The :attribute field is required when :values are present.',
-    'required_without' => 'The :attribute field is required when :values is not present.',
-    'required_without_all' => 'The :attribute field is required when none of :values are present.',
-    'same' => 'The :attribute and :other must match.',
-    'size' => [
-        'numeric' => 'The :attribute must be :size.',
-        'file' => 'The :attribute must be :size kilobytes.',
-        'string' => 'The :attribute must be :size characters.',
-        'array' => 'The :attribute must contain :size items.',
+    'not_in'               => ' kuchaguliwa :attribute ni batili.
+',
+    'not_regex'            => ' :attribute muundo ni batili.
+',
+    'numeric'              => ' :attribute lazima iwe nambari
+.',
+    'present'              => ' :attribute lazima iwepo.',
+    'regex'                => ' :attribute muundo ni batili
+.',
+    'required'             => ' :attribute inahitajika.',
+    'required_if'          => ' :attribute inahitajika wakati
+ :other ni :value.',
+    'required_unless'      => ' :attribute
+inahitajika isipokuwa :other ni  :values.',
+    'required_with'        => ' :attribute inahitajika wakati :values kuwepo.',
+    'required_with_all'    => ' :attribute inahitajika wakati :values kuwepo.',
+    'required_without'     => ' :attribute inahitajika wakati :values kutokuwepo.',
+    'required_without_all' => ' :attribute inahitajika wakati hakuna
+ :values kuwepo.',
+    'same'                 => ' :attribute na :other lazima inafanana .',
+    'size'                 => [
+        'numeric' => ' :attribute
+lazima iwe:size.',
+        'file'    => ' :attribute
+lazima iwe :size kilobytes.',
+        'string'  => ' :attribute
+lazima iwe :size characters.',
+        'array'   => ' :attribute lazima iwe na :size items.',
     ],
-    'starts_with' => 'The :attribute must start with one of the following: :values',
-    'string' => 'The :attribute must be a string.',
-    'timezone' => 'The :attribute must be a valid zone.',
-    'unique' => 'The :attribute has already been taken.',
-    'uploaded' => 'The :attribute failed to upload.',
-    'url' => 'The :attribute format is invalid.',
-    'uuid' => 'The :attribute must be a valid UUID.',
+    'string'               => ' :attribute
+lazima iwe string.',
+    'timezone'             => ' :attribute
+lazima iwe eneo la halali.',
+    'unique'               => ' :attribute
+tayari imechukuliwa.',
+    'uploaded'             => ' :attribute imeshindwa kupakia..',
+    'url'                  => ' :attribute
+muundo ni batili.',
+    'phone' => ' :attribute fied ina nambari batili
+.',
+    'captcha' => ' :attribute
+field ina captcha batili.',
+    'alpha_spaces' => ' :attribute
+inaweza tu kuwa na herufi na nafasi',
 
     /*
     |--------------------------------------------------------------------------
@@ -139,12 +184,15 @@ return [
     | Custom Validation Attributes
     |--------------------------------------------------------------------------
     |
-    | The following language lines are used to swap our attribute placeholder
-    | with something more reader friendly such as "E-Mail Address" instead
-    | of "email". This simply helps us make our message more expressive.
+    | The following language lines are used to swap attribute place-holders
+    | with something more reader friendly such as E-Mail Address instead
+    | of "email". This simply helps us make messages a little cleaner.
     |
     */
 
-    'attributes' => [],
+    'attributes' => [
+        'url' => '
+anwani ya wavuti',
+    ],
 
 ];

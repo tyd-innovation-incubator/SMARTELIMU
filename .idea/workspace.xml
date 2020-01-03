@@ -3,7 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="08d93d0e-5c1d-42d8-82c3-2dc7bd1f714f" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/lessons/primary_level/show/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/lessons/primary_level/show/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Profile/ProfileController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Profile/ProfileController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/Auth/RegisterRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/Auth/RegisterRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/sw/label.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/sw/label.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/sw/validation.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/sw/validation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/emails/user/confirmation.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/emails/user/confirmation.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/information/about/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/information/about/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/profile/includes/edit_personal_information.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/profile/includes/edit_personal_information.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -217,7 +225,7 @@
     <property name="SearchEverywhereHistoryKey" value="la&#9;FILE&#9;file:///home/dontito/SMARTELIMU/resources/lang/sw/label.php&#10;new&#9;FILE&#9;file:///home/dontito/SMARTELIMU/app/Repositories/Information/NewsRepository.php&#10;label&#9;FILE&#9;file:///home/dontito/SMARTELIMU/resources/lang/sw/label.php&#10;label.&#9;FILE&#9;file:///home/dontito/SMARTELIMU/resources/lang/sw/label.php&#10;codevaluesre&#9;null&#9;null&#10;userreposi&#9;FILE&#9;file:///home/dontito/SMARTELIMU/app/Repositories/Access/UserRepository.php&#10;menu&#9;FILE&#9;file:///home/dontito/SMARTELIMU/public/themes/css/menuzord-skins/menuzord-rounded-boxed.css&#10;theme&#9;FILE&#9;file:///home/dontito/SMARTELIMU/public/themes/css/colors/theme-skin-color-set-1.css&#10;user&#9;FILE&#9;file:///home/dontito/SMARTELIMU/app/Repositories/Access/UserRepository.php&#10;paymentco&#9;FILE&#9;file:///home/dontito/SMARTELIMU/app/Http/Controllers/Payment/PaymentController.php&#10;style.css&#9;FILE&#9;file:///home/dontito/SMARTELIMU/public/assets/css/style.css&#10;labe&#9;FILE&#9;file:///home/dontito/SMARTELIMU/resources/lang/sw/label.php&#10;regis&#9;FILE&#9;file:///home/dontito/SMARTELIMU/app/Http/Controllers/Auth/RegisterController.php&#10;userre&#9;FILE&#9;file:///home/dontito/SMARTELIMU/app/Repositories/Access/UserRepository.php&#10;abel&#9;FILE&#9;file:///home/dontito/SMARTELIMU/resources/lang/sw/label.php&#10;userrepo&#9;FILE&#9;file:///home/dontito/SMARTELIMU/app/Repositories/Access/UserRepository.php&#10;codevalu&#9;FILE&#9;file:///home/dontito/SMARTELIMU/app/Repositories/Sysdef/CodeValueRepository.php&#10;profi&#9;FILE&#9;file:///home/dontito/SMARTELIMU/app/Http/Controllers/Profile/ProfileController.php&#10;larave&#9;FILE&#9;file:///home/dontito/SMARTELIMU/storage/logs/laravel-2019-07-30.log" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/lang/sw" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -228,19 +236,19 @@
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/database/migrations" />
-      <recent name="$PROJECT_DIR$/resources/lang/sw" />
-      <recent name="$PROJECT_DIR$/resources/views/lessons/extra_secondary_level/includes" />
-      <recent name="$PROJECT_DIR$/resources/views/lessons/extra_primary_level/includes" />
-      <recent name="$PROJECT_DIR$/resources/views/lessons/secondary_level/includes" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/Models/Package" />
       <recent name="$PROJECT_DIR$/app/Http/Controllers/Package" />
       <recent name="$PROJECT_DIR$/app/Models/Auth" />
       <recent name="$PROJECT_DIR$/app/Models/Information" />
       <recent name="$PROJECT_DIR$/app/Models" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/lang/sw" />
+      <recent name="$PROJECT_DIR$/database/migrations" />
+      <recent name="$PROJECT_DIR$/resources/views/lessons/extra_secondary_level/includes" />
+      <recent name="$PROJECT_DIR$/resources/views/lessons/extra_primary_level/includes" />
+      <recent name="$PROJECT_DIR$/resources/views/lessons/secondary_level/includes" />
     </key>
   </component>
   <component name="RunManager">
@@ -263,17 +271,7 @@
       <list>
         <serviceView>
           <treeState>
-            <expand>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="root:smartelimu@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="root:smartelimu@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="com.intellij.database.console.session.MessageBusSession@2e3161c" type="9fbbdea:ServiceModel$ServiceNode" />
-              </path>
-            </expand>
+            <expand />
             <select />
           </treeState>
         </serviceView>
@@ -389,7 +387,9 @@
       <workItem from="1577001009412" duration="14000" />
       <workItem from="1577182348723" duration="2980000" />
       <workItem from="1577187402754" duration="4441000" />
-      <workItem from="1577423904610" duration="7931000" />
+      <workItem from="1577423904610" duration="8051000" />
+      <workItem from="1577900022715" duration="1885000" />
+      <workItem from="1578052315576" duration="9633000" />
     </task>
     <servers />
   </component>
@@ -431,6 +431,10 @@
       <screen x="1366" y="0" width="1680" height="1050" />
     </state>
     <state x="1801" y="185" width="800" height="677" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1366.696/1366.0.1680.1050@1366.0.1680.1050" timestamp="1576485382811" />
+    <state x="693" y="295" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1578058393571">
+      <screen x="0" y="28" width="1920" height="1018" />
+    </state>
+    <state x="693" y="295" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.28.1920.1018/1920.0.1680.1050@0.28.1920.1018" timestamp="1578058393571" />
     <state x="2543" y="283" width="424" height="491" key="FileChooserDialogImpl" timestamp="1576760023285">
       <screen x="0" y="28" width="3600" height="1018" />
     </state>
@@ -480,6 +484,10 @@
     <state x="1862" y="351" key="com.intellij.ide.util.TipDialog/0.27.1366.696/1366.0.1680.1050@1366.0.1680.1050" timestamp="1576485338414" />
     <state x="567" y="368" key="com.intellij.ide.util.TipDialog/0.28.1920.1018/1920.0.1680.1050@0.28.1920.1018" timestamp="1577188842302" />
     <state x="567" y="368" key="com.intellij.ide.util.TipDialog/0.28.1920.1018@0.28.1920.1018" timestamp="1577001022506" />
+    <state x="1920" y="79" width="1680" height="971" key="dock-window-1" timestamp="1578059076431">
+      <screen x="1920" y="0" width="1680" height="1050" />
+    </state>
+    <state x="1920" y="79" width="1680" height="971" key="dock-window-1/0.28.1920.1018/1920.0.1680.1050@0.28.1920.1018" timestamp="1578059076431" />
     <state x="1292" y="231" width="672" height="678" key="search.everywhere.popup" timestamp="1577432565470">
       <screen x="0" y="28" width="1920" height="1018" />
     </state>

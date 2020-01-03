@@ -24,28 +24,23 @@ class RegisterRequest extends Request
      */
     public function rules()
     {
-        $input = request()->input();
-        $country = $input['country'];
-        $region = [];
-        $basic  = [];
-        $optional = [];// Fields which exist
-        $array = [];
 
-        $basic = [
-            'first_name' => 'required|string|max:255|alpha_spaces',
-            'last_name' => 'required|string|max:255|alpha_spaces',
-
-            'username' => 'required|string|max:255|alpha_spaces',
-            'phone' => ['required', 'string', 'phone:TZ', 'unique:users'],
-            'email' => 'required|string|email|max:255|unique:users',
-            'category_cv_id' => 'required',
-            'password' => 'required|string|min:6|confirmed',
-//            'captcha' => 'required|captcha',
-        ];
+         return [
+            'first_name' => 'required',
+            'last_name' => 'required|string|max:255',
+            'username' => 'required|string|max:255',
+            'phone' => ['required', 'string', 'phone:TZ' ],
+            'email' => 'required|string|email|max:255',
+            'account_category' => 'required',
+            'gender' => 'required',
+             'country' => 'required',
+             'region' => 'required',
 
 
 
-        return array_merge($region, $basic, $optional);
+         ];
+
+
     }
 
     /**

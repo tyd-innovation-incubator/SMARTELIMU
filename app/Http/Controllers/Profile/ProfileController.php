@@ -3,11 +3,13 @@
 namespace App\Http\Controllers\Profile;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\Auth\RegisterRequest;
 use App\Models\Auth\Candidate;
 use App\Repositories\Access\UserRepository;
 use App\Repositories\Package\InvoiceRepository;
 use App\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Validator;
 
 class ProfileController extends Controller
 {
@@ -20,6 +22,20 @@ class ProfileController extends Controller
 
         $this->users = new UserRepository();
         $this->invoices = new InvoiceRepository();
+    }
+
+    protected function validator(array $data)
+    {
+        return Validator::make($data, [
+            'first_name' => 'required|string|max:255|alpha_spaces',
+            'last_name' => 'required|string|max:255|alpha_spaces',
+
+            'username' => 'required|string|max:255|alpha_spaces',
+            'phone' => ['required', 'string', 'phone:TZ', 'unique:users'],
+            'email' => 'required|string|email|max:255|unique:users',
+            'category_cv_id' => 'required',
+            'password' => 'required|string|min:6|confirmed',
+        ]);
     }
 
 
@@ -71,9 +87,11 @@ class ProfileController extends Controller
             ->with('user',$user);
     }
 
-    public function updatePersonalInformation(Request $request,$user)
+    public function updatePersonalInformation(RegisterRequest $request,$user)
     {
         $user = $this->users->getOneByUuid($user);
+
+        $this->validator($request->all());
         $user = $this->users->update($request->all(),$user);
         return view('profile.personal_info')
             ->with('user',$user);

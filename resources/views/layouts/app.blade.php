@@ -257,6 +257,7 @@
         </div>
     </header>
 
+@include("includes.partials.messages")
 
     <!-- Start main-content -->
 
