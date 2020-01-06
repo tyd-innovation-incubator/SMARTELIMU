@@ -24,10 +24,10 @@ class PrimaryLevelController extends Controller
     public function index()
     {
         $packages = Package::where('category',5)->where('status',1)->paginate(9);
-        $primary_level = $this->packages->getPrimaryLevelPackages();
-        $secondary_level = $this->packages->getSecondaryLevelPackages();
-        $extra_primary_level = $this->packages->getExtraPrimaryLevelPackages();
-        $extra_secondary_level = $this->packages->getExtralSecondaryLevelPackages();
+        $primary_level = code_value()->getPrimaryLevelPackages();
+        $secondary_level = code_value()->getSecondaryLevelPackages();
+        $extra_primary_level = code_value()->getExtraPrimaryLevelPackages();
+        $extra_secondary_level = code_value()->getExtraSecondaryLevelPackages();
 
             return view('lessons.primary_level.includes.package_list')
                 ->with('packages',$packages)

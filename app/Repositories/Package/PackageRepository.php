@@ -29,7 +29,7 @@ class PackageRepository extends BaseRepository
     }
     public function getSecondaryLevelPackages()
     {
-        $packages = Package::where('category',4)
+        $packages = Package::where('category',6)
             ->where('status',1)->get();
         return $packages;
     }

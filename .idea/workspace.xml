@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="08d93d0e-5c1d-42d8-82c3-2dc7bd1f714f" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Lessons/PrimaryLevelController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Lessons/PrimaryLevelController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repositories/Package/PackageRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/Package/PackageRepository.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -381,6 +383,10 @@
       <workItem from="1577423904610" duration="8051000" />
       <workItem from="1577900022715" duration="1885000" />
       <workItem from="1578052315576" duration="10948000" />
+      <workItem from="1578140420294" duration="654000" />
+      <workItem from="1578165221065" duration="1192000" />
+      <workItem from="1578205795783" duration="585000" />
+      <workItem from="1578310250811" duration="284000" />
     </task>
     <servers />
   </component>
@@ -469,16 +475,16 @@
       <screen x="1366" y="0" width="1680" height="1050" />
     </state>
     <state x="1918" y="164" width="566" height="720" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.27.1366.696/1366.0.1680.1050@1366.0.1680.1050" timestamp="1576497859429" />
-    <state x="567" y="368" key="com.intellij.ide.util.TipDialog" timestamp="1577188842302">
+    <state x="567" y="368" key="com.intellij.ide.util.TipDialog" timestamp="1578167369889">
       <screen x="0" y="28" width="1920" height="1018" />
     </state>
     <state x="1862" y="351" key="com.intellij.ide.util.TipDialog/0.27.1366.696/1366.0.1680.1050@1366.0.1680.1050" timestamp="1576485338414" />
     <state x="567" y="368" key="com.intellij.ide.util.TipDialog/0.28.1920.1018/1920.0.1680.1050@0.28.1920.1018" timestamp="1577188842302" />
-    <state x="567" y="368" key="com.intellij.ide.util.TipDialog/0.28.1920.1018@0.28.1920.1018" timestamp="1577001022506" />
-    <state x="1920" y="79" width="1680" height="971" key="dock-window-1" timestamp="1578059076431">
+    <state x="567" y="368" key="com.intellij.ide.util.TipDialog/0.28.1920.1018@0.28.1920.1018" timestamp="1578167369889" />
+    <state x="1920" y="203" width="1649" height="695" maximized="true" key="dock-window-1" timestamp="1578310602203">
       <screen x="1920" y="0" width="1680" height="1050" />
     </state>
-    <state x="1920" y="79" width="1680" height="971" key="dock-window-1/0.28.1920.1018/1920.0.1680.1050@0.28.1920.1018" timestamp="1578059076431" />
+    <state x="1920" y="203" width="1649" height="695" maximized="true" key="dock-window-1/0.28.1920.1018/1920.0.1680.1050@0.28.1920.1018" timestamp="1578310602203" />
     <state x="1292" y="231" width="672" height="678" key="search.everywhere.popup" timestamp="1577432565470">
       <screen x="0" y="28" width="1920" height="1018" />
     </state>
