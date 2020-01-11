@@ -104,10 +104,7 @@
                                         </div>
 
 
-
                                         <h5 class="line-bottom mt-20 mb-20 text-theme-colored">{!! trans('label.course') !!}</h5>
-
-
                                                 <div class="row">
                                                     <div id="proposalAccordion" class="panel-group">
                                                         @foreach($package->subjects as $subject)
@@ -127,14 +124,19 @@
                                                                             </div>
                                                                             <div class="col-xs-2"><i class="fa fa-chevron-down pull-right"></i></div>
                                                                         </div>
-                                                                        <div id="detail-{!! $chapter->id !!}">
-                                                                            <ul class="list theme-colored angle-double-right">
-                                                                                <li>link for a video </li>
-                                                                                <li>Link for download article</li>
-                                                                                <li>Link for examinations </li>
-                                                                            </ul>
+                                                                        @if ($package->ispaid == 1)
+                                                                            <div id="detail-{!! $chapter->id !!}">
+                                                                                <ul class="list theme-colored angle-double-right">
+                                                                                    <li>link for a video </li>
+                                                                                    <li>Link for download article</li>
+                                                                                    <li>Link for examinations </li>
+                                                                                </ul>
 
-                                                                        </div>
+                                                                            </div>
+                                                                            @else
+
+                                                                        @endif
+
                                                                     </li>
                                                                    @endforeach
                                                                 </ul>

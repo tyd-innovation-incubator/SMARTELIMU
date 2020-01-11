@@ -40,8 +40,6 @@ class PrimaryLevelController extends Controller
 
     public function view($package)
     {
-
-
         $package = $this->packages->getOneByUuid($package);
         $syllabus = Syllabus::where('name',$package->name)->first();
         return view('lessons.primary_level.show.show')
