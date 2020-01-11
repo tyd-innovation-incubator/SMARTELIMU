@@ -116,6 +116,8 @@
                                                                 <div class="panel-heading">
                                                                     <h1 class="panel-title"><b>{!! $subject->name !!}</b></h1>
                                                                 </div>
+                                                                <div class="panel-body">{!! $subject->description !!}</div>
+
                                                                 <ul class="list-group">
                                                                     @foreach($subject->chapters as $chapter)
                                                                     <li class="list-group-item">
