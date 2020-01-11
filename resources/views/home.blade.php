@@ -8,8 +8,8 @@
 @section('content')
     <!-- Start main-content -->
     <div class="main-content">
-
-        <section class="bg-lighter" style="background-image: url(https://i.udemycdn.com/notices/featured_banner/image/eb91edb8-3561-4cf3-843a-a56790395ab1.jpg);width: 70%;margin-left: 15%">
+{{--        {!! url('img/content/WALIMU.png') !!}--}}
+        <section class="bg-lighter" style="background-image: url(img/content/HOME_LOG_IN_BANNER.jpg);width: 70%;margin-left: 15%">
             <div class="container text-center">
                 <h2 class="heading probootstrap-animate fadeIn probootstrap-animated" data-animate-effect="fadeIn">SMART ELIMU</h2>
 {{--                <p class="sub-heading probootstrap-animate fadeIn probootstrap-animated" data-animate-effect="fadeIn">Nobody looks forward to poopin' scoopin'!</p>--}}
