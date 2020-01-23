@@ -1,4 +1,4 @@
-@extends('layouts.main')
+@extends('layouts.app')
 @push('after-styles')
 {!! Html::style(url('vendor/sweetalert/sweetalert.css')) !!}
 <style>
@@ -10,32 +10,13 @@
 @endpush
 @section('content')
 
-    <div class="ct-site--map ct-u-backgroundGradient">
-        <div class="container">
-            <div class="ct-u-displayTableVertical text-capitalize">
-                <div class="ct-u-displayTableCell">
-                <span class="ct-u-textBig">
-                Taarifa za mtumiaji
-                </span>
-
-                </div>
-                <div class="ct-u-displayTableCell text-right">
-                <span class="ct-u-textNormal ct-u-textItalic">
-                    <a href="userdashboard.html">Nyumbani</a>/<a href="user-profile">Ijayo</a>
-                </span>
-                </div>
-            </div>
-
-
-        </div>
-    </div>
 
 
     <div class="container " style="margin-top: 10px">
         <div class="row">
             <div class="col-md-3" style="margin-left: 0px">
 
-                @include('profile.includes.left_sidebar')
+{{--                @include('profile.includes.left_sidebar')--}}
             </div>
             <div class="col-md-9" style="margin-top: 20px">
 
@@ -154,7 +135,8 @@
 
                     <div class="form-group row mb-0">
                         <div class="col-md-6 offset-md-4">
-                            <button type="submit" class="btn btn-primary">
+                            <a class="btn btn-dark btn-lg mt-15" href="{!! route('profile.personal_info') !!}">{!! trans('buttons.general.cancel') !!}</a>
+                            <button type="submit" class="btn btn-dark btn-lg mt-15">
                                 {{ trans('label.register') }}
                             </button>
                         </div>
@@ -173,9 +155,6 @@
     $(function() {
         $( "#datepicker" ).datepicker({dateFormat: 'yy'});
     });
-
-
-
 
 
 </script>

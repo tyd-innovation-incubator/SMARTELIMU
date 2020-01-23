@@ -69,7 +69,7 @@ class ProfileController extends Controller
 
         $input = $request->all();
         $candidate = $this->users->createCandidate($input);
-        return redirect()->route('profile.candidate_info');
+        return redirect()->route('profile.personal_info');
     }
 
 
@@ -120,7 +120,7 @@ class ProfileController extends Controller
         $user = access()->user();
         $candidate = $user->candidates()->where('uuid',$candidate)->get()->first();
         $candidate = $this->users->updateCandidate($input,$candidate);
-        return redirect()->route('profile.candidate_info');
+        return redirect()->route('profile.personal_info');
     }
 
 

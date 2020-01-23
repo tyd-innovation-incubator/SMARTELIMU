@@ -83,6 +83,7 @@
                             </div>
                             <div class="tab-pane fade" id="tab17">
                                 <div class="row">
+                                    <a class="btn btn-success pull-right" href="{!! route('profile.create_candidate') !!}">{!! trans('label.add_candidate') !!}</a>
                                     <div class="col-md-12">
                                         <table class="table table-hover">
                                             <thead>
@@ -103,7 +104,7 @@
                                                 <td>{!! $candidate->first_name !!}</td>
                                                 <td>{!! $candidate->last_name !!}</td>
                                                 <td>{!! $candidate->year_of_study !!}</td>
-                                                <td><a class="btn btn-success btn-xs" href="#">{!! trans('label.view') !!}</a></td>
+                                                <td class="text-center"><a class='btn btn-info btn-xs' href="{!! route('profile.edit_candidate',$candidate->uuid) !!}"><span class="glyphicon glyphicon-edit"></span> {!! trans('buttons.general.crud.edit') !!}</a> <a href="#" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"></span> {!! trans('buttons.general.crud.delete') !!}</a></td>
                                             </tr>
                                                 @endforeach
 

@@ -1,4 +1,4 @@
-@extends('layouts.main')
+@extends('layouts.app')
 @push('after-styles')
 {!! Html::style(url('vendor/sweetalert/sweetalert.css')) !!}
 <style>
@@ -10,32 +10,12 @@
 @endpush
 @section('content')
 
-    <div class="ct-site--map ct-u-backgroundGradient">
-        <div class="container">
-            <div class="ct-u-displayTableVertical text-capitalize">
-                <div class="ct-u-displayTableCell">
-                <span class="ct-u-textBig">
-                Taarifa za mtumiaji
-                </span>
-
-                </div>
-                <div class="ct-u-displayTableCell text-right">
-                <span class="ct-u-textNormal ct-u-textItalic">
-                    <a href="userdashboard.html">Nyumbani</a>/<a href="user-profile">Ijayo</a>
-                </span>
-                </div>
-            </div>
-
-
-        </div>
-    </div>
-
 
     <div class="container " style="margin-top: 10px">
         <div class="row">
             <div class="col-md-3" style="margin-left: 0px">
 
-                @include('profile.includes.left_sidebar')
+{{--                @include('profile.includes.left_sidebar')--}}
             </div>
             <div class="col-md-9" style="margin-top: 20px">
 
@@ -76,7 +56,7 @@
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label for="class_name" class=" col-form-label text-md-right">{{ __('label.class_name') }}</label>
-                                <input id="class_name" type="text" class="form-control @error('username') is-invalid @enderror" name="class_name" value="{!! $candidate->className !!}" required autocomplete="class_name" autofocus>
+                                <input id="class_name" type="text" class="form-control @error('username') is-invalid @enderror" name="class_name" value="{!! $candidate->class_name !!}" required autocomplete="class_name" autofocus>
 
                                 @error('class_name')
                                 <span class="invalid-feedback" role="alert">
@@ -90,7 +70,7 @@
                             <div class="form-group ">
                                 <label for="year_of_study" class=" ol-form-label text-md-right">{{ __('label.year_of_study') }}</label>
 
-                                {!! Form::date('year_of_study',$candidate->yearOfStudy , ['id'=>'datepicker', 'class' => 'form-control datepicker1','required','style' => 'background-color: white;']) !!}
+                                {!! Form::date('year_of_study',$candidate->year_of_study , ['id'=>'datepicker', 'class' => 'form-control datepicker1','required','style' => 'background-color: white;']) !!}
 
                                 @error('year_of_study')
                                 <span class="invalid-feedback" role="alert">
@@ -106,7 +86,7 @@
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label for="date_of_birth" class=" col-form-label text-md-right">{{ __('label.date_of_birth') }}</label>
-                                <input id="date_of_birth" type="date" class="form-control @error('phone') is-invalid @enderror" name="date_of_birth" value="{!! $candidate->DOB !!}" required autocomplete="phone" autofocus>
+                                <input id="date_of_birth" type="date" class="form-control @error('phone') is-invalid @enderror" name="date_of_birth" value="{!! $candidate->date_of_birth !!}" required autocomplete="phone" autofocus>
 
                                 @error('date_of_birth')
                                 <span class="invalid-feedback" role="alert">
@@ -154,7 +134,8 @@
 
                     <div class="form-group row mb-0">
                         <div class="col-md-6 offset-md-4">
-                            <button type="submit" class="btn btn-primary">
+                            <a class="btn btn-default btn-lg mt-15" href="{!! route('profile.personal_info') !!}">{!! trans('buttons.general.cancel') !!}</a>
+                            <button type="submit" class="btn btn-dark btn-lg mt-15">
                                 {{ trans('label.register') }}
                             </button>
                         </div>

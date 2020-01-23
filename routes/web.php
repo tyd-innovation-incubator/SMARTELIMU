@@ -29,7 +29,9 @@ Route::get('/', function () {
         ->with('packages',$packages)
         ->with('news',$news);
 });
-
+Route::get('/debug', function () {
+    return view('debug');
+});
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

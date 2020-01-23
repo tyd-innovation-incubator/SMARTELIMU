@@ -124,6 +124,7 @@ Yote yaliyomo kwenye kozi',
     'account_confirm' => 'Uthibitishaji wa Akaunti ya mtandaoni',
     'account_activated' => 'Uthibitisho wa kuhamsha akaunti',
     'account_deactivated' => 'Uthibitisho wa kufunga Akaunti',
-    'syllabus' => 'Mtaala'
+    'syllabus' => 'Mtaala',
+    'add_candidate' => 'Ongeza Mwanafunzi'
 
 ];
