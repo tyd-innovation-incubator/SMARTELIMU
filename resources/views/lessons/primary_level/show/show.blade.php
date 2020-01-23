@@ -98,7 +98,8 @@
 
                                             @if(isset($syllabus))
                                             <p>{!!  $syllabus->name !!}</p>
-                                            <a  class="btn btn-info btn-sm" href="{!! url('https://admin.smartelimu.ac.tz/files/'.$syllabus->file.'') !!}" target="_blank"><i class="fa fa-download"></i>{!! trans('label.view') !!}</a>
+
+                                            <a  class="btn btn-info btn-sm" src="{!! url('https://admin.smartelimu.ac.tz/files/'.$syllabus->file.'') !!}" target="_blank"><i class="fa fa-download"></i>{!! trans('label.view') !!}</a>
                                                 @endif
 
                                         </div>
